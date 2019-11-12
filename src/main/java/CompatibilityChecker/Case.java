@@ -6,16 +6,14 @@ public class Case extends CompositeEquipment{
         super(name);
     }
 
-    public void add(Equipment e) {
-
+    public Case(String name, double price){
+        super(name);
+        setPrice(price);
     }
 
-    public void remove(Equipment e) {
-
-    }
-
-    public Iterable<Equipment> createIterator() {
-        return null;
-    }
+//    @Override
+//    public double getPrice(){
+//        return this.price;
+//    }
 
 }

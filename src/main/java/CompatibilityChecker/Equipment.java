@@ -3,8 +3,8 @@ package CompatibilityChecker;
 public abstract class Equipment {
 
     private String name;
-    private double wattage;
-    private double price;
+    protected double wattage;
+    protected double price;
 
     protected Equipment(String name){
         this.name = name;
@@ -20,8 +20,6 @@ public abstract class Equipment {
     public void setName(String name) {
         this.name = name;
     }
-
-
 
     public double getWattage() {
         return wattage;
@@ -39,11 +37,11 @@ public abstract class Equipment {
         this.price = price;
     }
 
-    public void add(Equipment e){};
-
-    public void remove(Equipment e){};
-
-    public Iterable<Equipment> createIterator(){
-        return null;
-    };
+//    public void add(Equipment e){};
+//
+//    public void remove(Equipment e){};
+//
+//    public Iterable<Equipment> createIterator(){
+//        return null;
+//    };
 }

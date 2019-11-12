@@ -8,6 +8,11 @@ public class Cpu extends Equipment {
         super(name);
     }
 
+    public Cpu(String name, double price){
+        super(name);
+        setPrice(price);
+    }
+
     public void add(Equipment e) {
 
     }

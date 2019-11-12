@@ -1,11 +1,12 @@
 package CompatibilityChecker;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public abstract class CompositeEquipment extends Equipment {
-    private ArrayList<Equipment> equipment = new ArrayList<Equipment>();
+public class CompositeEquipment extends Equipment {
+    private List<Equipment> equipmentList = new ArrayList<Equipment>();
 
-    protected CompositeEquipment(String name){
+    public CompositeEquipment(String name){
         this.setName(name);
     }
 
@@ -13,6 +14,24 @@ public abstract class CompositeEquipment extends Equipment {
 
     @Override
     public double getPrice(){
-        return 20;
+        double total = 0;
+        for(Equipment e: equipmentList){
+            System.out.println(e.getName());
+            System.out.println(e.getPrice());
+            total += e.getPrice();
+        }
+        total+=this.price;
+
+        return total;
     }
+
+
+    public void add(Equipment e){
+        equipmentList.add(e);
+    }
+
+    public void remove(Equipment e){
+        equipmentList.remove(e);
+    }
+
 }
