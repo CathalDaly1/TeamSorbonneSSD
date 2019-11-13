@@ -17,7 +17,7 @@ public class Main extends WelcomeFrame {
 
         caseObj.add(new Cpu("cpu"));
 
-        System.out.println("test run again");
+        System.out.println("test run");
 
     }
 }
