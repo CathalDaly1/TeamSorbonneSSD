@@ -13,7 +13,7 @@ public class LoginFrame extends JFrame {
     private JButton backButton;
 
     public LoginFrame() {
-        setTitle("PC Part Picker");
+        setTitle("PC Part Picker app");
         setSize(500, 500);
         setContentPane(mainPanel);
         setLocationRelativeTo(null);

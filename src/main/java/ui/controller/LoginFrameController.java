@@ -15,7 +15,6 @@ public class LoginFrameController {
 
     public LoginFrameController() {
         initComponents();
-
     }
 
     private void initComponents() {

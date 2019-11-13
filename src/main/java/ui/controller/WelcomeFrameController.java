@@ -14,6 +14,7 @@ public class WelcomeFrameController  {
 
     public WelcomeFrameController() {
         initComponents();
+
     }
 
     private void initComponents() {

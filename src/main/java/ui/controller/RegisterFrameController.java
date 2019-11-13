@@ -19,6 +19,7 @@ public class RegisterFrameController  {
 
     public RegisterFrameController() {
         initComponents();
+
     }
 
     private void initComponents() {

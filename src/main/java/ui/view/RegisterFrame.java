@@ -15,7 +15,7 @@ public class RegisterFrame extends JFrame {
     private JLabel errorLabel;
 
     public RegisterFrame() {
-        setTitle("PC Part Picker");
+        setTitle("PC Part Picker app");
         setSize(500, 500);
         setContentPane(mainPanel);
         setLocationRelativeTo(null);

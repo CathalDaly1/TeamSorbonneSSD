@@ -11,7 +11,7 @@ public class WelcomeFrame extends RegisterFrame {
     private JPanel mainPanel;
 
     public WelcomeFrame() {
-        setTitle("PC Part Picker");
+        setTitle("PC Part Picker app");
         setSize(500, 500);
         setContentPane(mainPanel);
         setLocationRelativeTo(null);
