@@ -1,23 +1,23 @@
 import CompatibilityChecker.Case;
-import CompatibilityChecker.CompositeEquipment;
 import CompatibilityChecker.Cpu;
+import ui.view.WelcomeFrame;
 
-public class Main {
+import javax.swing.*;
+
+public class Main extends WelcomeFrame {
 
     public static void main(String[] args){
-        Case caseObj2 = new Case("Case2",30);
 
-        Case caseObj = new Case("Case",20);
+        WelcomeFrame welcomeFrame = new WelcomeFrame();
+        welcomeFrame.pack();
+        welcomeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        welcomeFrame.setVisible(true);
 
-        caseObj.add(new Cpu("cpu",10));
+        Case caseObj = new Case("Case");
 
-        caseObj2.add(caseObj);
+        caseObj.add(new Cpu("cpu"));
 
-        CompositeEquipment compositeEquipment = new CompositeEquipment("Compo");
-
-        compositeEquipment.add(caseObj);
-
-        System.out.print(compositeEquipment.getPrice());
+        System.out.println("test run again");
 
     }
 }
