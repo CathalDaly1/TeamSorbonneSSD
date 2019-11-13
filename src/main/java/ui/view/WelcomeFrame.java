@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class WelcomeFrame extends JFrame {
+public class WelcomeFrame extends RegisterFrame {
     private JButton loginButton;
     private JButton registerButton;
     private JLabel titleLabel;
@@ -22,7 +22,7 @@ public class WelcomeFrame extends JFrame {
             public void windowClosing(WindowEvent e) {
                 int x = JOptionPane.showConfirmDialog(
                         null,
-                        "Are you sure you wish to exit PC Part Picker application?",
+                        "Are you sure you wish to exit PC Part Picker app?",
                         "Exit PC Part Picker application",
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.INFORMATION_MESSAGE
@@ -35,11 +35,10 @@ public class WelcomeFrame extends JFrame {
         });
     }
 
-    public JButton getLoginButton() {
-        return loginButton;
-    }
+    public JButton getLoginButton() { return loginButton; }
 
     public JButton getRegisterButton() {
+        System.out.print("Register Button");
         return registerButton;
     }
 }
