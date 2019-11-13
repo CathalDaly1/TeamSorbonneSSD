@@ -17,6 +17,5 @@ public class WelcomeFrameController {
         WelcomeFrame welcomeFrame = new WelcomeFrame();
         loginButton = welcomeFrame.getLoginButton();
         registerButton = welcomeFrame.getRegisterButton();
-        System.out.println("test method now");
     }
 }

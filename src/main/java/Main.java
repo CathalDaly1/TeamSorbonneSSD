@@ -10,7 +10,6 @@ public class Main extends WelcomeFrame {
 
         WelcomeFrame welcomeFrame = new WelcomeFrame();
         welcomeFrame.pack();
-        welcomeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         welcomeFrame.setVisible(true);
 
         Case caseObj = new Case("Case");
@@ -18,6 +17,5 @@ public class Main extends WelcomeFrame {
         caseObj.add(new Cpu("cpu"));
 
         System.out.println("test run");
-
     }
 }

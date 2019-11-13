@@ -22,7 +22,7 @@ public class WelcomeFrame extends JFrame {
             public void windowClosing(WindowEvent e) {
                 int x = JOptionPane.showConfirmDialog(
                         null,
-                        "Are you sure you wish to exit PC Part Picker app?",
+                        "Are you sure you wish to exit PC Part Picker application?",
                         "Exit PC Part Picker application",
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.INFORMATION_MESSAGE
