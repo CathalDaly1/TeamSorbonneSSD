@@ -29,6 +29,6 @@ public class Main  {
 
         caseObj.add(new Cpu("cpu"));
 
-        System.out.println("git test");
+        System.out.println("git test 123");
     }
 }
