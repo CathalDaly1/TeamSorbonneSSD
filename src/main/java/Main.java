@@ -1,23 +1,34 @@
 import CompatibilityChecker.Case;
-import CompatibilityChecker.CompositeEquipment;
 import CompatibilityChecker.Cpu;
+import ui.controller.WelcomeFrameController;
+import ui.view.LoginFrame;
+import ui.view.RegisterFrame;
+import ui.view.WelcomeFrame;
 
-public class Main {
+import javax.swing.*;
 
-    public static void main(String[] args){
-        Case caseObj2 = new Case("Case2",30);
+public class Main  {
 
-        Case caseObj = new Case("Case",20);
+    public static void main(String[] args)
 
-        caseObj.add(new Cpu("cpu",10));
+    {
+        WelcomeFrame welcomeFrame = new WelcomeFrame();
+        welcomeFrame.pack();
+        welcomeFrame.setVisible(true);
 
-        caseObj2.add(caseObj);
+        RegisterFrame registerFrame = new RegisterFrame();
+        registerFrame.pack();
+        registerFrame.setVisible(true);
 
-        CompositeEquipment compositeEquipment = new CompositeEquipment("Compo");
+        LoginFrame loginFrame = new LoginFrame();
+        loginFrame.pack();
+        loginFrame.setVisible(true);
 
-        compositeEquipment.add(caseObj);
 
-        System.out.print(compositeEquipment.getPrice());
+        Case caseObj = new Case("Case");
 
+        caseObj.add(new Cpu("cpu"));
+
+        System.out.println("git test 123");
     }
 }
