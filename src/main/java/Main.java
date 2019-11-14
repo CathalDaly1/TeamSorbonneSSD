@@ -30,6 +30,6 @@ public class Main  {
         caseObj.add(new Cpu("cpu"));
 
         System.out.println("test run");
-        System.out.println("testing my git");
+        System.out.println("testing my git again");
     }
 }
