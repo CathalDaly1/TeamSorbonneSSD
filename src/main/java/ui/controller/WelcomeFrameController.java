@@ -3,8 +3,7 @@ package ui.controller;
 import ui.view.WelcomeFrame;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 
 
 public class WelcomeFrameController  {
@@ -14,7 +13,6 @@ public class WelcomeFrameController  {
 
     public WelcomeFrameController() {
         initComponents();
-
     }
 
     private void initComponents() {
@@ -22,5 +20,4 @@ public class WelcomeFrameController  {
         loginButton = welcomeFrame.getLoginButton();
         registerButton = welcomeFrame.getRegisterButton();
     }
-
 }

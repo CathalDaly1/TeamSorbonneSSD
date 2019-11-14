@@ -1,10 +1,14 @@
 package ui.view;
 
+import ui.controller.WelcomeFrameController;
+
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.awt.event.ActionListener;
 
-public class WelcomeFrame extends RegisterFrame {
+public class WelcomeFrame extends JFrame {
     private JButton loginButton;
     private JButton registerButton;
     private JLabel titleLabel;
@@ -37,8 +41,5 @@ public class WelcomeFrame extends RegisterFrame {
 
     public JButton getLoginButton() { return loginButton; }
 
-    public JButton getRegisterButton() {
-        System.out.print("Register Button");
-        return registerButton;
-    }
+    public JButton getRegisterButton() { return registerButton; }
 }
