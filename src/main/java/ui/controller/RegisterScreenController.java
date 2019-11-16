@@ -28,5 +28,6 @@ public class RegisterScreenController {
         signUpButton = registerUserScreen.getSignUpButton();
         backButton = registerUserScreen.getBackButton();
         errorLabel = registerUserScreen.getErrorLabel();
+
     }
 }

@@ -31,7 +31,6 @@ public class HomeScreen extends JFrame {
 
                 if (x == JOptionPane.YES_OPTION)
                    System.exit(0);
-
             }
         });
     }

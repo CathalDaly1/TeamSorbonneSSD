@@ -32,7 +32,6 @@ public class RegisterUserScreen extends JFrame {
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.QUESTION_MESSAGE
                 );
-
                 if (x == JOptionPane.YES_OPTION)
                     System.exit(0);
             }

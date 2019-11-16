@@ -6,6 +6,7 @@ abstract class BaseFrameController implements ViewController {
 
     JFrame frame;
 
+
     public void show() {
         frame.setVisible(true);
     }

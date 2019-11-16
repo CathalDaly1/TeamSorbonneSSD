@@ -19,11 +19,11 @@ public class LoginCoordinator extends BaseCoordinator implements ILoginCoordinat
 
     @Override
     public void goToRegister() {
-        System.out.println("Register Button Pressed - Implement");
+        System.out.println("Register Button Pressed - Implement next");
     }
 
     @Override
     public void goToMainMenu() {
-        System.out.print("Main Menu Page Displayed - Implement");
+        System.out.print("Main Menu Page Displayed - Implement next");
     }
 }
