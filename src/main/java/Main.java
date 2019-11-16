@@ -11,6 +11,7 @@ public class Main  {
         ILoginCoordinator loginCoordinator = new LoginCoordinator();
         loginCoordinator.start();
 
+
         Case caseObj = new Case("Case");
 
         caseObj.add(new Cpu("cpu"));

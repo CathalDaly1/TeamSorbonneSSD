@@ -7,23 +7,23 @@ public class LoginCoordinator extends BaseCoordinator implements ILoginCoordinat
 
     public void start() {
         HomeScreenController welcome = new HomeScreenController(this);
-        System.out.println("Home Page Displayed");
+        System.out.println("Home Page Displayed - CHECK");
         setViewController(welcome);
     }
 
     public void goToLogin() {
         LoginUserController login = new LoginUserController(this);
-        System.out.println("Login Button Pressed");
+        System.out.println("Login Button Pressed - CHECK");
         setViewController(login);
     }
 
     @Override
     public void goToRegister() {
-        System.out.println("Register Button Pressed");
+        System.out.println("Register Button Pressed - Implement");
     }
 
     @Override
     public void goToMainMenu() {
-        System.out.print("Main Menu Page Displayed");
+        System.out.print("Main Menu Page Displayed - Implement");
     }
 }

@@ -20,6 +20,7 @@ public class HomeScreen extends JFrame {
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
+                System.out.println("Closing window");
                 int x = JOptionPane.showConfirmDialog(
                         null,
                         "Are you sure you wish to exit PC Part Picker app?",

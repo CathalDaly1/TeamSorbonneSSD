@@ -15,6 +15,7 @@ abstract class BaseCoordinator {
             currentViewController.hide();
         }
 
+
         currentViewController = controller;
     }
 }

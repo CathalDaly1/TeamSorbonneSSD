@@ -17,7 +17,6 @@ public class RegisterScreenController {
 
     public RegisterScreenController(LoginCoordinator loginCoordinator) {
         initComponents();
-
     }
 
     private void initComponents() {

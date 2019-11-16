@@ -38,7 +38,7 @@ public class LoginUserController extends BaseFrameController {
     private class LoginButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
 
-            System.out.println("Test now now now");
+            System.out.println("Test");
 
         }
     }

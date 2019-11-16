@@ -16,6 +16,7 @@ public class HomeScreenController extends BaseFrameController {
         this.coordinator = coordinator;
         initComponents();
         initListeners();
+
     }
 
     private void initComponents() {
