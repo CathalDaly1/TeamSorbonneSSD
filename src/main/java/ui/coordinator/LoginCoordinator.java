@@ -1,9 +1,9 @@
 package ui.coordinator;
 
+import ui.controller.AppMenuScreenController;
 import ui.controller.LoginUserController;
 import ui.controller.HomeScreenController;
 import ui.controller.RegisterScreenController;
-import ui.view.HomeScreen;
 
 public class LoginCoordinator extends BaseCoordinator implements ILoginCoordinator {
 
@@ -26,8 +26,12 @@ public class LoginCoordinator extends BaseCoordinator implements ILoginCoordinat
     }
 
     public void goToMainMenu() {
-        System.out.print("Main Menu Page Displayed - Implement next");
+        IAppMenuScreenCoordinator menu = new AppMenuScreenCoordinator();
+        menu.start();
+        System.out.print("Main Menu Page Displayed - CHECK\n");
+        setViewController(null);
     }
+
 
     public void closeApplication() {
         System.exit(0);

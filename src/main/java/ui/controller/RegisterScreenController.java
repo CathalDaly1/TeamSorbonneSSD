@@ -5,7 +5,6 @@ import ui.coordinator.LoginCoordinator;
 import ui.view.RegisterUserScreen;
 
 import javax.swing.*;
-import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -37,17 +36,17 @@ public class RegisterScreenController extends BaseFrameController {
         signUpButton = registerScreen.getSignUpButton();
         backButton = registerScreen.getBackButton();
         errorLabel = registerScreen.getErrorLabel();
-
     }
 
     private void initListeners() {
-        signUpButton.addActionListener(new SignUpButtonListener());
+        signUpButton.addActionListener(e -> coordinator.goToMainMenu());
+       // signUpButton.addActionListener(new SignUpButtonListener());
         backButton.addActionListener(e -> coordinator.start());
     }
 
     private class SignUpButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            System.out.println("Sign-up button clicked");
+            System.out.println("Sign up button clicked");
         }
     }
 }
