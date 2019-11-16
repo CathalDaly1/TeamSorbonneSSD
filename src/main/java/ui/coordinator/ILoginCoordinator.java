@@ -5,4 +5,5 @@ public interface ILoginCoordinator {
     void goToLogin();
     void goToRegister();
     void goToMainMenu();
+    void closeApplication();
 }

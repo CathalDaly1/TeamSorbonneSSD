@@ -7,6 +7,7 @@ import java.awt.event.WindowEvent;
 public class HomeScreen extends JFrame {
     private JButton loginButton;
     private JButton registerButton;
+    private  JButton exitButton;
     private JLabel titleLabel;
     private JPanel mainPanel;
 
@@ -38,4 +39,6 @@ public class HomeScreen extends JFrame {
     public JButton getLoginButton() { return loginButton; }
 
     public JButton getRegisterButton() { return registerButton; }
+
+    public JButton getExitButton() { return exitButton; }
 }

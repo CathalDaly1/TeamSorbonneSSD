@@ -2,6 +2,8 @@ package ui.coordinator;
 
 import ui.controller.LoginUserController;
 import ui.controller.HomeScreenController;
+import ui.controller.RegisterScreenController;
+import ui.view.HomeScreen;
 
 public class LoginCoordinator extends BaseCoordinator implements ILoginCoordinator {
 
@@ -17,13 +19,17 @@ public class LoginCoordinator extends BaseCoordinator implements ILoginCoordinat
         setViewController(login);
     }
 
-    @Override
     public void goToRegister() {
-        System.out.println("Register Button Pressed - Implement next");
+        RegisterScreenController register = new RegisterScreenController(this);
+        System.out.println("Register Button Pressed - CHECK");
+        setViewController(register);
     }
 
-    @Override
     public void goToMainMenu() {
         System.out.print("Main Menu Page Displayed - Implement next");
+    }
+
+    public void closeApplication() {
+        System.exit(0);
     }
 }

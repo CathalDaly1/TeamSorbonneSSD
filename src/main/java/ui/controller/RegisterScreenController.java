@@ -1,12 +1,17 @@
 package ui.controller;
 
+import ui.coordinator.ILoginCoordinator;
 import ui.coordinator.LoginCoordinator;
 import ui.view.RegisterUserScreen;
 
 import javax.swing.*;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class RegisterScreenController {
+public class RegisterScreenController extends BaseFrameController {
 
+    private ILoginCoordinator coordinator;
     private JTextField usernameField;
     private JTextField emailField;
     private JPasswordField passwordField1;
@@ -15,19 +20,34 @@ public class RegisterScreenController {
     private JButton backButton;
     private JLabel errorLabel;
 
-    public RegisterScreenController(LoginCoordinator loginCoordinator) {
+    public RegisterScreenController(LoginCoordinator coordinator)
+    {
+        this.coordinator = coordinator;
         initComponents();
+        initListeners();
     }
 
     private void initComponents() {
-        RegisterUserScreen registerUserScreen = new RegisterUserScreen();
-        usernameField = registerUserScreen.getUsernameField();
-        emailField = registerUserScreen.getEmailField();
-        passwordField1 = registerUserScreen.getPasswordField1();
-        passwordField2 = registerUserScreen.getPasswordField2();
-        signUpButton = registerUserScreen.getSignUpButton();
-        backButton = registerUserScreen.getBackButton();
-        errorLabel = registerUserScreen.getErrorLabel();
+        RegisterUserScreen registerScreen = new RegisterUserScreen();
+        frame = registerScreen;
+        usernameField = registerScreen.getUsernameField();
+        emailField = registerScreen.getEmailField();
+        passwordField1 = registerScreen.getPasswordField1();
+        passwordField2 = registerScreen.getPasswordField2();
+        signUpButton = registerScreen.getSignUpButton();
+        backButton = registerScreen.getBackButton();
+        errorLabel = registerScreen.getErrorLabel();
 
+    }
+
+    private void initListeners() {
+        signUpButton.addActionListener(new SignUpButtonListener());
+        backButton.addActionListener(e -> coordinator.start());
+    }
+
+    private class SignUpButtonListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            System.out.println("Sign-up button clicked");
+        }
     }
 }
