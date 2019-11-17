@@ -1,5 +1,6 @@
 package ui.coordinator;
 import ui.controller.AppMenuScreenController;
+import ui.controller.BuyPartsController;
 import ui.controller.SearchPartsController;
 
 import javax.swing.*;
@@ -14,7 +15,9 @@ public class AppMenuScreenCoordinator extends BaseCoordinator implements IAppMen
 
     @Override
     public void buyParts() {
-        System.out.println("Buy Parts Button Clicked - Implement");
+        System.out.println("Buy Parts Button Clicked - button implemented");
+        BuyPartsController buyParts = new BuyPartsController(this);
+        setViewController(buyParts);
     }
 
     @Override
@@ -24,7 +27,7 @@ public class AppMenuScreenCoordinator extends BaseCoordinator implements IAppMen
 
     @Override
     public void searchParts() {
-        System.out.println("Search parts button clicked - IMPLEMENT");
+        System.out.println("Search parts button clicked - button implemented");
         System.out.println("Need to fix this");
         SearchPartsController searchParts = new SearchPartsController(this);
         setViewController(searchParts);
