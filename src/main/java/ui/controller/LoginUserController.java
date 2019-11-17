@@ -31,7 +31,8 @@ public class LoginUserController extends BaseFrameController {
     }
 
     private void initListeners() {
-        loginButton.addActionListener(new LoginButtonListener());
+        //loginButton.addActionListener(new LoginButtonListener());
+        loginButton.addActionListener(e -> coordinator.goToMenuScreen());
         backButton.addActionListener(e -> coordinator.start());
     }
 

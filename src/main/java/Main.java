@@ -3,7 +3,7 @@ import CompatibilityChecker.Cpu;
 import ui.coordinator.ILoginCoordinator;
 import ui.coordinator.LoginCoordinator;
 
-public class Main  {
+public class Main {
 
     public static void main(String[] args)
 

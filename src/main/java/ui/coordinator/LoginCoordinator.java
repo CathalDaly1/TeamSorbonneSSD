@@ -1,13 +1,10 @@
 package ui.coordinator;
 
-import ui.controller.AppMenuScreenController;
-import ui.controller.LoginUserController;
-import ui.controller.HomeScreenController;
-import ui.controller.RegisterScreenController;
+import ui.controller.*;
 
 public class LoginCoordinator extends BaseCoordinator implements ILoginCoordinator {
 
-    public void start() {
+   public void start() {
         HomeScreenController welcome = new HomeScreenController(this);
         System.out.println("Home Page Displayed - CHECK");
         setViewController(welcome);
@@ -25,13 +22,12 @@ public class LoginCoordinator extends BaseCoordinator implements ILoginCoordinat
         setViewController(register);
     }
 
-    public void goToMainMenu() {
+    public void goToMenuScreen() {
         IAppMenuScreenCoordinator menu = new AppMenuScreenCoordinator();
         menu.start();
         System.out.print("Main Menu Page Displayed - CHECK\n");
         setViewController(null);
     }
-
 
     public void closeApplication() {
         System.exit(0);

@@ -9,6 +9,9 @@ public class AppMenuScreen extends JFrame {
     private JButton buyPartsButton;
     private JButton searchPartsButton;
     private JButton sellPartsButton;
+    private JButton exitApplicationButton;
+    private JButton logoutButton;
+
 
     public AppMenuScreen() {
         setTitle("PC Part Picker app");
@@ -46,4 +49,10 @@ public class AppMenuScreen extends JFrame {
         return sellPartsButton;
     }
 
+    public JButton getLogoutButton() { return  logoutButton; }
+
+    public JButton getExitApplicationButton() {
+
+        return exitApplicationButton;
+    }
 }
