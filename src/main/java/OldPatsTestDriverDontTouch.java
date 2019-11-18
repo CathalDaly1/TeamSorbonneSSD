@@ -21,7 +21,9 @@ public class OldPatsTestDriverDontTouch {
         motherboard.add(new Socket("AM4"));
 
         PowerSupply powerSupply = new PowerSupply("EVGA 500W 80","EVGA",0);
-
+        powerSupply.add(new PowerConnector(6));
+        powerSupply.add(new PowerConnector(6));
+        powerSupply.add(new PowerConnector(8));
 
         pc.add(cpu);
         pc.add(gpu);
