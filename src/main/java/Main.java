@@ -1,5 +1,3 @@
-import CompatibilityChecker.Case;
-import CompatibilityChecker.Cpu;
 import ui.coordinator.ILoginCoordinator;
 import ui.coordinator.LoginCoordinator;
 
@@ -10,10 +8,6 @@ public class Main {
     {
         ILoginCoordinator loginCoordinator = new LoginCoordinator();
         loginCoordinator.start();
-
-        Case caseObj = new Case("Case");
-
-        caseObj.add(new Cpu("cpu"));
 
     }
 }
