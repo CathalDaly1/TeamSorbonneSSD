@@ -1,6 +1,8 @@
 package ui.coordinator;
 
-import ui.controller.*;
+import ui.controller.HomeScreenController;
+import ui.controller.LoginUserController;
+import ui.controller.RegisterScreenController;
 
 public class LoginCoordinator extends BaseCoordinator implements ILoginCoordinator {
 

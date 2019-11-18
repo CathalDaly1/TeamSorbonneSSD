@@ -4,15 +4,20 @@ import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class BuyPCParts extends JFrame {
-    private JButton BuyPCPartsButton;
+public class SellPCParts extends JFrame {
+    private JButton placeAdvert;
     private JButton backButton;
     private JLabel titleLabel;
     private JPanel mainPanel;
-    private JComboBox comboBox1;
-    private JComboBox comboBox2;
+    private JButton selectImageButton;
+    private JTextField partType;
+    private JTextField advertPrice;
+    private JTextField advertName;
+    private JLabel advertImage;
+    private JLabel price1;
+    private JLabel advertName1;
 
-    public BuyPCParts() {
+    public SellPCParts() {
         setTitle("PC Part Picker");
         setSize(500, 500);
         setContentPane(mainPanel);
@@ -37,11 +42,20 @@ public class BuyPCParts extends JFrame {
         });
     }
 
-    public JButton getBuyPCPartsButton() {
-        return BuyPCPartsButton;
+    public JButton getPlaceAdvert() {
+        return placeAdvert;
     }
 
     public JButton getBackButton() {
         return backButton;
     }
+
+    public JTextField getPartName () { return advertName;}
+
+    public JTextField getPartType () { return partType;}
+
+    public JTextField getAdvertPrice() { return advertPrice;}
+
+    public JLabel getAdvertImage () { return advertImage; }
+
 }

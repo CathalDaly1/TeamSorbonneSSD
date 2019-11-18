@@ -6,7 +6,6 @@ import java.awt.event.WindowEvent;
 
 public class AppMenuScreen extends JFrame {
     private JPanel mainPanel;
-    private JButton buyPartsButton;
     private JButton searchPartsButton;
     private JButton sellPartsButton;
     private JButton exitApplicationButton;
@@ -39,10 +38,6 @@ public class AppMenuScreen extends JFrame {
 
     public JButton getSearchPartsButton() {
         return searchPartsButton;
-    }
-
-    public JButton getBuyPartsButton() {
-        return buyPartsButton;
     }
 
     public JButton getSellPartsButton() {

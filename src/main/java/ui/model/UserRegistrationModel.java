@@ -1,14 +1,15 @@
 package ui.model;
-
+import java.io.*;
 import java.security.InvalidParameterException;
 
 public class UserRegistrationModel {
+
     private String username;
     private String email;
     private String password;
 
     public UserRegistrationModel() {
-        System.out.println("test");
+
     }
 
     public void setUsername(String username) throws InvalidParameterException {
@@ -23,7 +24,6 @@ public class UserRegistrationModel {
         if(!password.equals(confirmPassword)) {
             throw new InvalidParameterException("Passwords do not match");
         }
-
        this.password = password;
     }
 
