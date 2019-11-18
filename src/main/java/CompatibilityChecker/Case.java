@@ -11,9 +11,4 @@ public class Case extends CompositeEquipment{
         setPrice(price);
     }
 
-//    @Override
-//    public double getPrice(){
-//        return this.price;
-//    }
-
 }
