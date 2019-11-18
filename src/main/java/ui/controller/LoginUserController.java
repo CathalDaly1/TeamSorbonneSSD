@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LoginUserController extends BaseFrameController {
+
     private ILoginCoordinator coordinator;
     private JButton loginButton, backButton;
     private JTextField usernameField;

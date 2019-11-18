@@ -43,7 +43,7 @@ public class RegisterScreenController extends BaseFrameController {
     }
 
     private void initListeners() {
-       // signUpButton.addActionListener(e -> coordinator.goToMenuScreen());
+        //signUpButton.addActionListener(e -> coordinator.goToMenuScreen());
         signUpButton.addActionListener(new SignUpButtonListener());
         backButton.addActionListener(e -> coordinator.start());
     }

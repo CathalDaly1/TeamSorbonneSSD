@@ -1,6 +1,7 @@
 package ui.coordinator;
 import ui.controller.AppMenuScreenController;
-import ui.controller.BuyPartsController;
+import ui.controller.LoginUserController;
+import ui.controller.SellPartsController;
 import ui.controller.SearchPartsController;
 
 import javax.swing.*;
@@ -14,23 +15,27 @@ public class AppMenuScreenCoordinator extends BaseCoordinator implements IAppMen
     }
 
     @Override
-    public void buyParts() {
-        System.out.println("Buy Parts Button Clicked - button implemented");
-        BuyPartsController buyParts = new BuyPartsController(this);
-        setViewController(buyParts);
+    public void sellParts() {
+
+        SellPartsController sellParts = new SellPartsController(this);
+        setViewController(sellParts);
     }
 
     @Override
-    public void sellParts() {
-        System.out.println("Sell Parts Button Clicked - Implement");
+    public void placeAdvert() {
+        System.out.println("Place Advert button pressed");
     }
 
     @Override
     public void searchParts() {
-        System.out.println("Search parts button clicked - button implemented");
-        System.out.println("Need to fix this");
+
         SearchPartsController searchParts = new SearchPartsController(this);
         setViewController(searchParts);
+    }
+
+    @Override
+    public void searchForParts() {
+        System.out.println("Search for parts button pressed");
     }
 
     @Override
@@ -43,7 +48,6 @@ public class AppMenuScreenCoordinator extends BaseCoordinator implements IAppMen
 
         if (userLogout == JOptionPane.YES_NO_OPTION) {
             System.out.println("USER LOGOUT - Implement");
-            System.exit(0);
         }
     }
 
@@ -51,10 +55,5 @@ public class AppMenuScreenCoordinator extends BaseCoordinator implements IAppMen
     public void exitApplication() {
         System.out.println("Exiting application");
         System.exit(0);
-    }
-
-    @Override
-    public void searchForParts() {
-        System.out.println("Search for parts button pressed");
     }
 }
