@@ -1,5 +1,4 @@
 package ui.coordinator;
-
 import ui.controller.HomeScreenController;
 import ui.controller.LoginUserController;
 import ui.controller.RegisterScreenController;

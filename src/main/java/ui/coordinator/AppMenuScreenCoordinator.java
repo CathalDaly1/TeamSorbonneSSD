@@ -1,6 +1,5 @@
 package ui.coordinator;
 import ui.controller.AppMenuScreenController;
-import ui.controller.LoginUserController;
 import ui.controller.SellPartsController;
 import ui.controller.SearchPartsController;
 

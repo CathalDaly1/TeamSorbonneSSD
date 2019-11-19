@@ -29,8 +29,8 @@ public class SellPCParts extends JFrame {
             public void windowClosing(WindowEvent e) {
                 int x = JOptionPane.showConfirmDialog(
                         null,
-                        "Are you sure you wish to PC Parts search?",
-                        "Exit PC Part Search",
+                        "Are you sure you wish to PC Parts application?",
+                        "Exit PC Part Picker application",
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.INFORMATION_MESSAGE
                 );

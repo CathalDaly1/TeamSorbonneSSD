@@ -1,9 +1,7 @@
 package ui.controller;
-
 import javax.swing.*;
 import ui.coordinator.IAppMenuScreenCoordinator;
 import ui.view.AppMenuScreen;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 

@@ -26,7 +26,7 @@ public class LoginUserScreen extends JFrame {
                 int x = JOptionPane.showConfirmDialog(
                         null,
                         "Are you sure you wish to exit PC Part Picker?",
-                        "Exit PC Part Picker",
+                        "Exit PC Part Picker application",
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.QUESTION_MESSAGE
                 );

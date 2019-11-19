@@ -1,10 +1,8 @@
 package ui.controller;
-
 import ui.coordinator.ILoginCoordinator;
 import ui.coordinator.LoginCoordinator;
 import ui.model.UserRegistrationModel;
 import ui.view.RegisterUserScreen;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -54,11 +52,11 @@ public class RegisterScreenController extends BaseFrameController {
             try {
                 model.setUsername(usernameField.getText());
                 model.setEmail(emailField.getText());
-                model.setPassword(passwordField1.getText(), passwordField2.getText());
                 model.createUser();
                 signUpButton.addActionListener(a->coordinator.goToMenuScreen());
 
             } catch (InvalidParameterException exception) {
+                //errorLabel is if passwords do not match
                 errorLabel.setText(exception.getMessage());
             }
         }

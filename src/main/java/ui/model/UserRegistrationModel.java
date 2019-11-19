@@ -1,5 +1,4 @@
 package ui.model;
-import java.io.*;
 import java.security.InvalidParameterException;
 
 public class UserRegistrationModel {

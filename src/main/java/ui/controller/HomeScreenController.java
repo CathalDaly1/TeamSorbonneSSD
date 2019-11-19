@@ -1,10 +1,7 @@
 package ui.controller;
-
 import ui.view.HomeScreen;
 import ui.coordinator.ILoginCoordinator;
-
 import javax.swing.*;
-
 
 public class HomeScreenController extends BaseFrameController {
 

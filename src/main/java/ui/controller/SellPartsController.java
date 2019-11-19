@@ -1,8 +1,6 @@
 package ui.controller;
-
 import ui.coordinator.IAppMenuScreenCoordinator;
 import ui.view.SellPCParts;
-
 import javax.swing.*;
 
 public class SellPartsController extends BaseFrameController {
