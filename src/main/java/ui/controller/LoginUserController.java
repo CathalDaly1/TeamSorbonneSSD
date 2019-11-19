@@ -18,11 +18,11 @@ public class LoginUserController extends BaseFrameController {
 
     public LoginUserController(ILoginCoordinator coordinator) {
         this.coordinator = coordinator;
-        initialiseComponents();
-        initialiseListeners();
+        initialiseFrameComponents();
+        initialiseFrameListeners();
     }
 
-    private void initialiseComponents() {
+    private void initialiseFrameComponents() {
         LoginUserScreen loginUserScreen = new LoginUserScreen();
         frame = loginUserScreen;
         loginButton = loginUserScreen.getLoginButton();
@@ -32,7 +32,7 @@ public class LoginUserController extends BaseFrameController {
         errorLabel = loginUserScreen.getErrorLabel();
     }
 
-    private void initialiseListeners() {
+    private void initialiseFrameListeners() {
         //loginButton.addActionListener(new LoginButtonListener());
         loginButton.addActionListener(e -> coordinator.goToMenuScreen());
         backButton.addActionListener(e -> coordinator.start());

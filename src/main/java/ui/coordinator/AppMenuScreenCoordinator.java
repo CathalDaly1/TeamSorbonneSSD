@@ -21,6 +21,7 @@ public class AppMenuScreenCoordinator extends BaseCoordinator implements IAppMen
 
     @Override
     public void placeAdvert() {
+
         System.out.println("Place Advert button pressed");
     }
 

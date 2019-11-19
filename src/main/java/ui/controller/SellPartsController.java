@@ -11,11 +11,11 @@ public class SellPartsController extends BaseFrameController {
 
     public SellPartsController(IAppMenuScreenCoordinator coordinator) {
         this.coordinator = coordinator;
-        initialiseComponents();
-        initialiseListeners();
+        initialiseFrameComponents();
+        initialiseFrameListeners();
     }
 
-    private void initialiseComponents() {
+    private void initialiseFrameComponents() {
         SellPCParts sellPCParts = new SellPCParts();
         frame = sellPCParts;
         System.out.println("Sell parts button pressed");
@@ -23,7 +23,7 @@ public class SellPartsController extends BaseFrameController {
         sellPCPartsButton = sellPCParts.getPlaceAdvert();
     }
 
-    private void initialiseListeners() {
+    private void initialiseFrameListeners() {
         backButton.addActionListener(e -> coordinator.start());
         sellPCPartsButton.addActionListener(e -> coordinator.placeAdvert());
     }

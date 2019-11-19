@@ -12,11 +12,11 @@ public class HomeScreenController extends BaseFrameController {
 
     public HomeScreenController(ILoginCoordinator coordinator) {
         this.coordinator = coordinator;
-        initialiseComponents();
+        initialiseFrameComponents();
         initialiseListeners();
     }
 
-    private void initialiseComponents() {
+    private void initialiseFrameComponents() {
         HomeScreen homeScreen = new HomeScreen();
         frame = homeScreen;
         loginButton = homeScreen.getLoginButton();

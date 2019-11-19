@@ -15,11 +15,11 @@ public class AppMenuScreenController extends BaseFrameController {
 
     public AppMenuScreenController(IAppMenuScreenCoordinator coordinator) {
         this.coordinator = coordinator;
-        initialiseComponents();
-        initialiseListeners();
+        initialiseFrameComponents();
+        initialiseFrameListeners();
     }
 
-    private void initialiseComponents() {
+    private void initialiseFrameComponents() {
         AppMenuScreen menu = new AppMenuScreen();
         frame = menu;
         sellPartsButton = menu.getSellPartsButton();
@@ -28,7 +28,7 @@ public class AppMenuScreenController extends BaseFrameController {
         logoutButton = menu.getLogoutButton();
     }
     
-    private void initialiseListeners() {
+    private void initialiseFrameListeners() {
         sellPartsButton.addActionListener(e -> coordinator.sellParts());
         searchPartsButton.addActionListener(e -> coordinator.searchParts());
         exitApplicationButton.addActionListener(e -> coordinator.exitApplication());
