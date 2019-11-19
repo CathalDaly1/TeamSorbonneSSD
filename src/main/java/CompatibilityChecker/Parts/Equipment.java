@@ -1,10 +1,16 @@
-package CompatibilityChecker;
+package CompatibilityChecker.Parts;
 
 public abstract class Equipment {
 
-    private String name;
+    protected String name;
+    protected String brand;
     protected double wattage;
-    protected double price;
+
+    protected Equipment(String name,String brand, double wattage){
+        this.name = name;
+        this.brand = brand;
+        this.wattage = wattage;
+    }
 
     protected Equipment(String name){
         this.name = name;
@@ -29,19 +35,11 @@ public abstract class Equipment {
         this.wattage = wattage;
     }
 
-    public double getPrice() {
-        return price;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
-
-//    public void add(Equipment e){};
-//
-//    public void remove(Equipment e){};
-//
-//    public Iterable<Equipment> createIterator(){
-//        return null;
-//    };
 }
