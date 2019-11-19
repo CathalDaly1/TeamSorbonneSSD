@@ -10,14 +10,13 @@ public class AppMenuScreenCoordinator extends BaseCoordinator implements IAppMen
     @Override
     public void start() {
         AppMenuScreenController mainMenu = new AppMenuScreenController(this);
-        setViewController(mainMenu);
+        setFrameController(mainMenu);
     }
 
     @Override
     public void sellParts() {
-
         SellPartsController sellParts = new SellPartsController(this);
-        setViewController(sellParts);
+        setFrameController(sellParts);
     }
 
     @Override
@@ -27,9 +26,8 @@ public class AppMenuScreenCoordinator extends BaseCoordinator implements IAppMen
 
     @Override
     public void searchParts() {
-
         SearchPartsController searchParts = new SearchPartsController(this);
-        setViewController(searchParts);
+        setFrameController(searchParts);
     }
 
     @Override
@@ -40,7 +38,7 @@ public class AppMenuScreenCoordinator extends BaseCoordinator implements IAppMen
     @Override
     public void logoutUser() {
         int userLogout = JOptionPane.showConfirmDialog(null,
-                "Are you sure you want to logout of PC Part Picker?",
+                "Are you sure you want to logout of PC Part Piecer?",
                 "Logout", JOptionPane.YES_NO_OPTION,
                 JOptionPane.QUESTION_MESSAGE
         );

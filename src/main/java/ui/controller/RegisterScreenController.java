@@ -24,11 +24,11 @@ public class RegisterScreenController extends BaseFrameController {
     {
         this.coordinator = coordinator;
         model = new UserRegistrationModel();
-        initComponents();
-        initListeners();
+        initialiseComponents();
+        initialiseListeners();
     }
 
-    private void initComponents() {
+    private void initialiseComponents() {
         RegisterUserScreen registerScreen = new RegisterUserScreen();
         frame = registerScreen;
         usernameField = registerScreen.getUsernameField();
@@ -40,7 +40,7 @@ public class RegisterScreenController extends BaseFrameController {
         errorLabel = registerScreen.getErrorLabel();
     }
 
-    private void initListeners() {
+    private void initialiseListeners() {
         //signUpButton.addActionListener(e -> coordinator.goToMenuScreen());
         signUpButton.addActionListener(new SignUpButtonListener());
         backButton.addActionListener(e -> coordinator.start());
@@ -52,6 +52,7 @@ public class RegisterScreenController extends BaseFrameController {
             try {
                 model.setUsername(usernameField.getText());
                 model.setEmail(emailField.getText());
+                model.setPassword(passwordField1.getText(), passwordField2.getText());
                 model.createUser();
                 signUpButton.addActionListener(a->coordinator.goToMenuScreen());
 

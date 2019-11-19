@@ -9,11 +9,11 @@ public class SellPCParts extends JFrame {
     private JButton backButton;
     private JLabel titleLabel;
     private JPanel mainPanel;
-    private JButton selectImageButton;
-    private JTextField partType;
+    private JComboBox partType;
     private JTextField advertPrice;
     private JTextField advertName;
     private JLabel advertImage;
+    private JButton selectImageButton;
     private JLabel price1;
     private JLabel advertName1;
 
@@ -52,7 +52,7 @@ public class SellPCParts extends JFrame {
 
     public JTextField getPartName () { return advertName;}
 
-    public JTextField getPartType () { return partType;}
+    public JComboBox getPartType () { return partType;}
 
     public JTextField getAdvertPrice() { return advertPrice;}
 

@@ -29,7 +29,7 @@
           <font name="Segoe UI" size="36" style="1"/>
           <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
-          <text value="PC Part Picker Application"/>
+          <text value="PC Part Piecer Application"/>
         </properties>
       </component>
       <component id="3ad24" class="javax.swing.JLabel">
