@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Users/StaffUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Users/UserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Auctions/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Users/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/view/AdvertPage.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/view/AdvertPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/PremiumUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/PremiumUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Auctions/Advert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Auctions/Advert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Auctions/Advert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auctions/Advert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/TeamSorbonneSSD.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Users/PremiumUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/PremiumUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/model/UserRegistrationModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/model/UserRegistrationModel.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,11 +57,11 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="158" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="335" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="189" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574106456241" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OneDrive/Desktop/Past Projects SAD/CS4125-Sample_Project-AY1819-STORE_DISPATCHER_PREDICATES" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ui/view" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -63,24 +70,29 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ui.controller" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\James\IdeaProjects\TeamSorbonneSSD\src\main\java\ui\view" />
+      <recent name="C:\Users\James\IdeaProjects\TeamSorbonneSSD\src\main\java\ui\view\AdvertPage" />
+      <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\view" />
+      <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ui.view.AdvertPage" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\James\IdeaProjects\TeamSorbonneSSD\src\main\java\ui\view" />
       <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\view" />
       <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\controller" />
       <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\view\SearchPcParts" />
       <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\coordinator" />
-      <recent name="C:\TeamSorbonneSSD\src\main\java\ui\controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ui.controller" />
       <recent name="ui.view" />
+      <recent name="ui.controller" />
       <recent name="ui.coordinator" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\view" />
-      <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ui.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -268,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574105415093</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added new users and userFactory">
+      <created>1574168942363</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1574168942363</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -311,6 +330,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="testing commits" />
     <MESSAGE value="Welcome Screen" />
     <MESSAGE value="Login, Reg and Welcome Screen setup. No working buttons yet" />
@@ -327,7 +347,8 @@
     <MESSAGE value="Added Buy parts screen" />
     <MESSAGE value="Started Registration Model&#10;Added error handling for incorrect passwords on registration screen." />
     <MESSAGE value="Added BuyParts frame and controller.&#10;Removed SellParts frame." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added BuyParts frame and controller.&#10;Removed SellParts frame." />
+    <MESSAGE value="Added new users and userFactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new users and userFactory" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
