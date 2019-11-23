@@ -81,7 +81,7 @@
           <font name="Segoe UI" size="36" style="1"/>
           <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
-          <text value="PC Part Picker "/>
+          <text value="PC Part Piecer "/>
         </properties>
       </component>
       <component id="685e9" class="javax.swing.JComboBox" binding="partType">

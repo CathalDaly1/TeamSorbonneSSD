@@ -13,11 +13,11 @@ public class SearchPartsController extends BaseFrameController {
 
     public SearchPartsController(IAppMenuScreenCoordinator coordinator) {
         this.coordinator = coordinator;
-        initComponents();
-        initListeners();
+        initialiseFrameComponents();
+        initialiseFrameListeners();
     }
 
-    private void initComponents() {
+    private void initialiseFrameComponents() {
         SearchPCPartsScreen searchPCPartsScreen = new SearchPCPartsScreen();
         frame = searchPCPartsScreen;
         System.out.println("PC Search page displayed");
@@ -25,7 +25,7 @@ public class SearchPartsController extends BaseFrameController {
         searchPCPartsButton = searchPCPartsScreen.getSearchPCPartsButton();
     }
 
-    private void initListeners() {
+    private void initialiseFrameListeners() {
         backButton.addActionListener(e -> coordinator.start());
         searchPCPartsButton.addActionListener(e -> coordinator.searchForParts());
     }

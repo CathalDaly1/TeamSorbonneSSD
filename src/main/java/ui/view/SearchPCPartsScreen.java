@@ -26,7 +26,7 @@ public class SearchPCPartsScreen extends JFrame {
                 int x = JOptionPane.showConfirmDialog(
                         null,
                         "Are you sure you wish to PC Parts search?",
-                        "Exit PC Part Picker application",
+                        "Exit PC Part Piecer application",
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.INFORMATION_MESSAGE
                 );

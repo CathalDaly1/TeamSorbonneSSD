@@ -24,8 +24,8 @@ public class AppMenuScreen extends JFrame {
             public void windowClosing(WindowEvent e) {
                 int x = JOptionPane.showConfirmDialog(
                         null,
-                        "Are you sure you wish to exit PC Part Picker?",
-                        "Exit PC Part Picker application",
+                        "Are you sure you wish to exit PC Part Piecer?",
+                        "Exit PC Part Piecer application",
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.QUESTION_MESSAGE
                 );

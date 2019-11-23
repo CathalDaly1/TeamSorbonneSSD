@@ -12,11 +12,11 @@ public class HomeScreenController extends BaseFrameController {
 
     public HomeScreenController(ILoginCoordinator coordinator) {
         this.coordinator = coordinator;
-        initComponents();
-        initListeners();
+        initialiseFrameComponents();
+        initialiseListeners();
     }
 
-    private void initComponents() {
+    private void initialiseFrameComponents() {
         HomeScreen homeScreen = new HomeScreen();
         frame = homeScreen;
         loginButton = homeScreen.getLoginButton();
@@ -24,7 +24,7 @@ public class HomeScreenController extends BaseFrameController {
         exitButton = homeScreen.getExitButton();
     }
 
-    private void initListeners() {
+    private void initialiseListeners() {
         loginButton.addActionListener(e -> coordinator.goToLogin());
         registerButton.addActionListener(e -> coordinator.goToRegister());
         exitButton.addActionListener(e-> coordinator.closeApplication());
