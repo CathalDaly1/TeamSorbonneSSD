@@ -7,6 +7,6 @@ public interface IAppMenuScreenCoordinator {
     void placeAdvert();
     void searchParts();
     void searchForParts();
+    void configurePC();
     void logoutUser();
-    void exitApplication();
 }

@@ -8,5 +8,7 @@ public class Main {
     {
         ILoginCoordinator loginCoordinator = new LoginCoordinator();
         loginCoordinator.start();
+
+
     }
 }

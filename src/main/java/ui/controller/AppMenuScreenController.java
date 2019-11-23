@@ -10,8 +10,8 @@ public class AppMenuScreenController extends BaseFrameController {
     private JPanel mainPanel;
     private JButton searchPartsButton;
     private JButton sellPartsButton;
-    private JButton exitApplicationButton;
     private JButton logoutButton;
+    private JButton configurePCButton;
 
     public AppMenuScreenController(IAppMenuScreenCoordinator coordinator) {
         this.coordinator = coordinator;
@@ -24,14 +24,14 @@ public class AppMenuScreenController extends BaseFrameController {
         frame = menu;
         sellPartsButton = menu.getSellPartsButton();
         searchPartsButton = menu.getSearchPartsButton();
-        exitApplicationButton = menu.getExitApplicationButton();
+        configurePCButton = menu.getConfigurePCButton();
         logoutButton = menu.getLogoutButton();
     }
     
     private void initialiseFrameListeners() {
         sellPartsButton.addActionListener(e -> coordinator.sellParts());
+        configurePCButton.addActionListener(e -> coordinator.configurePC());
         searchPartsButton.addActionListener(e -> coordinator.searchParts());
-        exitApplicationButton.addActionListener(e -> coordinator.exitApplication());
         logoutButton.addActionListener(e-> coordinator.logoutUser());
     }
 

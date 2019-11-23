@@ -8,8 +8,8 @@ public class AppMenuScreen extends JFrame {
     private JPanel mainPanel;
     private JButton searchPartsButton;
     private JButton sellPartsButton;
-    private JButton exitApplicationButton;
     private JButton logoutButton;
+    private JButton configurePCButton;
 
 
     public AppMenuScreen() {
@@ -46,8 +46,5 @@ public class AppMenuScreen extends JFrame {
 
     public JButton getLogoutButton() { return  logoutButton; }
 
-    public JButton getExitApplicationButton() {
-
-        return exitApplicationButton;
-    }
+    public JButton getConfigurePCButton() { return configurePCButton; }
 }
