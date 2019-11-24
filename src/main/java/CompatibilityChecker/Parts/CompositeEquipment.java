@@ -7,7 +7,8 @@ import CompatibilityChecker.Configuration.WattageCompatiblityCheckerDecorator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositeEquipment extends Equipment {
+public class CompositeEquipment extends Equipment implements IComposite {
+
     private List<Equipment> equipmentList = new ArrayList<Equipment>();
 
     public CompositeEquipment(String name){
@@ -32,6 +33,7 @@ public class CompositeEquipment extends Equipment {
     public ICompatibilityChecker getCompatibility(){
         double wattageIn = 0;
         double wattageOut = 0;
+    
         ICompatibilityChecker compatibilityChecker = new CompatibilityChecker();
 
 
