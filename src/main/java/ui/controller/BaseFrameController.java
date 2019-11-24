@@ -1,5 +1,4 @@
 package ui.controller;
-
 import javax.swing.*;
 
 abstract class BaseFrameController implements ViewController {

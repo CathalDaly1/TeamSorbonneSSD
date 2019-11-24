@@ -1,8 +1,6 @@
 package ui.controller;
-
 import ui.coordinator.IAppMenuScreenCoordinator;
 import ui.view.SellPCParts;
-
 import javax.swing.*;
 
 public class SellPartsController extends BaseFrameController {
@@ -13,11 +11,11 @@ public class SellPartsController extends BaseFrameController {
 
     public SellPartsController(IAppMenuScreenCoordinator coordinator) {
         this.coordinator = coordinator;
-        initComponents();
-        initListeners();
+        initialiseFrameComponents();
+        initialiseFrameListeners();
     }
 
-    private void initComponents() {
+    private void initialiseFrameComponents() {
         SellPCParts sellPCParts = new SellPCParts();
         frame = sellPCParts;
         System.out.println("Sell parts button pressed");
@@ -25,7 +23,7 @@ public class SellPartsController extends BaseFrameController {
         sellPCPartsButton = sellPCParts.getPlaceAdvert();
     }
 
-    private void initListeners() {
+    private void initialiseFrameListeners() {
         backButton.addActionListener(e -> coordinator.start());
         sellPCPartsButton.addActionListener(e -> coordinator.placeAdvert());
     }

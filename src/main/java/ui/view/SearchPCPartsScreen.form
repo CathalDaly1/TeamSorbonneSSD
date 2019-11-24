@@ -81,10 +81,10 @@
           <font name="Segoe UI" size="36" style="1"/>
           <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
-          <text value="PC Part Picker "/>
+          <text value="PC Part Piecer "/>
         </properties>
       </component>
-      <component id="685e9" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+      <component id="685e9" class="javax.swing.JComboBox" binding="partType">
         <constraints>
           <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -102,7 +102,7 @@
           </model>
         </properties>
       </component>
-      <component id="35a70" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+      <component id="35a70" class="javax.swing.JComboBox" binding="partBrand">
         <constraints>
           <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -133,7 +133,7 @@
           <text value="Brand"/>
         </properties>
       </component>
-      <component id="69cec" class="javax.swing.JComboBox" default-binding="true">
+      <component id="69cec" class="javax.swing.JComboBox" binding="partPriceRange">
         <constraints>
           <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -145,33 +145,12 @@
           </model>
         </properties>
       </component>
-      <component id="5a128" class="javax.swing.JComboBox" default-binding="true">
-        <constraints>
-          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="test"/>
-            <item value="test"/>
-            <item value="test"/>
-            <item value="test"/>
-          </model>
-        </properties>
-      </component>
       <component id="7b16f" class="javax.swing.JLabel">
         <constraints>
           <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Price"/>
-        </properties>
-      </component>
-      <component id="9b51a" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Test"/>
         </properties>
       </component>
     </children>

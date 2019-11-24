@@ -1,10 +1,8 @@
 package ui.controller;
-
 import ui.coordinator.ILoginCoordinator;
 import ui.coordinator.LoginCoordinator;
 import ui.model.UserRegistrationModel;
 import ui.view.RegisterUserScreen;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -26,11 +24,11 @@ public class RegisterScreenController extends BaseFrameController {
     {
         this.coordinator = coordinator;
         model = new UserRegistrationModel();
-        initComponents();
-        initListeners();
+        initialiseFrameComponents();
+        initialiseFrameListeners();
     }
 
-    private void initComponents() {
+    private void initialiseFrameComponents() {
         RegisterUserScreen registerScreen = new RegisterUserScreen();
         frame = registerScreen;
         usernameField = registerScreen.getUsernameField();
@@ -42,7 +40,7 @@ public class RegisterScreenController extends BaseFrameController {
         errorLabel = registerScreen.getErrorLabel();
     }
 
-    private void initListeners() {
+    private void initialiseFrameListeners() {
         //signUpButton.addActionListener(e -> coordinator.goToMenuScreen());
         signUpButton.addActionListener(new SignUpButtonListener());
         backButton.addActionListener(e -> coordinator.start());
@@ -59,6 +57,7 @@ public class RegisterScreenController extends BaseFrameController {
                 signUpButton.addActionListener(a->coordinator.goToMenuScreen());
 
             } catch (InvalidParameterException exception) {
+                //errorLabel is if passwords do not match
                 errorLabel.setText(exception.getMessage());
             }
         }

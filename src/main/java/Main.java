@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args)
 
     {
-        //Start Screen with Login and Registration options
         ILoginCoordinator loginCoordinator = new LoginCoordinator();
         loginCoordinator.start();
     }

@@ -9,8 +9,9 @@ public class SearchPCPartsScreen extends JFrame {
     private JButton backButton;
     private JLabel titleLabel;
     private JPanel mainPanel;
-    private JComboBox comboBox1;
-    private JComboBox comboBox2;
+    private JComboBox partType;
+    private JComboBox partBrand;
+    private JComboBox partPriceRange;
 
     public SearchPCPartsScreen() {
         setTitle("PC Part Picker");
@@ -25,7 +26,7 @@ public class SearchPCPartsScreen extends JFrame {
                 int x = JOptionPane.showConfirmDialog(
                         null,
                         "Are you sure you wish to PC Parts search?",
-                        "Exit PC Part Search",
+                        "Exit PC Part Piecer application",
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.INFORMATION_MESSAGE
                 );
@@ -44,4 +45,11 @@ public class SearchPCPartsScreen extends JFrame {
     public JButton getBackButton() {
         return backButton;
     }
+
+    public JComboBox getPartType() { return partType; }
+
+    public JComboBox getPartBrand() { return partBrand; }
+
+    public JComboBox getPartPriceRange() { return partPriceRange; }
+
 }

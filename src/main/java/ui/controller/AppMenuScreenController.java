@@ -1,9 +1,7 @@
 package ui.controller;
-
 import javax.swing.*;
 import ui.coordinator.IAppMenuScreenCoordinator;
 import ui.view.AppMenuScreen;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -17,11 +15,11 @@ public class AppMenuScreenController extends BaseFrameController {
 
     public AppMenuScreenController(IAppMenuScreenCoordinator coordinator) {
         this.coordinator = coordinator;
-        initComponents();
-        initListeners();
+        initialiseFrameComponents();
+        initialiseFrameListeners();
     }
 
-    private void initComponents() {
+    private void initialiseFrameComponents() {
         AppMenuScreen menu = new AppMenuScreen();
         frame = menu;
         sellPartsButton = menu.getSellPartsButton();
@@ -30,7 +28,7 @@ public class AppMenuScreenController extends BaseFrameController {
         logoutButton = menu.getLogoutButton();
     }
     
-    private void initListeners() {
+    private void initialiseFrameListeners() {
         sellPartsButton.addActionListener(e -> coordinator.sellParts());
         searchPartsButton.addActionListener(e -> coordinator.searchParts());
         exitApplicationButton.addActionListener(e -> coordinator.exitApplication());
@@ -40,9 +38,6 @@ public class AppMenuScreenController extends BaseFrameController {
     private class SearchButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             System.out.println("PC Parts Search Button");
-
         }
     }
-
-
 }

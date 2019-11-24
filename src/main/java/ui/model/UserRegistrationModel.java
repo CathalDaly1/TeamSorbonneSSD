@@ -1,5 +1,4 @@
 package ui.model;
-import java.io.*;
 import java.security.InvalidParameterException;
 
 public class UserRegistrationModel {
@@ -9,14 +8,14 @@ public class UserRegistrationModel {
     private String password;
 
     public UserRegistrationModel() {
-
+        //validation of registration credentials
     }
 
-    public void setUsername(String username) throws InvalidParameterException {
+    public void setUsername(String username) {
         this.username = username;
     }
 
-    public void setEmail(String email) throws InvalidParameterException {
+    public void setEmail(String email) {
         this.email = email;
     }
 
