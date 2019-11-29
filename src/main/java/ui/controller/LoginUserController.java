@@ -8,19 +8,21 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LoginUserController extends BaseFrameController {
+
     private ILoginCoordinator coordinator;
-    private JButton loginButton, backButton;
+    private JButton loginButton;
+    private JButton backButton;
     private JTextField usernameField;
     private JPasswordField passwordField;
     private JLabel errorLabel;
 
     public LoginUserController(ILoginCoordinator coordinator) {
         this.coordinator = coordinator;
-        initComponents();
-        initListeners();
+        initialiseFrameComponents();
+        initialiseFrameListeners();
     }
 
-    private void initComponents() {
+    private void initialiseFrameComponents() {
         LoginUserScreen loginUserScreen = new LoginUserScreen();
         frame = loginUserScreen;
         loginButton = loginUserScreen.getLoginButton();
@@ -30,8 +32,9 @@ public class LoginUserController extends BaseFrameController {
         errorLabel = loginUserScreen.getErrorLabel();
     }
 
-    private void initListeners() {
-        loginButton.addActionListener(new LoginButtonListener());
+    private void initialiseFrameListeners() {
+        //loginButton.addActionListener(new LoginButtonListener());
+        loginButton.addActionListener(e -> coordinator.goToMenuScreen());
         backButton.addActionListener(e -> coordinator.start());
     }
 

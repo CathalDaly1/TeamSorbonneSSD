@@ -1,16 +1,17 @@
 package ui.controller;
-
 import ui.coordinator.ILoginCoordinator;
 import ui.coordinator.LoginCoordinator;
+import ui.model.UserRegistrationModel;
 import ui.view.RegisterUserScreen;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.security.InvalidParameterException;
 
 public class RegisterScreenController extends BaseFrameController {
 
     private ILoginCoordinator coordinator;
+    private UserRegistrationModel model;
     private JTextField usernameField;
     private JTextField emailField;
     private JPasswordField passwordField1;
@@ -22,11 +23,12 @@ public class RegisterScreenController extends BaseFrameController {
     public RegisterScreenController(LoginCoordinator coordinator)
     {
         this.coordinator = coordinator;
-        initComponents();
-        initListeners();
+        model = new UserRegistrationModel();
+        initialiseFrameComponents();
+        initialiseFrameListeners();
     }
 
-    private void initComponents() {
+    private void initialiseFrameComponents() {
         RegisterUserScreen registerScreen = new RegisterUserScreen();
         frame = registerScreen;
         usernameField = registerScreen.getUsernameField();
@@ -38,15 +40,26 @@ public class RegisterScreenController extends BaseFrameController {
         errorLabel = registerScreen.getErrorLabel();
     }
 
-    private void initListeners() {
-        signUpButton.addActionListener(e -> coordinator.goToMainMenu());
-       // signUpButton.addActionListener(new SignUpButtonListener());
+    private void initialiseFrameListeners() {
+        //signUpButton.addActionListener(e -> coordinator.goToMenuScreen());
+        signUpButton.addActionListener(new SignUpButtonListener());
         backButton.addActionListener(e -> coordinator.start());
     }
 
     private class SignUpButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             System.out.println("Sign up button clicked");
+            try {
+                model.setUsername(usernameField.getText());
+                model.setEmail(emailField.getText());
+                model.setPassword(passwordField1.getText(), passwordField2.getText());
+                model.createUser();
+                signUpButton.addActionListener(a->coordinator.goToMenuScreen());
+
+            } catch (InvalidParameterException exception) {
+                //errorLabel is if passwords do not match
+                errorLabel.setText(exception.getMessage());
+            }
         }
     }
 }

@@ -1,19 +1,12 @@
-import CompatibilityChecker.Case;
-import CompatibilityChecker.Cpu;
 import ui.coordinator.ILoginCoordinator;
 import ui.coordinator.LoginCoordinator;
 
-public class Main  {
+public class Main {
 
     public static void main(String[] args)
 
     {
         ILoginCoordinator loginCoordinator = new LoginCoordinator();
         loginCoordinator.start();
-
-        Case caseObj = new Case("Case");
-
-        caseObj.add(new Cpu("cpu"));
-
     }
 }

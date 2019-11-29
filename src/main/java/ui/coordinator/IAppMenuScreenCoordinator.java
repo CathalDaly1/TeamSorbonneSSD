@@ -1,9 +1,12 @@
 package ui.coordinator;
 
-
 public interface IAppMenuScreenCoordinator {
+
     void start();
-    void buyParts();
     void sellParts();
+    void placeAdvert();
     void searchParts();
+    void searchForParts();
+    void logoutUser();
+    void exitApplication();
 }

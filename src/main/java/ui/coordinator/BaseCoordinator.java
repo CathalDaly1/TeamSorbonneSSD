@@ -6,7 +6,7 @@ abstract class BaseCoordinator {
 
     private ViewController currentViewController;
 
-    void setViewController(ViewController controller) {
+    void setFrameController(ViewController controller) {
         if (controller != null) {
             controller.show();
         }

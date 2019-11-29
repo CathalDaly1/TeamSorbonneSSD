@@ -24,8 +24,8 @@ public class HomeScreen extends JFrame {
                 System.out.println("Closing window");
                 int x = JOptionPane.showConfirmDialog(
                         null,
-                        "Are you sure you wish to exit PC Part Picker app?",
-                        "Exit PC Part Picker application",
+                        "Are you sure you wish to exit PC Part Piecer app?",
+                        "Exit PC Part Piecer application",
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.INFORMATION_MESSAGE
                 );

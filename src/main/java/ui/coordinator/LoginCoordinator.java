@@ -1,39 +1,34 @@
 package ui.coordinator;
-
-import ui.controller.AppMenuScreenController;
-import ui.controller.LoginUserController;
 import ui.controller.HomeScreenController;
+import ui.controller.LoginUserController;
 import ui.controller.RegisterScreenController;
 
 public class LoginCoordinator extends BaseCoordinator implements ILoginCoordinator {
 
-    public void start() {
+   public void start() {
+
         HomeScreenController welcome = new HomeScreenController(this);
-        System.out.println("Home Page Displayed - CHECK");
-        setViewController(welcome);
+        setFrameController(welcome);
     }
 
     public void goToLogin() {
+
         LoginUserController login = new LoginUserController(this);
-        System.out.println("Login Button Pressed - CHECK");
-        setViewController(login);
+        setFrameController(login);
     }
 
     public void goToRegister() {
+
         RegisterScreenController register = new RegisterScreenController(this);
-        System.out.println("Register Button Pressed - CHECK");
-        setViewController(register);
+        setFrameController(register);
     }
 
-    public void goToMainMenu() {
+    public void goToMenuScreen() {
+
         IAppMenuScreenCoordinator menu = new AppMenuScreenCoordinator();
         menu.start();
-        System.out.print("Main Menu Page Displayed - CHECK\n");
-        setViewController(null);
+        setFrameController(null);
     }
 
-
-    public void closeApplication() {
-        System.exit(0);
-    }
+    public void closeApplication() { System.exit(0); }
 }
