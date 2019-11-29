@@ -1,32 +1,52 @@
 package ui.controller;
 import ui.view.HomeScreen;
-import ui.coordinator.ILoginCoordinator;
+import ui.view.LoginUserScreen;
+
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 
 public class HomeScreenController extends BaseFrameController {
 
-    private ILoginCoordinator coordinator;
+    private HomeScreen home;
     private JButton loginButton;
     private JButton registerButton;
     private JButton exitButton;
 
-    public HomeScreenController(ILoginCoordinator coordinator) {
-        this.coordinator = coordinator;
-        initialiseFrameComponents();
-        initialiseListeners();
+    public HomeScreenController() {
+
     }
 
-    private void initialiseFrameComponents() {
-        HomeScreen homeScreen = new HomeScreen();
-        frame = homeScreen;
-        loginButton = homeScreen.getLoginButton();
-        registerButton = homeScreen.getRegisterButton();
-        exitButton = homeScreen.getExitButton();
+    public void controlStart() {
+
+        home = new HomeScreen();
+        LoginUserScreen rv = new LoginUserScreen();
+        loginButton = home.getLoginButton();
+        registerButton = home.getRegisterButton();
+        exitButton = home.getExitButton();
+        addListeners();
+        home.setVisible(true);
     }
 
-    private void initialiseListeners() {
-        loginButton.addActionListener(e -> coordinator.goToLogin());
-        registerButton.addActionListener(e -> coordinator.goToRegister());
-        exitButton.addActionListener(e-> coordinator.closeApplication());
+    public  void addListeners() {
+
+        loginButton.addActionListener((ActionEvent e) -> {
+            System.out.println("Login");
+            home.setVisible(false);
+            LoginUserController login = new LoginUserController();
+            login.controlLogin();
+        });
+
+        registerButton.addActionListener((ActionEvent e) -> {
+            System.out.println("register");
+            home.setVisible(false);
+            RegisterScreenController register = new RegisterScreenController();
+            register.controlReg();
+        });
+
+        exitButton.addActionListener((ActionEvent e) -> {
+            System.out.println("exit");
+            System.exit(0);
+        });
     }
+
 }

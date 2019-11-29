@@ -1,31 +1,51 @@
 package ui.controller;
 
-import ui.coordinator.IAppMenuScreenCoordinator;
 import ui.view.ConfigurePCScreen;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 
 public class ConfigurePCController extends BaseFrameController {
 
-    private IAppMenuScreenCoordinator coordinator;
+    private ConfigurePCScreen config;
+    private JComboBox GPUComboBox;
     private JButton backButton;
     private JButton saveButton1;
+    private JComboBox CoolerComboBox;
+    private JComboBox RAMComboBox;
+    private JComboBox HardDriveComboBox;
+    private JComboBox MotherboardComboBox;
 
-    public ConfigurePCController(IAppMenuScreenCoordinator coordinator) {
-        this.coordinator = coordinator;
-        initialiseFrameComponents();
-        initialiseFrameListeners();
+    public ConfigurePCController() {
+
     }
 
-    private void initialiseFrameComponents() {
-        ConfigurePCScreen configure = new ConfigurePCScreen();
-        frame = configure;
-        backButton = configure.getBackButton();
-        saveButton1 = configure.getSaveButton1();
+    public void controlConfigurePC() {
+        config = new ConfigurePCScreen();
+        ConfigurePCScreen config1 = new ConfigurePCScreen();
+        saveButton1 = config.getSaveButton1();
+        backButton = config.getBackButton();
+        GPUComboBox = config.getGPUComboBox();
+        CoolerComboBox = config.getCoolerComboBox();
+        RAMComboBox = config.getRAMComboBox();
+        HardDriveComboBox = config.getHardDriveComboBox();
+        MotherboardComboBox = config.getMotherboardComboBox();
+        addListeners();
+        config.setVisible(true);
     }
 
-    private void initialiseFrameListeners() {
-        backButton.addActionListener(e -> coordinator.start());
-        //saveButton1.addActionListener(e -> coordinator.saveButton1());
+    public void addListeners() {
+
+        saveButton1.addActionListener((ActionEvent e) -> {
+            System.out.println("Save configuration");
+            config.setVisible(false);
+        });
+
+        backButton.addActionListener((ActionEvent e) -> {
+            System.out.println("back button");
+            config.setVisible(false);
+            AppMenuScreenController menu = new AppMenuScreenController();
+            menu.controlMenu();
+        });
     }
 }

@@ -1,16 +1,12 @@
 package ui.controller;
-import ui.coordinator.ILoginCoordinator;
-import ui.coordinator.LoginCoordinator;
 import ui.model.UserRegistrationModel;
 import ui.view.RegisterUserScreen;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.security.InvalidParameterException;
 
 public class RegisterScreenController extends BaseFrameController {
 
-    private ILoginCoordinator coordinator;
+    private RegisterUserScreen reg;
     private UserRegistrationModel model;
     private JTextField usernameField;
     private JTextField emailField;
@@ -20,46 +16,39 @@ public class RegisterScreenController extends BaseFrameController {
     private JButton backButton;
     private JLabel errorLabel;
 
-    public RegisterScreenController(LoginCoordinator coordinator)
-    {
-        this.coordinator = coordinator;
-        model = new UserRegistrationModel();
-        initialiseFrameComponents();
-        initialiseFrameListeners();
+    public RegisterScreenController() {
+
     }
 
-    private void initialiseFrameComponents() {
-        RegisterUserScreen registerScreen = new RegisterUserScreen();
-        frame = registerScreen;
-        usernameField = registerScreen.getUsernameField();
-        emailField = registerScreen.getEmailField();
-        passwordField1 = registerScreen.getPasswordField1();
-        passwordField2 = registerScreen.getPasswordField2();
-        signUpButton = registerScreen.getSignUpButton();
-        backButton = registerScreen.getBackButton();
-        errorLabel = registerScreen.getErrorLabel();
+    public void controlReg() {
+        reg = new RegisterUserScreen();
+        RegisterUserScreen rv1 = new RegisterUserScreen();
+        signUpButton = reg.getSignUpButton();
+        backButton = reg.getBackButton();
+        usernameField = reg.getUsernameField();
+        emailField = reg.getEmailField();
+        passwordField1 = reg.getPasswordField1();
+        passwordField2 = reg.getPasswordField2();
+        errorLabel = reg.getErrorLabel();
+        addListeners();
+        reg.setVisible(true);
+
     }
 
-    private void initialiseFrameListeners() {
-        //signUpButton.addActionListener(e -> coordinator.goToMenuScreen());
-        signUpButton.addActionListener(new SignUpButtonListener());
-        backButton.addActionListener(e -> coordinator.start());
-    }
+    public void addListeners() {
 
-    private class SignUpButtonListener implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-            System.out.println("Sign up button clicked");
-            try {
-                model.setUsername(usernameField.getText());
-                model.setEmail(emailField.getText());
-                model.setPassword(passwordField1.getText(), passwordField2.getText());
-                model.createUser();
-                signUpButton.addActionListener(a->coordinator.goToMenuScreen());
+        signUpButton.addActionListener((ActionEvent e) -> {
+            System.out.println("Login");
+            reg.setVisible(false);
+            AppMenuScreenController menu = new AppMenuScreenController();
+            menu.controlMenu();
+        });
 
-            } catch (InvalidParameterException exception) {
-                //errorLabel is if passwords do not match
-                errorLabel.setText(exception.getMessage());
-            }
-        }
+        backButton.addActionListener((ActionEvent e) -> {
+            System.out.println("register");
+            reg.setVisible(false);
+            HomeScreenController home = new HomeScreenController();
+            home.controlStart();
+        });
     }
 }

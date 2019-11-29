@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+
 public class ConfigurePCScreen extends JFrame {
     private JPanel mainPanel;
     private JComboBox CPUComboBox;
@@ -14,7 +15,6 @@ public class ConfigurePCScreen extends JFrame {
     private JComboBox RAMComboBox;
     private JComboBox HardDriveComboBox;
     private JComboBox MotherboardComboBox;
-
 
     public ConfigurePCScreen() {
         setTitle("PC Part Picker");

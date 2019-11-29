@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+
 public class HomeScreen extends JFrame {
     private JButton loginButton;
     private JButton registerButton;
@@ -31,14 +32,28 @@ public class HomeScreen extends JFrame {
                 );
 
                 if (x == JOptionPane.YES_OPTION)
-                   System.exit(0);
+                    System.exit(0);
             }
         });
     }
 
     public JButton getLoginButton() { return loginButton; }
 
+    public void setLoginButton(JButton loginButton) {
+        this.loginButton=loginButton;
+    }
+
     public JButton getRegisterButton() { return registerButton; }
 
+    public void setRegisterButton(JButton registerButton) {
+        this.registerButton=registerButton;
+    }
+
     public JButton getExitButton() { return exitButton; }
+
+    public void setExitButton(JButton exitButton) {
+        this.exitButton=exitButton;
+    }
+
+
 }

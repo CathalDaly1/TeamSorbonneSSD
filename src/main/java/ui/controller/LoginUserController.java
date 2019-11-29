@@ -1,46 +1,49 @@
 package ui.controller;
-import ui.coordinator.ILoginCoordinator;
-
 import ui.view.LoginUserScreen;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class LoginUserController extends BaseFrameController {
 
-    private ILoginCoordinator coordinator;
+    private LoginUserScreen login;
     private JButton loginButton;
     private JButton backButton;
     private JTextField usernameField;
     private JPasswordField passwordField;
     private JLabel errorLabel;
 
-    public LoginUserController(ILoginCoordinator coordinator) {
-        this.coordinator = coordinator;
-        initialiseFrameComponents();
-        initialiseFrameListeners();
+    public LoginUserController() {
+
     }
 
-    private void initialiseFrameComponents() {
-        LoginUserScreen loginUserScreen = new LoginUserScreen();
-        frame = loginUserScreen;
-        loginButton = loginUserScreen.getLoginButton();
-        backButton = loginUserScreen.getBackButton();
-        usernameField = loginUserScreen.getUsernameField();
-        passwordField = loginUserScreen.getPasswordField();
-        errorLabel = loginUserScreen.getErrorLabel();
+    public void controlLogin() {
+
+        login = new LoginUserScreen();
+        LoginUserScreen rv = new LoginUserScreen();
+        loginButton = login.getLoginButton();
+        backButton = login.getBackButton();
+        errorLabel = login.getErrorLabel();
+        passwordField = login.getPasswordField();
+        usernameField = login.getUsernameField();
+        addListeners();
+        login.setVisible(true);
     }
 
-    private void initialiseFrameListeners() {
-        //loginButton.addActionListener(new LoginButtonListener());
-        loginButton.addActionListener(e -> coordinator.goToMenuScreen());
-        backButton.addActionListener(e -> coordinator.start());
-    }
+    public void addListeners() {
 
-    private class LoginButtonListener implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-            System.out.println("Login button clicked");
-        }
+        loginButton.addActionListener((ActionEvent e) -> {
+            System.out.println("Login user");
+            login.setVisible(false);
+            AppMenuScreenController menu = new AppMenuScreenController();
+            menu.controlMenu();
+        });
+
+        backButton.addActionListener((ActionEvent e) -> {
+            System.out.println("back button");
+            login.setVisible(false);
+            HomeScreenController home = new HomeScreenController();
+            home.controlStart();
+        });
     }
 }
