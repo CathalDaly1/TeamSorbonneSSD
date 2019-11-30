@@ -33,7 +33,7 @@ public class CompositeEquipment extends Equipment implements IComposite {
     public ICompatibilityChecker getCompatibility(){
         double wattageIn = 0;
         double wattageOut = 0;
-    
+
         ICompatibilityChecker compatibilityChecker = new CompatibilityChecker();
 
 

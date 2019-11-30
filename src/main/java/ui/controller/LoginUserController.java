@@ -1,11 +1,13 @@
 package ui.controller;
 import ui.coordinator.ILoginCoordinator;
 
+import ui.model.UserLoginModel;
 import ui.view.LoginUserScreen;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.security.InvalidParameterException;
 
 public class LoginUserController extends BaseFrameController {
 
@@ -15,6 +17,7 @@ public class LoginUserController extends BaseFrameController {
     private JTextField usernameField;
     private JPasswordField passwordField;
     private JLabel errorLabel;
+    UserLoginModel model;
 
     public LoginUserController(ILoginCoordinator coordinator) {
         this.coordinator = coordinator;
@@ -40,7 +43,17 @@ public class LoginUserController extends BaseFrameController {
 
     private class LoginButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            System.out.println("Login button clicked");
+
+            try {
+                model.setUsername(usernameField.getText());
+                model.setPassword(passwordField.getText());
+                if(model.login())
+                    coordinator.goToMainMenu();
+                else
+                    errorLabel.setText("Invalid username or password");
+            } catch (InvalidParameterException exception) {
+                errorLabel.setText(exception.getMessage());
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
 import CompatibilityChecker.Parts.*;
+import RestAPIHandlers.GetHandlerSimple;
 
 public class OldPatsTestDriverDontTouch {
     public static void main(String[] args){
@@ -33,7 +34,10 @@ public class OldPatsTestDriverDontTouch {
         pc.add(motherboard);
         pc.add(powerSupply);
 
-        System.out.println(pc.getWattage());
-        pc.getCompatibility().isCompatible();
+        //System.out.println(pc.getWattage());
+        //pc.getCompatibility().isCompatible();
+
+        GetHandlerSimple get = new GetHandlerSimple();
+        get.getUsers();
     }
 }
