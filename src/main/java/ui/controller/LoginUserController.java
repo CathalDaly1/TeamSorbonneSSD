@@ -1,6 +1,4 @@
 package ui.controller;
-import ui.coordinator.ILoginCoordinator;
-
 import ui.model.UserLoginModel;
 import ui.view.LoginUserScreen;
 
@@ -11,7 +9,7 @@ import java.security.InvalidParameterException;
 
 public class LoginUserController extends BaseFrameController {
 
-    private ILoginCoordinator coordinator;
+    private LoginUserScreen login;
     private JButton loginButton;
     private JButton backButton;
     private JTextField usernameField;
@@ -19,41 +17,37 @@ public class LoginUserController extends BaseFrameController {
     private JLabel errorLabel;
     UserLoginModel model;
 
-    public LoginUserController(ILoginCoordinator coordinator) {
-        this.coordinator = coordinator;
-        initialiseFrameComponents();
-        initialiseFrameListeners();
+    public LoginUserController() {
+
     }
 
-    private void initialiseFrameComponents() {
-        LoginUserScreen loginUserScreen = new LoginUserScreen();
-        frame = loginUserScreen;
-        loginButton = loginUserScreen.getLoginButton();
-        backButton = loginUserScreen.getBackButton();
-        usernameField = loginUserScreen.getUsernameField();
-        passwordField = loginUserScreen.getPasswordField();
-        errorLabel = loginUserScreen.getErrorLabel();
+    public void controlLogin() {
+
+        login = new LoginUserScreen();
+        LoginUserScreen rv = new LoginUserScreen();
+        loginButton = login.getLoginButton();
+        backButton = login.getBackButton();
+        errorLabel = login.getErrorLabel();
+        passwordField = login.getPasswordField();
+        usernameField = login.getUsernameField();
+        addListeners();
+        login.setVisible(true);
     }
 
-    private void initialiseFrameListeners() {
-        //loginButton.addActionListener(new LoginButtonListener());
-        loginButton.addActionListener(e -> coordinator.goToMenuScreen());
-        backButton.addActionListener(e -> coordinator.start());
-    }
+    public void addListeners() {
 
-    private class LoginButtonListener implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
+        loginButton.addActionListener((ActionEvent e) -> {
+            System.out.println("Login user");
+            login.setVisible(false);
+            AppMenuScreenController menu = new AppMenuScreenController();
+            menu.controlMenu();
+        });
 
-            try {
-                model.setUsername(usernameField.getText());
-                model.setPassword(passwordField.getText());
-                if(model.login())
-                    coordinator.goToMainMenu();
-                else
-                    errorLabel.setText("Invalid username or password");
-            } catch (InvalidParameterException exception) {
-                errorLabel.setText(exception.getMessage());
-            }
-        }
+        backButton.addActionListener((ActionEvent e) -> {
+            System.out.println("back button");
+            login.setVisible(false);
+            HomeScreenController home = new HomeScreenController();
+            home.controlStart();
+        });
     }
 }

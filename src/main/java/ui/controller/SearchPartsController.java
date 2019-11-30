@@ -1,32 +1,47 @@
 package ui.controller;
 
-import ui.coordinator.IAppMenuScreenCoordinator;
 import ui.view.SearchPCPartsScreen;
-
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 
 public class SearchPartsController extends BaseFrameController {
 
-    private IAppMenuScreenCoordinator coordinator;
+    private SearchPCPartsScreen search;
     private JButton backButton;
     private JButton searchPCPartsButton;
+    private JComboBox partType;
+    private JComboBox partBrand;
+    private JComboBox partPriceRange;
 
-    public SearchPartsController(IAppMenuScreenCoordinator coordinator) {
-        this.coordinator = coordinator;
-        initialiseFrameComponents();
-        initialiseFrameListeners();
+    public SearchPartsController() {
+
     }
 
-    private void initialiseFrameComponents() {
-        SearchPCPartsScreen searchPCPartsScreen = new SearchPCPartsScreen();
-        frame = searchPCPartsScreen;
-        System.out.println("PC Search page displayed");
-        backButton = searchPCPartsScreen.getBackButton();
-        searchPCPartsButton = searchPCPartsScreen.getSearchPCPartsButton();
+    public void controlSearchParts() {
+
+        search = new SearchPCPartsScreen();
+        SearchPCPartsScreen search1 = new SearchPCPartsScreen();
+        searchPCPartsButton = search.getSearchPCPartsButton();
+        backButton = search.getBackButton();
+        partType = search.getPartType();
+        partBrand = search.getPartBrand();
+        partPriceRange = search.getPartPriceRange();
+        addListeners();
+        search.setVisible(true);
     }
 
-    private void initialiseFrameListeners() {
-        backButton.addActionListener(e -> coordinator.start());
-        searchPCPartsButton.addActionListener(e -> coordinator.searchForParts());
+    public void addListeners() {
+
+        searchPCPartsButton.addActionListener((ActionEvent e) -> {
+            System.out.println("Login");
+            search.setVisible(false);
+        });
+
+        backButton.addActionListener((ActionEvent e) -> {
+            System.out.println("Back Button");
+            search.setVisible(false);
+            AppMenuScreenController menu = new AppMenuScreenController();
+            menu.controlMenu();
+        });
     }
 }
