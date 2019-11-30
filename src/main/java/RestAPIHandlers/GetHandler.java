@@ -3,7 +3,6 @@ package RestAPIHandlers;
 
 import Users.User;
 import Users.UserFactory;
-import jdk.nashorn.internal.parser.JSONParser;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -15,12 +14,17 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class GetHandlerSimple implements GetAPI {
+public class GetHandler implements GetAPI {
     
     URL url;
     HttpURLConnection conn;
     UserFactory userFactory;
 
+    private static final String URL_ADDRESS = "http://212.17.39.218:5000";
+
+    public GetHandler(){
+        userFactory = new UserFactory();
+    }
 
     public JSONObject executeQuery(String urlstring){
         String restResult = "";
@@ -53,7 +57,7 @@ public class GetHandlerSimple implements GetAPI {
 
         restResult = restResult.replace("\\\"","\"");
         restResult = restResult.substring(1,restResult.length()-1);
-        System.out.print(restResult);
+//        System.out.print(restResult);
 
         JSONObject jsonObject = new JSONObject();
         try {
@@ -61,33 +65,39 @@ public class GetHandlerSimple implements GetAPI {
         }catch (JSONException err){
             System.out.println(err);
         }
-
         return jsonObject;
     }
 
     public ArrayList<User> getUsers(){
         ArrayList<User> users = new ArrayList<>();
-        JSONObject jsonObject = executeQuery("http://localhost:5000/user/");
+        JSONObject jsonObject = executeQuery(URL_ADDRESS + "/user/");
 
         JSONArray jsonArray = jsonObject.getJSONArray("results");
         for (int i = 0; i < jsonArray.length(); i++) {
             JSONObject explrObject = jsonArray.getJSONObject(i);
-            System.out.println(explrObject);
-            System.out.println(explrObject.get("username"));
+//            System.out.println(explrObject);
+//            System.out.println(explrObject.get("username"));
         }
 
         return users;
     }
 
     public User getUserWithName(String username){
-        JSONObject jsonObject = executeQuery("http://localhost:5000/user/" + username);
+        JSONObject jsonObject = executeQuery(URL_ADDRESS + "/user/" + username);
 
         JSONArray jsonArray = jsonObject.getJSONArray("results");
-        JSONObject explrObject = jsonArray.getJSONObject(0);
-        int id = (int) explrObject.get("uid");
-        String email = (String) explrObject.get("email");
-        String password = (String) explrObject.get("email");
-        int premium = (int) explrObject.get("premium");
-        return(userFactory.addNewUser(id,username,password,email,premium));
+
+        if(jsonArray.length() > 0) {
+            JSONObject explrObject = jsonArray.getJSONObject(0);
+            System.out.println(explrObject);
+            int id = (int) explrObject.get("uid");
+            String email = (String) explrObject.get("email");
+            String password = (String) explrObject.get("password");
+            boolean premium = (boolean) explrObject.get("premium");
+            return (userFactory.addNewUser(id, username, email, password, premium));
+        }
+        else {
+            return null;
+        }
     }
 }

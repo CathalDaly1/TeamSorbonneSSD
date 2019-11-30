@@ -9,11 +9,20 @@ public class UserLoginModel {
     }
 
     public boolean login() {
-        return UIController.getInstance().logIn(username, password);
+//        return UIController.getInstance().logIn(username, password);
+        return  true;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getUsername() {
+        return username;
     }
 
     public void setUsername(String username) {
