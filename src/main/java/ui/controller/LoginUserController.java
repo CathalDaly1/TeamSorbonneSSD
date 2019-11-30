@@ -1,11 +1,11 @@
 package ui.controller;
+import RestAPIHandlers.GetHandler;
+import Users.User;
 import ui.model.UserLoginModel;
 import ui.view.LoginUserScreen;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.security.InvalidParameterException;
 
 public class LoginUserController extends BaseFrameController {
 
@@ -15,10 +15,12 @@ public class LoginUserController extends BaseFrameController {
     private JTextField usernameField;
     private JPasswordField passwordField;
     private JLabel errorLabel;
-    UserLoginModel model;
+    private UserLoginModel model ;
+    private GetHandler getHandler;
 
     public LoginUserController() {
-
+        model = new UserLoginModel();
+        getHandler = new GetHandler();
     }
 
     public void controlLogin() {
@@ -37,10 +39,16 @@ public class LoginUserController extends BaseFrameController {
     public void addListeners() {
 
         loginButton.addActionListener((ActionEvent e) -> {
-            System.out.println("Login user");
-            login.setVisible(false);
-            AppMenuScreenController menu = new AppMenuScreenController();
-            menu.controlMenu();
+            model.setPassword(passwordField.getText());
+            model.setUsername(usernameField.getText());
+
+            if(login()){
+                login.setVisible(false);
+                AppMenuScreenController menu = new AppMenuScreenController();
+                menu.controlMenu();
+            } else {
+                JOptionPane.showMessageDialog(null,"Incorrect login details. Try again.");
+            }
         });
 
         backButton.addActionListener((ActionEvent e) -> {
@@ -49,5 +57,25 @@ public class LoginUserController extends BaseFrameController {
             HomeScreenController home = new HomeScreenController();
             home.controlStart();
         });
+    }
+
+    private boolean login() {
+        String username = model.getUsername();
+        String password = model.getPassword();
+
+        User user = getHandler.getUserWithName(username);
+
+        if(user == null){
+            return false;
+        }
+
+        System.out.println(password);
+        System.out.println(user.getPassword());
+        if(user.getPassword().equals(password)){
+            System.out.print("correct password");
+            return true;
+        }
+        System.out.println("incorrect password ");
+        return false;
     }
 }

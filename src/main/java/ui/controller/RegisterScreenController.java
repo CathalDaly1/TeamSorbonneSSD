@@ -1,4 +1,7 @@
 package ui.controller;
+import RestAPIHandlers.PostHandler;
+import Users.User;
+import Users.UserFactory;
 import ui.model.UserRegistrationModel;
 import ui.view.RegisterUserScreen;
 import javax.swing.*;
@@ -15,9 +18,13 @@ public class RegisterScreenController extends BaseFrameController {
     private JButton signUpButton;
     private JButton backButton;
     private JLabel errorLabel;
+    private UserFactory userFactory;
+    private PostHandler postHandler;
 
     public RegisterScreenController() {
-
+        model = new UserRegistrationModel();
+        userFactory = new UserFactory();
+        postHandler = new PostHandler();
     }
 
     public void controlReg() {
@@ -38,10 +45,18 @@ public class RegisterScreenController extends BaseFrameController {
     public void addListeners() {
 
         signUpButton.addActionListener((ActionEvent e) -> {
-            System.out.println("Login");
-            reg.setVisible(false);
-            AppMenuScreenController menu = new AppMenuScreenController();
-            menu.controlMenu();
+            model.setPassword(passwordField1.getText(),passwordField2.getText());
+            model.setUsername(usernameField.getText());
+            model.setEmail(emailField.getText());
+
+            if(register()){
+                reg.setVisible(false);
+                AppMenuScreenController menu = new AppMenuScreenController();
+                menu.controlMenu();
+            }
+            else {
+                JOptionPane.showMessageDialog(null, "Sorry the register failed. Try again.");
+            }
         });
 
         backButton.addActionListener((ActionEvent e) -> {
@@ -50,5 +65,9 @@ public class RegisterScreenController extends BaseFrameController {
             HomeScreenController home = new HomeScreenController();
             home.controlStart();
         });
+    }
+
+    private boolean register() {
+        return (postHandler.insertUser(userFactory.addNewUser(0,model.getUsername(),model.getemail(),model.getPassword(),false)));
     }
 }

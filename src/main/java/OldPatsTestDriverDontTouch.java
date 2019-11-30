@@ -1,5 +1,9 @@
 import CompatibilityChecker.Parts.*;
-import RestAPIHandlers.GetHandlerSimple;
+import RestAPIHandlers.GetHandler;
+import RestAPIHandlers.PostHandler;
+import Users.User;
+import Users.UserFactory;
+import org.restlet.resource.Post;
 
 public class OldPatsTestDriverDontTouch {
     public static void main(String[] args){
@@ -37,7 +41,13 @@ public class OldPatsTestDriverDontTouch {
         //System.out.println(pc.getWattage());
         //pc.getCompatibility().isCompatible();
 
-        GetHandlerSimple get = new GetHandlerSimple();
-        get.getUsers();
+       // GetHandler get = new GetHandler();
+      //  get.getUsers();
+
+        PostHandler postHandler = new PostHandler();
+
+        UserFactory userFactory = new UserFactory();
+
+        postHandler.insertUser(userFactory.addNewUser(5,"dairelavelle", "daire@aol.net", "test",false));
     }
 }

@@ -2,9 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandlerSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/PremiumUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/PremiumUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/StaffUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/UserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/RegisterScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/RegisterScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/model/UserLoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/model/UserLoginModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/model/UserRegistrationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/model/UserRegistrationModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Auctions/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auctions/Subject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/CompositeEquipment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/CompositeEquipment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/TeamSorbonneSSD.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandlerSimple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/UserResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Users/PremiumUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/PremiumUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Users/StaffUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Users/UserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/UserFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/AppMenuScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/AppMenuScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/BaseFrameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/BaseFrameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/HomeScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/HomeScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/LoginUserController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/LoginUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/LoginUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/RegisterScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/RegisterScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/SearchPartsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/SearchPartsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/SellPartsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/SellPartsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/coordinator/AppMenuScreenCoordinator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/coordinator/BaseCoordinator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/coordinator/IAppMenuScreenCoordinator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/coordinator/ILoginCoordinator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/coordinator/LoginCoordinator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/model/UserLoginModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/model/UserLoginModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/model/UserRegistrationModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/model/UserRegistrationModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AdvertPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AppMenuScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AppMenuScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/LoginUserScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/LoginUserScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/RegisterUserScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/RegisterUserScreen$1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,22 +66,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>create</find>
-      <find>sellParts</find>
-      <find>searchPartsOnApp</find>
-      <find>Search Parts Button Clicked - Implement</find>
-      <find>SearchPCPartsScreen</find>
-      <find>buyPartsButton</find>
-      <find>searchPCPartsButton</find>
-      <find>buyPCPartsButton</find>
-      <find>Search for parts button pressed</find>
-      <find>searchForParts</find>
-      <find>controlStart</find>
-      <find>controlReg</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -60,13 +84,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575031915233" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/desk/CS4125-Sample_Project-AY1819--FLIGHTS/CS4125-Sample_Project-AY1819--FLIGHTS/Code/Systems-Analysis-And-Design-Project" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Diff &amp; Merge" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -90,10 +114,17 @@
       <recent name="ui.controller" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="TeamSorbonneSSD" />
+      <module name="TS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OldPatsTestDriverDontTouch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OldPatsTestDriverDontTouch" />
+      <module name="TS" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,6 +132,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.OldPatsTestDriverDontTouch" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -118,7 +150,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\catha\AppData\Roaming\Subversion</configuration>
+    <configuration>C:\Users\James\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -373,14 +405,55 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;target/classes/Users/User.class" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="686" y="188" key="#Main" timestamp="1575126544525">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="188" key="#Main/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575126544525" />
+    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1575134099760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575134099760" />
     <state x="811" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575122490824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575122490824" />
+    <state x="740" y="277" width="633" height="485" key="FileChooserDialogImpl" timestamp="1575125961798">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="277" width="633" height="485" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575125961798" />
+    <state width="868" height="205" key="GridCell.Tab.0.bottom" timestamp="1575135282296">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="868" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575135282296" />
+    <state width="868" height="205" key="GridCell.Tab.0.center" timestamp="1575135282296">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="868" height="205" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575135282296" />
+    <state width="868" height="205" key="GridCell.Tab.0.left" timestamp="1575135282296">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="868" height="205" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575135282296" />
+    <state width="868" height="205" key="GridCell.Tab.0.right" timestamp="1575135282296">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="868" height="205" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575135282296" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1575124953040">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575124953040" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1575126310639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575126310639" />
     <state x="360" y="120" width="1200" height="800" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1575111447782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="360" y="120" width="1200" height="800" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575111447782" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575136385164">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575134183042" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575136385164" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
