@@ -2,51 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ConfigurationDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ConfigurationDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/SocketCompatibilityCheckerDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/SocketCompatibilityCheckerDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/WattageCompatiblityCheckerDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/WattageCompatiblityCheckerDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/RamChannelCompatibilityDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/RamTypeCompatibilityDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/CompositePart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/CompositePart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Cooler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Cooler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Cpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Cpu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Gpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Gpu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Motherboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Motherboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PowerConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PowerConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PowerSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PowerSupply.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Ram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Ram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Socket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Socket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Auctions/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auctions/Subject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/CompatibilityChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/CompatibilityChecker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/CompatibilityCheckerDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/CompatibilityCheckerDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ICompatibilityChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ICompatibilityChecker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/WattageCompatiblityCheckerDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/WattageCompatiblityCheckerDecorator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ConfigurationDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ConfigurationDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/RamChannelCompatibilityDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/RamChannelCompatibilityDecorator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/CompositePart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/CompositePart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/ConfigurationDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Cooler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Cooler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Cpu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Cpu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Gpu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Gpu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Hardrive.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Hardrive.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/IConfigDetails.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Motherboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Motherboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Part.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Part.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PowerConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PowerConnector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PowerSupply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PowerSupply.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Ram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Ram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Socket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Socket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/TS.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/DeleteHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/DeleteHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/PostHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/PostHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Users/CurrentUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/CurrentUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/LoginUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/LoginUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/SellPCParts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/SellPCParts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

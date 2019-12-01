@@ -47,36 +47,11 @@ public class CompositePart extends Part implements IComposite{
         SocketCompatibilityCheckerDecorator socketCompatibilityCheckerDecorator = new SocketCompatibilityCheckerDecorator(
                 wattageCompatiblityCheckerDecorator,configurationDetails);
 
-        RamChannelCompatibilityDecorator ramChannelCompatibilityDecorator = new RamChannelCompatibilityDecorator(
+        RamTypeCompatibilityDecorator ramTypeCompatibilityDecorator = new RamTypeCompatibilityDecorator(
                 socketCompatibilityCheckerDecorator,configurationDetails);
 
-        ICompatibilityChecker compatibilityCheckerFinal = ramChannelCompatibilityDecorator;
-
-        return compatibilityCheckerFinal;
-    }
-
-    public ICompatibilityChecker getCompatibility(ConfigurationDetails configurationDetails){
-
-        ICompatibilityChecker compatibilityChecker = new CompatibilityChecker();
-        configurationDetails = this.getConfiguration(configurationDetails);
-
-        for(Part e: equipmentList) {
-            if(e instanceof  CompositePart) {
-                ((CompositePart) e).getCompatibility(configurationDetails);
-            }
-            configurationDetails = e.getConfiguration(configurationDetails);
-        }
-
-
-        WattageCompatiblityCheckerDecorator wattageCompatiblityCheckerDecorator = new WattageCompatiblityCheckerDecorator(
-            compatibilityChecker,configurationDetails);
-
-        SocketCompatibilityCheckerDecorator socketCompatibilityCheckerDecorator = new SocketCompatibilityCheckerDecorator(
-                wattageCompatiblityCheckerDecorator,configurationDetails);
-
-
         RamChannelCompatibilityDecorator ramChannelCompatibilityDecorator = new RamChannelCompatibilityDecorator(
-                socketCompatibilityCheckerDecorator,configurationDetails);
+                ramTypeCompatibilityDecorator,configurationDetails);
 
         ICompatibilityChecker compatibilityCheckerFinal = ramChannelCompatibilityDecorator;
 
