@@ -23,6 +23,7 @@ public class Motherboard extends CompositePart {
         super.getConfiguration(configurationDetails);
         System.out.println("MOBO GetConfig called");
         configurationDetails.addRamType(ramProtocol);
+        configurationDetails.setMotherboardRamChannels(numberOfRamChannels);
         configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
         return configurationDetails;
     }

@@ -1,11 +1,14 @@
 package ui.controller;
 
+import Auctions.Advert;
 import RestAPIHandlers.DeleteHandler;
 import RestAPIHandlers.GetHandler;
 import RestAPIHandlers.PostHandler;
+import ui.model.SearchPartsModel;
 import ui.view.SearchPCPartsScreen;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
 
 public class SearchPartsController extends BaseFrameController {
 
@@ -16,8 +19,10 @@ public class SearchPartsController extends BaseFrameController {
     private GetHandler getHandler;
     private PostHandler postHandler;
     private DeleteHandler deleteHandler;
+    private SearchPartsModel model;
 
     public SearchPartsController() {
+        model = new SearchPartsModel();
         getHandler = new GetHandler();
         deleteHandler = new DeleteHandler();
         postHandler = new PostHandler();
@@ -37,11 +42,12 @@ public class SearchPartsController extends BaseFrameController {
     public void addListeners() {
 
         searchPCPartsButton.addActionListener((ActionEvent e) -> {
+            model.setPartType((String) partType.getSelectedItem());
+            ArrayList<Advert> adverts = (ArrayList<Advert>) getHandler.getAdvertByPartType(model.getPartType());
             System.out.println("IMPLEMENT - Search Parts");
             search.setVisible(false);
-            SearchAdListingController adListing = new SearchAdListingController();
-            adListing.controlSearchAds();
-
+            AdvertListingController adListing = new AdvertListingController();
+            adListing.controlSearchAds(adverts);
         });
 
         backButton.addActionListener((ActionEvent e) -> {

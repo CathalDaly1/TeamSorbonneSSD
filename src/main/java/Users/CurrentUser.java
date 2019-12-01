@@ -1,6 +1,10 @@
 package Users;
 
+import CompatibilityChecker.Configuration.CompatibilityResult;
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+import CompatibilityChecker.Configuration.ICompatibilityChecker;
 import CompatibilityChecker.Parts.CompositePart;
+import CompatibilityChecker.Parts.Part;
 import RestAPIHandlers.GetHandler;
 import org.restlet.resource.Get;
 
@@ -46,18 +50,21 @@ public class CurrentUser extends User {
         this.pc = pc;
     }
 
-    public void updatePc() {
+    public boolean updatePc() {
+        pc = new CompositePart("PC");
         List<String> pids = getHandler.getPartsOwnedByUser(String.valueOf(this.getuId()));
 
-//        CompositePart pc = getHandler.getPartDetailsWithId()
-
         for(int i = 0;i<pids.size();i++){
-            System.out.println(pids.get(i));
+            Part part = getHandler.getPartDetailsWithId(pids.get(i));
+            pc.add(part);
         }
 
-//        getHandler.
-        //get all pids for that user
-        //create objects that align with those parts based on type of part
-        //fac
+        CompatibilityResult compatibilityResult = new CompatibilityResult();
+        ConfigurationDetails configurationDetails = new ConfigurationDetails();
+
+        ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
+        compatibilityResult = compatibilityChecker.isCompatible(compatibilityResult);
+
+        return true;
     }
 }

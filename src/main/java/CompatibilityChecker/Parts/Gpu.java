@@ -4,12 +4,12 @@ import CompatibilityChecker.Configuration.ConfigurationDetails;
 
 public class Gpu extends CompositePart {
 
-    private double baseClock;
+    private int baseClock;
     private double memoryCapacity;
     private String memoryType;
     private int cudaCores;
 
-    public Gpu(String name, String brand, double wattage, double baseClock, double memoryCapacity, String memoryType, int cudaCores) {
+    public Gpu(String name, String brand, double wattage, int baseClock, double memoryCapacity, String memoryType, int cudaCores) {
         super(name, brand, wattage);
         this.baseClock = baseClock;
         this.memoryCapacity = memoryCapacity;
@@ -21,7 +21,7 @@ public class Gpu extends CompositePart {
         return baseClock;
     }
 
-    public void setBaseClock(double baseClock) {
+    public void setBaseClock(int baseClock) {
         this.baseClock = baseClock;
     }
 

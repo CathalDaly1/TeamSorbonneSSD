@@ -1,6 +1,7 @@
 package Auctions;
 
 import CompatibilityChecker.Parts.CompositePart;
+import CompatibilityChecker.Parts.Part;
 import Users.User;
 
 import java.util.ArrayList;
@@ -9,9 +10,9 @@ public class Advert extends Subject {
     private ArrayList<User> observers = new ArrayList<User>();
     private double price;
     private int userId;
-    private CompositePart partSelling;
+    private Part partSelling;
 
-    public Advert(double price, int userId, CompositePart partSelling) {
+    public Advert(double price, int userId, Part partSelling) {
         this.price = price;
         this.userId = userId;
         this.partSelling = partSelling;
@@ -37,4 +38,11 @@ public class Advert extends Subject {
     }
 
 
+    public Part getPartSelling() {
+        return partSelling;
+    }
+
+    public void setPartSelling(Part partSelling) {
+        this.partSelling = partSelling;
+    }
 }
