@@ -21,6 +21,8 @@ public class PowerSupply extends CompositePart {
 
     @Override
     public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        super.getConfiguration(configurationDetails);
+        System.out.println("PSU GetConfig called");
         configurationDetails.setWattageOut(this.wattageOutput);
         return configurationDetails;
     }

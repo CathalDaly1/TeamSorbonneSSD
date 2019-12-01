@@ -5,7 +5,7 @@ public class CompatibilityChecker implements  ICompatibilityChecker{
     protected boolean isCompatible = true;
 
     @Override
-    public void isCompatible() {
-        System.out.println(isCompatible);
+    public CompatibilityResult isCompatible(CompatibilityResult compatibilityResult) {
+        return new CompatibilityResult();
     }
 }

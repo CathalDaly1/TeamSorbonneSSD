@@ -9,7 +9,7 @@ public class ConfigurationDetails {
     private double wattageOut;
 
     private List<String> sockets = new ArrayList<>();
-
+    private List<String> ramTypes = new ArrayList<>();
 
 
     public double getWattageIn() {
@@ -33,7 +33,14 @@ public class ConfigurationDetails {
     }
 
     public List<String> getSockets(){
-        return this.sockets;
+        return sockets;
     }
 
+    public void addRamType(String ramType){
+        ramTypes.add(ramType);
+    }
+
+    public List<String> getRamTypes(){
+        return ramTypes;
+    }
 }

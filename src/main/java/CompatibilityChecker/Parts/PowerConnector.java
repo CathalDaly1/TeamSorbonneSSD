@@ -20,6 +20,7 @@ public class PowerConnector extends Part {
 
     @Override
     public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        System.out.println("Power Connect GetConfig called");
         configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
         return configurationDetails;
     }

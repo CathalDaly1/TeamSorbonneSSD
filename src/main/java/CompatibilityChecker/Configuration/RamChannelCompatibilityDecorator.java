@@ -2,11 +2,11 @@ package CompatibilityChecker.Configuration;
 
 import java.util.List;
 
-public class SocketCompatibilityCheckerDecorator extends CompatibilityCheckerDecorator {
+public class RamChannelCompatibilityDecorator extends CompatibilityCheckerDecorator {
 
     ConfigurationDetails configurationDetails;
 
-    public SocketCompatibilityCheckerDecorator(ICompatibilityChecker compatibilityChecker, ConfigurationDetails configurationDetails){
+    public RamChannelCompatibilityDecorator(ICompatibilityChecker compatibilityChecker, ConfigurationDetails configurationDetails){
         super(compatibilityChecker);
         this.configurationDetails = configurationDetails;
     }
@@ -14,11 +14,11 @@ public class SocketCompatibilityCheckerDecorator extends CompatibilityCheckerDec
     @Override
     public CompatibilityResult isCompatible(CompatibilityResult compatibilityResult) {
         decoratedCompatiblityChecker.isCompatible(compatibilityResult);
-        List<String> sockets = configurationDetails.getSockets();
-        for(int i =0;i < sockets.size()-1;i++){
-            if(!sockets.get(i).equals(sockets.get(i+1))){
+        List<String> ramTypes = configurationDetails.getRamTypes();
+        for(int i =0;i < ramTypes.size()-1;i++){
+            if(!ramTypes.get(i).equals(ramTypes.get(i+1))){
                 compatibilityResult.setCompatible(false);
-                compatibilityResult.setMessage(compatibilityResult.getMessage() +"\nSocket is incompat");
+                compatibilityResult.setMessage(compatibilityResult.getMessage() +"\nThe motherboard ram type does not match the ram you selected");
                 return compatibilityResult;
             }
         }
