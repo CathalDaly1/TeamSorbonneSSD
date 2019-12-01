@@ -1,8 +1,11 @@
 package ui.view;
 
+import ui.controller.ReviewSellerController;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -80,9 +83,19 @@ public class ViewTransactionsScreen extends JFrame {
             leftPanel.add(price);
 
             rightPanel.add(review);
-
+            addListeners();
             mainPanel.add(panel);
         }
+    }
+
+   public void addListeners() {
+
+        review.addActionListener((ActionEvent e) -> {
+            System.out.println("IMPLEMENT - review");
+            review.setVisible(false);
+            ReviewSellerController rev = new ReviewSellerController();
+            rev.controlReviewSeller();
+        });
     }
 
     public JButton getReview() {
