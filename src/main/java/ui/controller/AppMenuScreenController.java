@@ -55,9 +55,9 @@ public class AppMenuScreenController extends BaseFrameController {
         viewTransactionsButton.addActionListener((ActionEvent e) -> {
             System.out.println("View Transactions Button pressed");
             System.out.println("IMPLEMENT - View Transactions screen");
-            //menu.setVisible(false);
-            //ViewTransactionsController transactions = new ViewTransactionsController();
-            //System.out.println("view trans");
+            menu.setVisible(false);
+            ViewTransactionsController transactions = new ViewTransactionsController();
+            transactions.controlTransactions();
         });
 
         logoutButton.addActionListener((ActionEvent e) -> {
