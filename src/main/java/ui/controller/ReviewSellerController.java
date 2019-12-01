@@ -54,8 +54,8 @@ public class ReviewSellerController {
 
             System.out.println("Back Button");
             reviewSeller.setVisible(false);
-            SearchAdListingController menu = new SearchAdListingController();
-            menu.controlSearchAds();
+            SearchPartsController menu = new SearchPartsController();
+            menu.controlSearchParts();
         });
     }
 }
