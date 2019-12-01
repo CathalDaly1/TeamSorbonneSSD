@@ -1,5 +1,7 @@
 package CompatibilityChecker.Parts;
 
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
 public class Gpu extends CompositePart {
 
     private double baseClock;
@@ -45,5 +47,11 @@ public class Gpu extends CompositePart {
 
     public void setCudaCores(int cudaCores) {
         this.cudaCores = cudaCores;
+    }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        return configurationDetails;
     }
 }

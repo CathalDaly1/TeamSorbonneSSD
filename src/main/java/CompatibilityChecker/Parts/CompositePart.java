@@ -1,13 +1,11 @@
 package CompatibilityChecker.Parts;
 
-import CompatibilityChecker.Configuration.CompatibilityChecker;
-import CompatibilityChecker.Configuration.ICompatibilityChecker;
-import CompatibilityChecker.Configuration.WattageCompatiblityCheckerDecorator;
+import CompatibilityChecker.Configuration.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositePart extends Part implements IComposite {
+public class CompositePart extends Part implements IComposite{
 
     private List<Part> equipmentList = new ArrayList<Part>();
 
@@ -31,27 +29,24 @@ public class CompositePart extends Part implements IComposite {
     }
 
     public ICompatibilityChecker getCompatibility(){
-        double wattageIn = 0;
-        double wattageOut = 0;
 
         ICompatibilityChecker compatibilityChecker = new CompatibilityChecker();
 
+        ConfigurationDetails configurationDetails = new ConfigurationDetails();
+
 
         for(Part e: equipmentList) {
-            wattageIn += e.getWattage();
-            if(e instanceof PowerSupply){
-                wattageOut = ((PowerSupply) e).getWattageOutput();
-            }
+            configurationDetails = e.getConfiguration(configurationDetails);
         }
 
-        System.out.println("Watt in: " + wattageIn);
-        System.out.println("Watt out: " + wattageOut);
-
         WattageCompatiblityCheckerDecorator wattageCompatiblityCheckerDecorator = new WattageCompatiblityCheckerDecorator(
-            compatibilityChecker,wattageIn,wattageOut);
+            compatibilityChecker,configurationDetails);
 
+        SocketCompatibilityCheckerDecorator socketCompatibilityCheckerDecorator = new SocketCompatibilityCheckerDecorator(
+                wattageCompatiblityCheckerDecorator,configurationDetails
+        );
 
-        ICompatibilityChecker compatibilityCheckerFinal = wattageCompatiblityCheckerDecorator;
+        ICompatibilityChecker compatibilityCheckerFinal = socketCompatibilityCheckerDecorator;
 
         return compatibilityCheckerFinal;
     }
@@ -65,4 +60,9 @@ public class CompositePart extends Part implements IComposite {
         equipmentList.remove(e);
     }
 
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        return configurationDetails;
+    }
 }

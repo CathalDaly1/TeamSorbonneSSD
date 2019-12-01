@@ -1,5 +1,7 @@
 package CompatibilityChecker.Parts;
 
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
 public class Motherboard extends CompositePart {
 
     private String chipset;
@@ -15,4 +17,43 @@ public class Motherboard extends CompositePart {
         this.ramProtocol = ramProtocol;
         this.fanPins = fanPins;
     }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        return configurationDetails;
+    }
+
+    public int getFanPins() {
+        return fanPins;
+    }
+
+    public void setFanPins(int fanPins) {
+        this.fanPins = fanPins;
+    }
+
+    public String getRamProtocol() {
+        return ramProtocol;
+    }
+
+    public void setRamProtocol(String ramProtocol) {
+        this.ramProtocol = ramProtocol;
+    }
+
+    public int getNumberOfRamChannels() {
+        return numberOfRamChannels;
+    }
+
+    public void setNumberOfRamChannels(int numberOfRamChannels) {
+        this.numberOfRamChannels = numberOfRamChannels;
+    }
+
+    public String getChipset() {
+        return chipset;
+    }
+
+    public void setChipset(String chipset) {
+        this.chipset = chipset;
+    }
+
 }

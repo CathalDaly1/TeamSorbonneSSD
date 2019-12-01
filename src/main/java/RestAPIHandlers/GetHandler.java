@@ -10,6 +10,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -154,6 +155,24 @@ public class GetHandler extends APIHandler implements GetAPI {
         }
 
         return parts;
+    }
+
+    public List<String> getPartsOwnedByUser(String uid){
+        List<String> pids = new ArrayList<>();
+        String url = URL_ADDRESS + "/pc_build/?";
+
+        url = addParameterToUrl(url,"uid",uid,true);
+
+        JSONObject jsonObject = executeQuery(url);
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject explrObject = jsonArray.getJSONObject(i);
+            pids.add(String.valueOf(explrObject.get("pid")));
+        }
+
+        return pids;
     }
 
 }

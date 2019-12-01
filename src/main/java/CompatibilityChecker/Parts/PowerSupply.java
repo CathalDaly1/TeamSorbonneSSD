@@ -1,5 +1,7 @@
 package CompatibilityChecker.Parts;
 
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
 public class PowerSupply extends CompositePart {
 
     private double wattageOutput;
@@ -15,5 +17,11 @@ public class PowerSupply extends CompositePart {
 
     public void setWattageOutput(double wattageOutput) {
         this.wattageOutput = wattageOutput;
+    }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        configurationDetails.setWattageOut(this.wattageOutput);
+        return configurationDetails;
     }
 }
