@@ -1,6 +1,8 @@
 package CompatibilityChecker.Parts;
 
-public abstract class Part {
+import CompatibilityChecker.Configuration.IConfigDetails;
+
+public abstract class Part implements IConfigDetails {
 
     protected String name;
     protected String brand;

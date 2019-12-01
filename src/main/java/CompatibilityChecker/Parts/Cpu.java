@@ -1,5 +1,7 @@
 package CompatibilityChecker.Parts;
 
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
 public class Cpu extends CompositePart {
 
     private int cores;
@@ -35,5 +37,11 @@ public class Cpu extends CompositePart {
 
     public void setChipset(String chipset) {
         this.chipset = chipset;
+    }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        return configurationDetails;
     }
 }

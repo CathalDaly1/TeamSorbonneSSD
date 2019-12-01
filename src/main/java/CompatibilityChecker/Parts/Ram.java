@@ -1,5 +1,7 @@
 package CompatibilityChecker.Parts;
 
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
 public class Ram extends Part {
 
     private double dataRate;
@@ -45,5 +47,11 @@ public class Ram extends Part {
 
     public void setRamProtocol(String ramProtocol) {
         this.ramProtocol = ramProtocol;
+    }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        return configurationDetails;
     }
 }

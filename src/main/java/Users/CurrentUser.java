@@ -4,14 +4,17 @@ import CompatibilityChecker.Parts.CompositePart;
 import RestAPIHandlers.GetHandler;
 import org.restlet.resource.Get;
 
+import java.util.List;
+
 public class CurrentUser extends User {
 
     // static variable single_instance of type Singleton
     private static CurrentUser single_instance = null;
     private CompositePart pc;
+    private GetHandler getHandler;
 
     private CurrentUser(){
-
+        getHandler = new GetHandler();
     }
 
     public static CurrentUser getInstance()
@@ -32,6 +35,7 @@ public class CurrentUser extends User {
 
     private CurrentUser(User user){
         super(user.getuId(),user.getUsername(),user.getEmail(),user.getPassword(),false);
+        getHandler = new GetHandler();
     }
 
     public CompositePart getPc() {
@@ -43,10 +47,17 @@ public class CurrentUser extends User {
     }
 
     public void updatePc() {
-//        getHandler.
+        List<String> pids = getHandler.getPartsOwnedByUser(String.valueOf(this.getuId()));
 
+//        CompositePart pc = getHandler.getPartDetailsWithId()
+
+        for(int i = 0;i<pids.size();i++){
+            System.out.println(pids.get(i));
+        }
+
+//        getHandler.
         //get all pids for that user
         //create objects that align with those parts based on type of part
-        // fac
+        //fac
     }
 }

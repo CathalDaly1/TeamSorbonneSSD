@@ -1,5 +1,7 @@
 package CompatibilityChecker.Parts;
 
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
 public class Socket extends Part {
 
     private String socketType;
@@ -14,5 +16,11 @@ public class Socket extends Part {
 
     public void setSocketType(String socketType) {
         this.socketType = socketType;
+    }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        configurationDetails.addSocket(socketType);
+        return configurationDetails;
     }
 }

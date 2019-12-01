@@ -22,7 +22,7 @@ public class OldPatsTestDriverDontTouch {
         motherboard.add(new PowerConnector(24));
         motherboard.add(new Socket("AM4"));
 
-        PowerSupply powerSupply = new PowerSupply("EVGA 500W 80","EVGA",0);
+        PowerSupply powerSupply = new PowerSupply("EVGA 500W 80","EVGA",40);
         powerSupply.add(new PowerConnector(6));
         powerSupply.add(new PowerConnector(6));
         powerSupply.add(new PowerConnector(8));
@@ -35,8 +35,8 @@ public class OldPatsTestDriverDontTouch {
         pc.add(motherboard);
         pc.add(powerSupply);
 
-        //System.out.println(pc.getWattage());
-        //pc.getCompatibility().isCompatible();
+        System.out.println(pc.getWattage());
+        pc.getCompatibility().isCompatible();
 
        // GetHandler get = new GetHandler();
       //  get.getUsers();

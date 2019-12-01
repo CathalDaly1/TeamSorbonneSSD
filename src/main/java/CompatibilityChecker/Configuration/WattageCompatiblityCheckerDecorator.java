@@ -5,10 +5,10 @@ public class WattageCompatiblityCheckerDecorator extends CompatibilityCheckerDec
     private double wattageIn;
     private double wattageOut;
 
-    public WattageCompatiblityCheckerDecorator(ICompatibilityChecker compatibilityChecker, double wattageIn, double wattageOut){
+    public WattageCompatiblityCheckerDecorator(ICompatibilityChecker compatibilityChecker, ConfigurationDetails configurationDetails){
         super(compatibilityChecker);
-        this.wattageIn = wattageIn;
-        this.wattageOut = wattageOut;
+        this.wattageIn = configurationDetails.getWattageIn();
+        this.wattageOut = configurationDetails.getWattageOut();
     }
 
     @Override
@@ -19,5 +19,4 @@ public class WattageCompatiblityCheckerDecorator extends CompatibilityCheckerDec
         }
         System.out.println(isCompatible);
     }
-
 }
