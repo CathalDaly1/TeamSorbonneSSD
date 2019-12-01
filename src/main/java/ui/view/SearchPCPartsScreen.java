@@ -10,7 +10,7 @@ public class SearchPCPartsScreen extends JFrame {
     private JLabel titleLabel;
     private JPanel mainPanel;
     private JComboBox partType;
-    private String[] types = {"CPU", "GPU","Motherboard", "Ram","Cooler", "Harddrive"};
+    private String[] types = {"CPU", "GPU","Motherboard", "Ram","Cooler", "Harddrive","PowerSupply"};
 
 
     public SearchPCPartsScreen() {

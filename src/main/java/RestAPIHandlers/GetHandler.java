@@ -2,6 +2,7 @@ package RestAPIHandlers;
 
 
 import Auctions.Advert;
+import Auctions.Transaction;
 import CompatibilityChecker.Parts.CompositePart;
 import CompatibilityChecker.Parts.Part;
 import CompatibilityChecker.Parts.PartFactory;
@@ -209,10 +210,34 @@ public class GetHandler extends APIHandler implements GetAPI {
             JSONObject explrObject = jsonArray.getJSONObject(i);
             double price = explrObject.getDouble("price");
             int uid = explrObject.getInt("uid");
-            Advert advert = new Advert(price,uid,partFactory.addNewPart(explrObject));
+            int pid = explrObject.getInt("pid");
+            Advert advert = new Advert(price,uid,pid,partFactory.addNewPart(explrObject));
             adverts.add(advert);
         }
 
         return adverts;
+    }
+
+    public List<Transaction> getTransactionsByUid(String uid){
+        List<Transaction> transactions = new ArrayList<Transaction>();
+        String url = URL_ADDRESS + "/transaction/?";
+
+        url = addParameterToUrl(url,"uid1",uid,true);
+        url = addParameterToUrl(url,"uid2",uid,true);
+
+        JSONObject jsonObject = executeQuery(url);
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        for(int i = 0;i<jsonArray.length();i++) {
+            JSONObject explrObject = jsonArray.getJSONObject(i);
+            int tid = explrObject.getInt("tid");
+            double price = explrObject.getDouble("price");
+            int sellerId = explrObject.getInt("uid1");
+            int buyerId = explrObject.getInt("uid2");
+            Transaction transaction = new Transaction(tid,price,sellerId,buyerId);
+            transactions.add(transaction);
+        }
+
+        return transactions;
     }
 }

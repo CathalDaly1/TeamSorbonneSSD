@@ -85,7 +85,19 @@ public class PostHandler extends APIHandler{
         }
     }
 
+    public boolean insertTransaction(String pid,String uid1,String uid2, String price){
 
+        String url = URL_ADDRESS + "/transaction/?";
 
+        url = addParameterToUrl(url, "uid1", uid1, false);
+        url = addParameterToUrl(url, "uid2", uid2, false);
+        url = addParameterToUrl(url, "pid", pid, false);
+        url = addParameterToUrl(url, "price", price, true);
 
+        if (executeInsert(url)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

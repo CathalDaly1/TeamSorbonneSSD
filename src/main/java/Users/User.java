@@ -17,7 +17,6 @@ public class User implements Observer{
 
     public User(){}
 
-
     public User(int uId, String username, String email, String password, boolean userType) {
         getHandler = new GetHandler();
         this.uId = uId;

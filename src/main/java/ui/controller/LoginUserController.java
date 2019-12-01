@@ -1,4 +1,5 @@
 package ui.controller;
+import CompatibilityChecker.Configuration.CompatibilityResult;
 import RestAPIHandlers.GetHandler;
 import Users.CurrentUser;
 import Users.User;
@@ -75,7 +76,10 @@ public class LoginUserController extends BaseFrameController {
         if(user.getPassword().equals(password)){
             System.out.print("correct password");
             CurrentUser currentUser = CurrentUser.getInstance(user);
-            currentUser.updatePc();
+            CompatibilityResult compatibilityResult = currentUser.updatePc();
+            if(!compatibilityResult.isCompatible()) {
+                JOptionPane.showMessageDialog(null, "We noticed your current build is incompatible, try changing it.:\n" + compatibilityResult.getMessage());
+            }
             return true;
         }
         System.out.println("incorrect password ");

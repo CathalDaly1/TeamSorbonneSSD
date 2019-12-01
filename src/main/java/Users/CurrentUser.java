@@ -50,7 +50,7 @@ public class CurrentUser extends User {
         this.pc = pc;
     }
 
-    public boolean updatePc() {
+    public CompatibilityResult updatePc() {
         pc = new CompositePart("PC");
         List<String> pids = getHandler.getPartsOwnedByUser(String.valueOf(this.getuId()));
 
@@ -63,8 +63,10 @@ public class CurrentUser extends User {
         ConfigurationDetails configurationDetails = new ConfigurationDetails();
 
         ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
-        compatibilityResult = compatibilityChecker.isCompatible(compatibilityResult);
+        return(compatibilityChecker.isCompatible(compatibilityResult));
+    }
 
-        return true;
+    public CompatibilityResult insertPart(Part p){
+        return new CompatibilityResult();
     }
 }

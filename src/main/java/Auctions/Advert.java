@@ -10,9 +10,11 @@ public class Advert extends Subject {
     private ArrayList<User> observers = new ArrayList<User>();
     private double price;
     private int userId;
+    private int pid;
     private Part partSelling;
 
-    public Advert(double price, int userId, Part partSelling) {
+    public Advert(double price, int userId,int pid, Part partSelling) {
+        this.pid = pid;
         this.price = price;
         this.userId = userId;
         this.partSelling = partSelling;
@@ -44,5 +46,13 @@ public class Advert extends Subject {
 
     public void setPartSelling(Part partSelling) {
         this.partSelling = partSelling;
+    }
+
+    public int getPid() {
+        return pid;
+    }
+
+    public void setPid(int pid) {
+        this.pid = pid;
     }
 }

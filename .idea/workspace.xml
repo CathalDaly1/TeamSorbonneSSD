@@ -4,32 +4,40 @@
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Auctions/Advert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Auctions/Advert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Auctions/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Auctions/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PartFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/DeleteHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/DeleteHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/PostHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/PostHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/AppMenuScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AppMenuScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/SearchAdListingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/SearchPartsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/SearchPartsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/SearchPCPartsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/SearchPCPartsScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Auctions/Advert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auctions/Advert.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ConfigurationDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ConfigurationDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/SocketCompatibilityCheckerDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/SocketCompatibilityCheckerDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/WattageCompatiblityCheckerDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/WattageCompatiblityCheckerDecorator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/CompositePart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/CompositePart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Cooler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Cooler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Cpu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Cpu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Gpu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Gpu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Motherboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Motherboard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PartFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PartFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PowerConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PowerConnector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PowerSupply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PowerSupply.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Ram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Ram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Socket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Socket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/DeleteHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/DeleteHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/PostHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/PostHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Users/CurrentUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/CurrentUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/AdvertListingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/AdvertListingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/ConfigurePCController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/ConfigurePCController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/LoginUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/LoginUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/SearchPartsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/SearchPartsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/SearchPCPartsScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/SearchPCPartsScreen.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -411,26 +419,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="277" width="633" height="485" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575125961798" />
-    <state width="868" height="205" key="GridCell.Tab.0.bottom" timestamp="1575234736860">
+    <state width="868" height="205" key="GridCell.Tab.0.bottom" timestamp="1575239912179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="868" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575201982198" />
-    <state width="868" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575234736860" />
-    <state width="868" height="205" key="GridCell.Tab.0.center" timestamp="1575234736860">
+    <state width="868" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575239912179" />
+    <state width="868" height="205" key="GridCell.Tab.0.center" timestamp="1575239912179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="868" height="205" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575201982198" />
-    <state width="868" height="205" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575234736860" />
-    <state width="868" height="205" key="GridCell.Tab.0.left" timestamp="1575234736860">
+    <state width="868" height="205" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575239912179" />
+    <state width="868" height="205" key="GridCell.Tab.0.left" timestamp="1575239912179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="868" height="205" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575201982198" />
-    <state width="868" height="205" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575234736860" />
-    <state width="868" height="205" key="GridCell.Tab.0.right" timestamp="1575234736860">
+    <state width="868" height="205" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575239912179" />
+    <state width="868" height="205" key="GridCell.Tab.0.right" timestamp="1575239912179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="868" height="205" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575201982198" />
-    <state width="868" height="205" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575234736860" />
+    <state width="868" height="205" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575239912179" />
     <state width="937" height="121" key="GridCell.Tab.1.bottom" timestamp="1575234730540">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -455,29 +463,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575126310639" />
-    <state x="839" y="317" key="UIDesigner.ListEditorDialog" timestamp="1575151787554">
+    <state x="839" y="317" key="UIDesigner.ListEditorDialog" timestamp="1575235932830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="839" y="317" key="UIDesigner.ListEditorDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575151787554" />
+    <state x="839" y="317" key="UIDesigner.ListEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575235932830" />
     <state x="360" y="120" width="1200" height="800" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1575111447782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="360" y="120" width="1200" height="800" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575111447782" />
-    <state x="667" y="161" width="586" height="717" key="find.popup" timestamp="1575235104382">
+    <state x="667" y="161" width="586" height="717" key="find.popup" timestamp="1575239789658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="161" width="586" height="717" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575150567437" />
-    <state x="667" y="161" width="586" height="717" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575235104382" />
+    <state x="667" y="161" width="586" height="717" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575239789658" />
     <state x="702" y="154" key="refactoring.ChangeSignatureDialog" timestamp="1575231674656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="154" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575231674656" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575235355677">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575241556362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575152546352" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575136385164" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575235355677" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575241556362" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
