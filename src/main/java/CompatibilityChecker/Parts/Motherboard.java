@@ -1,6 +1,6 @@
 package CompatibilityChecker.Parts;
 
-public class Motherboard extends CompositeEquipment {
+public class Motherboard extends CompositePart {
 
     private String chipset;
     private int numberOfRamChannels;

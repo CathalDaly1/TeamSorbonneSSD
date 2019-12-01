@@ -1,6 +1,6 @@
 package CompatibilityChecker.Parts;
 
-public class Socket extends Equipment {
+public class Socket extends Part {
 
     private String socketType;
 

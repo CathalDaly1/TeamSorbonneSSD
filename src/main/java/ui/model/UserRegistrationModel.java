@@ -11,14 +11,6 @@ public class UserRegistrationModel {
         //validation of registration credentials
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public void setPassword(String password, String confirmPassword) throws InvalidParameterException {
         if(!password.equals(confirmPassword)) {
             throw new InvalidParameterException("Passwords do not match");
@@ -29,5 +21,24 @@ public class UserRegistrationModel {
     public void createUser() {
         System.out.println(username);
         System.out.println(email);
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public String getUsername(){
+        return this.username;
+    }
+
+    public String getemail(){
+        return this.email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }

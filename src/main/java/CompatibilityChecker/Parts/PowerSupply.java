@@ -1,6 +1,6 @@
 package CompatibilityChecker.Parts;
 
-public class PowerSupply extends CompositeEquipment {
+public class PowerSupply extends CompositePart {
 
     private double wattageOutput;
 

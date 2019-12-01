@@ -1,6 +1,6 @@
 package CompatibilityChecker.Parts;
 
-public class Ram extends Equipment {
+public class Ram extends Part {
 
     private double dataRate;
     private double capacity;

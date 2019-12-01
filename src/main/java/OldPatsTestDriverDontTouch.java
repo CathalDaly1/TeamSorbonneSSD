@@ -1,8 +1,10 @@
 import CompatibilityChecker.Parts.*;
+import RestAPIHandlers.PostHandler;
+import Users.UserFactory;
 
 public class OldPatsTestDriverDontTouch {
     public static void main(String[] args){
-        CompositeEquipment pc = new CompositeEquipment("PC");
+        CompositePart pc = new CompositePart("PC");
         Cpu cpu = new Cpu("Intel i5 9500", "intel", 10, "Cannon Point",8,3.6);
         cpu.add(new Socket("LGA 1151"));
         cpu.add(new PowerConnector(4));
@@ -33,7 +35,16 @@ public class OldPatsTestDriverDontTouch {
         pc.add(motherboard);
         pc.add(powerSupply);
 
-        System.out.println(pc.getWattage());
-        pc.getCompatibility().isCompatible();
+        //System.out.println(pc.getWattage());
+        //pc.getCompatibility().isCompatible();
+
+       // GetHandler get = new GetHandler();
+      //  get.getUsers();
+
+        PostHandler postHandler = new PostHandler();
+
+        UserFactory userFactory = new UserFactory();
+
+        postHandler.insertUser(userFactory.addNewUser(5,"dairelavelle", "daire@aol.net", "test",false));
     }
 }

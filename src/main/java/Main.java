@@ -1,6 +1,4 @@
 import ui.controller.HomeScreenController;
-import ui.coordinator.ILoginCoordinator;
-import ui.coordinator.LoginCoordinator;
 import ui.view.HomeScreen;
 
 public class Main {

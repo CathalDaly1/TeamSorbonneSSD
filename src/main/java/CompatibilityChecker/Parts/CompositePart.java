@@ -7,22 +7,22 @@ import CompatibilityChecker.Configuration.WattageCompatiblityCheckerDecorator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositeEquipment extends Equipment implements IComposite {
+public class CompositePart extends Part implements IComposite {
 
-    private List<Equipment> equipmentList = new ArrayList<Equipment>();
+    private List<Part> equipmentList = new ArrayList<Part>();
 
-    public CompositeEquipment(String name){
+    public CompositePart(String name){
         this.setName(name);
     }
 
-    public CompositeEquipment(String name, String brand, double wattage){
+    public CompositePart(String name, String brand, double wattage){
         super(name, brand, wattage);
     }
 
     @Override
     public double getWattage(){
         double total = 0;
-        for(Equipment e: equipmentList){
+        for(Part e: equipmentList){
             total += e.getWattage();
         }
         total+=this.wattage;
@@ -33,11 +33,11 @@ public class CompositeEquipment extends Equipment implements IComposite {
     public ICompatibilityChecker getCompatibility(){
         double wattageIn = 0;
         double wattageOut = 0;
-    
+
         ICompatibilityChecker compatibilityChecker = new CompatibilityChecker();
 
 
-        for(Equipment e: equipmentList) {
+        for(Part e: equipmentList) {
             wattageIn += e.getWattage();
             if(e instanceof PowerSupply){
                 wattageOut = ((PowerSupply) e).getWattageOutput();
@@ -57,11 +57,11 @@ public class CompositeEquipment extends Equipment implements IComposite {
     }
 
 
-    public void add(Equipment e){
+    public void add(Part e){
         equipmentList.add(e);
     }
 
-    public void remove(Equipment e){
+    public void remove(Part e){
         equipmentList.remove(e);
     }
 

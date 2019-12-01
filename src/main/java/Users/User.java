@@ -2,6 +2,7 @@ package Users;
 
 import Auctions.Advert;
 import Auctions.Subject;
+import RestAPIHandlers.GetHandler;
 
 import java.util.ArrayList;
 
@@ -10,13 +11,15 @@ public class User implements Observer{
     private int uId;
     private String email;
     private String password;
-    private  int userType;
+    private  boolean userType;
     public ArrayList<Advert> wishlist = new ArrayList<Advert>();
+    private GetHandler getHandler;
 
     public User(){}
 
 
-    public User(int uId, String username, String email, String password, int userType) {
+    public User(int uId, String username, String email, String password, boolean userType) {
+        getHandler = new GetHandler();
         this.uId = uId;
         this.username = username;
         this.email = email;
@@ -24,11 +27,11 @@ public class User implements Observer{
         this.userType=userType;
     }
 
-    public int getUserType() {
+    public boolean getUserType() {
         return userType;
     }
 
-    public void setUserType(int userType) {
+    public void setUserType(boolean userType) {
         this.userType = userType;
     }
 

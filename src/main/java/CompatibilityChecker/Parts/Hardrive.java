@@ -1,6 +1,6 @@
 package CompatibilityChecker.Parts;
 
-public class Hardrive extends Equipment {
+public class Hardrive extends Part {
 
     private String type;
     private double capacity;
