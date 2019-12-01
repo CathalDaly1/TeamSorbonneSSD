@@ -51,7 +51,9 @@ public class Ram extends Part {
 
     @Override
     public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        System.out.println("RAM GetConfig called");
         configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        configurationDetails.addRamType(getRamProtocol());
         return configurationDetails;
     }
 }

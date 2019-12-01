@@ -1,5 +1,8 @@
 package ui.controller;
 
+import RestAPIHandlers.DeleteHandler;
+import RestAPIHandlers.GetHandler;
+import RestAPIHandlers.PostHandler;
 import ui.view.SearchPCPartsScreen;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -10,11 +13,14 @@ public class SearchPartsController extends BaseFrameController {
     private JButton backButton;
     private JButton searchPCPartsButton;
     private JComboBox partType;
-    private JComboBox partBrand;
-    private JComboBox partPriceRange;
+    private GetHandler getHandler;
+    private PostHandler postHandler;
+    private DeleteHandler deleteHandler;
 
     public SearchPartsController() {
-
+        getHandler = new GetHandler();
+        deleteHandler = new DeleteHandler();
+        postHandler = new PostHandler();
     }
 
     public void controlSearchParts() {
@@ -24,8 +30,6 @@ public class SearchPartsController extends BaseFrameController {
         searchPCPartsButton = search.getSearchPCPartsButton();
         backButton = search.getBackButton();
         partType = search.getPartType();
-        partBrand = search.getPartBrand();
-        partPriceRange = search.getPartPriceRange();
         addListeners();
         search.setVisible(true);
     }
@@ -33,11 +37,15 @@ public class SearchPartsController extends BaseFrameController {
     public void addListeners() {
 
         searchPCPartsButton.addActionListener((ActionEvent e) -> {
-            System.out.println("Login");
+            System.out.println("IMPLEMENT - Search Parts");
             search.setVisible(false);
+            SearchAdListingController adListing = new SearchAdListingController();
+            adListing.controlSearchAds();
+
         });
 
         backButton.addActionListener((ActionEvent e) -> {
+
             System.out.println("Back Button");
             search.setVisible(false);
             AppMenuScreenController menu = new AppMenuScreenController();

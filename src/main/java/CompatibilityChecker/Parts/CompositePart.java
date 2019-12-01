@@ -23,34 +23,65 @@ public class CompositePart extends Part implements IComposite{
         for(Part e: equipmentList){
             total += e.getWattage();
         }
-        total+=this.wattage;
+        total = total+ this.wattage;
 
         return total;
     }
 
-    public ICompatibilityChecker getCompatibility(){
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        for(Part e: equipmentList) {
+                configurationDetails = e.getConfiguration(configurationDetails);
+        }
+
+        return configurationDetails;
+    }
+
+    public ICompatibilityChecker getCompat(ConfigurationDetails configurationDetails){
+        ICompatibilityChecker compatibilityChecker = new CompatibilityChecker();
+        configurationDetails = this.getConfiguration(configurationDetails);
+
+        WattageCompatiblityCheckerDecorator wattageCompatiblityCheckerDecorator = new WattageCompatiblityCheckerDecorator(
+                compatibilityChecker,configurationDetails);
+
+        SocketCompatibilityCheckerDecorator socketCompatibilityCheckerDecorator = new SocketCompatibilityCheckerDecorator(
+                wattageCompatiblityCheckerDecorator,configurationDetails);
+
+        RamChannelCompatibilityDecorator ramChannelCompatibilityDecorator = new RamChannelCompatibilityDecorator(
+                socketCompatibilityCheckerDecorator,configurationDetails);
+
+        ICompatibilityChecker compatibilityCheckerFinal = ramChannelCompatibilityDecorator;
+
+        return compatibilityCheckerFinal;
+    }
+
+    public ICompatibilityChecker getCompatibility(ConfigurationDetails configurationDetails){
 
         ICompatibilityChecker compatibilityChecker = new CompatibilityChecker();
-
-        ConfigurationDetails configurationDetails = new ConfigurationDetails();
-
+        configurationDetails = this.getConfiguration(configurationDetails);
 
         for(Part e: equipmentList) {
+            if(e instanceof  CompositePart) {
+                ((CompositePart) e).getCompatibility(configurationDetails);
+            }
             configurationDetails = e.getConfiguration(configurationDetails);
         }
+
 
         WattageCompatiblityCheckerDecorator wattageCompatiblityCheckerDecorator = new WattageCompatiblityCheckerDecorator(
             compatibilityChecker,configurationDetails);
 
         SocketCompatibilityCheckerDecorator socketCompatibilityCheckerDecorator = new SocketCompatibilityCheckerDecorator(
-                wattageCompatiblityCheckerDecorator,configurationDetails
-        );
+                wattageCompatiblityCheckerDecorator,configurationDetails);
 
-        ICompatibilityChecker compatibilityCheckerFinal = socketCompatibilityCheckerDecorator;
+
+        RamChannelCompatibilityDecorator ramChannelCompatibilityDecorator = new RamChannelCompatibilityDecorator(
+                socketCompatibilityCheckerDecorator,configurationDetails);
+
+        ICompatibilityChecker compatibilityCheckerFinal = ramChannelCompatibilityDecorator;
 
         return compatibilityCheckerFinal;
     }
-
 
     public void add(Part e){
         equipmentList.add(e);
@@ -61,8 +92,4 @@ public class CompositePart extends Part implements IComposite{
     }
 
 
-    @Override
-    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
-        return configurationDetails;
-    }
 }

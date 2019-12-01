@@ -16,6 +16,7 @@ public class Cooler extends Part {
     @Override
     public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
         configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        System.out.println("Cooler GetConfig called");
         return configurationDetails;
     }
 }

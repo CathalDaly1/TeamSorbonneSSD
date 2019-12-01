@@ -1,6 +1,8 @@
 package CompatibilityChecker.Configuration;
 
 
+import CompatibilityChecker.Parts.CompositePart;
+
 public interface ICompatibilityChecker {
-    public void isCompatible();
+    public CompatibilityResult isCompatible(CompatibilityResult compatibilityResult);
 }

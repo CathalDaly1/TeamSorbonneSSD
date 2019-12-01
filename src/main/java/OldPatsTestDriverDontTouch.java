@@ -1,3 +1,7 @@
+import CompatibilityChecker.Configuration.CompatibilityChecker;
+import CompatibilityChecker.Configuration.CompatibilityResult;
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+import CompatibilityChecker.Configuration.ICompatibilityChecker;
 import CompatibilityChecker.Parts.*;
 import RestAPIHandlers.PostHandler;
 import Users.UserFactory;
@@ -5,8 +9,8 @@ import Users.UserFactory;
 public class OldPatsTestDriverDontTouch {
     public static void main(String[] args){
         CompositePart pc = new CompositePart("PC");
-        Cpu cpu = new Cpu("Intel i5 9500", "intel", 10, "Cannon Point",8,3.6);
-        cpu.add(new Socket("LGA 1151"));
+        Cpu cpu = new Cpu("Intel i5 9500", "intel", 50, "Cannon Point",8,3.6);
+        cpu.add(new Socket("1151"));
         cpu.add(new PowerConnector(4));
 
         Gpu gpu = new Gpu("Nvidia gtx 1080 ti", "Nvidia", 20,1670,11,"GDDR5X",3584);
@@ -18,11 +22,11 @@ public class OldPatsTestDriverDontTouch {
 
         Cooler cooler = new Cooler("Corsair H45","Corsair",0,"Water",120);
 
-        Motherboard motherboard = new Motherboard("Asus EX-A320M","Asus",0,"AMD A320",2,"DDR4",12);
+        Motherboard motherboard = new Motherboard("Asus EX-A320M","Asus",0,"AMD A320",2,"GDDR4",12);
         motherboard.add(new PowerConnector(24));
-        motherboard.add(new Socket("AM4"));
+        motherboard.add(new Socket("1151"));
 
-        PowerSupply powerSupply = new PowerSupply("EVGA 500W 80","EVGA",40);
+        PowerSupply powerSupply = new PowerSupply("EVGA 500W 80","EVGA",80);
         powerSupply.add(new PowerConnector(6));
         powerSupply.add(new PowerConnector(6));
         powerSupply.add(new PowerConnector(8));
@@ -35,7 +39,16 @@ public class OldPatsTestDriverDontTouch {
         pc.add(motherboard);
         pc.add(powerSupply);
 
-        System.out.println(pc.getWattage());
-        pc.getCompatibility().isCompatible();
+        CompatibilityResult compatibilityResult = new CompatibilityResult();
+        ConfigurationDetails configurationDetails = new ConfigurationDetails();
+
+        ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
+        compatibilityResult = compatibilityChecker.isCompatible(compatibilityResult);
+        System.out.println(compatibilityResult.getMessage());
+        System.out.println(compatibilityResult.isCompatible());
+
+        PostHandler postHandler = new PostHandler();
+
+        UserFactory userFactory = new UserFactory();
     }
 }
