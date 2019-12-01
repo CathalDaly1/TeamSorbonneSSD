@@ -10,6 +10,10 @@ public class Socket extends Part {
         this.socketType = socketType;
     }
 
+    public Socket(String socketType, int wattage){
+        this.socketType = socketType;
+    }
+
     public String getSocketType() {
         return socketType;
     }

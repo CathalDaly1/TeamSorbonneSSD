@@ -37,14 +37,5 @@ public class OldPatsTestDriverDontTouch {
 
         System.out.println(pc.getWattage());
         pc.getCompatibility().isCompatible();
-
-       // GetHandler get = new GetHandler();
-      //  get.getUsers();
-
-        PostHandler postHandler = new PostHandler();
-
-        UserFactory userFactory = new UserFactory();
-
-        postHandler.insertUser(userFactory.addNewUser(5,"dairelavelle", "daire@aol.net", "test",false));
     }
 }
