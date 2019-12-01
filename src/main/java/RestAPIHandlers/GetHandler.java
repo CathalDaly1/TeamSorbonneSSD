@@ -1,7 +1,10 @@
 package RestAPIHandlers;
 
 
+import Auctions.Advert;
+import CompatibilityChecker.Parts.CompositePart;
 import CompatibilityChecker.Parts.Part;
+import CompatibilityChecker.Parts.PartFactory;
 import Users.User;
 import Users.UserFactory;
 import org.json.JSONArray;
@@ -24,11 +27,13 @@ public class GetHandler extends APIHandler implements GetAPI {
     URL url;
     HttpURLConnection conn;
     UserFactory userFactory;
+    PartFactory partFactory;
 
     private static final String URL_ADDRESS = "http://212.17.39.218:5000";
 
     public GetHandler(){
         userFactory = new UserFactory();
+        partFactory = new PartFactory();
     }
 
     public JSONObject executeQuery(String urlstring){
@@ -175,4 +180,37 @@ public class GetHandler extends APIHandler implements GetAPI {
         return pids;
     }
 
+    public Part getPartDetailsWithId(String id){
+        String url = URL_ADDRESS + "/partDetails/?";
+
+        url = addParameterToUrl(url,"pid",id,true);
+
+        JSONObject jsonObject = executeQuery(url);
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        JSONObject explrObject = jsonArray.getJSONObject(0);
+
+        System.out.println(explrObject);
+
+        return(partFactory.addNewPart(explrObject));
+    }
+
+    public List<Advert> getAdvertByPartType(String type){
+        List<Advert> adverts = new ArrayList<Advert>();
+        String url = URL_ADDRESS + "/advertsByType/?";
+
+        url = addParameterToUrl(url,"partType",type,true);
+
+        JSONObject jsonObject = executeQuery(url);
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        for(int i = 0;i<jsonArray.length();i++) {
+            JSONObject explrObject = jsonArray.getJSONObject(i);
+            System.out.println(explrObject);
+        }
+
+        //create advert per result
+        return new ArrayList<>();
+    }
 }
