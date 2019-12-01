@@ -7,11 +7,9 @@ public class UserFactory {
         if(!userType){
             return new User(uId, username, email, password, userType);
         }
-        else if(userType){
+        else{
             return new PremiumUser(uId, username, email, password, userType);
         }
-        else{
-            return null;
-        }
+
     }
 }
