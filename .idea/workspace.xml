@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ConfigurationDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ConfigurationDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/RamChannelCompatibilityDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/RamTypeCompatibilityDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/CompositePart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/CompositePart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Motherboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Motherboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Ram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Ram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ConfigurationDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ConfigurationDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/RamChannelCompatibilityDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/RamChannelCompatibilityDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/CompositePart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/CompositePart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Motherboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Motherboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Ram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Ram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/UserFactory.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
