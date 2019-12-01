@@ -27,7 +27,7 @@ public class OldPatsTestDriverDontTouch {
 
         Cooler cooler = new Cooler("Corsair H45","Corsair",0,"Water",120);
 
-        Motherboard motherboard = new Motherboard("Asus EX-A320M","Asus",0,"AMD A320",2,"GDDR4",12);
+        Motherboard motherboard = new Motherboard("Asus EX-A320M","Asus",0,"AMD A320",4,"GDDR4",12);
         motherboard.add(new PowerConnector(24));
         motherboard.add(new Socket("1151"));
 

@@ -10,6 +10,8 @@ public class ConfigurationDetails {
 
     private List<String> sockets = new ArrayList<>();
     private List<String> ramTypes = new ArrayList<>();
+    private int motherboardRamChannels;
+    private int ramChannels;
 
 
     public double getWattageIn() {
@@ -42,5 +44,21 @@ public class ConfigurationDetails {
 
     public List<String> getRamTypes(){
         return ramTypes;
+    }
+
+    public int getMotherboardRamChannels(){
+        return motherboardRamChannels;
+    }
+
+    public void setMotherboardRamChannels(int motherboardRamChannels) {
+        this.motherboardRamChannels = motherboardRamChannels;
+    }
+
+    public int getRamChannels() {
+        return ramChannels;
+    }
+
+    public void setRamChannels(int ramChannels) {
+        this.ramChannels = ramChannels;
     }
 }

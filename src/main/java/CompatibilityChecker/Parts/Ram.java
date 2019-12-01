@@ -54,6 +54,7 @@ public class Ram extends Part {
         System.out.println("RAM GetConfig called");
         configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
         configurationDetails.addRamType(getRamProtocol());
+        configurationDetails.setRamChannels(numberOfChannels);
         return configurationDetails;
     }
 }

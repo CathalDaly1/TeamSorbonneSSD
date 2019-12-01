@@ -14,13 +14,12 @@ public class RamChannelCompatibilityDecorator extends CompatibilityCheckerDecora
     @Override
     public CompatibilityResult isCompatible(CompatibilityResult compatibilityResult) {
         decoratedCompatiblityChecker.isCompatible(compatibilityResult);
-        List<String> ramTypes = configurationDetails.getRamTypes();
-        for(int i =0;i < ramTypes.size()-1;i++){
-            if(!ramTypes.get(i).equals(ramTypes.get(i+1))){
-                compatibilityResult.setCompatible(false);
-                compatibilityResult.setMessage(compatibilityResult.getMessage() +"\nThe motherboard ram type does not match the ram you selected");
-                return compatibilityResult;
-            }
+        int motherboardRamChannels = configurationDetails.getMotherboardRamChannels() ;
+        int ramChannels = configurationDetails.getRamChannels();
+        if(motherboardRamChannels<ramChannels){
+            compatibilityResult.setCompatible(false);
+            compatibilityResult.setMessage(compatibilityResult.getMessage() +"\nThe motherboard does not have enough ram channels!");
+            return compatibilityResult;
         }
         return compatibilityResult;
     }
