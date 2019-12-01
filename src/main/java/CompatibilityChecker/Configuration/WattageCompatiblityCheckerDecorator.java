@@ -7,16 +7,20 @@ public class WattageCompatiblityCheckerDecorator extends CompatibilityCheckerDec
 
     public WattageCompatiblityCheckerDecorator(ICompatibilityChecker compatibilityChecker, ConfigurationDetails configurationDetails){
         super(compatibilityChecker);
+
         this.wattageIn = configurationDetails.getWattageIn();
         this.wattageOut = configurationDetails.getWattageOut();
     }
 
     @Override
-    public void isCompatible() {
-        decoratedCompatiblityChecker.isCompatible();
+    public CompatibilityResult isCompatible(CompatibilityResult compatibilityResult) {
+        decoratedCompatiblityChecker.isCompatible(compatibilityResult);
+        System.out.println("Wattage in: "+ wattageIn + "\nWattage Out: " + wattageOut);
         if((wattageOut - wattageIn) < 0){
-            this.isCompatible = false;
+            compatibilityResult.setCompatible(false);
+            compatibilityResult.setMessage(compatibilityResult.getMessage() +"\nWattage is not compat");
+            return compatibilityResult;
         }
-        System.out.println(isCompatible);
+        return compatibilityResult;
     }
 }

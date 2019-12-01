@@ -51,7 +51,9 @@ public class Gpu extends CompositePart {
 
     @Override
     public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        super.getConfiguration(configurationDetails);
         configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        System.out.println("GPU GetConfig called");
         return configurationDetails;
     }
 }

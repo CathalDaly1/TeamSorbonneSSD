@@ -4,7 +4,7 @@ package CompatibilityChecker.Configuration;
 public abstract class CompatibilityCheckerDecorator implements ICompatibilityChecker {
 
     protected ICompatibilityChecker decoratedCompatiblityChecker;
-    protected boolean isCompatible = true;
+    protected CompatibilityResult compatibilityResult = new CompatibilityResult();
 
     public CompatibilityCheckerDecorator(ICompatibilityChecker decoratedCompatiblityChecker){
         super();

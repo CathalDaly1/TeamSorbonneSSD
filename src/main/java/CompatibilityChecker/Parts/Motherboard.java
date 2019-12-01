@@ -20,6 +20,9 @@ public class Motherboard extends CompositePart {
 
     @Override
     public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        super.getConfiguration(configurationDetails);
+        System.out.println("MOBO GetConfig called");
+        configurationDetails.addRamType(ramProtocol);
         configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
         return configurationDetails;
     }
@@ -55,5 +58,7 @@ public class Motherboard extends CompositePart {
     public void setChipset(String chipset) {
         this.chipset = chipset;
     }
+
+
 
 }

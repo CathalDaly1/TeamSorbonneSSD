@@ -10,6 +10,8 @@ public class Socket extends Part {
         this.socketType = socketType;
     }
 
+
+
     public String getSocketType() {
         return socketType;
     }
@@ -20,6 +22,7 @@ public class Socket extends Part {
 
     @Override
     public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        System.out.println("Sockets GetConfig called");
         configurationDetails.addSocket(socketType);
         return configurationDetails;
     }

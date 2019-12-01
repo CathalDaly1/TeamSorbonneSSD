@@ -41,7 +41,9 @@ public class Cpu extends CompositePart {
 
     @Override
     public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        super.getConfiguration(configurationDetails);
         configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        System.out.println("CPU GetConfig called");
         return configurationDetails;
     }
 }
