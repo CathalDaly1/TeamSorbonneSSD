@@ -1,18 +1,22 @@
 package ui.view;
 
+import Auctions.Advert;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.ArrayList;
 
 public class AdvertListingScreen extends JFrame{
     private JPanel mainPanel;
     private JScrollPane scrollPane;
-    private JButton buyPartsButton;
-    private JButton viewDetails;
-    private JButton watchList;
+    private JButton[] buyPartsButtons;
+    private JButton[] viewDetailButtons;
+    private JButton[] watchlistButtons;
+    private ArrayList<Advert> adverts;
 
 
     public AdvertListingScreen() {
@@ -23,7 +27,6 @@ public class AdvertListingScreen extends JFrame{
         setSize(500, 500);
         mainPanel.setLayout(new BoxLayout(mainPanel,BoxLayout.Y_AXIS));
 
-        populateMainPanel();
         setLocationRelativeTo(null);
         setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 
@@ -44,10 +47,14 @@ public class AdvertListingScreen extends JFrame{
         });
     }
 
-    private void populateMainPanel() {
+    public void populateMainPanel(ArrayList<Advert> adverts) {
+        this.adverts = adverts;
         //get advert details
+        buyPartsButtons = new JButton[adverts.size()];
+        viewDetailButtons = new JButton[adverts.size()];
+        watchlistButtons = new JButton[adverts.size()];
 
-        for(int i = 0;i< 9;i++){
+        for(int i = 0;i< adverts.size();i++){
             JPanel panel = new JPanel();
             panel.setLayout(new GridLayout(1,2));
 
@@ -62,45 +69,39 @@ public class AdvertListingScreen extends JFrame{
             panel.add(leftPanel);
             panel.add(rightPanel);
 
-            JLabel price = new JLabel("Price :");
-            JLabel name = new JLabel("name :");
-            JLabel user = new JLabel("user :");
+            JLabel price = new JLabel("Price :" + adverts.get(i).getPrice());
+            JLabel name = new JLabel("name :" + adverts.get(i).getPartSelling().getName());
+            JLabel user = new JLabel("user :" + adverts.get(i).getUserId());
 
-            buyPartsButton = new JButton("Buy Part");
-            viewDetails = new JButton("View Details");
-            watchList = new JButton("Add to WatchList");
+            buyPartsButtons[i] = new JButton("Buy Part");
+            viewDetailButtons[i] = new JButton("View Details");
+            watchlistButtons[i] = new JButton("Add to WatchList");
 
             leftPanel.add(price);
             leftPanel.add(name);
             leftPanel.add(user);
 
-            rightPanel.add(buyPartsButton);
-            rightPanel.add(viewDetails);
-            rightPanel.add(watchList);
-            addListeners1();
+            rightPanel.add(buyPartsButtons[i]);
+            rightPanel.add(viewDetailButtons[i]);
+            rightPanel.add(watchlistButtons[i]);
             mainPanel.add(panel);
         }
     }
 
-    public void addListeners1() {
-        buyPartsButton.addActionListener((ActionEvent e) -> {
-            System.out.println("buy parts - Implement");
-            //Implement screen
-        });
-
-        viewDetails.addActionListener((ActionEvent e) -> {
-            System.out.println("View Details - Implement");
-
-        });
-
-        watchList.addActionListener((ActionEvent e) -> {
-            System.out.println("Watch List Implement");
-
-        });
+    public JButton[] getBuyPartButtons() {
+        return buyPartsButtons;
     }
 
-    public JButton getBuyPartsButton() {
-        return buyPartsButton;
+    public JButton[] getViewDetailButtons() {
+        return viewDetailButtons;
+    }
+
+    public JButton[] getWatchlistButtons() {
+        return watchlistButtons;
+    }
+
+    public ArrayList<Advert> getAdverts() {
+        return adverts;
     }
 
 }

@@ -33,21 +33,18 @@ public class AppMenuScreenController extends BaseFrameController {
 
         sellPartsButton.addActionListener((ActionEvent e) -> {
             System.out.println("Sell parts button pressed");
-            menu.setVisible(false);
             SellPartsController sellParts = new SellPartsController();
             sellParts.ControlSellParts();
         });
 
         searchPartsButton.addActionListener((ActionEvent e) -> {
             System.out.println("Search Parts Button Pressed");
-            menu.setVisible(false);
             SearchPartsController searchParts = new SearchPartsController();
             searchParts.controlSearchParts();
         });
 
         configurePCButton.addActionListener((ActionEvent e) -> {
             System.out.println("Configure PC Button pressed");
-            menu.setVisible(false);
             ConfigurePCController configure = new ConfigurePCController();
             configure.controlConfigurePC();
         });
@@ -55,7 +52,6 @@ public class AppMenuScreenController extends BaseFrameController {
         viewTransactionsButton.addActionListener((ActionEvent e) -> {
             System.out.println("View Transactions Button pressed");
             System.out.println("IMPLEMENT - View Transactions screen");
-            menu.setVisible(false);
             ViewTransactionsController transactions = new ViewTransactionsController();
             transactions.controlTransactions();
         });

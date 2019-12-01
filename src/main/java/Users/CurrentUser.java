@@ -1,5 +1,8 @@
 package Users;
 
+import CompatibilityChecker.Configuration.CompatibilityResult;
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+import CompatibilityChecker.Configuration.ICompatibilityChecker;
 import CompatibilityChecker.Parts.CompositePart;
 import CompatibilityChecker.Parts.Part;
 import RestAPIHandlers.GetHandler;
@@ -47,7 +50,7 @@ public class CurrentUser extends User {
         this.pc = pc;
     }
 
-    public void updatePc() {
+    public boolean updatePc() {
         pc = new CompositePart("PC");
         List<String> pids = getHandler.getPartsOwnedByUser(String.valueOf(this.getuId()));
 
@@ -55,5 +58,13 @@ public class CurrentUser extends User {
             Part part = getHandler.getPartDetailsWithId(pids.get(i));
             pc.add(part);
         }
+
+        CompatibilityResult compatibilityResult = new CompatibilityResult();
+        ConfigurationDetails configurationDetails = new ConfigurationDetails();
+
+        ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
+        compatibilityResult = compatibilityChecker.isCompatible(compatibilityResult);
+
+        return true;
     }
 }

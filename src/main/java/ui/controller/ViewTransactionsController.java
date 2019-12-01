@@ -15,20 +15,20 @@ public class ViewTransactionsController extends  BaseFrameController{
     }
 
     public void controlTransactions() {
+
         viewTrans = new ViewTransactionsScreen();
-        ViewTransactionsScreen tra = new ViewTransactionsScreen();
         review = viewTrans.getReview();
+        addListeners();
         viewTrans.setVisible(true);
     }
 
     public void addListeners() {
 
         review.addActionListener((ActionEvent e) -> {
-            System.out.println("IMPLEMENT - Search Parts");
+            System.out.println("IMPLEMENT - review");
             review.setVisible(false);
-            //set new view for review screen
-
+            //ReviewSellerController rev = new ReviewSellerController();
+            //rev.controlReviewSeller();
         });
-
     }
 }

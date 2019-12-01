@@ -207,10 +207,12 @@ public class GetHandler extends APIHandler implements GetAPI {
 
         for(int i = 0;i<jsonArray.length();i++) {
             JSONObject explrObject = jsonArray.getJSONObject(i);
-            System.out.println(explrObject);
+            double price = explrObject.getDouble("price");
+            int uid = explrObject.getInt("uid");
+            Advert advert = new Advert(price,uid,partFactory.addNewPart(explrObject));
+            adverts.add(advert);
         }
 
-        //create advert per result
-        return new ArrayList<>();
+        return adverts;
     }
 }
