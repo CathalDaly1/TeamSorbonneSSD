@@ -20,9 +20,10 @@ public class ConfigurePCScreen extends JFrame {
     private JComboBox RAMComboBox;
     private JComboBox HardDriveComboBox;
     private JComboBox MotherboardComboBox;
+    private JComboBox PowerSupplyComboBox;
     private GetHandler getHandler;
-    private String[] types = {"CPU", "GPU","Motherboard", "Ram","Cooler", "Harddrive"};
-    private JComboBox[] comboBoxes =  {CPUComboBox,GPUComboBox,MotherboardComboBox,RAMComboBox, CoolerComboBox,HardDriveComboBox};
+    private String[] types = {"CPU", "GPU","Motherboard", "Ram","Cooler", "Harddrive","PowerSupply"};
+    private JComboBox[] comboBoxes =  {CPUComboBox,GPUComboBox,MotherboardComboBox,RAMComboBox, CoolerComboBox,HardDriveComboBox, PowerSupplyComboBox};
 
     public ConfigurePCScreen() {
         getHandler = new GetHandler();
@@ -85,6 +86,10 @@ public class ConfigurePCScreen extends JFrame {
 
     public JComboBox getHardDriveComboBox() {
         return HardDriveComboBox;
+    }
+
+    public JComboBox getPowerSupplyComboBox() {
+        return PowerSupplyComboBox;
     }
 
     public JButton getBackButton() {

@@ -11,6 +11,7 @@ public class PartFactory {
     private static final String MOTHERBOARD = "Motherboard";
     private static final String COOLER = "Cooler";
     private static final String HARDDRIVE = "Harddrive";
+    private static final String POWERSUPPLY = "PowerSupply";
 
     public Part addNewPart(JSONObject apiResult){
         double wattage = (double) apiResult.get("wattage");
@@ -38,7 +39,11 @@ public class PartFactory {
         }
         else if(type.equals(HARDDRIVE)){
             return new Hardrive(name,brand,wattage,(String)specificDetails.get("type"),specificDetails.getDouble("capactiy"),specificDetails.getDouble("readSpeed"),specificDetails.getDouble("writeSpeed"));
-        }else {
+        }
+        else if(type.equals(POWERSUPPLY)){
+            return new PowerSupply(name,brand,specificDetails.getDouble("wattageOutput"));
+        }
+        else {
             return null;
         }
         return compositePart;

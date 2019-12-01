@@ -1,11 +1,13 @@
 package ui.controller;
 
+import CompatibilityChecker.Configuration.CompatibilityResult;
 import CompatibilityChecker.Parts.Part;
 import RestAPIHandlers.DeleteHandler;
 import RestAPIHandlers.GetHandler;
 import RestAPIHandlers.PostHandler;
 import Users.CurrentUser;
 import Users.User;
+import jdk.nashorn.internal.scripts.JO;
 import org.restlet.resource.Post;
 import ui.model.PartComboBoxModel;
 import ui.view.ConfigurePCScreen;
@@ -26,8 +28,9 @@ public class ConfigurePCController extends BaseFrameController  {
     private JComboBox RAMComboBox;
     private JComboBox HardDriveComboBox;
     private JComboBox MotherboardComboBox;
-    private String[] types = {"CPU", "GPU","Motherboard", "Ram","Cooler", "Harddrive"};
-    private JComboBox[] comboBoxes = new JComboBox[6];
+    private JComboBox PowerSupplyComboBox;
+    private String[] types = {"CPU", "GPU","Motherboard", "Ram","Cooler", "Harddrive","PowerSupply"};
+    private JComboBox[] comboBoxes = new JComboBox[7];
     private GetHandler getHandler;
     private PostHandler postHandler;
     private DeleteHandler deleteHandler;
@@ -49,12 +52,14 @@ public class ConfigurePCController extends BaseFrameController  {
         RAMComboBox = config.getRAMComboBox();
         HardDriveComboBox = config.getHardDriveComboBox();
         MotherboardComboBox = config.getMotherboardComboBox();
+        PowerSupplyComboBox = config.getPowerSupplyComboBox();
         comboBoxes[0] = CPUComboBox;
         comboBoxes[1] = GPUComboBox;
         comboBoxes[2] = MotherboardComboBox;
         comboBoxes[3] = RAMComboBox;
         comboBoxes[4] = CoolerComboBox;
         comboBoxes[5] = HardDriveComboBox;
+        comboBoxes[6] = PowerSupplyComboBox;
         addListeners();
         config.setVisible(true);
 
@@ -68,16 +73,18 @@ public class ConfigurePCController extends BaseFrameController  {
                 if(!comboBoxes[i].getSelectedItem().equals("")){
                     addPartToPc((String)comboBoxes[i].getSelectedItem(),types[i]);
                 }
-
-
             }
 
-            config.setVisible(false);
-            AppMenuScreenController menu = new AppMenuScreenController();
-            menu.controlMenu();
-
             CurrentUser currentUser = CurrentUser.getInstance();
-            currentUser.updatePc();
+            CompatibilityResult compatibilityResult = currentUser.updatePc();
+            if(compatibilityResult.isCompatible()){
+                JOptionPane.showMessageDialog(null,"PC is compatible");
+                config.setVisible(false);
+                AppMenuScreenController menu = new AppMenuScreenController();
+                menu.controlMenu();
+            }else{
+                JOptionPane.showMessageDialog(null,"Unfortunately this configuration is not compatible:\n" + compatibilityResult.getMessage());
+            }
         });
 
         backButton.addActionListener((ActionEvent e) -> {

@@ -31,7 +31,6 @@ public class SearchPartsController extends BaseFrameController {
     public void controlSearchParts() {
 
         search = new SearchPCPartsScreen();
-        SearchPCPartsScreen search1 = new SearchPCPartsScreen();
         searchPCPartsButton = search.getSearchPCPartsButton();
         backButton = search.getBackButton();
         partType = search.getPartType();
@@ -44,7 +43,6 @@ public class SearchPartsController extends BaseFrameController {
         searchPCPartsButton.addActionListener((ActionEvent e) -> {
             model.setPartType((String) partType.getSelectedItem());
             ArrayList<Advert> adverts = (ArrayList<Advert>) getHandler.getAdvertByPartType(model.getPartType());
-            System.out.println("IMPLEMENT - Search Parts");
             search.setVisible(false);
             AdvertListingController adListing = new AdvertListingController();
             adListing.controlSearchAds(adverts);

@@ -65,7 +65,6 @@ public class AdvertListingScreen extends JFrame{
             Border blackline = BorderFactory.createLineBorder(Color.black);
             panel.setBorder(blackline);
 
-
             panel.add(leftPanel);
             panel.add(rightPanel);
 

@@ -48,5 +48,18 @@ public class DeleteHandler extends APIHandler {
             return false;
         }
     }
+
+    public boolean deleteAdvert(String uid,String pid){
+        String url = URL_ADDRESS + "/advert/?";
+
+        url = addParameterToUrl(url,"uid",uid,false);
+        url = addParameterToUrl(url,"pid",pid,true);
+
+        if (executeDelete(url)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 
