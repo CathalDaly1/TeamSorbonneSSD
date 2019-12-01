@@ -68,6 +68,8 @@ public class ConfigurePCController extends BaseFrameController  {
                 if(!comboBoxes[i].getSelectedItem().equals("")){
                     addPartToPc((String)comboBoxes[i].getSelectedItem(),types[i]);
                 }
+
+
             }
 
             config.setVisible(false);

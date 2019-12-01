@@ -1,10 +1,15 @@
+import Auctions.Advert;
 import CompatibilityChecker.Configuration.CompatibilityChecker;
 import CompatibilityChecker.Configuration.CompatibilityResult;
 import CompatibilityChecker.Configuration.ConfigurationDetails;
 import CompatibilityChecker.Configuration.ICompatibilityChecker;
 import CompatibilityChecker.Parts.*;
+import RestAPIHandlers.GetHandler;
 import RestAPIHandlers.PostHandler;
 import Users.UserFactory;
+import org.restlet.resource.Get;
+
+import java.util.List;
 
 public class OldPatsTestDriverDontTouch {
     public static void main(String[] args){
@@ -42,10 +47,12 @@ public class OldPatsTestDriverDontTouch {
         CompatibilityResult compatibilityResult = new CompatibilityResult();
         ConfigurationDetails configurationDetails = new ConfigurationDetails();
 
-        ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
-        compatibilityResult = compatibilityChecker.isCompatible(compatibilityResult);
-        System.out.println(compatibilityResult.getMessage());
-        System.out.println(compatibilityResult.isCompatible());
+//        ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
+//        compatibilityResult = compatibilityChecker.isCompatible(compatibilityResult);
+//        System.out.println(compatibilityResult.getMessage());
+//        System.out.println(compatibilityResult.isCompatible());
+
+        GetHandler getHandler = new GetHandler();
 
         PostHandler postHandler = new PostHandler();
 
