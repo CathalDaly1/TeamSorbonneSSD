@@ -2,43 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Auctions/Advert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Auctions/Advert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Auctions/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Auctions/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PartFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/DeleteHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/DeleteHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/PostHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/PostHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/SearchPartsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/SearchPartsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/SearchPCPartsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/SearchPCPartsScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Auctions/Advert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auctions/Advert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ConfigurationDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ConfigurationDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/CompositePart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/CompositePart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Motherboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Motherboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PartFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PartFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Ram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Ram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/DeleteHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/DeleteHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Auctions/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auctions/Transaction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/PostHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/PostHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Users/CurrentUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/CurrentUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/AdvertListingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/AdvertListingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/ConfigurePCController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/ConfigurePCController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/LoginUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/LoginUserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/SearchPartsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/SearchPartsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/SearchPCPartsScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/SearchPCPartsScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AppMenuScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AppMenuScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/HomeScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/HomeScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/LoginUserScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/LoginUserScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/RegisterUserScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/RegisterUserScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/ReviewSellerScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/ReviewSellerScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/SellPCParts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/SellPCParts.class" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +32,31 @@
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Users/CurrentUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+              <folding>
+                <element signature="e#2091#2092#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,8 +74,91 @@
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="CathalDaly1" />
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="TeamSorbonneSSD" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
   <component name="ProjectId" id="1TbS5ywFI3FFlZHzJZX7SKyjkIa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="CompatibilityChecker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="RestAPIHandlers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
@@ -77,7 +167,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575031915233" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/desk/CS4125-Sample_Project-AY1819--FLIGHTS/CS4125-Sample_Project-AY1819--FLIGHTS/Code/Systems-Analysis-And-Design-Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -107,10 +197,22 @@
       <recent name="ui.controller" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="TS" />
+      <module name="PcPartPiecerCompat" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,6 +262,7 @@
       <workItem from="1573674636176" duration="236000" />
       <workItem from="1573726448105" duration="313000" />
       <workItem from="1573727130247" duration="174000" />
+      <workItem from="1575243030578" duration="384000" />
     </task>
     <task id="LOCAL-00001" summary="testing commits">
       <created>1573649006325</created>
@@ -332,6 +435,9 @@
     <option name="localTasksCounter" value="25" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="384000" />
+  </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -340,6 +446,41 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -350,6 +491,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -407,10 +554,11 @@
     </state>
     <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575142044313" />
     <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1575207755256" />
-    <state x="811" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575122490824">
+    <state x="811" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575241864805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575122490824" />
+    <state x="811" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575241864805" />
     <state x="494" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575141993749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -419,42 +567,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="277" width="633" height="485" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575125961798" />
-    <state width="868" height="205" key="GridCell.Tab.0.bottom" timestamp="1575239912179">
+    <state width="937" height="121" key="GridCell.Tab.0.bottom" timestamp="1575242985166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="868" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575201982198" />
-    <state width="868" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575239912179" />
-    <state width="868" height="205" key="GridCell.Tab.0.center" timestamp="1575239912179">
+    <state width="937" height="121" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575242985166" />
+    <state width="937" height="121" key="GridCell.Tab.0.center" timestamp="1575242985166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="868" height="205" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575201982198" />
-    <state width="868" height="205" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575239912179" />
-    <state width="868" height="205" key="GridCell.Tab.0.left" timestamp="1575239912179">
+    <state width="937" height="121" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575242985166" />
+    <state width="937" height="121" key="GridCell.Tab.0.left" timestamp="1575242985166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="868" height="205" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575201982198" />
-    <state width="868" height="205" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575239912179" />
-    <state width="868" height="205" key="GridCell.Tab.0.right" timestamp="1575239912179">
+    <state width="937" height="121" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575242985166" />
+    <state width="937" height="121" key="GridCell.Tab.0.right" timestamp="1575242985166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="868" height="205" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575201982198" />
-    <state width="868" height="205" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575239912179" />
-    <state width="937" height="121" key="GridCell.Tab.1.bottom" timestamp="1575234730540">
+    <state width="937" height="121" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575242985166" />
+    <state width="937" height="121" key="GridCell.Tab.1.bottom" timestamp="1575242985166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="937" height="121" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575234730540" />
-    <state width="937" height="121" key="GridCell.Tab.1.center" timestamp="1575234730540">
+    <state width="937" height="121" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575242985166" />
+    <state width="937" height="121" key="GridCell.Tab.1.center" timestamp="1575242985166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="937" height="121" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575234730540" />
-    <state width="937" height="121" key="GridCell.Tab.1.left" timestamp="1575234730539">
+    <state width="937" height="121" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575242985166" />
+    <state width="937" height="121" key="GridCell.Tab.1.left" timestamp="1575242985166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="937" height="121" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575234730539" />
-    <state width="937" height="121" key="GridCell.Tab.1.right" timestamp="1575234730540">
+    <state width="937" height="121" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575242985166" />
+    <state width="937" height="121" key="GridCell.Tab.1.right" timestamp="1575242985166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="937" height="121" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575234730540" />
+    <state width="937" height="121" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575242985166" />
     <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1575124953040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -481,15 +629,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="154" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575231674656" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575241556362">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575242766697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575152546352" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575136385164" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575241556362" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575242766697" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Users/CurrentUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+          <folding>
+            <element signature="e#2091#2092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
