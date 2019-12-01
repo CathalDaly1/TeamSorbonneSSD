@@ -1,6 +1,7 @@
 package RestAPIHandlers;
 
 
+import CompatibilityChecker.Parts.Part;
 import Users.User;
 import Users.UserFactory;
 import org.json.JSONArray;
@@ -8,13 +9,16 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-public class GetHandler implements GetAPI {
+public class GetHandler extends APIHandler implements GetAPI {
     
     URL url;
     HttpURLConnection conn;
@@ -75,8 +79,6 @@ public class GetHandler implements GetAPI {
         JSONArray jsonArray = jsonObject.getJSONArray("results");
         for (int i = 0; i < jsonArray.length(); i++) {
             JSONObject explrObject = jsonArray.getJSONObject(i);
-//            System.out.println(explrObject);
-//            System.out.println(explrObject.get("username"));
         }
 
         return users;
@@ -100,4 +102,58 @@ public class GetHandler implements GetAPI {
             return null;
         }
     }
+
+    public List<String> getPartNamesWithType(String type){
+        ArrayList<String> parts = new ArrayList<>();
+        JSONObject jsonObject = executeQuery(URL_ADDRESS + "/part/" + type);
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject explrObject = jsonArray.getJSONObject(i);
+            parts.add((String)explrObject.get("name"));
+        }
+
+        return parts;
+    }
+
+    public String getPartIdWithName(String name){
+        try {
+            name = URLEncoder.encode(name, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        String url  = URL_ADDRESS + "/partId/?";
+
+        url = addParameterToUrl(url,"partName",name,true);
+
+        JSONObject jsonObject = executeQuery(url);
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        if(jsonArray.length() > 0) {
+            JSONObject explrObject = jsonArray.getJSONObject(0);
+            String id = String.valueOf(explrObject.get("pid"));
+            return id;
+        }
+        else {
+            return null;
+        }
+    }
+
+    public List<String> getAllParts( ){
+        ArrayList<String> parts = new ArrayList<>();
+        JSONObject jsonObject = executeQuery(URL_ADDRESS + "/parts/");
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject explrObject = jsonArray.getJSONObject(i);
+            parts.add((String)explrObject.get("name"));
+        }
+
+        return parts;
+    }
+
 }

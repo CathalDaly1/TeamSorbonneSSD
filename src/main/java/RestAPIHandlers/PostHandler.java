@@ -10,7 +10,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
-public class PostHandler {
+public class PostHandler extends APIHandler{
 
     URL url;
     HttpURLConnection conn;
@@ -56,14 +56,36 @@ public class PostHandler {
         }
     }
 
-    public String addParameterToUrl(String url, String parameter, String value,boolean last){
-        url += parameter + "=" + value;
-        if(!last){
-            url += "&";
-        }
+    public boolean insertPcBuild(String pid,String uid,String type){
+        String url = URL_ADDRESS + "/pc_build/?";
 
-        return url;
+        url = addParameterToUrl(url, "uid", uid, false);
+        url = addParameterToUrl(url, "pid", pid, false);
+        url = addParameterToUrl(url, "type", type, true);
+
+        if (executeInsert(url)) {
+            return true;
+        } else {
+            return false;
+        }
     }
+
+    public boolean insertAdvert(String pid,String uid,String price){
+
+        String url = URL_ADDRESS + "/advert/?";
+
+        url = addParameterToUrl(url, "uid", uid, false);
+        url = addParameterToUrl(url, "pid", pid, false);
+        url = addParameterToUrl(url, "price", price, true);
+
+        if (executeInsert(url)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
 
 
 }

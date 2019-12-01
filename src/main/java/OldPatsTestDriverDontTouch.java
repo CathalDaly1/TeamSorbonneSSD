@@ -1,13 +1,10 @@
 import CompatibilityChecker.Parts.*;
-import RestAPIHandlers.GetHandler;
 import RestAPIHandlers.PostHandler;
-import Users.User;
 import Users.UserFactory;
-import org.restlet.resource.Post;
 
 public class OldPatsTestDriverDontTouch {
     public static void main(String[] args){
-        CompositeEquipment pc = new CompositeEquipment("PC");
+        CompositePart pc = new CompositePart("PC");
         Cpu cpu = new Cpu("Intel i5 9500", "intel", 10, "Cannon Point",8,3.6);
         cpu.add(new Socket("LGA 1151"));
         cpu.add(new PowerConnector(4));

@@ -1,6 +1,6 @@
 package CompatibilityChecker.Parts;
 
-public class Cpu extends CompositeEquipment {
+public class Cpu extends CompositePart {
 
     private int cores;
     private double frequency;

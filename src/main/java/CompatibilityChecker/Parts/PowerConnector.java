@@ -1,6 +1,6 @@
 package CompatibilityChecker.Parts;
 
-public class PowerConnector extends Equipment {
+public class PowerConnector extends Part {
 
     private int numberOfPins;
 

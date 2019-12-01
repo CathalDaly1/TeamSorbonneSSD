@@ -1,6 +1,6 @@
 package CompatibilityChecker.Parts;
 
-public class Cooler extends Equipment {
+public class Cooler extends Part {
 
     private String type;
     private double fanSizemm;

@@ -1,6 +1,6 @@
 package CompatibilityChecker.Parts;
 
-public class Gpu extends CompositeEquipment {
+public class Gpu extends CompositePart {
 
     private double baseClock;
     private double memoryCapacity;

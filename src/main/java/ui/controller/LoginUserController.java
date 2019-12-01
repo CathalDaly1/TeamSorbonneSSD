@@ -1,5 +1,6 @@
 package ui.controller;
 import RestAPIHandlers.GetHandler;
+import Users.CurrentUser;
 import Users.User;
 import ui.model.UserLoginModel;
 import ui.view.LoginUserScreen;
@@ -73,6 +74,8 @@ public class LoginUserController extends BaseFrameController {
         System.out.println(user.getPassword());
         if(user.getPassword().equals(password)){
             System.out.print("correct password");
+            CurrentUser currentUser = CurrentUser.getInstance(user);
+            currentUser.updatePc();
             return true;
         }
         System.out.println("incorrect password ");
