@@ -11,6 +11,7 @@ public class AppMenuScreenController extends BaseFrameController {
     private JButton sellPartsButton;
     private JButton logoutButton;
     private JButton configurePCButton;
+    private JButton viewTransactionsButton;
 
     public AppMenuScreenController() {
 
@@ -23,6 +24,7 @@ public class AppMenuScreenController extends BaseFrameController {
         searchPartsButton = menu.getSearchPartsButton();
         configurePCButton = menu.getConfigurePCButton();
         logoutButton = menu.getLogoutButton();
+        viewTransactionsButton = menu.getViewTransactionsButton();
         addListeners();
         menu.setVisible(true);
     }
@@ -48,6 +50,14 @@ public class AppMenuScreenController extends BaseFrameController {
             menu.setVisible(false);
             ConfigurePCController configure = new ConfigurePCController();
             configure.controlConfigurePC();
+        });
+
+        viewTransactionsButton.addActionListener((ActionEvent e) -> {
+            System.out.println("View Transactions Button pressed");
+            System.out.println("IMPLEMENT - View Transactions screen");
+            //menu.setVisible(false);
+            //ViewTransactionsController transactions = new ViewTransactionsController();
+            //System.out.println("view trans");
         });
 
         logoutButton.addActionListener((ActionEvent e) -> {
