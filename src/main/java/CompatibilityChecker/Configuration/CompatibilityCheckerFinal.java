@@ -23,7 +23,6 @@ public class CompatibilityCheckerFinal implements ICompatibilityCheckerFinal {
 
         ICompatibilityChecker compatibilityCheckerFinal = ramChannelCompatibilityDecorator;
 
-
         return(compatibilityCheckerFinal.isCompatible(compatibilityResult));
     }
 }

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DbSchema/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DbSchema/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/ViewTransactionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/ViewTransactionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SimpleTestDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,55 +25,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Users/CurrentUser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="398">
-              <caret line="108" column="36" selection-start-line="108" selection-start-column="36" selection-end-line="108" selection-end-column="36" />
-              <folding>
-                <element signature="e#4018#4019#0" expanded="true" />
-                <element signature="e#4059#4060#0" expanded="true" />
-                <element signature="e#4133#4134#0" expanded="true" />
-                <element signature="e#4166#4167#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/ViewTransactionsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tests/CompositePartTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="104" column="44" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DbSchema/schema.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+              <caret line="71" column="71" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -82,47 +36,647 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityCheckerFinal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="102">
+              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IConfigDetails.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="459.0" y="2029.0">ui.view.HomeScreen</node>
+                <node x="1575.0" y="1670.0">ui.view.AppMenuScreen</node>
+                <node x="343.0" y="2234.0">ui.model.ValidationOfCredentials</node>
+                <node x="897.0" y="2029.0">Auctions.Advert</node>
+                <node x="1484.0" y="952.0">ui.controller.AppMenuScreenController</node>
+                <node x="1347.0" y="2029.0">CompatibilityChecker.Configuration.ICompatibilityCheckerFinal</node>
+                <node x="212.0" y="974.0">ui.controller.AdvertListingController</node>
+                <node x="577.0" y="2234.0">SimpleTestDriver</node>
+                <node x="1333.5" y="77.0">CompatibilityChecker.Parts.Part</node>
+                <node x="478.5" y="143.5">CompatibilityChecker.Parts.IComposite</node>
+                <node x="531.0" y="1521.0">CompatibilityChecker.Configuration.RamTypeCompatibilityDecorator</node>
+                <node x="0.0" y="518.0">CompatibilityChecker.Parts.PowerSupply</node>
+                <node x="1542.75" y="1289.0">CompatibilityChecker.Configuration.ICompatibilityChecker</node>
+                <node x="468.5" y="319.0">CompatibilityChecker.Parts.CompositePart</node>
+                <node x="839.0" y="745.0">ui.controller.BaseFrameController</node>
+                <node x="2011.0" y="1521.0">CompatibilityChecker.Configuration.RamChannelCompatibilityDecorator</node>
+                <node x="2206.0" y="2029.0">CompatibilityChecker.Configuration.CompatibilityResult</node>
+                <node x="641.0" y="985.0">ui.controller.HomeScreenController</node>
+                <node x="1917.5" y="330.0">CompatibilityChecker.Parts.Socket</node>
+                <node x="1681.0" y="1388.5">CompatibilityChecker.Configuration.CompatibilityChecker</node>
+                <node x="1748.5" y="330.0">CompatibilityChecker.Parts.PowerConnector</node>
+                <node x="1456.5" y="319.0">CompatibilityChecker.Parts.Cooler</node>
+                <node x="246.0" y="485.0">CompatibilityChecker.Parts.Motherboard</node>
+                <node x="1030.0" y="908.0">ui.controller.RegisterScreenController</node>
+                <node x="269.0" y="1289.0">ui.controller.ReviewSellerController</node>
+                <node x="1824.0" y="1670.0">ui.view.LoginUserScreen</node>
+                <node x="0.0" y="2234.0">ui.model.SearchPartsModel</node>
+                <node x="1330.0" y="1366.0">CompatibilityChecker.Configuration.CompatibilityCheckerDecorator</node>
+                <node x="829.0" y="941.0">ui.controller.SearchPartsController</node>
+                <node x="1332.0" y="1670.0">ui.view.RegisterUserScreen</node>
+                <node x="229.0" y="1670.0">ui.view.ViewTransactionsScreen</node>
+                <node x="429.0" y="941.0">ui.controller.LoginUserController</node>
+                <node x="657.0" y="2029.0">CompatibilityChecker.Configuration.ConfigurationDetails</node>
+                <node x="663.0" y="1780.5">RestAPIHandlers.DeleteHandler</node>
+                <node x="1127.0" y="2029.0">ui.model.UserRegistrationModel</node>
+                <node x="1068.5" y="297.0">CompatibilityChecker.Parts.Hardrive</node>
+                <node x="1708.0" y="864.0">ui.controller.ConfigurePCController</node>
+                <node x="1610.0" y="2029.0">ui.model.PartComboBoxModel</node>
+                <node x="1248.0" y="996.0">ui.controller.ViewTransactionsController</node>
+                <node x="2178.0" y="966.0">Users.PremiumUser</node>
+                <node x="855.0" y="1747.0">RestAPIHandlers.GetHandler</node>
+                <node x="856.5" y="668.0">ui.controller.ViewController</node>
+                <node x="696.0" y="1670.0">RestAPIHandlers.APIHandler</node>
+                <node x="2076.25" y="668.0">Users.User</node>
+                <node x="2295.0" y="1670.0">CompatibilityChecker.Parts.PartFactory</node>
+                <node x="2035.0" y="2029.0">ui.model.UserLoginModel</node>
+                <node x="945.0" y="1670.0">RestAPIHandlers.GetAPI</node>
+                <node x="2061.0" y="1670.0">ui.view.SearchPCPartsScreen</node>
+                <node x="926.0" y="496.0">CompatibilityChecker.Parts.Cpu</node>
+                <node x="0.0" y="1289.0">ui.view.ConfigurePCScreen</node>
+                <node x="1003.0" y="1521.0">CompatibilityChecker.Configuration.SocketCompatibilityCheckerDecorator</node>
+                <node x="0.0" y="2029.0">Auctions.Transaction</node>
+                <node x="607.0" y="485.0">CompatibilityChecker.Parts.Gpu</node>
+                <node x="0.0" y="1670.0">ui.view.SellPCParts</node>
+                <node x="1837.0" y="2029.0">Auctions.Review</node>
+                <node x="1359.5" y="0.0">CompatibilityChecker.Parts.IConfigDetails</node>
+                <node x="471.0" y="1780.5">RestAPIHandlers.PostHandler</node>
+                <node x="1350.5" y="2106.0">CompatibilityChecker.Configuration.CompatibilityCheckerFinal</node>
+                <node x="1985.0" y="922.0">Users.CurrentUser</node>
+                <node x="185.0" y="2234.0">Users.UserFactory</node>
+                <node x="1072.0" y="1670.0">ui.view.ReviewSellerScreen</node>
+                <node x="0.0" y="941.0">ui.controller.SellPartsController</node>
+                <node x="724.5" y="297.0">CompatibilityChecker.Parts.Ram</node>
+                <node x="1504.0" y="1510.0">CompatibilityChecker.Configuration.WattageCompatiblityCheckerDecorator</node>
+                <node x="770.0" y="2234.0">Main</node>
+                <node x="249.0" y="2029.0">ui.view.AdvertListingScreen</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="CompatibilityChecker.Configuration.CompatibilityCheckerFinal" target="CompatibilityChecker.Configuration.ICompatibilityCheckerFinal">
+                  <point x="0.0" y="-13.5" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="RestAPIHandlers.DeleteHandler" target="RestAPIHandlers.APIHandler">
+                  <point x="0.0" y="-46.5" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.IComposite">
+                  <point x="-59.0" y="-47.0" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="ui.controller.RegisterScreenController" target="ui.controller.BaseFrameController">
+                  <point x="0.0" y="-146.0" />
+                  <point x="1129.0" y="844.0" />
+                  <point x="937.3888888888889" y="844.0" />
+                  <point x="17.888888888888914" y="24.5" />
+                </edge>
+                <edge source="RestAPIHandlers.GetHandler" target="RestAPIHandlers.APIHandler">
+                  <point x="-43.0" y="-80.0" />
+                  <point x="898.0" y="1722.0" />
+                  <point x="784.3333333333334" y="1722.0" />
+                  <point x="35.33333333333337" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.CompatibilityChecker" target="CompatibilityChecker.Configuration.ICompatibilityChecker">
+                  <point x="0.0" y="-24.5" />
+                  <point x="1765.0" y="1341.0" />
+                  <point x="1674.0" y="1341.0" />
+                  <point x="43.75" y="13.5" />
+                </edge>
+                <edge source="ui.controller.SearchPartsController" target="ui.controller.BaseFrameController">
+                  <point x="0.0" y="-113.0" />
+                  <point x="0.0" y="24.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Cpu" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-58.0" />
+                  <point x="1065.5" y="455.0" />
+                  <point x="675.0" y="455.0" />
+                  <point x="88.5" y="47.0" />
+                </edge>
+                <edge source="ui.controller.BaseFrameController" target="ui.controller.ViewController">
+                  <point x="0.0" y="-24.5" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="RestAPIHandlers.PostHandler" target="RestAPIHandlers.APIHandler">
+                  <point x="0.0" y="-46.5" />
+                  <point x="557.0" y="1722.0" />
+                  <point x="713.6666666666666" y="1722.0" />
+                  <point x="-35.33333333333337" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.RamTypeCompatibilityDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+                  <point x="0.0" y="-36.0" />
+                  <point x="757.0" y="1480.0" />
+                  <point x="1371.375" y="1480.0" />
+                  <point x="-124.125" y="47.0" />
+                </edge>
+                <edge source="ui.controller.ConfigurePCController" target="ui.controller.BaseFrameController">
+                  <point x="0.0" y="-190.0" />
+                  <point x="1824.0" y="814.0" />
+                  <point x="991.0555555555554" y="814.0" />
+                  <point x="71.55555555555543" y="24.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Gpu" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-69.0" />
+                  <point x="756.5" y="465.0" />
+                  <point x="616.0" y="465.0" />
+                  <point x="29.5" y="47.0" />
+                </edge>
+                <edge source="ui.controller.HomeScreenController" target="ui.controller.BaseFrameController">
+                  <point x="0.0" y="-69.0" />
+                  <point x="725.0" y="844.0" />
+                  <point x="901.6111111111111" y="844.0" />
+                  <point x="-17.888888888888914" y="24.5" />
+                </edge>
+                <edge source="RestAPIHandlers.GetHandler" target="RestAPIHandlers.GetAPI">
+                  <point x="43.0" y="-80.0" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="Users.CurrentUser" target="Users.User">
+                  <point x="0.0" y="-80.0" />
+                  <point x="2071.5" y="897.0" />
+                  <point x="2137.0" y="897.0" />
+                  <point x="-60.75" y="102.0" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Part" target="CompatibilityChecker.Parts.IConfigDetails">
+                  <point x="0.0" y="-80.0" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.PowerConnector" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-36.0" />
+                  <point x="1823.0" y="267.0" />
+                  <point x="1467.0" y="267.0" />
+                  <point x="44.5" y="80.0" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Hardrive" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-69.0" />
+                  <point x="1252.5" y="277.0" />
+                  <point x="1407.6666666666667" y="277.0" />
+                  <point x="-14.833333333333258" y="80.0" />
+                </edge>
+                <edge source="ui.controller.ViewTransactionsController" target="ui.controller.BaseFrameController">
+                  <point x="0.0" y="-58.0" />
+                  <point x="1356.0" y="834.0" />
+                  <point x="955.2777777777778" y="834.0" />
+                  <point x="35.77777777777783" y="24.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.WattageCompatiblityCheckerDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+                  <point x="0.0" y="-47.0" />
+                  <point x="1747.5" y="1490.0" />
+                  <point x="1536.875" y="1490.0" />
+                  <point x="41.375" y="47.0" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator" target="CompatibilityChecker.Configuration.ICompatibilityChecker">
+                  <point x="0.0" y="-47.0" />
+                  <point x="1495.5" y="1341.0" />
+                  <point x="1586.5" y="1341.0" />
+                  <point x="-43.75" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Socket" target="CompatibilityChecker.Parts.Part">
+                  <point x="1.1368683772161603E-13" y="-36.0" />
+                  <point x="1981.5" y="257.0" />
+                  <point x="1496.6666666666667" y="257.0" />
+                  <point x="74.16666666666674" y="80.0" />
+                </edge>
+                <edge source="Users.PremiumUser" target="Users.User">
+                  <point x="0.0" y="-36.0" />
+                  <point x="2324.0" y="897.0" />
+                  <point x="2258.5" y="897.0" />
+                  <point x="60.75" y="102.0" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Motherboard" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-69.0" />
+                  <point x="416.5" y="465.0" />
+                  <point x="557.0" y="465.0" />
+                  <point x="-29.5" y="47.0" />
+                </edge>
+                <edge source="ui.controller.AppMenuScreenController" target="ui.controller.BaseFrameController">
+                  <point x="0.0" y="-102.0" />
+                  <point x="1586.0" y="824.0" />
+                  <point x="973.1666666666665" y="824.0" />
+                  <point x="53.666666666666515" y="24.5" />
+                </edge>
+                <edge source="ui.controller.SellPartsController" target="ui.controller.BaseFrameController">
+                  <point x="0.0" y="-113.0" />
+                  <point x="96.0" y="814.0" />
+                  <point x="847.9444444444445" y="814.0" />
+                  <point x="-71.55555555555554" y="24.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Cooler" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-47.0" />
+                  <point x="1592.5" y="277.0" />
+                  <point x="1437.3333333333333" y="277.0" />
+                  <point x="14.833333333333258" y="80.0" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Ram" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-69.0" />
+                  <point x="886.5" y="267.0" />
+                  <point x="1378.0" y="267.0" />
+                  <point x="-44.5" y="80.0" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.PowerSupply" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-36.0" />
+                  <point x="113.0" y="455.0" />
+                  <point x="498.0" y="455.0" />
+                  <point x="-88.5" y="47.0" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.RamChannelCompatibilityDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+                  <point x="0.0" y="-36.0" />
+                  <point x="2246.5" y="1480.0" />
+                  <point x="1619.625" y="1480.0" />
+                  <point x="124.125" y="47.0" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.SocketCompatibilityCheckerDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+                  <point x="0.0" y="-36.0" />
+                  <point x="1243.5" y="1490.0" />
+                  <point x="1454.125" y="1490.0" />
+                  <point x="-41.375" y="47.0" />
+                </edge>
+                <edge source="ui.controller.LoginUserController" target="ui.controller.BaseFrameController">
+                  <point x="0.0" y="-113.0" />
+                  <point x="525.0" y="834.0" />
+                  <point x="883.7222222222222" y="834.0" />
+                  <point x="-35.77777777777783" y="24.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.Part">
+                  <point x="59.0" y="-47.0" />
+                  <point x="645.5" y="257.0" />
+                  <point x="1348.3333333333333" y="257.0" />
+                  <point x="-74.16666666666674" y="80.0" />
+                </edge>
+                <edge source="ui.controller.AdvertListingController" target="ui.controller.BaseFrameController">
+                  <point x="0.0" y="-80.0" />
+                  <point x="310.5" y="824.0" />
+                  <point x="865.8333333333334" y="824.0" />
+                  <point x="-53.66666666666663" y="24.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.5" x="1479.0" y="2107.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/AppMenuScreenController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1084">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <entry file="file://$PROJECT_DIR$/AnalysisClassDiagram.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/RestAPIHandlers">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>RestAPIHandlers</OriginalElement>
+              <nodes>
+                <node x="384.0" y="77.0">RestAPIHandlers.GetHandler</node>
+                <node x="0.0" y="99.0">RestAPIHandlers.PostHandler</node>
+                <node x="474.0" y="0.0">RestAPIHandlers.GetAPI</node>
+                <node x="225.0" y="0.0">RestAPIHandlers.APIHandler</node>
+                <node x="192.0" y="99.0">RestAPIHandlers.DeleteHandler</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="RestAPIHandlers.GetHandler" target="RestAPIHandlers.APIHandler">
+                  <point x="-43.0" y="-68.5" />
+                  <point x="427.0" y="52.0" />
+                  <point x="313.33333333333337" y="52.0" />
+                  <point x="35.33333333333337" y="13.5" />
+                </edge>
+                <edge source="RestAPIHandlers.GetHandler" target="RestAPIHandlers.GetAPI">
+                  <point x="43.0" y="-68.5" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="RestAPIHandlers.DeleteHandler" target="RestAPIHandlers.APIHandler">
+                  <point x="0.0" y="-46.5" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="RestAPIHandlers.PostHandler" target="RestAPIHandlers.APIHandler">
+                  <point x="0.0" y="-46.5" />
+                  <point x="86.0" y="52.0" />
+                  <point x="242.66666666666666" y="52.0" />
+                  <point x="-35.33333333333334" y="13.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-329.0" y="9.5" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Inner Classes</Category>
+                <Category>Fields</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        <entry file="uml://JAVA/CompatibilityChecker.Configuration">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>CompatibilityChecker.Configuration</OriginalElement>
+              <nodes>
+                <node x="609.25" y="0.0">CompatibilityChecker.Configuration.ICompatibilityChecker</node>
+                <node x="0.0" y="314.0">CompatibilityChecker.Configuration.ConfigurationDetails</node>
+                <node x="240.0" y="314.0">CompatibilityChecker.Configuration.ICompatibilityCheckerFinal</node>
+                <node x="243.5" y="391.0">CompatibilityChecker.Configuration.CompatibilityCheckerFinal</node>
+                <node x="743.0" y="88.0">CompatibilityChecker.Configuration.CompatibilityChecker</node>
+                <node x="575.0" y="209.0">CompatibilityChecker.Configuration.RamChannelCompatibilityDecorator</node>
+                <node x="410.0" y="77.0">CompatibilityChecker.Configuration.CompatibilityCheckerDecorator</node>
+                <node x="301.0" y="209.0">CompatibilityChecker.Configuration.RamTypeCompatibilityDecorator</node>
+                <node x="503.0" y="314.0">CompatibilityChecker.Configuration.CompatibilityResult</node>
+                <node x="855.0" y="198.0">CompatibilityChecker.Configuration.WattageCompatiblityCheckerDecorator</node>
+                <node x="0.0" y="209.0">CompatibilityChecker.Configuration.SocketCompatibilityCheckerDecorator</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="CompatibilityChecker.Configuration.CompatibilityCheckerFinal" target="CompatibilityChecker.Configuration.ICompatibilityCheckerFinal">
+                  <point x="0.0" y="-13.5" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator" target="CompatibilityChecker.Configuration.ICompatibilityChecker">
+                  <point x="0.0" y="-35.5" />
+                  <point x="566.5" y="52.0" />
+                  <point x="653.0" y="52.0" />
+                  <point x="-43.75" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.RamChannelCompatibilityDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+                  <point x="0.0" y="-24.5" />
+                  <point x="705.0" y="178.0" />
+                  <point x="605.625" y="178.0" />
+                  <point x="39.125" y="35.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.CompatibilityChecker" target="CompatibilityChecker.Configuration.ICompatibilityChecker">
+                  <point x="0.0" y="-24.5" />
+                  <point x="827.0" y="52.0" />
+                  <point x="740.5" y="52.0" />
+                  <point x="43.75" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.SocketCompatibilityCheckerDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+                  <point x="0.0" y="-24.5" />
+                  <point x="140.5" y="168.0" />
+                  <point x="449.125" y="168.0" />
+                  <point x="-117.375" y="35.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.WattageCompatiblityCheckerDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+                  <point x="0.0" y="-35.5" />
+                  <point x="995.5" y="168.0" />
+                  <point x="683.875" y="168.0" />
+                  <point x="117.375" y="35.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Configuration.RamTypeCompatibilityDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+                  <point x="0.0" y="-24.5" />
+                  <point x="428.0" y="178.0" />
+                  <point x="527.375" y="178.0" />
+                  <point x="-39.125" y="35.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.2999999999999998" x="-882.4267676767688" y="76.16666666666663" />
+              <SelectedNodes>
+                <node>CompatibilityChecker.Configuration.ICompatibilityChecker</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java">
+        <entry file="uml://JAVA/CompatibilityChecker.Parts">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>CompatibilityChecker.Parts</OriginalElement>
+              <nodes>
+                <node x="484.2051282051283" y="164.0">CompatibilityChecker.Parts.Socket</node>
+                <node x="447.5" y="77.0">CompatibilityChecker.Parts.Part</node>
+                <node x="89.95512820512823" y="77.0">CompatibilityChecker.Parts.IComposite</node>
+                <node x="248.20512820512826" y="164.0">CompatibilityChecker.Parts.PowerConnector</node>
+                <node x="0.0" y="241.0">CompatibilityChecker.Parts.Cpu</node>
+                <node x="643.2051282051283" y="164.0">CompatibilityChecker.Parts.Hardrive</node>
+                <node x="394.2051282051283" y="164.0">CompatibilityChecker.Parts.Cooler</node>
+                <node x="194.0" y="241.0">CompatibilityChecker.Parts.Gpu</node>
+                <node x="69.0" y="241.0">CompatibilityChecker.Parts.PowerSupply</node>
+                <node x="263.0" y="241.0">CompatibilityChecker.Parts.Motherboard</node>
+                <node x="412.5" y="0.0">CompatibilityChecker.Parts.IConfigDetails</node>
+                <node x="109.20512820512823" y="164.0">CompatibilityChecker.Parts.CompositePart</node>
+                <node x="574.2051282051283" y="164.0">CompatibilityChecker.Parts.Ram</node>
+                <node x="0.0" y="313.0">CompatibilityChecker.Parts.PartFactory</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.Part">
+                  <point x="29.75" y="-13.5" />
+                  <point x="198.45512820512823" y="124.0" />
+                  <point x="452.1666666666667" y="124.0" />
+                  <point x="-23.333333333333314" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.IComposite">
+                  <point x="-29.75" y="-13.5" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Socket" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-13.5" />
+                  <point x="519.2051282051283" y="144.0" />
+                  <point x="480.1666666666667" y="144.0" />
+                  <point x="4.666666666666686" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Cooler" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-13.5" />
+                  <point x="429.2051282051283" y="144.0" />
+                  <point x="470.8333333333333" y="144.0" />
+                  <point x="-4.666666666666686" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Ram" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-13.5" />
+                  <point x="598.7051282051283" y="134.0" />
+                  <point x="489.5" y="134.0" />
+                  <point x="14.0" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Part" target="CompatibilityChecker.Parts.IConfigDetails">
+                  <point x="0.0" y="-13.5" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.PowerSupply" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-13.5" />
+                  <point x="121.5" y="221.0" />
+                  <point x="153.83012820512823" y="221.0" />
+                  <point x="-14.875" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.PowerConnector" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-13.5" />
+                  <point x="311.2051282051283" y="134.0" />
+                  <point x="461.5" y="134.0" />
+                  <point x="-14.0" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Cpu" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-13.5" />
+                  <point x="24.5" y="211.0" />
+                  <point x="124.08012820512823" y="211.0" />
+                  <point x="-44.625" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Hardrive" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-13.5" />
+                  <point x="689.2051282051283" y="124.0" />
+                  <point x="498.8333333333333" y="124.0" />
+                  <point x="23.333333333333314" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Motherboard" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-13.5" />
+                  <point x="315.5" y="211.0" />
+                  <point x="213.33012820512823" y="211.0" />
+                  <point x="44.625" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Gpu" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-13.5" />
+                  <point x="218.5" y="221.0" />
+                  <point x="183.58012820512823" y="221.0" />
+                  <point x="14.875" y="13.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-150.5" y="127.5" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/CompatibilityChecker">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>CompatibilityChecker</OriginalElement>
+              <nodes>
+                <node x="756.0" y="263.0">CompatibilityChecker.Parts.Socket</node>
+                <node x="680.4999999999999" y="77.0">CompatibilityChecker.Parts.Part</node>
+                <node x="231.24999999999994" y="110.0">CompatibilityChecker.Parts.IComposite</node>
+                <node x="904.0" y="263.0">CompatibilityChecker.Parts.PowerConnector</node>
+                <node x="174.99999999999994" y="406.0">CompatibilityChecker.Parts.Cpu</node>
+                <node x="426.99999999999994" y="230.0">CompatibilityChecker.Parts.Hardrive</node>
+                <node x="1053.0" y="252.0">CompatibilityChecker.Parts.Cooler</node>
+                <node x="322.99999999999994" y="395.0">CompatibilityChecker.Parts.Gpu</node>
+                <node x="508.99999999999994" y="395.0">CompatibilityChecker.Parts.Motherboard</node>
+                <node x="0.0" y="428.0">CompatibilityChecker.Parts.PowerSupply</node>
+                <node x="675.9999999999999" y="0.0">CompatibilityChecker.Parts.IConfigDetails</node>
+                <node x="237.99999999999994" y="263.0">CompatibilityChecker.Parts.CompositePart</node>
+                <node x="580.0" y="230.0">CompatibilityChecker.Parts.Ram</node>
+                <node x="201.0" y="555.0">CompatibilityChecker.Configuration</node>
+                <node x="0.0" y="555.0">CompatibilityChecker.Parts.PartFactory</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.Part">
+                  <point x="42.25" y="-24.5" />
+                  <point x="364.74999999999994" y="190.0" />
+                  <point x="690.2499999999999" y="190.0" />
+                  <point x="-48.75" y="46.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.IComposite">
+                  <point x="-42.25" y="-24.5" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Socket" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-24.5" />
+                  <point x="820.0" y="210.0" />
+                  <point x="748.7499999999999" y="210.0" />
+                  <point x="9.75" y="46.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Cooler" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-35.5" />
+                  <point x="1120.0" y="190.0" />
+                  <point x="787.7499999999999" y="190.0" />
+                  <point x="48.75" y="46.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Ram" target="CompatibilityChecker.Parts.Part">
+                  <point x="-1.1368683772161603E-13" y="-57.5" />
+                  <point x="657.9999999999998" y="210.0" />
+                  <point x="729.2499999999999" y="210.0" />
+                  <point x="-9.75" y="46.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Part" target="CompatibilityChecker.Parts.IConfigDetails">
+                  <point x="0.0" y="-46.5" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.PowerSupply" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-24.5" />
+                  <point x="77.5" y="365.0" />
+                  <point x="259.12499999999994" y="365.0" />
+                  <point x="-63.375" y="24.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.PowerConnector" target="CompatibilityChecker.Parts.Part">
+                  <point x="-5.6843418860808015E-14" y="-24.5" />
+                  <point x="968.4999999999999" y="200.0" />
+                  <point x="768.2499999999999" y="200.0" />
+                  <point x="29.25" y="46.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Cpu" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-46.5" />
+                  <point x="238.99999999999994" y="375.0" />
+                  <point x="301.37499999999994" y="375.0" />
+                  <point x="-21.125" y="24.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Hardrive" target="CompatibilityChecker.Parts.Part">
+                  <point x="0.0" y="-57.5" />
+                  <point x="493.49999999999994" y="200.0" />
+                  <point x="709.7499999999999" y="200.0" />
+                  <point x="-29.25" y="46.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Motherboard" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-57.5" />
+                  <point x="599.0" y="365.0" />
+                  <point x="385.87499999999994" y="365.0" />
+                  <point x="63.375" y="24.5" />
+                </edge>
+                <edge source="CompatibilityChecker.Parts.Gpu" target="CompatibilityChecker.Parts.CompositePart">
+                  <point x="0.0" y="-57.5" />
+                  <point x="405.99999999999994" y="375.0" />
+                  <point x="343.62499999999994" y="375.0" />
+                  <point x="21.125" y="24.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-454.0" y="145.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Inner Classes</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+            <state relative-caret-position="85">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -165,7 +719,6 @@
         <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/IConfigDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IConfigDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java" />
         <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityCheckerFinal.java" />
         <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/CompositePart.java" />
         <option value="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" />
@@ -187,14 +740,17 @@
         <option value="$PROJECT_DIR$/src/main/java/ui/controller/ViewTransactionsController.java" />
         <option value="$PROJECT_DIR$/src/tests/CompositePartTest.java" />
         <option value="$PROJECT_DIR$/DbSchema/schema.sql" />
+        <option value="$PROJECT_DIR$/RestApi/paths.py" />
+        <option value="$PROJECT_DIR$/RestApi/RestApp.py" />
+        <option value="$PROJECT_DIR$/src/main/java/SimpleTestDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectId" id="1TbS5ywFI3FFlZHzJZX7SKyjkIa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -211,11 +767,6 @@
             <path>
               <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
               <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
-              <item name="DbSchema" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
@@ -277,55 +828,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="RestAPIHandlers" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -340,7 +842,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575031915233" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/RestApi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -350,25 +852,25 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\view" />
-      <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\view\Test" />
-      <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ui.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\James\IdeaProjects\TeamSorbonneSSD\RestApi" />
       <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\view" />
       <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\controller" />
       <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\view\SearchPcParts" />
       <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\coordinator" />
-      <recent name="C:\TeamSorbonneSSD\src\main\java\ui\controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ui.controller" />
       <recent name="ui.view" />
       <recent name="ui.coordinator" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ui.controller" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\view" />
+      <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java\ui\view\Test" />
+      <recent name="C:\Users\catha\TeamSorbonneSSD\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -391,8 +893,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OldPatsTestDriverDontTouch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OldPatsTestDriverDontTouch" />
+    <configuration name="SimpleTestDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SimpleTestDriver" />
       <module name="PcPartPiecerCompat" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -401,7 +903,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.OldPatsTestDriverDontTouch" />
+        <item itemvalue="Application.SimpleTestDriver" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -438,7 +940,7 @@
       <workItem from="1573727130247" duration="174000" />
       <workItem from="1575243030578" duration="384000" />
       <workItem from="1575244527985" duration="12702000" />
-      <workItem from="1575257949537" duration="2423000" />
+      <workItem from="1575257949537" duration="7478000" />
     </task>
     <task id="LOCAL-00001" summary="testing commits">
       <created>1573649006325</created>
@@ -612,7 +1114,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15509000" />
+    <option name="totallyTimeSpent" value="20564000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -625,9 +1127,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="simpleUML" weight="0.32995737" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26439232" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16684435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -636,7 +1139,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33586133" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -821,73 +1324,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/view/ReviewSellerScreen.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Users/UserFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Users/PremiumUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="78" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Part.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Users/CurrentUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IPartDetails.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/view/ReviewSellerScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
@@ -1053,34 +1489,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityCheckerFinal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IConfigDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
@@ -1097,13 +1512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/AppMenuScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1084">
@@ -1114,7 +1522,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/ViewTransactionsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -1131,7 +1539,728 @@
     <entry file="file://$PROJECT_DIR$/DbSchema/schema.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestApi/RestApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestApi/paths.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2568">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestApi/dbFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestApi/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SimpleTestDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/model/PartComboBoxModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/view/LoginUserScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/SearchPartsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="79" column="73" lean-forward="true" selection-start-line="79" selection-start-column="73" selection-end-line="79" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Users/CurrentUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="71" column="71" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityCheckerFinal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/RestAPIHandlers">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>RestAPIHandlers</OriginalElement>
+          <nodes>
+            <node x="384.0" y="77.0">RestAPIHandlers.GetHandler</node>
+            <node x="0.0" y="99.0">RestAPIHandlers.PostHandler</node>
+            <node x="474.0" y="0.0">RestAPIHandlers.GetAPI</node>
+            <node x="225.0" y="0.0">RestAPIHandlers.APIHandler</node>
+            <node x="192.0" y="99.0">RestAPIHandlers.DeleteHandler</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="RestAPIHandlers.GetHandler" target="RestAPIHandlers.APIHandler">
+              <point x="-43.0" y="-68.5" />
+              <point x="427.0" y="52.0" />
+              <point x="313.33333333333337" y="52.0" />
+              <point x="35.33333333333337" y="13.5" />
+            </edge>
+            <edge source="RestAPIHandlers.GetHandler" target="RestAPIHandlers.GetAPI">
+              <point x="43.0" y="-68.5" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="RestAPIHandlers.DeleteHandler" target="RestAPIHandlers.APIHandler">
+              <point x="0.0" y="-46.5" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="RestAPIHandlers.PostHandler" target="RestAPIHandlers.APIHandler">
+              <point x="0.0" y="-46.5" />
+              <point x="86.0" y="52.0" />
+              <point x="242.66666666666666" y="52.0" />
+              <point x="-35.33333333333334" y="13.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-329.0" y="9.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Inner Classes</Category>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/CompatibilityChecker.Configuration">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>CompatibilityChecker.Configuration</OriginalElement>
+          <nodes>
+            <node x="609.25" y="0.0">CompatibilityChecker.Configuration.ICompatibilityChecker</node>
+            <node x="0.0" y="314.0">CompatibilityChecker.Configuration.ConfigurationDetails</node>
+            <node x="240.0" y="314.0">CompatibilityChecker.Configuration.ICompatibilityCheckerFinal</node>
+            <node x="243.5" y="391.0">CompatibilityChecker.Configuration.CompatibilityCheckerFinal</node>
+            <node x="743.0" y="88.0">CompatibilityChecker.Configuration.CompatibilityChecker</node>
+            <node x="575.0" y="209.0">CompatibilityChecker.Configuration.RamChannelCompatibilityDecorator</node>
+            <node x="410.0" y="77.0">CompatibilityChecker.Configuration.CompatibilityCheckerDecorator</node>
+            <node x="301.0" y="209.0">CompatibilityChecker.Configuration.RamTypeCompatibilityDecorator</node>
+            <node x="503.0" y="314.0">CompatibilityChecker.Configuration.CompatibilityResult</node>
+            <node x="855.0" y="198.0">CompatibilityChecker.Configuration.WattageCompatiblityCheckerDecorator</node>
+            <node x="0.0" y="209.0">CompatibilityChecker.Configuration.SocketCompatibilityCheckerDecorator</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="CompatibilityChecker.Configuration.CompatibilityCheckerFinal" target="CompatibilityChecker.Configuration.ICompatibilityCheckerFinal">
+              <point x="0.0" y="-13.5" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator" target="CompatibilityChecker.Configuration.ICompatibilityChecker">
+              <point x="0.0" y="-35.5" />
+              <point x="566.5" y="52.0" />
+              <point x="653.0" y="52.0" />
+              <point x="-43.75" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.RamChannelCompatibilityDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+              <point x="0.0" y="-24.5" />
+              <point x="705.0" y="178.0" />
+              <point x="605.625" y="178.0" />
+              <point x="39.125" y="35.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.CompatibilityChecker" target="CompatibilityChecker.Configuration.ICompatibilityChecker">
+              <point x="0.0" y="-24.5" />
+              <point x="827.0" y="52.0" />
+              <point x="740.5" y="52.0" />
+              <point x="43.75" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.SocketCompatibilityCheckerDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+              <point x="0.0" y="-24.5" />
+              <point x="140.5" y="168.0" />
+              <point x="449.125" y="168.0" />
+              <point x="-117.375" y="35.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.WattageCompatiblityCheckerDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+              <point x="0.0" y="-35.5" />
+              <point x="995.5" y="168.0" />
+              <point x="683.875" y="168.0" />
+              <point x="117.375" y="35.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.RamTypeCompatibilityDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+              <point x="0.0" y="-24.5" />
+              <point x="428.0" y="178.0" />
+              <point x="527.375" y="178.0" />
+              <point x="-39.125" y="35.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.2999999999999998" x="-882.4267676767688" y="76.16666666666663" />
+          <SelectedNodes>
+            <node>CompatibilityChecker.Configuration.ICompatibilityChecker</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/CompatibilityChecker.Parts">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>CompatibilityChecker.Parts</OriginalElement>
+          <nodes>
+            <node x="484.2051282051283" y="164.0">CompatibilityChecker.Parts.Socket</node>
+            <node x="447.5" y="77.0">CompatibilityChecker.Parts.Part</node>
+            <node x="89.95512820512823" y="77.0">CompatibilityChecker.Parts.IComposite</node>
+            <node x="248.20512820512826" y="164.0">CompatibilityChecker.Parts.PowerConnector</node>
+            <node x="0.0" y="241.0">CompatibilityChecker.Parts.Cpu</node>
+            <node x="643.2051282051283" y="164.0">CompatibilityChecker.Parts.Hardrive</node>
+            <node x="394.2051282051283" y="164.0">CompatibilityChecker.Parts.Cooler</node>
+            <node x="194.0" y="241.0">CompatibilityChecker.Parts.Gpu</node>
+            <node x="69.0" y="241.0">CompatibilityChecker.Parts.PowerSupply</node>
+            <node x="263.0" y="241.0">CompatibilityChecker.Parts.Motherboard</node>
+            <node x="412.5" y="0.0">CompatibilityChecker.Parts.IConfigDetails</node>
+            <node x="109.20512820512823" y="164.0">CompatibilityChecker.Parts.CompositePart</node>
+            <node x="574.2051282051283" y="164.0">CompatibilityChecker.Parts.Ram</node>
+            <node x="0.0" y="313.0">CompatibilityChecker.Parts.PartFactory</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.Part">
+              <point x="29.75" y="-13.5" />
+              <point x="198.45512820512823" y="124.0" />
+              <point x="452.1666666666667" y="124.0" />
+              <point x="-23.333333333333314" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.IComposite">
+              <point x="-29.75" y="-13.5" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Socket" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-13.5" />
+              <point x="519.2051282051283" y="144.0" />
+              <point x="480.1666666666667" y="144.0" />
+              <point x="4.666666666666686" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Cooler" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-13.5" />
+              <point x="429.2051282051283" y="144.0" />
+              <point x="470.8333333333333" y="144.0" />
+              <point x="-4.666666666666686" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Ram" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-13.5" />
+              <point x="598.7051282051283" y="134.0" />
+              <point x="489.5" y="134.0" />
+              <point x="14.0" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Part" target="CompatibilityChecker.Parts.IConfigDetails">
+              <point x="0.0" y="-13.5" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.PowerSupply" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-13.5" />
+              <point x="121.5" y="221.0" />
+              <point x="153.83012820512823" y="221.0" />
+              <point x="-14.875" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.PowerConnector" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-13.5" />
+              <point x="311.2051282051283" y="134.0" />
+              <point x="461.5" y="134.0" />
+              <point x="-14.0" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Cpu" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-13.5" />
+              <point x="24.5" y="211.0" />
+              <point x="124.08012820512823" y="211.0" />
+              <point x="-44.625" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Hardrive" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-13.5" />
+              <point x="689.2051282051283" y="124.0" />
+              <point x="498.8333333333333" y="124.0" />
+              <point x="23.333333333333314" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Motherboard" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-13.5" />
+              <point x="315.5" y="211.0" />
+              <point x="213.33012820512823" y="211.0" />
+              <point x="44.625" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Gpu" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-13.5" />
+              <point x="218.5" y="221.0" />
+              <point x="183.58012820512823" y="221.0" />
+              <point x="14.875" y="13.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-150.5" y="127.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/CompatibilityChecker">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>CompatibilityChecker</OriginalElement>
+          <nodes>
+            <node x="756.0" y="263.0">CompatibilityChecker.Parts.Socket</node>
+            <node x="680.4999999999999" y="77.0">CompatibilityChecker.Parts.Part</node>
+            <node x="231.24999999999994" y="110.0">CompatibilityChecker.Parts.IComposite</node>
+            <node x="904.0" y="263.0">CompatibilityChecker.Parts.PowerConnector</node>
+            <node x="174.99999999999994" y="406.0">CompatibilityChecker.Parts.Cpu</node>
+            <node x="426.99999999999994" y="230.0">CompatibilityChecker.Parts.Hardrive</node>
+            <node x="1053.0" y="252.0">CompatibilityChecker.Parts.Cooler</node>
+            <node x="322.99999999999994" y="395.0">CompatibilityChecker.Parts.Gpu</node>
+            <node x="508.99999999999994" y="395.0">CompatibilityChecker.Parts.Motherboard</node>
+            <node x="0.0" y="428.0">CompatibilityChecker.Parts.PowerSupply</node>
+            <node x="675.9999999999999" y="0.0">CompatibilityChecker.Parts.IConfigDetails</node>
+            <node x="237.99999999999994" y="263.0">CompatibilityChecker.Parts.CompositePart</node>
+            <node x="580.0" y="230.0">CompatibilityChecker.Parts.Ram</node>
+            <node x="201.0" y="555.0">CompatibilityChecker.Configuration</node>
+            <node x="0.0" y="555.0">CompatibilityChecker.Parts.PartFactory</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.Part">
+              <point x="42.25" y="-24.5" />
+              <point x="364.74999999999994" y="190.0" />
+              <point x="690.2499999999999" y="190.0" />
+              <point x="-48.75" y="46.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.IComposite">
+              <point x="-42.25" y="-24.5" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Socket" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-24.5" />
+              <point x="820.0" y="210.0" />
+              <point x="748.7499999999999" y="210.0" />
+              <point x="9.75" y="46.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Cooler" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-35.5" />
+              <point x="1120.0" y="190.0" />
+              <point x="787.7499999999999" y="190.0" />
+              <point x="48.75" y="46.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Ram" target="CompatibilityChecker.Parts.Part">
+              <point x="-1.1368683772161603E-13" y="-57.5" />
+              <point x="657.9999999999998" y="210.0" />
+              <point x="729.2499999999999" y="210.0" />
+              <point x="-9.75" y="46.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Part" target="CompatibilityChecker.Parts.IConfigDetails">
+              <point x="0.0" y="-46.5" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.PowerSupply" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-24.5" />
+              <point x="77.5" y="365.0" />
+              <point x="259.12499999999994" y="365.0" />
+              <point x="-63.375" y="24.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.PowerConnector" target="CompatibilityChecker.Parts.Part">
+              <point x="-5.6843418860808015E-14" y="-24.5" />
+              <point x="968.4999999999999" y="200.0" />
+              <point x="768.2499999999999" y="200.0" />
+              <point x="29.25" y="46.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Cpu" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-46.5" />
+              <point x="238.99999999999994" y="375.0" />
+              <point x="301.37499999999994" y="375.0" />
+              <point x="-21.125" y="24.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Hardrive" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-57.5" />
+              <point x="493.49999999999994" y="200.0" />
+              <point x="709.7499999999999" y="200.0" />
+              <point x="-29.25" y="46.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Motherboard" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-57.5" />
+              <point x="599.0" y="365.0" />
+              <point x="385.87499999999994" y="365.0" />
+              <point x="63.375" y="24.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Gpu" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-57.5" />
+              <point x="405.99999999999994" y="375.0" />
+              <point x="343.62499999999994" y="375.0" />
+              <point x="21.125" y="24.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-454.0" y="145.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnalysisClassDiagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="459.0" y="2029.0">ui.view.HomeScreen</node>
+            <node x="1575.0" y="1670.0">ui.view.AppMenuScreen</node>
+            <node x="343.0" y="2234.0">ui.model.ValidationOfCredentials</node>
+            <node x="897.0" y="2029.0">Auctions.Advert</node>
+            <node x="1484.0" y="952.0">ui.controller.AppMenuScreenController</node>
+            <node x="1347.0" y="2029.0">CompatibilityChecker.Configuration.ICompatibilityCheckerFinal</node>
+            <node x="212.0" y="974.0">ui.controller.AdvertListingController</node>
+            <node x="577.0" y="2234.0">SimpleTestDriver</node>
+            <node x="1333.5" y="77.0">CompatibilityChecker.Parts.Part</node>
+            <node x="478.5" y="143.5">CompatibilityChecker.Parts.IComposite</node>
+            <node x="531.0" y="1521.0">CompatibilityChecker.Configuration.RamTypeCompatibilityDecorator</node>
+            <node x="0.0" y="518.0">CompatibilityChecker.Parts.PowerSupply</node>
+            <node x="1542.75" y="1289.0">CompatibilityChecker.Configuration.ICompatibilityChecker</node>
+            <node x="468.5" y="319.0">CompatibilityChecker.Parts.CompositePart</node>
+            <node x="839.0" y="745.0">ui.controller.BaseFrameController</node>
+            <node x="2011.0" y="1521.0">CompatibilityChecker.Configuration.RamChannelCompatibilityDecorator</node>
+            <node x="2206.0" y="2029.0">CompatibilityChecker.Configuration.CompatibilityResult</node>
+            <node x="641.0" y="985.0">ui.controller.HomeScreenController</node>
+            <node x="1917.5" y="330.0">CompatibilityChecker.Parts.Socket</node>
+            <node x="1681.0" y="1388.5">CompatibilityChecker.Configuration.CompatibilityChecker</node>
+            <node x="1748.5" y="330.0">CompatibilityChecker.Parts.PowerConnector</node>
+            <node x="1456.5" y="319.0">CompatibilityChecker.Parts.Cooler</node>
+            <node x="246.0" y="485.0">CompatibilityChecker.Parts.Motherboard</node>
+            <node x="1030.0" y="908.0">ui.controller.RegisterScreenController</node>
+            <node x="269.0" y="1289.0">ui.controller.ReviewSellerController</node>
+            <node x="1824.0" y="1670.0">ui.view.LoginUserScreen</node>
+            <node x="0.0" y="2234.0">ui.model.SearchPartsModel</node>
+            <node x="1330.0" y="1366.0">CompatibilityChecker.Configuration.CompatibilityCheckerDecorator</node>
+            <node x="829.0" y="941.0">ui.controller.SearchPartsController</node>
+            <node x="1332.0" y="1670.0">ui.view.RegisterUserScreen</node>
+            <node x="229.0" y="1670.0">ui.view.ViewTransactionsScreen</node>
+            <node x="429.0" y="941.0">ui.controller.LoginUserController</node>
+            <node x="657.0" y="2029.0">CompatibilityChecker.Configuration.ConfigurationDetails</node>
+            <node x="663.0" y="1780.5">RestAPIHandlers.DeleteHandler</node>
+            <node x="1127.0" y="2029.0">ui.model.UserRegistrationModel</node>
+            <node x="1068.5" y="297.0">CompatibilityChecker.Parts.Hardrive</node>
+            <node x="1708.0" y="864.0">ui.controller.ConfigurePCController</node>
+            <node x="1610.0" y="2029.0">ui.model.PartComboBoxModel</node>
+            <node x="1248.0" y="996.0">ui.controller.ViewTransactionsController</node>
+            <node x="2178.0" y="966.0">Users.PremiumUser</node>
+            <node x="855.0" y="1747.0">RestAPIHandlers.GetHandler</node>
+            <node x="856.5" y="668.0">ui.controller.ViewController</node>
+            <node x="696.0" y="1670.0">RestAPIHandlers.APIHandler</node>
+            <node x="2076.25" y="668.0">Users.User</node>
+            <node x="2295.0" y="1670.0">CompatibilityChecker.Parts.PartFactory</node>
+            <node x="2035.0" y="2029.0">ui.model.UserLoginModel</node>
+            <node x="945.0" y="1670.0">RestAPIHandlers.GetAPI</node>
+            <node x="2061.0" y="1670.0">ui.view.SearchPCPartsScreen</node>
+            <node x="926.0" y="496.0">CompatibilityChecker.Parts.Cpu</node>
+            <node x="0.0" y="1289.0">ui.view.ConfigurePCScreen</node>
+            <node x="1003.0" y="1521.0">CompatibilityChecker.Configuration.SocketCompatibilityCheckerDecorator</node>
+            <node x="0.0" y="2029.0">Auctions.Transaction</node>
+            <node x="607.0" y="485.0">CompatibilityChecker.Parts.Gpu</node>
+            <node x="0.0" y="1670.0">ui.view.SellPCParts</node>
+            <node x="1837.0" y="2029.0">Auctions.Review</node>
+            <node x="1359.5" y="0.0">CompatibilityChecker.Parts.IConfigDetails</node>
+            <node x="471.0" y="1780.5">RestAPIHandlers.PostHandler</node>
+            <node x="1350.5" y="2106.0">CompatibilityChecker.Configuration.CompatibilityCheckerFinal</node>
+            <node x="1985.0" y="922.0">Users.CurrentUser</node>
+            <node x="185.0" y="2234.0">Users.UserFactory</node>
+            <node x="1072.0" y="1670.0">ui.view.ReviewSellerScreen</node>
+            <node x="0.0" y="941.0">ui.controller.SellPartsController</node>
+            <node x="724.5" y="297.0">CompatibilityChecker.Parts.Ram</node>
+            <node x="1504.0" y="1510.0">CompatibilityChecker.Configuration.WattageCompatiblityCheckerDecorator</node>
+            <node x="770.0" y="2234.0">Main</node>
+            <node x="249.0" y="2029.0">ui.view.AdvertListingScreen</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="CompatibilityChecker.Configuration.CompatibilityCheckerFinal" target="CompatibilityChecker.Configuration.ICompatibilityCheckerFinal">
+              <point x="0.0" y="-13.5" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="RestAPIHandlers.DeleteHandler" target="RestAPIHandlers.APIHandler">
+              <point x="0.0" y="-46.5" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.IComposite">
+              <point x="-59.0" y="-47.0" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="ui.controller.RegisterScreenController" target="ui.controller.BaseFrameController">
+              <point x="0.0" y="-146.0" />
+              <point x="1129.0" y="844.0" />
+              <point x="937.3888888888889" y="844.0" />
+              <point x="17.888888888888914" y="24.5" />
+            </edge>
+            <edge source="RestAPIHandlers.GetHandler" target="RestAPIHandlers.APIHandler">
+              <point x="-43.0" y="-80.0" />
+              <point x="898.0" y="1722.0" />
+              <point x="784.3333333333334" y="1722.0" />
+              <point x="35.33333333333337" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.CompatibilityChecker" target="CompatibilityChecker.Configuration.ICompatibilityChecker">
+              <point x="0.0" y="-24.5" />
+              <point x="1765.0" y="1341.0" />
+              <point x="1674.0" y="1341.0" />
+              <point x="43.75" y="13.5" />
+            </edge>
+            <edge source="ui.controller.SearchPartsController" target="ui.controller.BaseFrameController">
+              <point x="0.0" y="-113.0" />
+              <point x="0.0" y="24.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Cpu" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-58.0" />
+              <point x="1065.5" y="455.0" />
+              <point x="675.0" y="455.0" />
+              <point x="88.5" y="47.0" />
+            </edge>
+            <edge source="ui.controller.BaseFrameController" target="ui.controller.ViewController">
+              <point x="0.0" y="-24.5" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="RestAPIHandlers.PostHandler" target="RestAPIHandlers.APIHandler">
+              <point x="0.0" y="-46.5" />
+              <point x="557.0" y="1722.0" />
+              <point x="713.6666666666666" y="1722.0" />
+              <point x="-35.33333333333337" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.RamTypeCompatibilityDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+              <point x="0.0" y="-36.0" />
+              <point x="757.0" y="1480.0" />
+              <point x="1371.375" y="1480.0" />
+              <point x="-124.125" y="47.0" />
+            </edge>
+            <edge source="ui.controller.ConfigurePCController" target="ui.controller.BaseFrameController">
+              <point x="0.0" y="-190.0" />
+              <point x="1824.0" y="814.0" />
+              <point x="991.0555555555554" y="814.0" />
+              <point x="71.55555555555543" y="24.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Gpu" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-69.0" />
+              <point x="756.5" y="465.0" />
+              <point x="616.0" y="465.0" />
+              <point x="29.5" y="47.0" />
+            </edge>
+            <edge source="ui.controller.HomeScreenController" target="ui.controller.BaseFrameController">
+              <point x="0.0" y="-69.0" />
+              <point x="725.0" y="844.0" />
+              <point x="901.6111111111111" y="844.0" />
+              <point x="-17.888888888888914" y="24.5" />
+            </edge>
+            <edge source="RestAPIHandlers.GetHandler" target="RestAPIHandlers.GetAPI">
+              <point x="43.0" y="-80.0" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="Users.CurrentUser" target="Users.User">
+              <point x="0.0" y="-80.0" />
+              <point x="2071.5" y="897.0" />
+              <point x="2137.0" y="897.0" />
+              <point x="-60.75" y="102.0" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Part" target="CompatibilityChecker.Parts.IConfigDetails">
+              <point x="0.0" y="-80.0" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.PowerConnector" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-36.0" />
+              <point x="1823.0" y="267.0" />
+              <point x="1467.0" y="267.0" />
+              <point x="44.5" y="80.0" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Hardrive" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-69.0" />
+              <point x="1252.5" y="277.0" />
+              <point x="1407.6666666666667" y="277.0" />
+              <point x="-14.833333333333258" y="80.0" />
+            </edge>
+            <edge source="ui.controller.ViewTransactionsController" target="ui.controller.BaseFrameController">
+              <point x="0.0" y="-58.0" />
+              <point x="1356.0" y="834.0" />
+              <point x="955.2777777777778" y="834.0" />
+              <point x="35.77777777777783" y="24.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.WattageCompatiblityCheckerDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+              <point x="0.0" y="-47.0" />
+              <point x="1747.5" y="1490.0" />
+              <point x="1536.875" y="1490.0" />
+              <point x="41.375" y="47.0" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator" target="CompatibilityChecker.Configuration.ICompatibilityChecker">
+              <point x="0.0" y="-47.0" />
+              <point x="1495.5" y="1341.0" />
+              <point x="1586.5" y="1341.0" />
+              <point x="-43.75" y="13.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Socket" target="CompatibilityChecker.Parts.Part">
+              <point x="1.1368683772161603E-13" y="-36.0" />
+              <point x="1981.5" y="257.0" />
+              <point x="1496.6666666666667" y="257.0" />
+              <point x="74.16666666666674" y="80.0" />
+            </edge>
+            <edge source="Users.PremiumUser" target="Users.User">
+              <point x="0.0" y="-36.0" />
+              <point x="2324.0" y="897.0" />
+              <point x="2258.5" y="897.0" />
+              <point x="60.75" y="102.0" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Motherboard" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-69.0" />
+              <point x="416.5" y="465.0" />
+              <point x="557.0" y="465.0" />
+              <point x="-29.5" y="47.0" />
+            </edge>
+            <edge source="ui.controller.AppMenuScreenController" target="ui.controller.BaseFrameController">
+              <point x="0.0" y="-102.0" />
+              <point x="1586.0" y="824.0" />
+              <point x="973.1666666666665" y="824.0" />
+              <point x="53.666666666666515" y="24.5" />
+            </edge>
+            <edge source="ui.controller.SellPartsController" target="ui.controller.BaseFrameController">
+              <point x="0.0" y="-113.0" />
+              <point x="96.0" y="814.0" />
+              <point x="847.9444444444445" y="814.0" />
+              <point x="-71.55555555555554" y="24.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Cooler" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-47.0" />
+              <point x="1592.5" y="277.0" />
+              <point x="1437.3333333333333" y="277.0" />
+              <point x="14.833333333333258" y="80.0" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.Ram" target="CompatibilityChecker.Parts.Part">
+              <point x="0.0" y="-69.0" />
+              <point x="886.5" y="267.0" />
+              <point x="1378.0" y="267.0" />
+              <point x="-44.5" y="80.0" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.PowerSupply" target="CompatibilityChecker.Parts.CompositePart">
+              <point x="0.0" y="-36.0" />
+              <point x="113.0" y="455.0" />
+              <point x="498.0" y="455.0" />
+              <point x="-88.5" y="47.0" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.RamChannelCompatibilityDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+              <point x="0.0" y="-36.0" />
+              <point x="2246.5" y="1480.0" />
+              <point x="1619.625" y="1480.0" />
+              <point x="124.125" y="47.0" />
+            </edge>
+            <edge source="CompatibilityChecker.Configuration.SocketCompatibilityCheckerDecorator" target="CompatibilityChecker.Configuration.CompatibilityCheckerDecorator">
+              <point x="0.0" y="-36.0" />
+              <point x="1243.5" y="1490.0" />
+              <point x="1454.125" y="1490.0" />
+              <point x="-41.375" y="47.0" />
+            </edge>
+            <edge source="ui.controller.LoginUserController" target="ui.controller.BaseFrameController">
+              <point x="0.0" y="-113.0" />
+              <point x="525.0" y="834.0" />
+              <point x="883.7222222222222" y="834.0" />
+              <point x="-35.77777777777783" y="24.5" />
+            </edge>
+            <edge source="CompatibilityChecker.Parts.CompositePart" target="CompatibilityChecker.Parts.Part">
+              <point x="59.0" y="-47.0" />
+              <point x="645.5" y="257.0" />
+              <point x="1348.3333333333333" y="257.0" />
+              <point x="-74.16666666666674" y="80.0" />
+            </edge>
+            <edge source="ui.controller.AdvertListingController" target="ui.controller.BaseFrameController">
+              <point x="0.0" y="-80.0" />
+              <point x="310.5" y="824.0" />
+              <point x="865.8333333333334" y="824.0" />
+              <point x="-53.66666666666663" y="24.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5" x="1479.0" y="2107.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

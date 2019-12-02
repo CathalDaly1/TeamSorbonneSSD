@@ -10,7 +10,7 @@ import org.restlet.resource.Get;
 
 import java.util.List;
 
-public class OldPatsTestDriverDontTouch {
+public class SimpleTestDriver {
     public static void main(String[] args){
         CompositePart pc = new CompositePart("PC");
         Cpu cpu = new Cpu("Intel i5 9500", "intel", 50, "Cannon Point",8,3.6);
