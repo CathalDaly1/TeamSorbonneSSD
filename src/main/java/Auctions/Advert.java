@@ -6,8 +6,7 @@ import Users.User;
 
 import java.util.ArrayList;
 
-public class Advert extends Subject {
-    private ArrayList<User> observers = new ArrayList<User>();
+public class Advert  {
     private double price;
     private int userId;
     private int pid;
@@ -33,9 +32,6 @@ public class Advert extends Subject {
     }
 
     public void setPrice(double price) {
-        if(this.price > price){
-            notifyObservers();
-        }
         this.price = price;
     }
 

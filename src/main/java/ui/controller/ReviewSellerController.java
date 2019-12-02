@@ -1,5 +1,6 @@
 package ui.controller;
 
+import Auctions.Transaction;
 import RestAPIHandlers.DeleteHandler;
 import RestAPIHandlers.GetHandler;
 import RestAPIHandlers.PostHandler;
@@ -23,10 +24,11 @@ public class ReviewSellerController {
     private GetHandler getHandler;
     private PostHandler postHandler;
     private DeleteHandler deleteHandler;
+    Transaction transaction;
 
 
-    public ReviewSellerController() {
-
+    public ReviewSellerController(Transaction transaction) {
+        this.transaction = transaction;
         getHandler = new GetHandler();
         deleteHandler = new DeleteHandler();
         postHandler = new PostHandler();
@@ -36,6 +38,8 @@ public class ReviewSellerController {
 
         reviewSeller = new ReviewSellerScreen();
         submitReviewButton = reviewSeller.getSubmitReviewButton();
+        sellerRatingComboBox = reviewSeller.getSellerRatingComboBox();
+        reviewSellerTextField = reviewSeller.getReviewSellerTextField();
         backButton = reviewSeller.getBackButton();
         addListeners();
         reviewSeller.setVisible(true);
@@ -44,8 +48,9 @@ public class ReviewSellerController {
     public void addListeners() {
 
         submitReviewButton.addActionListener((ActionEvent e) -> {
-            System.out.println("IMPLEMENT - Search Parts");
             reviewSeller.setVisible(false);
+            postHandler.insertReview(String.valueOf(transaction.getTid()),String.valueOf(sellerRatingComboBox.getSelectedItem()),reviewSellerTextField.getText());
+
             AppMenuScreenController review = new AppMenuScreenController();
             review.controlMenu();
         });

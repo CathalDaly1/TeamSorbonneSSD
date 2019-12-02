@@ -238,4 +238,26 @@ public class GetHandler extends APIHandler implements GetAPI {
 
         return transactions;
     }
+
+    public User getUserById(String uid){
+        String url = URL_ADDRESS + "/userById/?";
+
+        url = addParameterToUrl(url,"uid",uid,true);
+
+        JSONObject jsonObject = executeQuery(url);
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        if(jsonArray.length() > 0) {
+            JSONObject explrObject = jsonArray.getJSONObject(0);
+            String username  = explrObject.getString("username");
+            String email = (String) explrObject.get("email");
+            String password = (String) explrObject.get("password");
+            boolean premium = (boolean) explrObject.get("premium");
+            return (userFactory.addNewUser(Integer.parseInt(uid), username, email, password, premium));
+        }
+        else {
+            return null;
+        }
+    }
 }

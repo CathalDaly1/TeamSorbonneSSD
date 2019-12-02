@@ -46,4 +46,12 @@ public class Transaction {
     public void setReview(Review review) {
         this.review = review;
     }
+
+    public int getTid() {
+        return tid;
+    }
+
+    public void setTid(int tid) {
+        this.tid = tid;
+    }
 }

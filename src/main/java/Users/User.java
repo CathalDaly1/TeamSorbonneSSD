@@ -1,18 +1,16 @@
 package Users;
 
 import Auctions.Advert;
-import Auctions.Subject;
 import RestAPIHandlers.GetHandler;
 
 import java.util.ArrayList;
 
-public class User implements Observer{
+public class User {
     private String username;
     private int uId;
     private String email;
     private String password;
     private  boolean userType;
-    public ArrayList<Advert> wishlist = new ArrayList<Advert>();
     private GetHandler getHandler;
 
     public User(){}
@@ -66,20 +64,8 @@ public class User implements Observer{
         this.uId = uId;
     }
 
-    public void addAdvertToWishlist(Advert ad){
-        wishlist.add(ad);
-    }
-
-    public void removeAdvertFromWishlist(Advert ad){
-        wishlist.remove(ad);
-    }
-
     public void update(Advert ad){
         System.out.println();
     }
 
-    @Override
-    public void update(Subject s) {
-        //todo add watchlisat table with notification field
-    }
 }

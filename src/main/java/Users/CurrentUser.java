@@ -13,6 +13,7 @@ public class CurrentUser extends User {
     // static variable single_instance of type Singleton
     private static CurrentUser single_instance = null;
     private CompositePart pc;
+    private CompositePart tempPc;
     private GetHandler getHandler;
 
     private CurrentUser(){
@@ -59,15 +60,16 @@ public class CurrentUser extends User {
 
         ICompatibilityCheckerFinal compatibilityCheckerFinal = new CompatibilityCheckerFinal();
         return(compatibilityCheckerFinal.getCompatibilityOfPc(pc));
-
-//        CompatibilityResult compatibilityResult = new CompatibilityResult();
-//        ConfigurationDetails configurationDetails = pc.getConfiguration(new ConfigurationDetails());
-//
-//        ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
-//        return(compatibilityChecker.isCompatible(compatibilityResult));
     }
 
     public CompatibilityResult insertPart(Part p){
-        return new CompatibilityResult();
+        if(pc==null){
+            updatePc();
+        }
+
+        tempPc = pc.replacePart(p);
+
+        ICompatibilityCheckerFinal compatibilityCheckerFinal = new CompatibilityCheckerFinal();
+        return(compatibilityCheckerFinal.getCompatibilityOfPc(tempPc));
     }
 }

@@ -3,6 +3,8 @@ import CompatibilityChecker.Configuration.*;
 import CompatibilityChecker.Parts.*;
 import RestAPIHandlers.GetHandler;
 import RestAPIHandlers.PostHandler;
+import Users.CurrentUser;
+import Users.User;
 import Users.UserFactory;
 import org.restlet.resource.Get;
 
@@ -50,13 +52,24 @@ public class OldPatsTestDriverDontTouch {
 //        System.out.println(compatibilityResult.getMessage());
 //        System.out.println(compatibilityResult.isCompatible());
 
-        ICompatibilityCheckerFinal compatibilityCheckerFinal = new CompatibilityCheckerFinal();
-        compatibilityResult = compatibilityCheckerFinal.getCompatibilityOfPc(pc);
+//        ICompatibilityCheckerFinal compatibilityCheckerFinal = new CompatibilityCheckerFinal();
+//        compatibilityResult = compatibilityCheckerFinal.getCompatibilityOfPc(pc);
 
 //        ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
 //        compatibilityResult = compatibilityChecker.isCompatible(compatibilityResult);
-        System.out.println(compatibilityResult.getMessage());
-        System.out.println(compatibilityResult.isCompatible());
+//        System.out.println(compatibilityResult.getMessage());
+//        System.out.println(compatibilityResult.isCompatible());
+
+        CurrentUser currentUser = CurrentUser.getInstance();
+        currentUser.setuId(1);
+
+        CompatibilityResult res = currentUser.updatePc();
+        System.out.println(res.isCompatible());
+
+        Part p = new PowerSupply("test","test",300);
+
+        System.out.println(currentUser.insertPart(p).isCompatible());
+        System.out.println(currentUser.insertPart(p).getMessage());
 
         GetHandler getHandler = new GetHandler();
 

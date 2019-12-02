@@ -64,7 +64,7 @@ public class AppMenuScreenController extends BaseFrameController {
             );
 
             if (userLogout == JOptionPane.YES_NO_OPTION) {
-                System.out.println("USER LOGOUT - Implement");
+                System.exit(0);
             }
         });
     }

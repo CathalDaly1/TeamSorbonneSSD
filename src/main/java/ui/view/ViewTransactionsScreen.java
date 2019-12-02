@@ -1,5 +1,10 @@
 package ui.view;
 
+import Auctions.Transaction;
+import RestAPIHandlers.GetHandler;
+import Users.CurrentUser;
+import Users.User;
+import org.omg.CORBA.Current;
 import ui.controller.ReviewSellerController;
 
 import javax.swing.*;
@@ -8,6 +13,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.List;
 
 import static com.sun.java.accessibility.util.AWTEventMonitor.addWindowListener;
 
@@ -15,14 +21,17 @@ public class ViewTransactionsScreen extends JFrame {
 
     private JPanel mainPanel;
     private JScrollPane scrollPane;
-    private JButton review;
+    private JButton[] reviewButtons;
     private JLabel buyer;
     private JLabel seller;
     private JLabel price;
     private JLabel partName;
+    private GetHandler getHandler;
+    List<Transaction> transactions;
 
 
     public ViewTransactionsScreen() {
+        getHandler = new GetHandler();
         mainPanel = new JPanel();
         scrollPane = new JScrollPane(mainPanel);
         add(scrollPane);
@@ -53,8 +62,11 @@ public class ViewTransactionsScreen extends JFrame {
 
     private void populateMainPanel() {
         //get advert details
+        CurrentUser currentUser = CurrentUser.getInstance();
+        transactions = getHandler.getTransactionsByUid(String.valueOf(currentUser.getuId()));
+        reviewButtons = new JButton[transactions.size()];
 
-        for(int i = 0;i< 9;i++){
+        for(int i = 0;i< transactions.size();i++){
             JPanel panel = new JPanel();
             panel.setLayout(new GridLayout(1,2));
 
@@ -65,41 +77,45 @@ public class ViewTransactionsScreen extends JFrame {
             Border blackline = BorderFactory.createLineBorder(Color.black);
             panel.setBorder(blackline);
 
-
             panel.add(leftPanel);
             panel.add(rightPanel);
 
-            price = new JLabel("Price :");
-            seller = new JLabel("name :");
-            partName = new JLabel("user :");
-            buyer = new JLabel("Buyer :");
+            User buyerUser = getHandler.getUserById(String.valueOf(transactions.get(i).getBuyerId()));
+            User sellerUser = getHandler.getUserById(String.valueOf(transactions.get(i).getSellerId()));
 
-            review = new JButton("Leave review for seller");
+            price = new JLabel("Price: " + transactions.get(i).getPrice());
+            seller = new JLabel("Buyer: " + buyerUser.getUsername());
+            buyer = new JLabel("Seller: " + sellerUser.getUsername());
+
+            reviewButtons[i] = new JButton("Leave review for seller");
 
 
             leftPanel.add(seller);
             leftPanel.add(buyer);
-            leftPanel.add(partName);
             leftPanel.add(price);
 
-            rightPanel.add(review);
+            if(!sellerUser.getUsername().equals(currentUser.getUsername()))
+                rightPanel.add(reviewButtons[i]);
             addListeners();
             mainPanel.add(panel);
         }
     }
 
    public void addListeners() {
+       for (int i = 0; i < reviewButtons.length; i++) {
+           int finalI = i;
+           if(reviewButtons[i] != null) {
+               reviewButtons[i].addActionListener((ActionEvent e) -> {
+                   reviewButtons[finalI].setVisible(false);
+                   ReviewSellerController rev = new ReviewSellerController(transactions.get(finalI));
+                   rev.controlReviewSeller();
+               });
+           }
+       }
+   }
 
-        review.addActionListener((ActionEvent e) -> {
-            System.out.println("IMPLEMENT - review");
-            review.setVisible(false);
-            ReviewSellerController rev = new ReviewSellerController();
-            rev.controlReviewSeller();
-        });
-    }
-
-    public JButton getReview() {
-        return review;
+   public JButton[] getReviewButtons(){
+        return this.reviewButtons;
     }
 
 }

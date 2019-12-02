@@ -5,9 +5,11 @@ import Users.UserFactory;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.Scanner;
 
 public class PostHandler extends APIHandler{
@@ -93,6 +95,27 @@ public class PostHandler extends APIHandler{
         url = addParameterToUrl(url, "uid2", uid2, false);
         url = addParameterToUrl(url, "pid", pid, false);
         url = addParameterToUrl(url, "price", price, true);
+
+        if (executeInsert(url)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean insertReview(String tid,String rating,String buyerComment){
+
+        String url = URL_ADDRESS + "/review/?";
+
+        try {
+            buyerComment = URLEncoder.encode(buyerComment, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        url = addParameterToUrl(url, "tid", tid, false);
+        url = addParameterToUrl(url, "rating", rating, false);
+        url = addParameterToUrl(url, "buyerComment", buyerComment, true);
 
         if (executeInsert(url)) {
             return true;

@@ -37,26 +37,18 @@ public class CompositePart extends Part implements IComposite{
         return configurationDetails;
     }
 
-    public ICompatibilityChecker getCompat(ConfigurationDetails configurationDetails){
-        ICompatibilityChecker compatibilityChecker = new CompatibilityChecker();
-        configurationDetails = this.getConfiguration(configurationDetails);
-
-        WattageCompatiblityCheckerDecorator wattageCompatiblityCheckerDecorator = new WattageCompatiblityCheckerDecorator(
-                compatibilityChecker,configurationDetails);
-
-        SocketCompatibilityCheckerDecorator socketCompatibilityCheckerDecorator = new SocketCompatibilityCheckerDecorator(
-                wattageCompatiblityCheckerDecorator,configurationDetails);
-
-        RamTypeCompatibilityDecorator ramTypeCompatibilityDecorator = new RamTypeCompatibilityDecorator(
-                socketCompatibilityCheckerDecorator,configurationDetails);
-
-        RamChannelCompatibilityDecorator ramChannelCompatibilityDecorator = new RamChannelCompatibilityDecorator(
-                ramTypeCompatibilityDecorator,configurationDetails);
-
-        ICompatibilityChecker compatibilityCheckerFinal = ramChannelCompatibilityDecorator;
-
-        return compatibilityCheckerFinal;
+    public CompositePart replacePart(Part p){
+        CompositePart temp = this;
+        for(Part e: temp.equipmentList){
+            if(e.getClass().equals( p.getClass())){
+                temp.equipmentList.remove(e);
+                temp.equipmentList.add(p);
+                break;
+            }
+        }
+        return temp;
     }
+
 
     public void add(Part e){
         equipmentList.add(e);

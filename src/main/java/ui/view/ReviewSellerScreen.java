@@ -59,4 +59,7 @@ public class ReviewSellerScreen extends JFrame {
         return reviewSellerTextField;
     }
 
+    public JComboBox getSellerRatingComboBox(){
+        return sellerRatingComboBox;
+    }
 }

@@ -10,14 +10,13 @@ import java.util.ArrayList;
 public class ViewTransactionsController extends  BaseFrameController{
 
    private ViewTransactionsScreen viewTrans;
-    private JButton review;
+    private JButton[] reviewButtons;
 
     public ViewTransactionsController() { }
 
     public void controlTransactions() {
-
         viewTrans = new ViewTransactionsScreen();
-        review = viewTrans.getReview();
+        reviewButtons = viewTrans.getReviewButtons();
         viewTrans.setVisible(true);
     }
 }

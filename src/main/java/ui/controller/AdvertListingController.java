@@ -18,8 +18,6 @@ public class AdvertListingController extends BaseFrameController {
 
     private AdvertListingScreen searchAds;
     private JButton[] buyPartsButtons;
-    private JButton[] viewDetailsButtons;
-    private JButton[] watchListButtons;
     private DeleteHandler deleteHandler;
     private PostHandler postHandler;
 
@@ -32,8 +30,6 @@ public class AdvertListingController extends BaseFrameController {
         searchAds = new AdvertListingScreen();
         searchAds.populateMainPanel(adverts);
         buyPartsButtons = searchAds.getBuyPartButtons();
-        viewDetailsButtons = searchAds.getViewDetailButtons();
-        watchListButtons = searchAds.getWatchlistButtons();
         addListeners();
         searchAds.setVisible(true);
     }
@@ -57,17 +53,6 @@ public class AdvertListingController extends BaseFrameController {
                 } else{
                     JOptionPane.showMessageDialog(null,"Sorry there was an issue in buying part");
                 }
-            });
-
-            viewDetailsButtons[i].addActionListener((ActionEvent e) -> {
-                System.out.println("View Details - Implement");
-                //try and view details of part
-
-            });
-
-            watchListButtons[i].addActionListener((ActionEvent e) -> {
-
-                System.out.println("Watch List Implement");
             });
 
         }
