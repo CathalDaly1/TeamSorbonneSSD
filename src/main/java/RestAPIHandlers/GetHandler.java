@@ -68,7 +68,6 @@ public class GetHandler extends APIHandler implements GetAPI {
 
         restResult = restResult.replace("\\\"","\"");
         restResult = restResult.substring(1,restResult.length()-1);
-//        System.out.print(restResult);
 
         JSONObject jsonObject = new JSONObject();
         try {
@@ -222,8 +221,7 @@ public class GetHandler extends APIHandler implements GetAPI {
         List<Transaction> transactions = new ArrayList<Transaction>();
         String url = URL_ADDRESS + "/transaction/?";
 
-        url = addParameterToUrl(url,"uid1",uid,true);
-        url = addParameterToUrl(url,"uid2",uid,true);
+        url = addParameterToUrl(url,"uid",uid,true);
 
         JSONObject jsonObject = executeQuery(url);
         JSONArray jsonArray = jsonObject.getJSONArray("results");

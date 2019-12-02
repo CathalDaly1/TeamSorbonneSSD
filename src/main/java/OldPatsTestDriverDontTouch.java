@@ -1,8 +1,5 @@
 import Auctions.Advert;
-import CompatibilityChecker.Configuration.CompatibilityChecker;
-import CompatibilityChecker.Configuration.CompatibilityResult;
-import CompatibilityChecker.Configuration.ConfigurationDetails;
-import CompatibilityChecker.Configuration.ICompatibilityChecker;
+import CompatibilityChecker.Configuration.*;
 import CompatibilityChecker.Parts.*;
 import RestAPIHandlers.GetHandler;
 import RestAPIHandlers.PostHandler;
@@ -31,7 +28,7 @@ public class OldPatsTestDriverDontTouch {
         motherboard.add(new PowerConnector(24));
         motherboard.add(new Socket("1151"));
 
-        PowerSupply powerSupply = new PowerSupply("EVGA 500W 80","EVGA",80);
+        PowerSupply powerSupply = new PowerSupply("EVGA 500W 80","EVGA",50);
         powerSupply.add(new PowerConnector(6));
         powerSupply.add(new PowerConnector(6));
         powerSupply.add(new PowerConnector(8));
@@ -47,10 +44,19 @@ public class OldPatsTestDriverDontTouch {
         CompatibilityResult compatibilityResult = new CompatibilityResult();
         ConfigurationDetails configurationDetails = new ConfigurationDetails();
 
-//        ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
-//        compatibilityResult = compatibilityChecker.isCompatible(compatibilityResult);
+//        configurationDetails = pc.getConfiguration(configurationDetails);
+//        CompatibilityChecker compatibilityChecker = new CompatibilityChecker();
+//        compatibilityResult = compatibilityChecker.getCompatibility(configurationDetails);
 //        System.out.println(compatibilityResult.getMessage());
 //        System.out.println(compatibilityResult.isCompatible());
+
+        ICompatibilityCheckerFinal compatibilityCheckerFinal = new CompatibilityCheckerFinal();
+        compatibilityResult = compatibilityCheckerFinal.getCompatibilityOfPc(pc);
+
+//        ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
+//        compatibilityResult = compatibilityChecker.isCompatible(compatibilityResult);
+        System.out.println(compatibilityResult.getMessage());
+        System.out.println(compatibilityResult.isCompatible());
 
         GetHandler getHandler = new GetHandler();
 

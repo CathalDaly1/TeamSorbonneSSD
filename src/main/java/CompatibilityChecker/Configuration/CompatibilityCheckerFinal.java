@@ -1,16 +1,14 @@
 package CompatibilityChecker.Configuration;
 
-public class CompatibilityChecker implements ICompatibilityChecker{
+import CompatibilityChecker.Parts.CompositePart;
 
-    protected boolean isCompatible = true;
+public class CompatibilityCheckerFinal implements ICompatibilityCheckerFinal {
 
     @Override
-    public CompatibilityResult isCompatible(CompatibilityResult compatibilityResult) {
-        return new CompatibilityResult();
-    }
+    public CompatibilityResult getCompatibilityOfPc(CompositePart pc){
+        CompatibilityResult compatibilityResult = new CompatibilityResult();
+        ConfigurationDetails configurationDetails = pc.getConfiguration(new ConfigurationDetails());
 
-
-    public CompatibilityResult getCompatibility(ConfigurationDetails configurationDetails){
         WattageCompatiblityCheckerDecorator wattageCompatiblityCheckerDecorator = new WattageCompatiblityCheckerDecorator(
                 new CompatibilityChecker(),configurationDetails);
 
@@ -25,7 +23,7 @@ public class CompatibilityChecker implements ICompatibilityChecker{
 
         ICompatibilityChecker compatibilityCheckerFinal = ramChannelCompatibilityDecorator;
 
-        return compatibilityCheckerFinal.isCompatible(new CompatibilityResult());
-    }
 
+        return(compatibilityCheckerFinal.isCompatible(compatibilityResult));
+    }
 }

@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Auctions/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auctions/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/IConfigDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IConfigDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Part.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/CompatibilityChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/CompatibilityChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/IConfigDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Part.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Part.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OldPatsTestDriverDontTouch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Users/CurrentUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/CurrentUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/AdvertListingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/AdvertListingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/SearchPartsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/SearchPartsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AppMenuScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AppMenuScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/HomeScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/HomeScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/LoginUserScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/LoginUserScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/RegisterUserScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/RegisterUserScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/ReviewSellerScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/ReviewSellerScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/SellPCParts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/SellPCParts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CompositePartTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,12 +32,12 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/CompositePart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="238">
+              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -47,11 +45,87 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Users/CurrentUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+            <state relative-caret-position="170">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
               <folding>
+                <element signature="e#2043#2044#0" expanded="true" />
                 <element signature="e#2091#2092#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="232" column="50" lean-forward="true" selection-start-line="232" selection-start-column="50" selection-end-line="232" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityCheckerFinal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IConfigDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/SocketCompatibilityCheckerDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -61,10 +135,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>CompatibilityResult</find>
+      <find>getcompat</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,7 +157,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/CompositePart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/IConfigDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/SocketCompatibilityCheckerDecorator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IConfigDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java" />
         <option value="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityCheckerFinal.java" />
       </list>
     </option>
   </component>
@@ -94,35 +184,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -130,7 +219,25 @@
             </path>
             <path>
               <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="CompatibilityChecker" type="462c0819:PsiDirectoryNode" />
+              <item name="Configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="CompatibilityChecker" type="462c0819:PsiDirectoryNode" />
+              <item name="Parts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -138,7 +245,7 @@
             </path>
             <path>
               <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -146,17 +253,24 @@
             </path>
             <path>
               <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TS" type="462c0819:PsiDirectoryNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,7 +323,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.OldPatsTestDriverDontTouch">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="PcPartPiecerCompat" />
@@ -219,15 +333,15 @@
     </configuration>
     <configuration name="OldPatsTestDriverDontTouch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OldPatsTestDriverDontTouch" />
-      <module name="TS" />
+      <module name="PcPartPiecerCompat" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.OldPatsTestDriverDontTouch" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -263,6 +377,7 @@
       <workItem from="1573726448105" duration="313000" />
       <workItem from="1573727130247" duration="174000" />
       <workItem from="1575243030578" duration="384000" />
+      <workItem from="1575244527985" duration="4578000" />
     </task>
     <task id="LOCAL-00001" summary="testing commits">
       <created>1573649006325</created>
@@ -436,7 +551,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384000" />
+    <option name="totallyTimeSpent" value="4962000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -451,19 +566,13 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
@@ -471,15 +580,21 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,18 +756,127 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/tests/CompositePartTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-884">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/WattageCompatiblityCheckerDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Part.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ConfigurationDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/SocketCompatibilityCheckerDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/CompositePart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IConfigDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/OldPatsTestDriverDontTouch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="232" column="50" lean-forward="true" selection-start-line="232" selection-start-column="50" selection-end-line="232" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityCheckerFinal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Users/CurrentUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+        <state relative-caret-position="170">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
+            <element signature="e#2043#2044#0" expanded="true" />
             <element signature="e#2091#2092#0" expanded="true" />
           </folding>
         </state>

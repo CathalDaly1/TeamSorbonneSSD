@@ -1,8 +1,6 @@
 package Users;
 
-import CompatibilityChecker.Configuration.CompatibilityResult;
-import CompatibilityChecker.Configuration.ConfigurationDetails;
-import CompatibilityChecker.Configuration.ICompatibilityChecker;
+import CompatibilityChecker.Configuration.*;
 import CompatibilityChecker.Parts.CompositePart;
 import CompatibilityChecker.Parts.Part;
 import RestAPIHandlers.GetHandler;
@@ -59,11 +57,14 @@ public class CurrentUser extends User {
             pc.add(part);
         }
 
-        CompatibilityResult compatibilityResult = new CompatibilityResult();
-        ConfigurationDetails configurationDetails = new ConfigurationDetails();
+        ICompatibilityCheckerFinal compatibilityCheckerFinal = new CompatibilityCheckerFinal();
+        return(compatibilityCheckerFinal.getCompatibilityOfPc(pc));
 
-        ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
-        return(compatibilityChecker.isCompatible(compatibilityResult));
+//        CompatibilityResult compatibilityResult = new CompatibilityResult();
+//        ConfigurationDetails configurationDetails = pc.getConfiguration(new ConfigurationDetails());
+//
+//        ICompatibilityChecker compatibilityChecker = pc.getCompat(configurationDetails);
+//        return(compatibilityChecker.isCompatible(compatibilityResult));
     }
 
     public CompatibilityResult insertPart(Part p){

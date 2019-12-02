@@ -1,10 +1,10 @@
-package CompatibilityChecker.Configuration;
+package CompatibilityChecker.Parts;
 
 
+import CompatibilityChecker.Configuration.CompatibilityChecker;
 import CompatibilityChecker.Configuration.ConfigurationDetails;
 
 public interface IConfigDetails {
-//    public CompatibilityChecker getCompatibility();
 
     public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails);
 }
