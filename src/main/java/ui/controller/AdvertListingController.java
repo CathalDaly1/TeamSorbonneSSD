@@ -20,6 +20,7 @@ public class AdvertListingController extends BaseFrameController {
     private JButton[] buyPartsButtons;
     private DeleteHandler deleteHandler;
     private PostHandler postHandler;
+    private JButton backButton;
 
     public AdvertListingController() { }
 
@@ -30,6 +31,7 @@ public class AdvertListingController extends BaseFrameController {
         searchAds = new AdvertListingScreen();
         searchAds.populateMainPanel(adverts);
         buyPartsButtons = searchAds.getBuyPartButtons();
+        backButton = searchAds.getBackButton();
         addListeners();
         searchAds.setVisible(true);
     }
@@ -55,6 +57,10 @@ public class AdvertListingController extends BaseFrameController {
                 }
             });
 
+            backButton.addActionListener((ActionEvent e) -> {
+                SearchPartsController searchParts = new SearchPartsController();
+                searchParts.controlSearchParts();
+            });
         }
     }
 }

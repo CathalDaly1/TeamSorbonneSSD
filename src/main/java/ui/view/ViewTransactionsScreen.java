@@ -27,6 +27,7 @@ public class ViewTransactionsScreen extends JFrame {
     private JLabel price;
     private JLabel partName;
     private GetHandler getHandler;
+    private JButton backButton;
     List<Transaction> transactions;
 
 
@@ -65,6 +66,11 @@ public class ViewTransactionsScreen extends JFrame {
         CurrentUser currentUser = CurrentUser.getInstance();
         transactions = getHandler.getTransactionsByUid(String.valueOf(currentUser.getuId()));
         reviewButtons = new JButton[transactions.size()];
+        backButton = new JButton();
+
+        JPanel bottomPanel = new JPanel();
+        bottomPanel.setLayout(new GridLayout(1,3));
+        backButton = new JButton("Back Button");
 
         for(int i = 0;i< transactions.size();i++){
             JPanel panel = new JPanel();
@@ -99,6 +105,8 @@ public class ViewTransactionsScreen extends JFrame {
             addListeners();
             mainPanel.add(panel);
         }
+        mainPanel.add(bottomPanel);
+        bottomPanel.add(backButton);
     }
 
    public void addListeners() {
@@ -116,6 +124,10 @@ public class ViewTransactionsScreen extends JFrame {
 
    public JButton[] getReviewButtons(){
         return this.reviewButtons;
+    }
+
+    public JButton getBackButton() {
+        return backButton;
     }
 
 }

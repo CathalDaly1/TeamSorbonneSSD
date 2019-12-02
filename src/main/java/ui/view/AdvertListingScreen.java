@@ -16,6 +16,7 @@ public class AdvertListingScreen extends JFrame{
     private JPanel mainPanel;
     private JScrollPane scrollPane;
     private JButton[] buyPartsButtons;
+    private JButton backButton;
     private ArrayList<Advert> adverts;
 
 
@@ -51,6 +52,11 @@ public class AdvertListingScreen extends JFrame{
         this.adverts = adverts;
         //get advert details
         buyPartsButtons = new JButton[adverts.size()];
+        backButton = new JButton();
+
+        JPanel bottomPanel = new JPanel();
+        bottomPanel.setLayout(new GridLayout(1,3));
+        backButton = new JButton("Back Button");
 
         for(int i = 0;i< adverts.size();i++){
             JPanel panel = new JPanel();
@@ -92,11 +98,15 @@ public class AdvertListingScreen extends JFrame{
             rightPanel.add(buyPartsButtons[i]);
             mainPanel.add(panel);
         }
+        mainPanel.add(bottomPanel);
+        bottomPanel.add(backButton);
     }
 
     public JButton[] getBuyPartButtons() {
         return buyPartsButtons;
     }
+
+    public JButton getBackButton() { return backButton; }
 
     public ArrayList<Advert> getAdverts() {
         return adverts;
