@@ -1,6 +1,11 @@
 package RestAPIHandlers;
 
 
+import Auctions.Advert;
+import Auctions.Transaction;
+import CompatibilityChecker.Parts.CompositePart;
+import CompatibilityChecker.Parts.Part;
+import CompatibilityChecker.Parts.PartFactory;
 import Users.User;
 import Users.UserFactory;
 import org.json.JSONArray;
@@ -8,22 +13,28 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-public class GetHandler implements GetAPI {
+public class GetHandler extends APIHandler implements GetAPI {
     
     URL url;
     HttpURLConnection conn;
     UserFactory userFactory;
+    PartFactory partFactory;
 
     private static final String URL_ADDRESS = "http://212.17.39.218:5000";
 
     public GetHandler(){
         userFactory = new UserFactory();
+        partFactory = new PartFactory();
     }
 
     public JSONObject executeQuery(String urlstring){
@@ -57,7 +68,6 @@ public class GetHandler implements GetAPI {
 
         restResult = restResult.replace("\\\"","\"");
         restResult = restResult.substring(1,restResult.length()-1);
-//        System.out.print(restResult);
 
         JSONObject jsonObject = new JSONObject();
         try {
@@ -75,8 +85,6 @@ public class GetHandler implements GetAPI {
         JSONArray jsonArray = jsonObject.getJSONArray("results");
         for (int i = 0; i < jsonArray.length(); i++) {
             JSONObject explrObject = jsonArray.getJSONObject(i);
-//            System.out.println(explrObject);
-//            System.out.println(explrObject.get("username"));
         }
 
         return users;
@@ -95,6 +103,158 @@ public class GetHandler implements GetAPI {
             String password = (String) explrObject.get("password");
             boolean premium = (boolean) explrObject.get("premium");
             return (userFactory.addNewUser(id, username, email, password, premium));
+        }
+        else {
+            return null;
+        }
+    }
+
+    public List<String> getPartNamesWithType(String type){
+        ArrayList<String> parts = new ArrayList<>();
+        JSONObject jsonObject = executeQuery(URL_ADDRESS + "/part/" + type);
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject explrObject = jsonArray.getJSONObject(i);
+            parts.add((String)explrObject.get("name"));
+        }
+
+        return parts;
+    }
+
+    public String getPartIdWithName(String name){
+        try {
+            name = URLEncoder.encode(name, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        String url  = URL_ADDRESS + "/partId/?";
+
+        url = addParameterToUrl(url,"partName",name,true);
+
+        JSONObject jsonObject = executeQuery(url);
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        if(jsonArray.length() > 0) {
+            JSONObject explrObject = jsonArray.getJSONObject(0);
+            String id = String.valueOf(explrObject.get("pid"));
+            return id;
+        }
+        else {
+            return null;
+        }
+    }
+
+    public List<String> getAllParts( ){
+        ArrayList<String> parts = new ArrayList<>();
+        JSONObject jsonObject = executeQuery(URL_ADDRESS + "/parts/");
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject explrObject = jsonArray.getJSONObject(i);
+            parts.add((String)explrObject.get("name"));
+        }
+
+        return parts;
+    }
+
+    public List<String> getPartsOwnedByUser(String uid){
+        List<String> pids = new ArrayList<>();
+        String url = URL_ADDRESS + "/pc_build/?";
+
+        url = addParameterToUrl(url,"uid",uid,true);
+
+        JSONObject jsonObject = executeQuery(url);
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject explrObject = jsonArray.getJSONObject(i);
+            pids.add(String.valueOf(explrObject.get("pid")));
+        }
+
+        return pids;
+    }
+
+    public Part getPartDetailsWithId(String id){
+        String url = URL_ADDRESS + "/partDetails/?";
+
+        url = addParameterToUrl(url,"pid",id,true);
+
+        JSONObject jsonObject = executeQuery(url);
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        JSONObject explrObject = jsonArray.getJSONObject(0);
+
+        System.out.println(explrObject);
+
+        return(partFactory.addNewPart(explrObject));
+    }
+
+    public List<Advert> getAdvertByPartType(String type){
+        List<Advert> adverts = new ArrayList<Advert>();
+        String url = URL_ADDRESS + "/advertsByType/?";
+
+        url = addParameterToUrl(url,"partType",type,true);
+
+        JSONObject jsonObject = executeQuery(url);
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        for(int i = 0;i<jsonArray.length();i++) {
+            JSONObject explrObject = jsonArray.getJSONObject(i);
+            double price = explrObject.getDouble("price");
+            int uid = explrObject.getInt("uid");
+            int pid = explrObject.getInt("pid");
+            Advert advert = new Advert(price,uid,pid,partFactory.addNewPart(explrObject));
+            adverts.add(advert);
+        }
+
+        return adverts;
+    }
+
+    public List<Transaction> getTransactionsByUid(String uid){
+        List<Transaction> transactions = new ArrayList<Transaction>();
+        String url = URL_ADDRESS + "/transaction/?";
+
+        url = addParameterToUrl(url,"uid",uid,true);
+
+        JSONObject jsonObject = executeQuery(url);
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        for(int i = 0;i<jsonArray.length();i++) {
+            JSONObject explrObject = jsonArray.getJSONObject(i);
+            int tid = explrObject.getInt("tid");
+            double price = explrObject.getDouble("price");
+            int sellerId = explrObject.getInt("uid1");
+            int buyerId = explrObject.getInt("uid2");
+            Transaction transaction = new Transaction(tid,price,sellerId,buyerId);
+            transactions.add(transaction);
+        }
+
+        return transactions;
+    }
+
+    public User getUserById(String uid){
+        String url = URL_ADDRESS + "/userById/?";
+
+        url = addParameterToUrl(url,"uid",uid,true);
+
+        JSONObject jsonObject = executeQuery(url);
+
+        JSONArray jsonArray = jsonObject.getJSONArray("results");
+
+        if(jsonArray.length() > 0) {
+            JSONObject explrObject = jsonArray.getJSONObject(0);
+            String username  = explrObject.getString("username");
+            String email = (String) explrObject.get("email");
+            String password = (String) explrObject.get("password");
+            boolean premium = (boolean) explrObject.get("premium");
+            return (userFactory.addNewUser(Integer.parseInt(uid), username, email, password, premium));
         }
         else {
             return null;

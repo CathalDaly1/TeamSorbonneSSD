@@ -10,8 +10,8 @@ public class SearchPCPartsScreen extends JFrame {
     private JLabel titleLabel;
     private JPanel mainPanel;
     private JComboBox partType;
-    private JComboBox partBrand;
-    private JComboBox partPriceRange;
+    private String[] types = {"CPU", "GPU","Motherboard", "Ram","Cooler", "Harddrive","PowerSupply"};
+
 
     public SearchPCPartsScreen() {
         setTitle("PC Part Picker");
@@ -36,7 +36,17 @@ public class SearchPCPartsScreen extends JFrame {
 
             }
         });
+
+        populatePartComboBoxs();
     }
+
+
+    private void populatePartComboBoxs() {
+        for(int i = 0;i <types.length;i++){
+            partType.addItem(types[i]);
+        }
+    }
+
 
     public JButton getSearchPCPartsButton() {
         return searchPCPartsButton;
@@ -47,9 +57,5 @@ public class SearchPCPartsScreen extends JFrame {
     }
 
     public JComboBox getPartType() { return partType; }
-
-    public JComboBox getPartBrand() { return partBrand; }
-
-    public JComboBox getPartPriceRange() { return partPriceRange; }
 
 }

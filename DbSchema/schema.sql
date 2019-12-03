@@ -6,59 +6,9 @@ CREATE TABLE parts
   name    VARCHAR(255),
   brand   VARCHAR(255),
   wattage double precision,
+  details json,
   CONSTRAINT name_unique UNIQUE (name)
 );
-
-CREATE TABLE cpus
-(
-  cores INT,
-  frequency DOUBLE PRECISION,
-  chipset VARCHAR(255)
-)INHERITS(parts);
-
-CREATE TABLE gpus
-(
-  baseClock DOUBLE PRECISION,
-  memoryCapacity DOUBLE PRECISION,
-  memoryType  VARCHAR(255),
-  cudaCores   INT
-)INHERITS(parts);
-
-CREATE TABLE coolers
-(
-  type VARCHAR(255),
-  fanSize INT
-)INHERITS(parts);
-
-
-CREATE TABLE hardrives
-(
-  type VARCHAR(255),
-  capacity DOUBLE PRECISION,
-  readSpeed DOUBLE PRECISION,
-  writeSpeed DOUBLE PRECISION
-) INHERITS(parts);
-
-
-CREATE TABLE motherboards
-(
-  chipset VARCHAR(255),
-  numberOfRamChannels INT,
-  ramProtocol VARCHAR(255)
-) INHERITS(parts);
-
-CREATE TABLE power_supplies
-(
-  wattageOutput INT
-) INHERITS (parts);
-
-CREATE TABLE rams
-(
-  dataRate DOUBLE PRECISION,
-  capacity DOUBLE PRECISION,
-  numberOfChannels DOUBLE PRECISION,
-  ramProtocol VARCHAR(255)
-) INHERITS (parts);
 
 CREATE TABLE users
 (

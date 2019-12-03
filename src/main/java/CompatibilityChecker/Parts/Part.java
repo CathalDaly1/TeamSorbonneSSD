@@ -1,22 +1,22 @@
 package CompatibilityChecker.Parts;
 
-public abstract class Equipment {
+public abstract class Part implements IConfigDetails {
 
     protected String name;
     protected String brand;
     protected double wattage;
 
-    protected Equipment(String name,String brand, double wattage){
+    protected Part(String name, String brand, double wattage){
         this.name = name;
         this.brand = brand;
         this.wattage = wattage;
     }
 
-    protected Equipment(String name){
+    protected Part(String name){
         this.name = name;
     }
 
-    public Equipment(){
+    public Part(){
     }
 
     public String getName() {

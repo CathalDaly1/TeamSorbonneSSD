@@ -1,6 +1,8 @@
 package CompatibilityChecker.Parts;
 
-public class PowerConnector extends Equipment {
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
+public class PowerConnector extends Part {
 
     private int numberOfPins;
 
@@ -14,5 +16,12 @@ public class PowerConnector extends Equipment {
 
     public void setNumberOfPins(int numberOfPins) {
         this.numberOfPins = numberOfPins;
+    }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        System.out.println("Power Connect GetConfig called");
+        configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        return configurationDetails;
     }
 }

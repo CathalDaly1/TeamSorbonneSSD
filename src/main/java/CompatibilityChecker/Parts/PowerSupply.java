@@ -1,6 +1,8 @@
 package CompatibilityChecker.Parts;
 
-public class PowerSupply extends CompositeEquipment {
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
+public class PowerSupply extends CompositePart {
 
     private double wattageOutput;
 
@@ -15,5 +17,13 @@ public class PowerSupply extends CompositeEquipment {
 
     public void setWattageOutput(double wattageOutput) {
         this.wattageOutput = wattageOutput;
+    }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        super.getConfiguration(configurationDetails);
+        System.out.println("PSU GetConfig called");
+        configurationDetails.setWattageOut(this.wattageOutput);
+        return configurationDetails;
     }
 }

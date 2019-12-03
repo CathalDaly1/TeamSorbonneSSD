@@ -1,6 +1,8 @@
 package CompatibilityChecker.Parts;
 
-public class Cooler extends Equipment {
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
+public class Cooler extends Part {
 
     private String type;
     private double fanSizemm;
@@ -9,5 +11,12 @@ public class Cooler extends Equipment {
         super(name,brand,wattage);
         this.type = type;
         this.fanSizemm = fanSize;
+    }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        System.out.println("Cooler GetConfig called");
+        return configurationDetails;
     }
 }

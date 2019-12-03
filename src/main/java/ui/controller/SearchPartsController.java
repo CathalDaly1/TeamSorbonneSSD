@@ -1,8 +1,14 @@
 package ui.controller;
 
+import Auctions.Advert;
+import RestAPIHandlers.DeleteHandler;
+import RestAPIHandlers.GetHandler;
+import RestAPIHandlers.PostHandler;
+import ui.model.SearchPartsModel;
 import ui.view.SearchPCPartsScreen;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
 
 public class SearchPartsController extends BaseFrameController {
 
@@ -10,22 +16,24 @@ public class SearchPartsController extends BaseFrameController {
     private JButton backButton;
     private JButton searchPCPartsButton;
     private JComboBox partType;
-    private JComboBox partBrand;
-    private JComboBox partPriceRange;
+    private GetHandler getHandler;
+    private PostHandler postHandler;
+    private DeleteHandler deleteHandler;
+    private SearchPartsModel model;
 
     public SearchPartsController() {
-
+        model = new SearchPartsModel();
+        getHandler = new GetHandler();
+        deleteHandler = new DeleteHandler();
+        postHandler = new PostHandler();
     }
 
     public void controlSearchParts() {
 
         search = new SearchPCPartsScreen();
-        SearchPCPartsScreen search1 = new SearchPCPartsScreen();
         searchPCPartsButton = search.getSearchPCPartsButton();
         backButton = search.getBackButton();
         partType = search.getPartType();
-        partBrand = search.getPartBrand();
-        partPriceRange = search.getPartPriceRange();
         addListeners();
         search.setVisible(true);
     }
@@ -33,11 +41,15 @@ public class SearchPartsController extends BaseFrameController {
     public void addListeners() {
 
         searchPCPartsButton.addActionListener((ActionEvent e) -> {
-            System.out.println("Login");
+            model.setPartType((String) partType.getSelectedItem());
+            ArrayList<Advert> adverts = (ArrayList<Advert>) getHandler.getAdvertByPartType(model.getPartType());
             search.setVisible(false);
+            AdvertListingController adListing = new AdvertListingController();
+            adListing.controlSearchAds(adverts);
         });
 
         backButton.addActionListener((ActionEvent e) -> {
+
             System.out.println("Back Button");
             search.setVisible(false);
             AppMenuScreenController menu = new AppMenuScreenController();

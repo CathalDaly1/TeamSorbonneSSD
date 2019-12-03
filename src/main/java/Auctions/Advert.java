@@ -1,17 +1,19 @@
 package Auctions;
 
-import CompatibilityChecker.Parts.CompositeEquipment;
+import CompatibilityChecker.Parts.CompositePart;
+import CompatibilityChecker.Parts.Part;
 import Users.User;
 
 import java.util.ArrayList;
 
-public class Advert extends Subject {
-    private ArrayList<User> observers = new ArrayList<User>();
+public class Advert  {
     private double price;
     private int userId;
-    private CompositeEquipment partSelling;
+    private int pid;
+    private Part partSelling;
 
-    public Advert(double price, int userId, CompositeEquipment partSelling) {
+    public Advert(double price, int userId,int pid, Part partSelling) {
+        this.pid = pid;
         this.price = price;
         this.userId = userId;
         this.partSelling = partSelling;
@@ -27,15 +29,26 @@ public class Advert extends Subject {
 
     public double getPrice() {
         return price;
-
     }
 
     public void setPrice(double price) {
-        if(this.price > price){
-            notifyObservers();
-        }
         this.price = price;
     }
 
 
+    public Part getPartSelling() {
+        return partSelling;
+    }
+
+    public void setPartSelling(Part partSelling) {
+        this.partSelling = partSelling;
+    }
+
+    public int getPid() {
+        return pid;
+    }
+
+    public void setPid(int pid) {
+        this.pid = pid;
+    }
 }

@@ -1,6 +1,8 @@
 package CompatibilityChecker.Parts;
 
-public class Cpu extends CompositeEquipment {
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
+public class Cpu extends CompositePart {
 
     private int cores;
     private double frequency;
@@ -35,5 +37,13 @@ public class Cpu extends CompositeEquipment {
 
     public void setChipset(String chipset) {
         this.chipset = chipset;
+    }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        super.getConfiguration(configurationDetails);
+        configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        System.out.println("CPU GetConfig called");
+        return configurationDetails;
     }
 }

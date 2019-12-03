@@ -1,6 +1,8 @@
 package CompatibilityChecker.Parts;
 
-public class Ram extends Equipment {
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
+public class Ram extends Part {
 
     private double dataRate;
     private double capacity;
@@ -45,5 +47,14 @@ public class Ram extends Equipment {
 
     public void setRamProtocol(String ramProtocol) {
         this.ramProtocol = ramProtocol;
+    }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        System.out.println("RAM GetConfig called");
+        configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        configurationDetails.addRamType(getRamProtocol());
+        configurationDetails.setRamChannels(numberOfChannels);
+        return configurationDetails;
     }
 }

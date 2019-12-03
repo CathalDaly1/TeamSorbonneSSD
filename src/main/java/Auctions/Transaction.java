@@ -2,12 +2,14 @@ package Auctions;
 
 public class Transaction {
 
+    private int tid;
     private double price;
     private int sellerId;
     private int buyerId;
     private Review review;
 
-    public Transaction(double price, int sellerId, int buyerId) {
+    public Transaction(int tid,double price, int sellerId, int buyerId) {
+        this.tid = tid;
         this.price = price;
         this.sellerId = sellerId;
         this.buyerId = buyerId;
@@ -43,5 +45,13 @@ public class Transaction {
 
     public void setReview(Review review) {
         this.review = review;
+    }
+
+    public int getTid() {
+        return tid;
+    }
+
+    public void setTid(int tid) {
+        this.tid = tid;
     }
 }

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="TS" />
         <module name="TeamSorbonneSSD" />
+        <module name="PcPartPiecerCompat" />
       </profile>
     </annotationProcessing>
   </component>

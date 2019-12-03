@@ -11,6 +11,7 @@ public class AppMenuScreenController extends BaseFrameController {
     private JButton sellPartsButton;
     private JButton logoutButton;
     private JButton configurePCButton;
+    private JButton viewTransactionsButton;
 
     public AppMenuScreenController() {
 
@@ -23,6 +24,7 @@ public class AppMenuScreenController extends BaseFrameController {
         searchPartsButton = menu.getSearchPartsButton();
         configurePCButton = menu.getConfigurePCButton();
         logoutButton = menu.getLogoutButton();
+        viewTransactionsButton = menu.getViewTransactionsButton();
         addListeners();
         menu.setVisible(true);
     }
@@ -31,23 +33,27 @@ public class AppMenuScreenController extends BaseFrameController {
 
         sellPartsButton.addActionListener((ActionEvent e) -> {
             System.out.println("Sell parts button pressed");
-            menu.setVisible(false);
             SellPartsController sellParts = new SellPartsController();
             sellParts.ControlSellParts();
         });
 
         searchPartsButton.addActionListener((ActionEvent e) -> {
             System.out.println("Search Parts Button Pressed");
-            menu.setVisible(false);
             SearchPartsController searchParts = new SearchPartsController();
             searchParts.controlSearchParts();
         });
 
         configurePCButton.addActionListener((ActionEvent e) -> {
             System.out.println("Configure PC Button pressed");
-            menu.setVisible(false);
             ConfigurePCController configure = new ConfigurePCController();
             configure.controlConfigurePC();
+        });
+
+        viewTransactionsButton.addActionListener((ActionEvent e) -> {
+            System.out.println("View Transactions Button pressed");
+            System.out.println("IMPLEMENT - View Transactions screen");
+            ViewTransactionsController transactions = new ViewTransactionsController();
+            transactions.controlTransactions();
         });
 
         logoutButton.addActionListener((ActionEvent e) -> {
@@ -58,7 +64,7 @@ public class AppMenuScreenController extends BaseFrameController {
             );
 
             if (userLogout == JOptionPane.YES_NO_OPTION) {
-                System.out.println("USER LOGOUT - Implement");
+                System.exit(0);
             }
         });
     }

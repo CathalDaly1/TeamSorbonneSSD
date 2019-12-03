@@ -5,19 +5,22 @@ public class WattageCompatiblityCheckerDecorator extends CompatibilityCheckerDec
     private double wattageIn;
     private double wattageOut;
 
-    public WattageCompatiblityCheckerDecorator(ICompatibilityChecker compatibilityChecker, double wattageIn, double wattageOut){
+    public WattageCompatiblityCheckerDecorator(ICompatibilityChecker compatibilityChecker, ConfigurationDetails configurationDetails){
         super(compatibilityChecker);
-        this.wattageIn = wattageIn;
-        this.wattageOut = wattageOut;
+
+        this.wattageIn = configurationDetails.getWattageIn();
+        this.wattageOut = configurationDetails.getWattageOut();
     }
 
     @Override
-    public void isCompatible() {
-        decoratedCompatiblityChecker.isCompatible();
+    public CompatibilityResult isCompatible(CompatibilityResult compatibilityResult) {
+        decoratedCompatiblityChecker.isCompatible(compatibilityResult);
+        System.out.println("Wattage in: "+ wattageIn + "\nWattage Out: " + wattageOut);
         if((wattageOut - wattageIn) < 0){
-            this.isCompatible = false;
+            compatibilityResult.setCompatible(false);
+            compatibilityResult.setMessage(compatibilityResult.getMessage() +"\nThe wattage from the power supply is too low for the parts");
+            return compatibilityResult;
         }
-        System.out.println(isCompatible);
+        return compatibilityResult;
     }
-
 }

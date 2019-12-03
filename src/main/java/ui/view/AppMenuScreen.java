@@ -10,6 +10,8 @@ public class AppMenuScreen extends JFrame {
     private JButton sellPartsButton;
     private JButton logoutButton;
     private JButton configurePCButton;
+    private JButton viewTransactionsButton;
+
 
 
     public AppMenuScreen() {
@@ -34,6 +36,8 @@ public class AppMenuScreen extends JFrame {
                     System.exit(0);
             }
         });
+
+
     }
 
     public JButton getSearchPartsButton() {
@@ -47,4 +51,6 @@ public class AppMenuScreen extends JFrame {
     public JButton getLogoutButton() { return  logoutButton; }
 
     public JButton getConfigurePCButton() { return configurePCButton; }
+
+    public JButton getViewTransactionsButton() { return viewTransactionsButton; }
 }

@@ -1,8 +1,11 @@
 package ui.view;
 
+import RestAPIHandlers.GetHandler;
+
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.List;
 
 public class SellPCParts extends JFrame {
     private JButton placeAdvert;
@@ -13,11 +16,13 @@ public class SellPCParts extends JFrame {
     private JTextField advertPrice;
     private JTextField advertName;
     private JLabel advertImage;
-    private JButton selectImageButton;
     private JLabel price1;
     private JLabel advertName1;
+    private JComboBox nameComboBox;
+    private GetHandler getHandler;
 
     public SellPCParts() {
+        getHandler = new GetHandler();
         setTitle("PC Part Picker");
         setSize(500, 500);
         setContentPane(mainPanel);
@@ -40,6 +45,18 @@ public class SellPCParts extends JFrame {
 
             }
         });
+
+        populateComboBox();
+    }
+
+    private void populateComboBox() {
+        List<String> names = getHandler.getAllParts();
+        for(int j = 0;j < names.size();j++){
+            if(j == 0){
+                nameComboBox.addItem("");
+            }
+            nameComboBox.addItem(names.get(j));
+        }
     }
 
     public JButton getPlaceAdvert() {
@@ -50,7 +67,7 @@ public class SellPCParts extends JFrame {
         return backButton;
     }
 
-    public JTextField getPartName () { return advertName;}
+    public JComboBox getPartName () { return nameComboBox;}
 
     public JComboBox getPartType () { return partType;}
 

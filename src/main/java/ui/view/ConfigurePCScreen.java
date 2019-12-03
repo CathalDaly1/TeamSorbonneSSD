@@ -1,8 +1,13 @@
 package ui.view;
 
+import RestAPIHandlers.GetHandler;
+
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class ConfigurePCScreen extends JFrame {
@@ -15,8 +20,13 @@ public class ConfigurePCScreen extends JFrame {
     private JComboBox RAMComboBox;
     private JComboBox HardDriveComboBox;
     private JComboBox MotherboardComboBox;
+    private JComboBox PowerSupplyComboBox;
+    private GetHandler getHandler;
+    private String[] types = {"CPU", "GPU","Motherboard", "Ram","Cooler", "Harddrive","PowerSupply"};
+    private JComboBox[] comboBoxes =  {CPUComboBox,GPUComboBox,MotherboardComboBox,RAMComboBox, CoolerComboBox,HardDriveComboBox, PowerSupplyComboBox};
 
     public ConfigurePCScreen() {
+        getHandler = new GetHandler();
         setTitle("PC Part Picker");
         setSize(500, 500);
         setContentPane(mainPanel);
@@ -38,6 +48,20 @@ public class ConfigurePCScreen extends JFrame {
                     System.exit(0);
             }
         });
+
+        populatePartComboBoxs();
+    }
+
+    private void populatePartComboBoxs() {
+        for(int i = 0;i <types.length;i++){
+            List<String> names = getHandler.getPartNamesWithType(types[i]);
+            for(int j = 0;j < names.size();j++){
+                if(j == 0){
+                    comboBoxes[i].addItem("");
+                }
+                comboBoxes[i].addItem(names.get(j));
+            }
+        }
     }
 
     public JComboBox getCPUComboBox() {
@@ -62,6 +86,10 @@ public class ConfigurePCScreen extends JFrame {
 
     public JComboBox getHardDriveComboBox() {
         return HardDriveComboBox;
+    }
+
+    public JComboBox getPowerSupplyComboBox() {
+        return PowerSupplyComboBox;
     }
 
     public JButton getBackButton() {

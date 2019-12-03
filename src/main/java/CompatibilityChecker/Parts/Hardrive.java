@@ -1,6 +1,8 @@
 package CompatibilityChecker.Parts;
 
-public class Hardrive extends Equipment {
+import CompatibilityChecker.Configuration.ConfigurationDetails;
+
+public class Hardrive extends Part {
 
     private String type;
     private double capacity;
@@ -45,5 +47,11 @@ public class Hardrive extends Equipment {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    @Override
+    public ConfigurationDetails getConfiguration(ConfigurationDetails configurationDetails) {
+        configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
+        return configurationDetails;
     }
 }
