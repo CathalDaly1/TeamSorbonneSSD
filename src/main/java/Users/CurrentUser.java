@@ -59,7 +59,7 @@ public class CurrentUser extends User {
         }
 
         ICompatibilityCheckerFinal compatibilityCheckerFinal = new CompatibilityCheckerFinal();
-        return(compatibilityCheckerFinal.getCompatibilityOfPc(pc));
+        return(compatibilityCheckerFinal.getCompatibilityOfParts(pc));
     }
 
     public CompatibilityResult insertPart(Part p){
@@ -70,6 +70,6 @@ public class CurrentUser extends User {
         tempPc = pc.replacePart(p);
 
         ICompatibilityCheckerFinal compatibilityCheckerFinal = new CompatibilityCheckerFinal();
-        return(compatibilityCheckerFinal.getCompatibilityOfPc(tempPc));
+        return(compatibilityCheckerFinal.getCompatibilityOfParts(tempPc));
     }
 }
