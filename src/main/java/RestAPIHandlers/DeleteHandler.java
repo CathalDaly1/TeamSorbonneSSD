@@ -10,7 +10,7 @@ public class DeleteHandler extends APIHandler {
     URL url;
     HttpURLConnection conn;
 
-    private static final String URL_ADDRESS = "http://212.17.39.218:5000";
+    private static final String URL_ADDRESS = "http://192.168.1.3:5000/";
 
     public boolean executeDelete(String urlstring){
         String restResult = "";

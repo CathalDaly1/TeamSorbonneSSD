@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="PcPartPiecerCompat" />
-        <module name="TeamSorbonneSSD" />
         <module name="TS" />
+        <module name="TeamSorbonneSSD" />
+        <module name="PcPartPiecerCompat" />
       </profile>
     </annotationProcessing>
   </component>

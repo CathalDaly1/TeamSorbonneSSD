@@ -1,5 +1,6 @@
-package CompatibilityChecker.Parts;
+package CompatibilityChecker.PartFactories;
 
+import CompatibilityChecker.Parts.*;
 import Users.User;
 import org.json.JSONObject;
 
@@ -13,7 +14,7 @@ public class PartFactory {
     private static final String HARDDRIVE = "Harddrive";
     private static final String POWERSUPPLY = "PowerSupply";
 
-    public Part addNewPart(JSONObject apiResult){
+    public Part getNewPart(JSONObject apiResult){
         double wattage = (double) apiResult.get("wattage");
         String name = (String) apiResult.get("name");
         String brand = (String) apiResult.get("brand");
@@ -32,7 +33,7 @@ public class PartFactory {
             return new Ram(name,brand,wattage,specificDetails.getDouble("dataRate"),specificDetails.getDouble("capacity"),specificDetails.getInt("numberOfChannels"),(String)specificDetails.get("ramProtocol"));
         }
         else if(type.equals(MOTHERBOARD)){
-            compositePart = new Motherboard(name,brand,wattage,(String)specificDetails.get("chipset"),(int)specificDetails.getInt("numberOfRamChannels"),(String)specificDetails.get("ramProtocol"),specificDetails.getInt("fanPins"));
+            compositePart = new Motherboard(name,brand,wattage,(String)specificDetails.get("chipset"),(int)specificDetails.getInt("numberOfRamChannels"),(String)specificDetails.get("ramProtocol"),2);
         }
         else if(type.equals(COOLER)){
             return new Cooler(name,brand,wattage,(String)specificDetails.get("type"),specificDetails.getDouble("fanSizemm"));

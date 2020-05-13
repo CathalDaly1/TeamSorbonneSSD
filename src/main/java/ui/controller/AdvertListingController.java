@@ -5,8 +5,8 @@ import RestAPIHandlers.DeleteHandler;
 import RestAPIHandlers.PostHandler;
 import Users.CurrentUser;
 import Users.User;
-import javafx.geometry.Pos;
-import sun.plugin2.message.JavaObjectOpMessage;
+//import javafx.geometry.Pos;
+//import sun.plugin2.message.JavaObjectOpMessage;
 import ui.view.AdvertListingScreen;
 
 import javax.swing.*;

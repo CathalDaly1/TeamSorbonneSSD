@@ -3,9 +3,10 @@ package RestAPIHandlers;
 
 import Auctions.Advert;
 import Auctions.Transaction;
-import CompatibilityChecker.Parts.CompositePart;
-import CompatibilityChecker.Parts.Part;
-import CompatibilityChecker.Parts.PartFactory;
+import CompatibilityChecker.PartFactories.AMDPartFactory;
+import CompatibilityChecker.PartFactories.IntelPartFactory;
+import CompatibilityChecker.PartFactories.PartFactory;
+import CompatibilityChecker.Parts.*;
 import Users.User;
 import Users.UserFactory;
 import org.json.JSONArray;
@@ -14,7 +15,6 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -29,12 +29,16 @@ public class GetHandler extends APIHandler implements GetAPI {
     HttpURLConnection conn;
     UserFactory userFactory;
     PartFactory partFactory;
+    IntelPartFactory intelPartFactory;
+    AMDPartFactory amdPartFactory;
 
-    private static final String URL_ADDRESS = "http://212.17.39.218:5000";
+    private static final String URL_ADDRESS = "http://192.168.1.3:5000/";
 
     public GetHandler(){
         userFactory = new UserFactory();
         partFactory = new PartFactory();
+        intelPartFactory = new IntelPartFactory();
+        amdPartFactory = new AMDPartFactory();
     }
 
     public JSONObject executeQuery(String urlstring){
@@ -184,16 +188,11 @@ public class GetHandler extends APIHandler implements GetAPI {
         String url = URL_ADDRESS + "/partDetails/?";
 
         url = addParameterToUrl(url,"pid",id,true);
-
         JSONObject jsonObject = executeQuery(url);
-
         JSONArray jsonArray = jsonObject.getJSONArray("results");
-
         JSONObject explrObject = jsonArray.getJSONObject(0);
 
-        System.out.println(explrObject);
-
-        return(partFactory.addNewPart(explrObject));
+        return getAmdOrIntelPart(explrObject);
     }
 
     public List<Advert> getAdvertByPartType(String type){
@@ -210,11 +209,23 @@ public class GetHandler extends APIHandler implements GetAPI {
             double price = explrObject.getDouble("price");
             int uid = explrObject.getInt("uid");
             int pid = explrObject.getInt("pid");
-            Advert advert = new Advert(price,uid,pid,partFactory.addNewPart(explrObject));
+            Advert advert = new Advert(price,uid,pid,getAmdOrIntelPart(explrObject));
             adverts.add(advert);
         }
 
         return adverts;
+    }
+
+    public Part getAmdOrIntelPart(JSONObject apiResult){
+        if((String) apiResult.get("brand")=="Intel"){
+            return intelPartFactory.getNewPart(apiResult);
+        }
+        else if ((String) apiResult.get("brand")=="AMD"){
+            return amdPartFactory.getNewPart(apiResult);
+        }
+        else{
+            return partFactory.getNewPart(apiResult);
+        }
     }
 
     public List<Transaction> getTransactionsByUid(String uid){
