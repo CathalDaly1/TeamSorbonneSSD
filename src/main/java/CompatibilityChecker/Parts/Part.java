@@ -1,6 +1,6 @@
 package CompatibilityChecker.Parts;
 
-public abstract class Part implements IConfigDetails {
+public abstract class Part implements IConfigDetails, Cloneable {
 
     protected String name;
     protected String brand;
@@ -41,5 +41,18 @@ public abstract class Part implements IConfigDetails {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public Object clone() {
+        Object clone = null;
+
+        try {
+            clone = super.clone();
+
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+
+        return clone;
     }
 }

@@ -2,7 +2,7 @@ package CompatibilityChecker.Parts;
 
 import CompatibilityChecker.Configuration.ConfigurationDetails;
 
-public class PowerConnector extends Part {
+public class PowerConnector extends Part implements Cloneable{
 
     private int numberOfPins;
 
@@ -24,4 +24,5 @@ public class PowerConnector extends Part {
         configurationDetails.setWattageIn(configurationDetails.getWattageIn()+this.getWattage());
         return configurationDetails;
     }
+
 }
