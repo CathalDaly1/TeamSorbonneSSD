@@ -1,9 +1,11 @@
 package Users;
 
 import Auctions.Advert;
+import Auctions.Transaction;
 import RestAPIHandlers.GetHandler;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class User {
     private String username;

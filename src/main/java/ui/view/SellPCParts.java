@@ -1,10 +1,15 @@
 package ui.view;
 
+import RestAPIHandlers.Command.Command;
+import RestAPIHandlers.Command.GetHandlerCommands.GetAllPartsCommand;
+import RestAPIHandlers.Command.RestParameters;
+import RestAPIHandlers.Command.RestResponse;
 import RestAPIHandlers.GetHandler;
 
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.HashMap;
 import java.util.List;
 
 public class SellPCParts extends JFrame {
@@ -50,7 +55,11 @@ public class SellPCParts extends JFrame {
     }
 
     private void populateComboBox() {
-        List<String> names = getHandler.getAllParts();
+        Command getUserWithNameCommand = new GetAllPartsCommand();
+        HashMap<String,Object> map = new HashMap<>();
+        RestParameters restParameters = new RestParameters(null);
+        RestResponse response = getUserWithNameCommand.execute(restParameters);
+        List<String> names = (List<String>) response.getValueReturned();
         for(int j = 0;j < names.size();j++){
             if(j == 0){
                 nameComboBox.addItem("");

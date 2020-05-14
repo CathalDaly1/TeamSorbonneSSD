@@ -1,4 +1,9 @@
 package ui.controller;
+import RestAPIHandlers.Command.Command;
+import RestAPIHandlers.Command.GetHandlerCommands.GetPartIdWithNameCommand;
+import RestAPIHandlers.Command.PostHandlerCommands.InsertAdvertCommand;
+import RestAPIHandlers.Command.RestParameters;
+import RestAPIHandlers.Command.RestResponse;
 import RestAPIHandlers.GetHandler;
 import RestAPIHandlers.PostHandler;
 import Users.CurrentUser;
@@ -6,6 +11,7 @@ import Users.User;
 import ui.view.SellPCParts;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import java.util.HashMap;
 
 public class SellPartsController extends BaseFrameController {
 
@@ -55,10 +61,23 @@ public class SellPartsController extends BaseFrameController {
     }
 
     private void createAdvert(String partName,String advertPrice) {
-        String partId = getHandler.getPartIdWithName(partName);
+
+        Command getUserWithNameCommand = new GetPartIdWithNameCommand();
+        HashMap<String,Object> map = new HashMap<>();
+        map.put("name",partName);
+        RestParameters restParameters = new RestParameters(map);
+        RestResponse response = getUserWithNameCommand.execute(restParameters);
+        String partId = (String) response.getValueReturned();
 
         User currentUser = CurrentUser.getInstance();
 
-        postHandler.insertAdvert(partId,String.valueOf(currentUser.getuId()),advertPrice);
+
+        Command insertAdvertCommand = new InsertAdvertCommand();
+        map = new HashMap<>();
+        map.put("uid",String.valueOf(currentUser.getuId()));
+        map.put("pid",partId);
+        map.put("price",advertPrice);
+        restParameters = new RestParameters(map);
+        insertAdvertCommand.execute(restParameters);
     }
 }

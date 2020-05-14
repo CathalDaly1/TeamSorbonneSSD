@@ -17,7 +17,7 @@ app = Flask(__name__)
 api = Api(app)
 
 # Build the Sqlite ULR for SqlAlchemy
-uri = "postgres://cxsmrevlzgagpc:0076d37587d72c8c7669a203d715c81cb8cfb2b069a8615b6021a6ad2bb66a8c@ec2-54-228-243-238.eu-west-1.compute.amazonaws.com:5432/d3cc849aaemsbe"
+uri = "postgres://ynxdugqyconiwd:832d325ad51261c595dc5710f4d1a9e9d1ca0be37eb13a8b2d48ede91a999224@ec2-54-246-116-119.eu-west-1.compute.amazonaws.com:5432/dfbdhscjrr76l8"
 
 # Configure the SqlAlchemy part of the app instance
 app.config["SQLALCHEMY_ECHO"] = True

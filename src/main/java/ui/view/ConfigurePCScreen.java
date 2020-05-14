@@ -1,5 +1,9 @@
 package ui.view;
 
+import RestAPIHandlers.Command.Command;
+import RestAPIHandlers.Command.GetHandlerCommands.GetPartNamesWithTypeCommand;
+import RestAPIHandlers.Command.RestParameters;
+import RestAPIHandlers.Command.RestResponse;
 import RestAPIHandlers.GetHandler;
 
 import javax.swing.*;
@@ -7,6 +11,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -54,7 +59,13 @@ public class ConfigurePCScreen extends JFrame {
 
     private void populatePartComboBoxs() {
         for(int i = 0;i <types.length;i++){
-            List<String> names = getHandler.getPartNamesWithType(types[i]);
+            Command getPartNamesWithTypeCommand = new GetPartNamesWithTypeCommand();
+            HashMap<String,Object> map = new HashMap<>();
+            map.put("type",types[i]);
+            RestParameters restParameters = new RestParameters(map);
+            RestResponse response = getPartNamesWithTypeCommand.execute(restParameters);
+            List<String> names = (List<String>) response.getValueReturned();
+
             for(int j = 0;j < names.size();j++){
                 if(j == 0){
                     comboBoxes[i].addItem("");

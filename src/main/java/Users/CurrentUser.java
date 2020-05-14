@@ -3,9 +3,16 @@ package Users;
 import CompatibilityChecker.Configuration.*;
 import CompatibilityChecker.Parts.CompositePart;
 import CompatibilityChecker.Parts.Part;
+import RestAPIHandlers.Command.Command;
+import RestAPIHandlers.Command.GetHandlerCommands.GetPartDetailsWithIdCommand;
+import RestAPIHandlers.Command.GetHandlerCommands.GetPartIdWithNameCommand;
+import RestAPIHandlers.Command.GetHandlerCommands.GetPartsOwnedByUserCommand;
+import RestAPIHandlers.Command.RestParameters;
+import RestAPIHandlers.Command.RestResponse;
 import RestAPIHandlers.GetHandler;
 import org.restlet.resource.Get;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class CurrentUser extends User {
@@ -51,11 +58,25 @@ public class CurrentUser extends User {
 
     public CompatibilityResult updatePc() {
         pc = new CompositePart("PC");
-        List<String> pids = getHandler.getPartsOwnedByUser(String.valueOf(this.getuId()));
+
+
+        Command getPartsOwnedByUserCommand = new GetPartsOwnedByUserCommand();
+        HashMap<String,Object> map = new HashMap<>();
+        map.put("uid",String.valueOf(this.getuId()));
+        RestParameters restParameters = new RestParameters(map);
+        RestResponse response = getPartsOwnedByUserCommand.execute(restParameters);
+        List<String> pids = (List<String>) response.getValueReturned();
 
         for(int i = 0;i<pids.size();i++){
-            Part part = getHandler.getPartDetailsWithId(pids.get(i));
+
+            Command getPartDetailsWithIdCommand = new GetPartDetailsWithIdCommand();
+            map = new HashMap<>();
+            map.put("id",pids.get(i));
+            restParameters = new RestParameters(map);
+            response = getPartDetailsWithIdCommand.execute(restParameters);
+            Part part = (Part) response.getValueReturned();
             pc.add(part);
+
         }
 
         ICompatibilityCheckerFinal compatibilityCheckerFinal = new CompatibilityCheckerFinal();

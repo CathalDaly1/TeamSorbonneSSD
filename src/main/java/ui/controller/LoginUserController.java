@@ -1,5 +1,9 @@
 package ui.controller;
 import CompatibilityChecker.Configuration.CompatibilityResult;
+import RestAPIHandlers.Command.Command;
+import RestAPIHandlers.Command.GetHandlerCommands.GetUserWithNameCommand;
+import RestAPIHandlers.Command.RestParameters;
+import RestAPIHandlers.Command.RestResponse;
 import RestAPIHandlers.GetHandler;
 import Users.CurrentUser;
 import Users.User;
@@ -8,6 +12,7 @@ import ui.view.LoginUserScreen;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import java.util.HashMap;
 
 public class LoginUserController extends BaseFrameController {
 
@@ -65,7 +70,13 @@ public class LoginUserController extends BaseFrameController {
         String username = model.getUsername();
         String password = model.getPassword();
 
-        User user = getHandler.getUserWithName(username);
+        Command getUserWithNameCommand = new GetUserWithNameCommand();
+        HashMap<String,Object> map = new HashMap<>();
+        map.put("username",username);
+        RestParameters restParameters = new RestParameters(map);
+        RestResponse response = getUserWithNameCommand.execute(restParameters);
+        User user = (User) response.getValueReturned();
+//        User user = getHandler.getUserWithName(username);
 
         if(user == null){
             return false;

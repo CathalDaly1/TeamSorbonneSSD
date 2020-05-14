@@ -22,7 +22,7 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+@Deprecated
 public class GetHandler extends APIHandler implements GetAPI {
     
     URL url;
@@ -30,64 +30,11 @@ public class GetHandler extends APIHandler implements GetAPI {
     UserFactory userFactory;
     PartFactory partFactory;
 
-    private static final String URL_ADDRESS = "http://212.17.39.218:5000";
+    private static final String URL_ADDRESS = "http://192.168.1.12:5000";
 
     public GetHandler(){
         userFactory = new UserFactory();
         partFactory = new PartFactory();
-    }
-
-    public JSONObject executeQuery(String urlstring){
-        String restResult = "";
-
-        try {
-            url = new URL(urlstring);
-            conn = (HttpURLConnection)url.openConnection();
-            conn.setRequestMethod("GET");
-            conn.connect();
-
-            if(conn.getResponseCode() != 200){
-                throw new RuntimeException("HttpResponseCode" + conn.getResponseCode());
-            }
-            else{
-                Scanner sc = new Scanner(url.openStream());
-                while(sc.hasNext()){
-                    restResult+=sc.nextLine();
-                }
-                sc.close();
-            }
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return(createJsonObject(restResult));
-    }
-
-    private JSONObject createJsonObject(String restResult) {
-
-        restResult = restResult.replace("\\\"","\"");
-        restResult = restResult.substring(1,restResult.length()-1);
-
-        JSONObject jsonObject = new JSONObject();
-        try {
-            jsonObject = new JSONObject(restResult);
-        }catch (JSONException err){
-            System.out.println(err);
-        }
-        return jsonObject;
-    }
-
-    public ArrayList<User> getUsers(){
-        ArrayList<User> users = new ArrayList<>();
-        JSONObject jsonObject = executeQuery(URL_ADDRESS + "/user/");
-
-        JSONArray jsonArray = jsonObject.getJSONArray("results");
-        for (int i = 0; i < jsonArray.length(); i++) {
-            JSONObject explrObject = jsonArray.getJSONObject(i);
-        }
-
-        return users;
     }
 
     public User getUserWithName(String username){

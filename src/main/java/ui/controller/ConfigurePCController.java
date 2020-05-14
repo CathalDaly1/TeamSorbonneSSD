@@ -2,6 +2,12 @@ package ui.controller;
 
 import CompatibilityChecker.Configuration.CompatibilityResult;
 import CompatibilityChecker.Parts.Part;
+import RestAPIHandlers.Command.Command;
+import RestAPIHandlers.Command.DeleteHandlerCommands.deletePcBuildCommand;
+import RestAPIHandlers.Command.GetHandlerCommands.GetPartIdWithNameCommand;
+import RestAPIHandlers.Command.PostHandlerCommands.InsertPcBuildCommand;
+import RestAPIHandlers.Command.RestParameters;
+import RestAPIHandlers.Command.RestResponse;
 import RestAPIHandlers.DeleteHandler;
 import RestAPIHandlers.GetHandler;
 import RestAPIHandlers.PostHandler;
@@ -16,6 +22,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.util.HashMap;
 
 public class ConfigurePCController extends BaseFrameController  {
 
@@ -96,12 +103,32 @@ public class ConfigurePCController extends BaseFrameController  {
     }
 
     private void addPartToPc(String selectedItem,String partType) {
-        String pid = getHandler.getPartIdWithName(selectedItem);
+
+        Command getUserWithNameCommand = new GetPartIdWithNameCommand();
+        HashMap<String,Object> map = new HashMap<>();
+        map.put("name",selectedItem);
+        RestParameters restParameters = new RestParameters(map);
+        RestResponse response = getUserWithNameCommand.execute(restParameters);
+        String pid = (String) response.getValueReturned();
+
         User currentUser = CurrentUser.getInstance();
         String uid = String.valueOf(currentUser.getuId());
 
-        deleteHandler.deletePcBuild(uid,partType);
 
-        postHandler.insertPcBuild(pid,uid,partType);
+        Command deletePcBuildCommand = new deletePcBuildCommand();
+        map = new HashMap<>();
+        map.put("uid",uid);
+        map.put("type",partType);
+        restParameters = new RestParameters(map);
+        response = deletePcBuildCommand.execute(restParameters);
+
+
+        Command insertPcBuildCommand = new InsertPcBuildCommand();
+        map = new HashMap<>();
+        map.put("uid",uid);
+        map.put("pid",pid);
+        map.put("type",partType);
+        restParameters = new RestParameters(map);
+        response = insertPcBuildCommand.execute(restParameters);
     }
 }

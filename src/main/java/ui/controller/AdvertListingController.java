@@ -1,6 +1,12 @@
 package ui.controller;
 
 import Auctions.Advert;
+import RestAPIHandlers.Command.Command;
+import RestAPIHandlers.Command.DeleteHandlerCommands.deleteAdvertCommand;
+import RestAPIHandlers.Command.DeleteHandlerCommands.deletePcBuildCommand;
+import RestAPIHandlers.Command.PostHandlerCommands.InsertTransactionCommand;
+import RestAPIHandlers.Command.RestParameters;
+import RestAPIHandlers.Command.RestResponse;
 import RestAPIHandlers.DeleteHandler;
 import RestAPIHandlers.PostHandler;
 import Users.CurrentUser;
@@ -12,6 +18,7 @@ import ui.view.AdvertListingScreen;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class AdvertListingController extends BaseFrameController {
@@ -46,9 +53,25 @@ public class AdvertListingController extends BaseFrameController {
                 User currentUser = CurrentUser.getInstance();
                 boolean result = true;
 
+
+                Command deleteAdvertCommand = new deleteAdvertCommand();
+                HashMap<String,Object> map = new HashMap<>();
+                map.put("uid",uidSeller);
+                map.put("pid",pid);
+                RestParameters restParameters = new RestParameters(map);
+                deleteAdvertCommand.execute(restParameters);
+
                 result = deleteHandler.deleteAdvert(uidSeller,pid);
 
-                result = postHandler.insertTransaction(pid,uidSeller, String.valueOf(currentUser.getuId()),price);
+
+                Command insertTransactionCommand = new InsertTransactionCommand();
+                map = new HashMap<>();
+                map.put("uid1",uidSeller);
+                map.put("uid2",String.valueOf(currentUser.getuId()));
+                map.put("pid",pid);
+                map.put("price",price);
+                restParameters = new RestParameters(map);
+                insertTransactionCommand.execute(restParameters);
 
                 if(result){
                     JOptionPane.showMessageDialog(null,"Succesfully bought part");

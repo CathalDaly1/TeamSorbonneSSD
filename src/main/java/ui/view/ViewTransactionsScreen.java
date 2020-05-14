@@ -1,6 +1,11 @@
 package ui.view;
 
 import Auctions.Transaction;
+import RestAPIHandlers.Command.Command;
+import RestAPIHandlers.Command.GetHandlerCommands.GetTransactionsByUidCommand;
+import RestAPIHandlers.Command.GetHandlerCommands.GetUsersByIdCommand;
+import RestAPIHandlers.Command.RestParameters;
+import RestAPIHandlers.Command.RestResponse;
 import RestAPIHandlers.GetHandler;
 import Users.CurrentUser;
 import Users.User;
@@ -13,6 +18,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.HashMap;
 import java.util.List;
 
 import static com.sun.java.accessibility.util.AWTEventMonitor.addWindowListener;
@@ -64,7 +70,14 @@ public class ViewTransactionsScreen extends JFrame {
     private void populateMainPanel() {
         //get advert details
         CurrentUser currentUser = CurrentUser.getInstance();
-        transactions = getHandler.getTransactionsByUid(String.valueOf(currentUser.getuId()));
+
+        Command getTransactionsByUidCommand = new GetTransactionsByUidCommand();
+        HashMap<String,Object> map = new HashMap<>();
+        map.put("uid",String.valueOf(currentUser.getuId()));
+        RestParameters restParameters = new RestParameters(map);
+        RestResponse response = getTransactionsByUidCommand.execute(restParameters);
+        transactions = (List<Transaction>) response.getValueReturned();
+
         reviewButtons = new JButton[transactions.size()];
         backButton = new JButton();
 
@@ -86,8 +99,19 @@ public class ViewTransactionsScreen extends JFrame {
             panel.add(leftPanel);
             panel.add(rightPanel);
 
-            User buyerUser = getHandler.getUserById(String.valueOf(transactions.get(i).getBuyerId()));
-            User sellerUser = getHandler.getUserById(String.valueOf(transactions.get(i).getSellerId()));
+
+            Command getUsersByIdCommand = new GetUsersByIdCommand();
+            HashMap<String,Object> commandMap = new HashMap<>();
+            commandMap.put("uid", String.valueOf(transactions.get(i).getBuyerId()));
+            restParameters = new RestParameters(commandMap);
+            response = getUsersByIdCommand.execute(restParameters);
+            User buyerUser = (User) response.getValueReturned();
+
+            commandMap = new HashMap<>();
+            commandMap.put("uid",String.valueOf(transactions.get(i).getSellerId()));
+            restParameters = new RestParameters(commandMap);
+            response = getUsersByIdCommand.execute(restParameters);
+            User sellerUser = (User) response.getValueReturned();
 
             price = new JLabel("Price: " + transactions.get(i).getPrice());
             seller = new JLabel("Buyer: " + buyerUser.getUsername());
