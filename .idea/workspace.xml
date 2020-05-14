@@ -22,15 +22,10 @@
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="Cleaned Frames">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDPartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDPartFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AbstractPartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AbstractPartFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelPartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelPartFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cooler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cooler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cpu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Motherboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Motherboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Socket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Socket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/HomeScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ReviewSellerScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ReviewSellerScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/PartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/PartFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest_api_handlers/GetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/GetHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +179,7 @@
       <workItem from="1575419236233" duration="1894000" />
       <workItem from="1588954253071" duration="1586000" />
       <workItem from="1589156131171" duration="9074000" />
-      <workItem from="1589464065950" duration="6232000" />
+      <workItem from="1589464065950" duration="7715000" />
     </task>
     <task id="LOCAL-00001" summary="testing commits">
       <created>1573649006325</created>

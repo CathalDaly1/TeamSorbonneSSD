@@ -194,7 +194,7 @@ public class GetHandler extends APIHandler implements GetAPI {
         JSONArray jsonArray = jsonObject.getJSONArray(RESULTS);
         JSONObject explrObject = jsonArray.getJSONObject(0);
 
-        return getAmdOrIntelPart(explrObject);
+        return partFactory.getNewPart(explrObject);
     }
 
     public List<Advert> getAdvertByPartType(String type){
@@ -211,25 +211,11 @@ public class GetHandler extends APIHandler implements GetAPI {
             double price = explrObject.getDouble("price");
             int uid = explrObject.getInt("uid");
             int pid = explrObject.getInt("pid");
-            Advert advert = new Advert(price,uid,pid,getAmdOrIntelPart(explrObject));
+            Advert advert = new Advert(price,uid,pid,partFactory.getNewPart(explrObject));
             adverts.add(advert);
         }
 
         return adverts;
-    }
-
-    public Part getAmdOrIntelPart(JSONObject apiResult){
-        String intel = "intel";
-
-        if(((String) apiResult.get("brand")).equals("Intel")){
-            return intelPartFactory.getNewPart(apiResult);
-        }
-        else if (((String) apiResult.get("brand")).equals("AMD")){
-            return amdPartFactory.getNewPart(apiResult);
-        }
-        else{
-            return partFactory.getNewPart(apiResult);
-        }
     }
 
     public List<Transaction> getTransactionsByUid(String uid){
