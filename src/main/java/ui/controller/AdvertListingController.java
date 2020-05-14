@@ -1,10 +1,10 @@
 package ui.controller;
 
-import Auctions.Advert;
-import RestAPIHandlers.DeleteHandler;
-import RestAPIHandlers.PostHandler;
-import Users.CurrentUser;
-import Users.User;
+import auctions.Advert;
+import rest_api_handlers.DeleteHandler;
+import rest_api_handlers.PostHandler;
+import users.CurrentUser;
+import users.User;
 //import javafx.geometry.Pos;
 //import sun.plugin2.message.JavaObjectOpMessage;
 import ui.view.AdvertListingScreen;
@@ -12,7 +12,6 @@ import ui.view.AdvertListingScreen;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
-import java.util.List;
 
 public class AdvertListingController extends BaseFrameController {
 
@@ -21,9 +20,6 @@ public class AdvertListingController extends BaseFrameController {
     private DeleteHandler deleteHandler;
     private PostHandler postHandler;
     private JButton backButton;
-
-    public AdvertListingController() { }
-
 
     public void controlSearchAds(ArrayList<Advert> adverts) {
         deleteHandler = new DeleteHandler();

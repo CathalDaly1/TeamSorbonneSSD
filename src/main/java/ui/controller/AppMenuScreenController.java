@@ -13,10 +13,6 @@ public class AppMenuScreenController extends BaseFrameController {
     private JButton configurePCButton;
     private JButton viewTransactionsButton;
 
-    public AppMenuScreenController() {
-
-    }
-
     public void controlMenu() {
         menu = new AppMenuScreen();
         AppMenuScreen mv1 = new AppMenuScreen();

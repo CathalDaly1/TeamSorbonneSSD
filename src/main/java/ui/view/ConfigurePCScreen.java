@@ -1,12 +1,10 @@
 package ui.view;
 
-import RestAPIHandlers.GetHandler;
+import rest_api_handlers.GetHandler;
 
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.List;
 
 

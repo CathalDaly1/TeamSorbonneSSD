@@ -4,7 +4,7 @@ public class ValidationOfCredentials {
 
     public boolean validateEmail(String email) {
 
-        return email.matches(".+@.+\\..+");
+        return email.matches("^(.+)@(.+)$");
     }
 
     public boolean validatePassword(String password) {
@@ -14,7 +14,7 @@ public class ValidationOfCredentials {
 
     public boolean validateName(String name) {
 
-        return name.matches("[a-zA-Z]+.*\\s[a-zA-Z]+.*");
+        return name.matches("^[\\p{L}\\s.’\\-,]+$");
     }
 
 }

@@ -1,8 +1,8 @@
 package ui.controller;
-import RestAPIHandlers.GetHandler;
-import RestAPIHandlers.PostHandler;
-import Users.CurrentUser;
-import Users.User;
+import rest_api_handlers.GetHandler;
+import rest_api_handlers.PostHandler;
+import users.CurrentUser;
+import users.User;
 import ui.view.SellPCParts;
 import javax.swing.*;
 import java.awt.event.ActionEvent;

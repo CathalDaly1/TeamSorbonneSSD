@@ -1,7 +1,6 @@
 package ui.controller;
-import RestAPIHandlers.PostHandler;
-import Users.User;
-import Users.UserFactory;
+import rest_api_handlers.PostHandler;
+import users.UserFactory;
 import ui.model.UserRegistrationModel;
 import ui.view.RegisterUserScreen;
 import javax.swing.*;

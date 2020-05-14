@@ -1,9 +1,9 @@
 package ui.controller;
 
-import Auctions.Advert;
-import RestAPIHandlers.DeleteHandler;
-import RestAPIHandlers.GetHandler;
-import RestAPIHandlers.PostHandler;
+import auctions.Advert;
+import rest_api_handlers.DeleteHandler;
+import rest_api_handlers.GetHandler;
+import rest_api_handlers.PostHandler;
 import ui.model.SearchPartsModel;
 import ui.view.SearchPCPartsScreen;
 import javax.swing.*;

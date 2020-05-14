@@ -1,7 +1,7 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import CompatibilityChecker.Configuration.*;
-import CompatibilityChecker.Parts.*;
+import compatibility_checker.configuration.*;
+import compatibility_checker.parts.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

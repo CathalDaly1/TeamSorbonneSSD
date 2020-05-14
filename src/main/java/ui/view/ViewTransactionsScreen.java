@@ -1,10 +1,9 @@
 package ui.view;
 
-import Auctions.Transaction;
-import RestAPIHandlers.GetHandler;
-import Users.CurrentUser;
-import Users.User;
-import org.omg.CORBA.Current;
+import auctions.Transaction;
+import rest_api_handlers.GetHandler;
+import users.CurrentUser;
+import users.User;
 import ui.controller.ReviewSellerController;
 
 import javax.swing.*;
@@ -14,8 +13,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.List;
-
-import static com.sun.java.accessibility.util.AWTEventMonitor.addWindowListener;
 
 public class ViewTransactionsScreen extends JFrame {
 

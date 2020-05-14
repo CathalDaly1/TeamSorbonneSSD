@@ -1,13 +1,12 @@
 package ui.view;
 
-import Auctions.Advert;
-import CompatibilityChecker.Configuration.CompatibilityResult;
-import Users.CurrentUser;
+import auctions.Advert;
+import compatibility_checker.configuration.CompatibilityResult;
+import users.CurrentUser;
 
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;

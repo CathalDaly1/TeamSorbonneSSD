@@ -1,21 +1,15 @@
 package ui.controller;
 
-import CompatibilityChecker.Configuration.CompatibilityResult;
-import CompatibilityChecker.Parts.Part;
-import RestAPIHandlers.DeleteHandler;
-import RestAPIHandlers.GetHandler;
-import RestAPIHandlers.PostHandler;
-import Users.CurrentUser;
-import Users.User;
-import jdk.nashorn.internal.scripts.JO;
-import org.restlet.resource.Post;
-import ui.model.PartComboBoxModel;
+import compatibility_checker.configuration.CompatibilityResult;
+import rest_api_handlers.DeleteHandler;
+import rest_api_handlers.GetHandler;
+import rest_api_handlers.PostHandler;
+import users.CurrentUser;
+import users.User;
 import ui.view.ConfigurePCScreen;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 
 public class ConfigurePCController extends BaseFrameController  {
 

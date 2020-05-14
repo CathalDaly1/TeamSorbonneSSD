@@ -1,14 +1,9 @@
-import Auctions.Advert;
-import CompatibilityChecker.Configuration.*;
-import CompatibilityChecker.Parts.*;
-import RestAPIHandlers.GetHandler;
-import RestAPIHandlers.PostHandler;
-import Users.CurrentUser;
-import Users.User;
-import Users.UserFactory;
-import org.restlet.resource.Get;
-
-import java.util.List;
+import compatibility_checker.configuration.*;
+import compatibility_checker.parts.*;
+import rest_api_handlers.GetHandler;
+import rest_api_handlers.PostHandler;
+import users.CurrentUser;
+import users.UserFactory;
 
 public class SimpleTestDriver {
     public static void main(String[] args){

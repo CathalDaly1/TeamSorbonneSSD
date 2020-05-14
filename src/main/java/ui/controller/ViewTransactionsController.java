@@ -1,12 +1,9 @@
 package ui.controller;
 
-import Auctions.Advert;
-import ui.view.AppMenuScreen;
 import ui.view.ViewTransactionsScreen;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.util.ArrayList;
 
 public class ViewTransactionsController extends  BaseFrameController{
 
@@ -14,7 +11,6 @@ public class ViewTransactionsController extends  BaseFrameController{
     private JButton[] reviewButtons;
     private JButton backButton;
 
-    public ViewTransactionsController() { }
 
     public void controlTransactions() {
         viewTrans = new ViewTransactionsScreen();

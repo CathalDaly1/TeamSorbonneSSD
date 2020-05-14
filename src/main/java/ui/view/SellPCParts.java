@@ -1,6 +1,6 @@
 package ui.view;
 
-import RestAPIHandlers.GetHandler;
+import rest_api_handlers.GetHandler;
 
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
