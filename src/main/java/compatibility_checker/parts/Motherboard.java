@@ -2,7 +2,7 @@ package compatibility_checker.parts;
 
 import compatibility_checker.configuration.ConfigurationDetails;
 
-public class Motherboard extends CompositePart {
+public abstract class Motherboard extends CompositePart {
 
     private String chipset;
     private int numberOfRamChannels;

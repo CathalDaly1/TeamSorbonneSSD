@@ -19,10 +19,6 @@ public class ViewTransactionsScreen extends JFrame {
     private JPanel mainPanel;
     private JScrollPane scrollPane;
     private JButton[] reviewButtons;
-    private JLabel buyer;
-    private JLabel seller;
-    private JLabel price;
-    private JLabel partName;
     private GetHandler getHandler;
     private JButton backButton;
     List<Transaction> transactions;
@@ -60,6 +56,9 @@ public class ViewTransactionsScreen extends JFrame {
 
     private void populateMainPanel() {
         //get advert details
+        JLabel buyer;
+        JLabel seller;
+        JLabel price;
         CurrentUser currentUser = CurrentUser.getInstance();
         transactions = getHandler.getTransactionsByUid(String.valueOf(currentUser.getuId()));
         reviewButtons = new JButton[transactions.size()];
@@ -70,6 +69,7 @@ public class ViewTransactionsScreen extends JFrame {
         backButton = new JButton("Back Button");
 
         for(int i = 0;i< transactions.size();i++){
+
             JPanel panel = new JPanel();
             panel.setLayout(new GridLayout(1,2));
 

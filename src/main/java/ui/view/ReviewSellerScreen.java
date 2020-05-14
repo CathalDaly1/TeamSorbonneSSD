@@ -9,8 +9,6 @@ public class ReviewSellerScreen extends JFrame {
     private JButton backButton;
     private JButton submitReviewButton;
     private JComboBox sellerRatingComboBox;
-    private JLabel reviewSellerLabel;
-    private JLabel ratingLabel;
     private JTextField reviewSellerTextField;
     private String[] rating = {"1", "2","3", "4","5"};
 

@@ -54,8 +54,8 @@ public class AMDPartFactory implements AbstractPartFactory{
     }
 
     @Override
-    public Cpu createCPU(String name, String brand, double wattage, String chipset, int cores, double frequency) {
-        return new Cpu(name,AMD,wattage,chipset,cores,frequency);
+    public AMDCpu createCPU(String name, String brand, double wattage, String chipset, int cores, double frequency) {
+        return new AMDCpu(name,AMD,wattage,chipset,cores,frequency);
     }
 
     @Override
@@ -64,8 +64,8 @@ public class AMDPartFactory implements AbstractPartFactory{
     }
 
     @Override
-    public Motherboard createMotherboard(String name, String brand, double wattage, String chipset, int numberOfRamChannels, String ramProtocol, int fanPins) {
-        return  new Motherboard(name,AMD,wattage,chipset,numberOfRamChannels,ramProtocol,fanPins);
+    public AMDMotherboard createMotherboard(String name, String brand, double wattage, String chipset, int numberOfRamChannels, String ramProtocol, int fanPins) {
+        return  new AMDMotherboard(name,AMD,wattage,chipset,numberOfRamChannels,ramProtocol,fanPins);
     }
 
     @Override

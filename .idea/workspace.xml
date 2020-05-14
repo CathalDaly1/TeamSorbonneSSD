@@ -21,70 +21,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="Cleaned Frames">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Auctions/Advert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auctions/Advert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Auctions/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auctions/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Auctions/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auctions/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/CompatibilityChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/CompatibilityCheckerDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/CompatibilityCheckerFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/CompatibilityResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ConfigurationDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/ConfigurationDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/ICompatibilityChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityCheckerFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/ICompatibilityCheckerFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/RamChannelCompatibilityDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/RamChannelCompatibilityDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/RamTypeCompatibilityDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/RamTypeCompatibilityDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/SocketCompatibilityCheckerDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/SocketCompatibilityCheckerDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/WattageCompatiblityCheckerDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/WattageCompatiblityCheckerDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/PartFactories/AMDPartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDPartFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/PartFactories/AbstractPartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AbstractPartFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/PartFactories/IntelPartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelPartFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/PartFactories/PartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/PartFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/CompositePart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/CompositePart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Cooler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cooler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Cpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cpu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Gpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Gpu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Hardrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Hardrive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/IComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IConfigDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/IConfigDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Motherboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Motherboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PCCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/PCCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Part.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PartAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/PartAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PowerConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/PowerConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PowerSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/PowerSupply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Ram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Ram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Socket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Socket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/unsupportedPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/unsupportedPart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/PartsCache/EightPinPowerConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/cache/EightPinPowerConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/PartsCache/FourPinPowerConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/cache/FourPinPowerConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/PartsCache/SixPinPowerConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/cache/SixPinPowerConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/PartsCache/TwoPinPowerConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/cache/TwoPinPowerConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/PartsCache/partsCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/cache/partsCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/APIHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/DeleteHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/DeleteHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/GetAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/GetHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/PostHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/PostHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SimpleTestDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SimpleTestDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/CurrentUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/PremiumUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/PremiumUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/RegisterScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/RegisterScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/ReviewSellerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/ReviewSellerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/SearchPartsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/SearchPartsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/SellPartsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/SellPartsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/ViewTransactionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/ViewTransactionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/model/PartComboBoxModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/model/PartComboBoxModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/model/ValidationOfCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/model/ValidationOfCredentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/SellPCParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/SellPCParts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDPartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDPartFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelPartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelPartFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cooler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cooler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cpu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Motherboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Motherboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Socket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Socket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ReviewSellerScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ReviewSellerScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CompositePartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CompositePartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +184,7 @@
       <workItem from="1575419236233" duration="1894000" />
       <workItem from="1588954253071" duration="1586000" />
       <workItem from="1589156131171" duration="9074000" />
-      <workItem from="1589464065950" duration="3130000" />
+      <workItem from="1589464065950" duration="6232000" />
     </task>
     <task id="LOCAL-00001" summary="testing commits">
       <created>1573649006325</created>
@@ -404,15 +350,6 @@
       <configuration name="CompositePartTest" configurationId="JUnit" />
     </history-entry>
   </component>
-  <component name="TodoView" selected-index="1">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
@@ -471,25 +408,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589385412728" />
-    <state width="1254" height="381" key="GridCell.Tab.0.bottom" timestamp="1589383804877">
+    <state width="1253" height="381" key="GridCell.Tab.0.bottom" timestamp="1589469821855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1254" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589383804877" />
+    <state width="1253" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589469821855" />
     <state width="1256" height="334" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588954365926" />
-    <state width="1254" height="381" key="GridCell.Tab.0.center" timestamp="1589383804877">
+    <state width="1253" height="381" key="GridCell.Tab.0.center" timestamp="1589469821855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1254" height="381" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589383804877" />
+    <state width="1253" height="381" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589469821855" />
     <state width="1256" height="334" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588954365926" />
-    <state width="1254" height="381" key="GridCell.Tab.0.left" timestamp="1589383804877">
+    <state width="1253" height="381" key="GridCell.Tab.0.left" timestamp="1589469821854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1254" height="381" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589383804877" />
+    <state width="1253" height="381" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589469821854" />
     <state width="1256" height="334" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588954365926" />
-    <state width="1254" height="381" key="GridCell.Tab.0.right" timestamp="1589383804877">
+    <state width="1253" height="381" key="GridCell.Tab.0.right" timestamp="1589469821855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1254" height="381" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589383804877" />
+    <state width="1253" height="381" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589469821855" />
     <state width="1256" height="334" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588954365926" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1588954503559">
       <screen x="0" y="0" width="1920" height="1040" />

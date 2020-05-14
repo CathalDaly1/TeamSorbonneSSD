@@ -57,8 +57,8 @@ public class IntelPartFactory implements AbstractPartFactory{
     }
 
     @Override
-    public Cpu createCPU(String name, String brand, double wattage, String chipset, int cores, double frequency) {
-        return (Cpu) (compositePart = new Cpu(name,INTEL,wattage,chipset,cores,frequency));
+    public IntelCpu createCPU(String name, String brand, double wattage, String chipset, int cores, double frequency) {
+        return new IntelCpu(name,INTEL,wattage,chipset,cores,frequency);
     }
 
     @Override
@@ -67,8 +67,8 @@ public class IntelPartFactory implements AbstractPartFactory{
     }
 
     @Override
-    public Motherboard createMotherboard(String name, String brand, double wattage, String chipset, int numberOfRamChannels, String ramProtocol, int fanPins) {
-        return  new Motherboard(name,INTEL,wattage,chipset,numberOfRamChannels,ramProtocol,fanPins);
+    public IntelMotherboard createMotherboard(String name, String brand, double wattage, String chipset, int numberOfRamChannels, String ramProtocol, int fanPins) {
+        return  new IntelMotherboard(name,INTEL,wattage,chipset,numberOfRamChannels,ramProtocol,fanPins);
     }
 
     @Override

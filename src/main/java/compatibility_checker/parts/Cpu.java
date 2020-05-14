@@ -2,7 +2,7 @@ package compatibility_checker.parts;
 
 import compatibility_checker.configuration.ConfigurationDetails;
 
-public class Cpu extends CompositePart {
+public abstract class Cpu extends CompositePart {
 
     private int cores;
     private double frequency;

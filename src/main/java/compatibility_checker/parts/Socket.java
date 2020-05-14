@@ -2,7 +2,7 @@ package compatibility_checker.parts;
 
 import compatibility_checker.configuration.ConfigurationDetails;
 
-public class Socket extends Part {
+public abstract class Socket extends Part {
 
     private String socketType;
 
