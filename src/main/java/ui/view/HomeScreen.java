@@ -10,6 +10,7 @@ public class HomeScreen extends JFrame {
     private JButton registerButton;
     private  JButton exitButton;
     private JPanel mainPanel;
+    private JLabel titleLabel;
 
     public HomeScreen() {
         setTitle("PC Part Picker app");

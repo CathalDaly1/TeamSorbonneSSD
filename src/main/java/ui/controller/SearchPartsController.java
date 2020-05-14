@@ -52,8 +52,7 @@ public class SearchPartsController extends BaseFrameController {
 
             System.out.println("Back Button");
             search.setVisible(false);
-            AppMenuScreenController menu = new AppMenuScreenController();
-            menu.controlMenu();
+            search.dispose();
         });
     }
 }

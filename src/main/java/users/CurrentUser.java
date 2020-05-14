@@ -36,7 +36,7 @@ public class CurrentUser extends User {
     }
 
     private CurrentUser(User user){
-        super(user.getuId(),user.getUsername(),user.getEmail(),user.getPassword(),false);
+        super(user.getuId(), user.getUsername(), user.getEmail(), user.getPassword(), user.getUserType());
         getHandler = new GetHandler();
     }
 

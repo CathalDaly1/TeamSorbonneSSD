@@ -49,8 +49,7 @@ public class SellPartsController extends BaseFrameController {
         backButton.addActionListener((ActionEvent e) -> {
             System.out.println("register");
             sell.setVisible(false);
-            AppMenuScreenController menu = new AppMenuScreenController();
-            menu.controlMenu();
+            sell.dispose();
         });
     }
 

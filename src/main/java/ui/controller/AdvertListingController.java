@@ -40,16 +40,42 @@ public class AdvertListingController extends BaseFrameController {
                 String pid = String.valueOf(searchAds.getAdverts().get(finalI).getPid());
                 String price = String.valueOf(searchAds.getAdverts().get(finalI).getPrice());
                 User currentUser = CurrentUser.getInstance();
-                boolean result = true;
+                System.out.println("User type: " + currentUser.getUserType());
 
-                result = deleteHandler.deleteAdvert(uidSeller,pid);
+                if (currentUser.getUserType()) {
+                    Double discountedPrice, regularPrice;
+                    regularPrice = Double.valueOf(searchAds.getAdverts().get(finalI).getPrice());
+                    discountedPrice = regularPrice - (regularPrice * 0.15);
+                    price = discountedPrice.toString();
+                    System.out.println(regularPrice);
+                    System.out.println(discountedPrice);
 
-                result = postHandler.insertTransaction(pid,uidSeller, String.valueOf(currentUser.getuId()),price);
+                    boolean result = true;
 
-                if(result){
-                    JOptionPane.showMessageDialog(null,"Succesfully bought part");
-                } else{
-                    JOptionPane.showMessageDialog(null,"Sorry there was an issue in buying part");
+                    result = deleteHandler.deleteAdvert(uidSeller,pid);
+
+                    result = postHandler.insertTransaction(pid,uidSeller, String.valueOf(currentUser.getuId()),price);
+
+                    if(result){
+                        JOptionPane.showMessageDialog(null,"Succesfully bought part\n You received a discounted price:" + price);
+                    } else{
+                        JOptionPane.showMessageDialog(null,"Sorry there was an issue in buying part");
+                    }
+                }
+                else {
+                    price = String.valueOf(searchAds.getAdverts().get(finalI).getPrice());
+
+                    boolean result = true;
+
+                    result = deleteHandler.deleteAdvert(uidSeller, pid);
+
+                    result = postHandler.insertTransaction(pid, uidSeller, String.valueOf(currentUser.getuId()), price);
+
+                    if (result) {
+                        JOptionPane.showMessageDialog(null, "Succesfully bought part\n You paid: " + price);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Sorry there was an issue in buying part");
+                    }
                 }
             });
 

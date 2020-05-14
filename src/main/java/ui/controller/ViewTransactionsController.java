@@ -22,8 +22,7 @@ public class ViewTransactionsController extends  BaseFrameController{
 
     public void addListeners() {
         backButton.addActionListener((ActionEvent e) -> {
-            AppMenuScreenController appMenu = new AppMenuScreenController();
-            appMenu.controlMenu();
+            viewTrans.dispose();
         });
     }
 }

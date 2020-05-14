@@ -1,20 +1,23 @@
 package ui.view;
 
+import rest_api_handlers.GetHandler;
+
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.List;
 
-public class ReviewSellerScreen extends JFrame {
+public class WarehouseScreen extends JFrame {
     private JPanel mainPanel;
+    private JLabel titleLabel;
+    private JLabel advertName1;
+    private JButton addPart;
     private JButton backButton;
-    private JButton submitReviewButton;
-    private JComboBox sellerRatingComboBox;
-    private JTextField reviewSellerTextField;
-    private JLabel reviewSellerLabel;
-    private JLabel ratingLabel;
-    private String[] rating = {"1", "2","3", "4","5"};
+    private JComboBox nameComboBox;
+    private GetHandler getHandler;
 
-    public ReviewSellerScreen() {
+    public WarehouseScreen() {
+        getHandler = new GetHandler();
         setTitle("PC Part Picker");
         setSize(500, 500);
         setContentPane(mainPanel);
@@ -26,8 +29,8 @@ public class ReviewSellerScreen extends JFrame {
             public void windowClosing(WindowEvent e) {
                 int x = JOptionPane.showConfirmDialog(
                         null,
-                        "Are you sure you wish to PC Parts search?",
-                        "Exit PC Part Piecer application",
+                        "Are you sure you wish to PC Parts application?",
+                        "Exit PC Part Picker application",
                         JOptionPane.YES_NO_OPTION,
                         JOptionPane.INFORMATION_MESSAGE
                 );
@@ -37,29 +40,28 @@ public class ReviewSellerScreen extends JFrame {
 
             }
         });
-        populatePartComboBoxs();
+
+        populateComboBox();
     }
 
-    private void populatePartComboBoxs() {
-        for(int i = 0;i <rating.length;i++){
-            sellerRatingComboBox.addItem(rating[i]);
+    private void populateComboBox() {
+        List<String> names = getHandler.getAllParts();
+        for(int j = 0;j < names.size();j++){
+            if(j == 0){
+                nameComboBox.addItem("");
+            }
+            nameComboBox.addItem(names.get(j));
         }
     }
 
+    public JButton getAddPart() {
+        return addPart;
+    }
 
     public JButton getBackButton() {
         return backButton;
     }
 
-    public JButton getSubmitReviewButton() {
-        return submitReviewButton;
-    }
+    public JComboBox getPartName () { return nameComboBox;}
 
-    public JTextField getReviewSellerTextField() {
-        return reviewSellerTextField;
-    }
-
-    public JComboBox getSellerRatingComboBox(){
-        return sellerRatingComboBox;
-    }
 }
