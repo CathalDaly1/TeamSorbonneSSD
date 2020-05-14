@@ -14,7 +14,7 @@ public class WarehouseController extends BaseFrameController {
 
     private WarehouseScreen warehouse;
     private JButton backButton;
-    private JButton addPart;
+    private JButton addPartButton;
     private JComboBox nameComboBox;
     private GetHandler getHandler;
     private PostHandler postHandler;
@@ -28,28 +28,26 @@ public class WarehouseController extends BaseFrameController {
 
     public void warehouseScreen() {
         warehouse = new WarehouseScreen();
-        WarehouseScreen warehouse1 = new WarehouseScreen();
-        nameComboBox = warehouse1.getPartName();
-        backButton = warehouse1.getBackButton();
-        addPart = warehouse1.getAddPart();
+        WarehouseScreen warehouse = new WarehouseScreen();
+        nameComboBox = warehouse.getPartName();
+        backButton = warehouse.getBackButton();
+        addPartButton = warehouse.getPartButton();
         addListeners();
         warehouse.setVisible(true);
     }
 
     public void addListeners() {
 
-        addPart.addActionListener((ActionEvent e) -> {
-            System.out.println("testnowwww2123");
+        addPartButton.addActionListener((ActionEvent e) -> {
             String partName = (String) nameComboBox.getSelectedItem();
             warehouse.setVisible(false);
-            AppMenuScreenController menu = new AppMenuScreenController();
-            menu.controlMenu();
         });
 
         backButton.addActionListener((ActionEvent e) -> {
-            System.out.println("testnowwww");
             warehouse.setVisible(false);
             warehouse.dispose();
+            AppMenuScreenController menu = new AppMenuScreenController();
+            menu.controlMenu();
         });
     }
 

@@ -112,32 +112,6 @@
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
           </hspacer>
-          <component id="e5aaf" class="javax.swing.JButton" binding="addPart">
-            <constraints>
-              <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="150" height="-1"/>
-                <preferred-size width="150" height="-1"/>
-                <maximum-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties>
-              <font name="Segoe UI" size="18" style="0"/>
-              <text value="Add Part"/>
-            </properties>
-          </component>
-          <component id="7d5af" class="javax.swing.JButton" binding="backButton">
-            <constraints>
-              <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="150" height="-1"/>
-                <preferred-size width="150" height="-1"/>
-                <maximum-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties>
-              <font name="Segoe UI" size="18" style="0"/>
-              <text value="Back"/>
-            </properties>
-          </component>
           <vspacer id="15f2c">
             <constraints>
               <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
@@ -148,6 +122,37 @@
               <grid row="1" column="10" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
           </hspacer>
+          <vspacer id="4dfa1">
+            <constraints>
+              <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="3acc" class="javax.swing.JButton" binding="partButton">
+            <constraints>
+              <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="150" height="-1"/>
+                <preferred-size width="150" height="-1"/>
+                <maximum-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Segoe UI" size="18" style="0"/>
+              <text value="Add Part"/>
+            </properties>
+          </component>
+          <component id="65bdd" class="javax.swing.JButton" binding="backButton">
+            <constraints>
+              <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="150" height="-1"/>
+                <preferred-size width="150" height="-1"/>
+                <maximum-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Segoe UI" size="18" style="0"/>
+              <text value="Back"/>
+            </properties>
+          </component>
         </children>
       </grid>
     </children>

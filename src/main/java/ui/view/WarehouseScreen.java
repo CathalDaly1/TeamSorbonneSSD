@@ -11,9 +11,9 @@ public class WarehouseScreen extends JFrame {
     private JPanel mainPanel;
     private JLabel titleLabel;
     private JLabel advertName1;
-    private JButton addPart;
     private JButton backButton;
     private JComboBox nameComboBox;
+    private JButton partButton;
     private GetHandler getHandler;
 
     public WarehouseScreen() {
@@ -54,8 +54,8 @@ public class WarehouseScreen extends JFrame {
         }
     }
 
-    public JButton getAddPart() {
-        return addPart;
+    public JButton getPartButton() {
+        return partButton;
     }
 
     public JButton getBackButton() {
