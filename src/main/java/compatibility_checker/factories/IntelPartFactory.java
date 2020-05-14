@@ -21,9 +21,6 @@ public class IntelPartFactory implements AbstractPartFactory{
         if(type.equals(CPU)){
             return createCPU(name, INTEL, wattage, specificDetails.getString("chipset"), specificDetails.getInt("cores"), specificDetails.getDouble("frequency"));
         }
-        else if(type.equals(GPU)){
-            return createGPU(name,INTEL,wattage,specificDetails.getInt("baseClock"),specificDetails.getDouble("memoryCapacity"),(String)specificDetails.get("memoryType"),specificDetails.getInt("cudaCores"));
-        }
         else if(type.equals(MOTHERBOARD)){
             return  createMotherboard(name,INTEL,wattage,(String)specificDetails.get("chipset"),(int)specificDetails.getInt("numberOfRamChannels"),(String)specificDetails.get("ramProtocol"),specificDetails.getInt("fanPins"));
         }
@@ -32,10 +29,6 @@ public class IntelPartFactory implements AbstractPartFactory{
         }
     }
 
-    @Override
-    public Gpu createGPU(String name, String brand, double wattage, int baseClock, double memoryCapacity, String memoryType, int cudaCores) {
-        return new Gpu(name,INTEL,wattage,baseClock,memoryCapacity,memoryType,cudaCores);
-    }
 
     @Override
     public IntelCpu createCPU(String name, String brand, double wattage, String chipset, int cores, double frequency) {

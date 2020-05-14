@@ -21,20 +21,12 @@ public class AMDPartFactory implements AbstractPartFactory{
         if(type.equals(CPU)){
             return createCPU(name, AMD, wattage, specificDetails.getString("chipset"), specificDetails.getInt("cores"), specificDetails.getDouble("frequency"));
         }
-        else if(type.equals(GPU)){
-            return createGPU(name,AMD,wattage,specificDetails.getInt("baseClock"),specificDetails.getDouble("memoryCapacity"),(String)specificDetails.get("memoryType"),specificDetails.getInt("cudaCores"));
-        }
         else if(type.equals(MOTHERBOARD)){
             return  createMotherboard(name,AMD,wattage,(String)specificDetails.get("chipset"),(int)specificDetails.getInt("numberOfRamChannels"),(String)specificDetails.get("ramProtocol"),specificDetails.getInt("fanPins"));
         }
         else {
             return null;
         }
-    }
-
-    @Override
-    public Gpu createGPU(String name, String brand, double wattage, int baseClock, double memoryCapacity, String memoryType, int cudaCores) {
-        return new Gpu(name,AMD,wattage,baseClock,memoryCapacity,memoryType,cudaCores);
     }
 
     @Override
