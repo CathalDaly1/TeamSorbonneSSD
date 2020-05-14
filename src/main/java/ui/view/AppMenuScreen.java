@@ -11,6 +11,7 @@ public class AppMenuScreen extends JFrame {
     private JButton logoutButton;
     private JButton configurePCButton;
     private JButton viewTransactionsButton;
+    private JButton warehouseButton;
 
 
 
@@ -51,6 +52,8 @@ public class AppMenuScreen extends JFrame {
     public JButton getLogoutButton() { return  logoutButton; }
 
     public JButton getConfigurePCButton() { return configurePCButton; }
+
+    public JButton getWarehouseButton() { return warehouseButton; }
 
     public JButton getViewTransactionsButton() { return viewTransactionsButton; }
 }

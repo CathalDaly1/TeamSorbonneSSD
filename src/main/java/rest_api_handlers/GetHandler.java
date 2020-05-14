@@ -8,10 +8,11 @@ import compatibility_checker.factories.IntelPartFactory;
 import compatibility_checker.factories.PartFactory;
 import compatibility_checker.parts.*;
 import users.User;
-import users.UserFactory;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import users.isPremium;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -31,13 +32,13 @@ public class GetHandler extends APIHandler implements GetAPI {
     private static final String RESULTS = "results";
     URL url;
     HttpURLConnection conn;
-    UserFactory userFactory;
     PartFactory partFactory;
     IntelPartFactory intelPartFactory;
     AMDPartFactory amdPartFactory;
+    isPremium userNow;
 
     public GetHandler(){
-        userFactory = new UserFactory();
+        userNow = new isPremium();
         partFactory = new PartFactory();
         intelPartFactory = new IntelPartFactory();
         amdPartFactory = new AMDPartFactory();
@@ -108,7 +109,7 @@ public class GetHandler extends APIHandler implements GetAPI {
             String email = (String) explrObject.get("email");
             String password = (String) explrObject.get("password");
             boolean premium = (boolean) explrObject.get("premium");
-            return (userFactory.addNewUser(id, username, email, password, premium));
+            return (userNow.addNewUser(id, username, email, password, premium));
         }
         else {
             return null;
@@ -255,7 +256,7 @@ public class GetHandler extends APIHandler implements GetAPI {
             String email = (String) explrObject.get("email");
             String password = (String) explrObject.get("password");
             boolean premium = (boolean) explrObject.get("premium");
-            return (userFactory.addNewUser(Integer.parseInt(uid), username, email, password, premium));
+            return (userNow.addNewUser(Integer.parseInt(uid), username, email, password, premium));
         }
         else {
             return null;

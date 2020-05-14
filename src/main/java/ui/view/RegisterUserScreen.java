@@ -13,6 +13,7 @@ public class RegisterUserScreen extends JFrame {
     private JButton signUpButton;
     private JButton backButton;
     private JLabel errorLabel;
+    private JCheckBox premiumUser;
 
     public RegisterUserScreen() {
         setTitle("PC Part Picker app");
@@ -57,6 +58,8 @@ public class RegisterUserScreen extends JFrame {
     public JPasswordField getPasswordField2() {
         return passwordField2;
     }
+
+    public JCheckBox getPremiumUser() { return premiumUser; }
 
     public JButton getSignUpButton() {
         return signUpButton;

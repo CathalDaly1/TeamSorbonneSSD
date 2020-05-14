@@ -58,8 +58,7 @@ public class ReviewSellerController {
 
             System.out.println("Back Button");
             reviewSeller.setVisible(false);
-            SearchPartsController menu = new SearchPartsController();
-            menu.controlSearchParts();
+            reviewSeller.dispose();
         });
     }
 }

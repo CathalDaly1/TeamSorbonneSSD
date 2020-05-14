@@ -11,11 +11,9 @@ public class User {
     private  boolean userType;
     private GetHandler getHandler;
 
-    public User(){
-        /*
-            This is empty to allow for CurrentUser to implement Singleton
-         */
-    }
+    public UserInterface userTypeNow;
+
+    public User(){}
 
     public User(int uId, String username, String email, String password, boolean userType) {
         getHandler = new GetHandler();
@@ -70,4 +68,12 @@ public class User {
         System.out.println();
     }
 
+    public User tryGetUser() {
+        System.out.println("Type of User: " + userType);
+        return userTypeNow.addNewUser(uId, username, email, password, userType);
+    }
+
+    public void setUserAbility(UserInterface newUserType) {
+        userTypeNow = newUserType;
+    }
 }
