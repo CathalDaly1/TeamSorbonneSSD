@@ -1,14 +1,14 @@
 package RestAPIHandlers.Command.GetHandlerCommands;
 
-import RestAPIHandlers.APIHandler;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import static RestAPIHandlers.APIHandler.URL_ADDRESS;
+import  rest_api_handlers.APIHandler;
 
+import static rest_api_handlers.APIHandler.URL_ADDRESS;
 public class GetPartDetailsWithIdCommand implements Command {
     @Override
     public RestResponse execute(RestParameters parameters) {
@@ -24,7 +24,6 @@ public class GetPartDetailsWithIdCommand implements Command {
         JSONObject explrObject = jsonArray.getJSONObject(0);
 
         System.out.println(explrObject);
-
-        return new RestResponse(true,apiHandler.getPartFactory().addNewPart(explrObject));
+        return new RestResponse(true,apiHandler.getPartFactory().getNewPart(explrObject));
     }
 }

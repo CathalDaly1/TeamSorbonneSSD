@@ -1,6 +1,6 @@
 package ui.model;
 
-import CompatibilityChecker.Parts.Part;
+import compatibility_checker.parts.Part;
 
 import javax.swing.*;
 import javax.swing.event.ListDataListener;

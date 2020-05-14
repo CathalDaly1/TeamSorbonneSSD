@@ -1,18 +1,16 @@
 package ui.controller;
 
-import CompatibilityChecker.Configuration.CompatibilityResult;
-import CompatibilityChecker.Parts.Part;
+import compatibility_checker.configuration.CompatibilityResult;
+import compatibility_checker.parts.Part;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.DeleteHandlerCommands.deletePcBuildCommand;
 import RestAPIHandlers.Command.GetHandlerCommands.GetPartIdWithNameCommand;
 import RestAPIHandlers.Command.PostHandlerCommands.InsertPcBuildCommand;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
-import RestAPIHandlers.DeleteHandler;
-import RestAPIHandlers.GetHandler;
-import RestAPIHandlers.PostHandler;
-import Users.CurrentUser;
-import Users.User;
+
+import users.CurrentUser;
+import users.User;
 import jdk.nashorn.internal.scripts.JO;
 import org.restlet.resource.Post;
 import ui.model.PartComboBoxModel;
@@ -38,14 +36,9 @@ public class ConfigurePCController extends BaseFrameController  {
     private JComboBox PowerSupplyComboBox;
     private String[] types = {"CPU", "GPU","Motherboard", "Ram","Cooler", "Harddrive","PowerSupply"};
     private JComboBox[] comboBoxes = new JComboBox[7];
-    private GetHandler getHandler;
-    private PostHandler postHandler;
-    private DeleteHandler deleteHandler;
 
     public ConfigurePCController() {
-        getHandler = new GetHandler();
-        deleteHandler = new DeleteHandler();
-        postHandler = new PostHandler();
+
     }
 
     public void controlConfigurePC() {
@@ -113,7 +106,6 @@ public class ConfigurePCController extends BaseFrameController  {
 
         User currentUser = CurrentUser.getInstance();
         String uid = String.valueOf(currentUser.getuId());
-
 
         Command deletePcBuildCommand = new deletePcBuildCommand();
         map = new HashMap<>();

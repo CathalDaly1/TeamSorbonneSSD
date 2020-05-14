@@ -1,12 +1,16 @@
 package ui.controller;
-import CompatibilityChecker.Configuration.CompatibilityResult;
+import compatibility_checker.configuration.CompatibilityResult;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.GetHandlerCommands.GetUserWithNameCommand;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
-import RestAPIHandlers.GetHandler;
-import Users.CurrentUser;
-import Users.User;
+import rest_api_handlers.GetHandler;
+import users.CurrentUser;
+import users.User;
+import compatibility_checker.configuration.CompatibilityResult;
+import rest_api_handlers.GetHandler;
+import users.CurrentUser;
+import users.User;
 import ui.model.UserLoginModel;
 import ui.view.LoginUserScreen;
 

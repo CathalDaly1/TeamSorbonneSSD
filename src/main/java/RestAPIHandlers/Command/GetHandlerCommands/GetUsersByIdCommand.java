@@ -1,19 +1,21 @@
 package RestAPIHandlers.Command.GetHandlerCommands;
 
-import RestAPIHandlers.APIHandler;
+import rest_api_handlers.APIHandler;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
-import Users.User;
+import users.User;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import users.isPremium;
 
-import static RestAPIHandlers.APIHandler.URL_ADDRESS;
+import static rest_api_handlers.APIHandler.URL_ADDRESS;
 
 public class GetUsersByIdCommand implements Command {
     @Override
     public RestResponse execute(RestParameters parameters) {
         APIHandler apiHandler = APIHandler.getInstance();
+        isPremium userNow = new isPremium();
 
         String url = URL_ADDRESS + "/userById/?";
 
@@ -29,7 +31,8 @@ public class GetUsersByIdCommand implements Command {
             String email = (String) explrObject.get("email");
             String password = (String) explrObject.get("password");
             boolean premium = (boolean) explrObject.get("premium");
-            user = apiHandler.getUserFactory().addNewUser(Integer.parseInt((String) parameters.getParameters().get("uid")), username, email, password, premium);
+            user = userNow.addNewUser(Integer.parseInt((String) parameters.getParameters().get("uid")), username, email, password, premium);
+
         }
         else {
             user = null;

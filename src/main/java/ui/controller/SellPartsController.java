@@ -1,13 +1,17 @@
 package ui.controller;
+import rest_api_handlers.GetHandler;
+import rest_api_handlers.PostHandler;
+import users.CurrentUser;
+import users.User;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.GetHandlerCommands.GetPartIdWithNameCommand;
 import RestAPIHandlers.Command.PostHandlerCommands.InsertAdvertCommand;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
-import RestAPIHandlers.GetHandler;
-import RestAPIHandlers.PostHandler;
-import Users.CurrentUser;
-import Users.User;
+import rest_api_handlers.GetHandler;
+import rest_api_handlers.PostHandler;
+import users.CurrentUser;
+import users.User;
 import ui.view.SellPCParts;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -55,8 +59,7 @@ public class SellPartsController extends BaseFrameController {
         backButton.addActionListener((ActionEvent e) -> {
             System.out.println("register");
             sell.setVisible(false);
-            AppMenuScreenController menu = new AppMenuScreenController();
-            menu.controlMenu();
+            sell.dispose();
         });
     }
 

@@ -12,10 +12,6 @@ public class HomeScreenController extends BaseFrameController {
     private JButton registerButton;
     private JButton exitButton;
 
-    public HomeScreenController() {
-
-    }
-
     public void controlStart() {
 
         home = new HomeScreen();

@@ -5,9 +5,6 @@ public class UserLoginModel {
     private String username;
     private String password;
 
-    public UserLoginModel() {
-    }
-
     public boolean login() {
 //        return UIController.getInstance().logIn(username, password);
         return  true;

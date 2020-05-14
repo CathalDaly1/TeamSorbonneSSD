@@ -12,10 +12,7 @@ public class AppMenuScreenController extends BaseFrameController {
     private JButton logoutButton;
     private JButton configurePCButton;
     private JButton viewTransactionsButton;
-
-    public AppMenuScreenController() {
-
-    }
+    private JButton warehouseButton;
 
     public void controlMenu() {
         menu = new AppMenuScreen();
@@ -23,6 +20,7 @@ public class AppMenuScreenController extends BaseFrameController {
         sellPartsButton = menu.getSellPartsButton();
         searchPartsButton = menu.getSearchPartsButton();
         configurePCButton = menu.getConfigurePCButton();
+        warehouseButton = menu.getWarehouseButton();
         logoutButton = menu.getLogoutButton();
         viewTransactionsButton = menu.getViewTransactionsButton();
         addListeners();
@@ -54,6 +52,12 @@ public class AppMenuScreenController extends BaseFrameController {
             System.out.println("IMPLEMENT - View Transactions screen");
             ViewTransactionsController transactions = new ViewTransactionsController();
             transactions.controlTransactions();
+        });
+
+        warehouseButton.addActionListener((ActionEvent e) -> {
+            System.out.println("Add To WarehouseController Button pressed");
+            WarehouseController warehouse = new WarehouseController();
+            warehouse.warehouseScreen();
         });
 
         logoutButton.addActionListener((ActionEvent e) -> {

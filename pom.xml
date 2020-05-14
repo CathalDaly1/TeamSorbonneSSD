@@ -27,6 +27,21 @@
         </repository>
     </repositories>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/javafx/javafx -->
+        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx</artifactId>
+            <version>11</version>
+            <type>pom</type>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.dejv78.commons.jfx/jfx-geometry -->
+        <dependency>
+            <groupId>com.github.dejv78.commons.jfx</groupId>
+            <artifactId>jfx-geometry</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>

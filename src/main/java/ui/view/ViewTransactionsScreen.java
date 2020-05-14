@@ -1,14 +1,18 @@
 package ui.view;
 
-import Auctions.Transaction;
+import auctions.Transaction;
+import rest_api_handlers.GetHandler;
+import users.CurrentUser;
+import users.User;
+import auctions.Transaction;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.GetHandlerCommands.GetTransactionsByUidCommand;
 import RestAPIHandlers.Command.GetHandlerCommands.GetUsersByIdCommand;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
-import RestAPIHandlers.GetHandler;
-import Users.CurrentUser;
-import Users.User;
+import rest_api_handlers.GetHandler;
+import users.CurrentUser;
+import users.User;
 import org.omg.CORBA.Current;
 import ui.controller.ReviewSellerController;
 
@@ -21,17 +25,11 @@ import java.awt.event.WindowEvent;
 import java.util.HashMap;
 import java.util.List;
 
-import static com.sun.java.accessibility.util.AWTEventMonitor.addWindowListener;
-
 public class ViewTransactionsScreen extends JFrame {
 
     private JPanel mainPanel;
     private JScrollPane scrollPane;
     private JButton[] reviewButtons;
-    private JLabel buyer;
-    private JLabel seller;
-    private JLabel price;
-    private JLabel partName;
     private GetHandler getHandler;
     private JButton backButton;
     List<Transaction> transactions;
@@ -69,6 +67,9 @@ public class ViewTransactionsScreen extends JFrame {
 
     private void populateMainPanel() {
         //get advert details
+        JLabel buyer;
+        JLabel seller;
+        JLabel price;
         CurrentUser currentUser = CurrentUser.getInstance();
 
         Command getTransactionsByUidCommand = new GetTransactionsByUidCommand();
@@ -86,6 +87,7 @@ public class ViewTransactionsScreen extends JFrame {
         backButton = new JButton("Back Button");
 
         for(int i = 0;i< transactions.size();i++){
+
             JPanel panel = new JPanel();
             panel.setLayout(new GridLayout(1,2));
 

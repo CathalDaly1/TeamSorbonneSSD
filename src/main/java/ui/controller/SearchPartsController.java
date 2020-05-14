@@ -1,13 +1,17 @@
 package ui.controller;
 
-import Auctions.Advert;
+import auctions.Advert;
+import rest_api_handlers.DeleteHandler;
+import rest_api_handlers.GetHandler;
+import rest_api_handlers.PostHandler;
+import auctions.Advert;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.GetHandlerCommands.GetAdvertsByPartTypeCommand;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
-import RestAPIHandlers.DeleteHandler;
-import RestAPIHandlers.GetHandler;
-import RestAPIHandlers.PostHandler;
+import rest_api_handlers.DeleteHandler;
+import rest_api_handlers.GetHandler;
+import rest_api_handlers.PostHandler;
 import ui.model.SearchPartsModel;
 import ui.view.SearchPCPartsScreen;
 import javax.swing.*;
@@ -63,8 +67,7 @@ public class SearchPartsController extends BaseFrameController {
 
             System.out.println("Back Button");
             search.setVisible(false);
-            AppMenuScreenController menu = new AppMenuScreenController();
-            menu.controlMenu();
+            search.dispose();
         });
     }
 }

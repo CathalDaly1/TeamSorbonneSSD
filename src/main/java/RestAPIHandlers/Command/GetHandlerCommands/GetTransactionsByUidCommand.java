@@ -1,7 +1,6 @@
 package RestAPIHandlers.Command.GetHandlerCommands;
 
-import Auctions.Transaction;
-import RestAPIHandlers.APIHandler;
+import auctions.Transaction;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
@@ -11,8 +10,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import static RestAPIHandlers.APIHandler.URL_ADDRESS;
+import  rest_api_handlers.APIHandler;
 
+import static rest_api_handlers.APIHandler.URL_ADDRESS;
 public class GetTransactionsByUidCommand implements Command {
     @Override
     public RestResponse execute(RestParameters parameters) {

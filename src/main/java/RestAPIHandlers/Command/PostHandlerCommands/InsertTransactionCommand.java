@@ -1,11 +1,12 @@
 package RestAPIHandlers.Command.PostHandlerCommands;
 
-import RestAPIHandlers.APIHandler;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
 
-import static RestAPIHandlers.APIHandler.URL_ADDRESS;
+import  rest_api_handlers.APIHandler;
+
+import static rest_api_handlers.APIHandler.URL_ADDRESS;
 
 public class InsertTransactionCommand implements Command {
     @Override

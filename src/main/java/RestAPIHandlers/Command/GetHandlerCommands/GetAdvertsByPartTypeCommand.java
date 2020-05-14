@@ -1,8 +1,7 @@
 package RestAPIHandlers.Command.GetHandlerCommands;
 
-import Auctions.Advert;
+import auctions.Advert;
 import Interceptor.ClientRequestDispatcher;
-import RestAPIHandlers.APIHandler;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
@@ -12,8 +11,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import static RestAPIHandlers.APIHandler.URL_ADDRESS;
+import  rest_api_handlers.APIHandler;
 
+import static rest_api_handlers.APIHandler.URL_ADDRESS;
 public class GetAdvertsByPartTypeCommand implements Command {
     @Override
     public RestResponse execute(RestParameters parameters) {
@@ -32,7 +32,7 @@ public class GetAdvertsByPartTypeCommand implements Command {
             double price = explrObject.getDouble("price");
             int uid = explrObject.getInt("uid");
             int pid = explrObject.getInt("pid");
-            Advert advert = new Advert(price,uid,pid,apiHandler.getPartFactory().addNewPart(explrObject));
+            Advert advert = new Advert(price,uid,pid,apiHandler.getPartFactory().getNewPart(explrObject));
             adverts.add(advert);
         }
         return new RestResponse(true,adverts);

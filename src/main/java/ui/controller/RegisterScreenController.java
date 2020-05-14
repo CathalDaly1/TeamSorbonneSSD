@@ -1,9 +1,9 @@
 package ui.controller;
-import RestAPIHandlers.PostHandler;
-import Users.User;
-import Users.UserFactory;
+import rest_api_handlers.PostHandler;
 import ui.model.UserRegistrationModel;
 import ui.view.RegisterUserScreen;
+import users.isPremium;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
@@ -18,12 +18,13 @@ public class RegisterScreenController extends BaseFrameController {
     private JButton signUpButton;
     private JButton backButton;
     private JLabel errorLabel;
-    private UserFactory userFactory;
+    private JCheckBox premiumUser;
     private PostHandler postHandler;
+    private isPremium typeOfUser;
 
     public RegisterScreenController() {
         model = new UserRegistrationModel();
-        userFactory = new UserFactory();
+        typeOfUser = new isPremium();
         postHandler = new PostHandler();
     }
 
@@ -36,6 +37,7 @@ public class RegisterScreenController extends BaseFrameController {
         emailField = reg.getEmailField();
         passwordField1 = reg.getPasswordField1();
         passwordField2 = reg.getPasswordField2();
+        premiumUser = reg.getPremiumUser();
         errorLabel = reg.getErrorLabel();
         addListeners();
         reg.setVisible(true);
@@ -68,6 +70,10 @@ public class RegisterScreenController extends BaseFrameController {
     }
 
     private boolean register() {
-        return (postHandler.insertUser(userFactory.addNewUser(0,model.getUsername(),model.getemail(),model.getPassword(),false)));
+        if (premiumUser.isSelected() == false) {
+            return (postHandler.insertUser(typeOfUser.addNewUser(0, model.getUsername(), model.getemail(), model.getPassword(), false)));
+        } else{
+            return (postHandler.insertUser(typeOfUser.addNewUser(0, model.getUsername(), model.getemail(), model.getPassword(), true)));
+        }
     }
 }

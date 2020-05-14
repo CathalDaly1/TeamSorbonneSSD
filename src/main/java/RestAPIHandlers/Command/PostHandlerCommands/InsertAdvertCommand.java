@@ -1,12 +1,11 @@
 package RestAPIHandlers.Command.PostHandlerCommands;
 
-import RestAPIHandlers.APIHandler;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
+import  rest_api_handlers.APIHandler;
 
-import static RestAPIHandlers.APIHandler.URL_ADDRESS;
-
+import static rest_api_handlers.APIHandler.URL_ADDRESS;
 public class InsertAdvertCommand implements Command {
     @Override
     public RestResponse execute(RestParameters parameters) {

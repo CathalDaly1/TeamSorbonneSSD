@@ -1,15 +1,18 @@
 package ui.controller;
 
-import Auctions.Transaction;
+import auctions.Transaction;
+import rest_api_handlers.DeleteHandler;
+import rest_api_handlers.GetHandler;
+import rest_api_handlers.PostHandler;
+import auctions.Transaction;
 import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.PostHandlerCommands.InsertAdvertCommand;
 import RestAPIHandlers.Command.PostHandlerCommands.InsertReviewCommand;
 import RestAPIHandlers.Command.RestParameters;
-import RestAPIHandlers.DeleteHandler;
-import RestAPIHandlers.GetHandler;
-import RestAPIHandlers.PostHandler;
+import rest_api_handlers.DeleteHandler;
+import rest_api_handlers.GetHandler;
+import rest_api_handlers.PostHandler;
 import ui.view.ReviewSellerScreen;
-import ui.view.SearchPCPartsScreen;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -72,8 +75,7 @@ public class ReviewSellerController {
 
             System.out.println("Back Button");
             reviewSeller.setVisible(false);
-            SearchPartsController menu = new SearchPartsController();
-            menu.controlSearchParts();
+            reviewSeller.dispose();
         });
     }
 }

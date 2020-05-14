@@ -4,7 +4,7 @@ import RestAPIHandlers.Command.Command;
 import RestAPIHandlers.Command.GetHandlerCommands.GetPartNamesWithTypeCommand;
 import RestAPIHandlers.Command.RestParameters;
 import RestAPIHandlers.Command.RestResponse;
-import RestAPIHandlers.GetHandler;
+import rest_api_handlers.GetHandler;
 
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
