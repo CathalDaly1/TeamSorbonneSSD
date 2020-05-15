@@ -1,5 +1,7 @@
 package rest_api_handlers;
 
+import Interceptor.ClientRequestDispatcher;
+import RestAPIHandlers.RestRequest;
 import compatibility_checker.factories.AMDPartFactory;
 import compatibility_checker.factories.IntelPartFactory;
 import compatibility_checker.factories.PartFactory;
@@ -67,6 +69,10 @@ public class APIHandler {
             conn.setRequestMethod("POST");
             conn.connect();
 
+            RestRequest restRequest = createRestRequest(conn);
+            restRequest.setURL(urlstring);
+            ClientRequestDispatcher.getInstance().dispatchClientRestRequestInterceptor(restRequest);
+
             if(conn.getResponseCode() != 200){
                 throw new RuntimeException("HttpResponseCode" + conn.getResponseCode());
             }
@@ -81,6 +87,16 @@ public class APIHandler {
             return false;
         }
     }
+
+    private RestRequest createRestRequest(HttpURLConnection conn) {
+        try {
+            return new RestRequest(conn.getRequestMethod(),conn.getResponseCode(),conn.getResponseMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public JSONObject executeQuery(String urlstring){
         String restResult = "";
 
@@ -89,6 +105,10 @@ public class APIHandler {
             conn = (HttpURLConnection)url.openConnection();
             conn.setRequestMethod("GET");
             conn.connect();
+
+            RestRequest restRequest = createRestRequest(conn);
+            restRequest.setURL(urlstring);
+            ClientRequestDispatcher.getInstance().dispatchClientRestRequestInterceptor(restRequest);
 
             if(conn.getResponseCode() != 200){
                 throw new RuntimeException("HttpResponseCode" + conn.getResponseCode());
@@ -131,6 +151,10 @@ public class APIHandler {
             conn.setRequestMethod("DELETE");
             conn.connect();
 
+            RestRequest restRequest = createRestRequest(conn);
+            restRequest.setURL(urlstring);
+            ClientRequestDispatcher.getInstance().dispatchClientRestRequestInterceptor(restRequest);
+
             if(conn.getResponseCode() != 200){
                 throw new RuntimeException("HttpResponseCode" + conn.getResponseCode());
             }
@@ -150,4 +174,5 @@ public class APIHandler {
     public PartFactory getPartFactory() {
         return partFactory;
     }
+
 }

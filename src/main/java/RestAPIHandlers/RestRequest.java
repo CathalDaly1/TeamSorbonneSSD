@@ -30,7 +30,7 @@ public class RestRequest implements Interceptor.RestRequest {
 
     @Override
     public String getURL() {
-        return null;
+        return URL;
     }
 
     public void setURL(String URL) {

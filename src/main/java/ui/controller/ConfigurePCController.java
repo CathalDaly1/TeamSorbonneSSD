@@ -112,7 +112,7 @@ public class ConfigurePCController extends BaseFrameController  {
         map.put("uid",uid);
         map.put("type",partType);
         restParameters = new RestParameters(map);
-        response = deletePcBuildCommand.execute(restParameters);
+        deletePcBuildCommand.execute(restParameters);
 
 
         Command insertPcBuildCommand = new InsertPcBuildCommand();

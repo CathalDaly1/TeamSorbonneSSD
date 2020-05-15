@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="Cleaned Frames">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUserWithNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUserWithNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUsersByIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUsersByIdCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/RestRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/RestRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest_api_handlers/GetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/GetHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest_api_handlers/PostHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/PostHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/RegisterScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/RegisterScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/users/isPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +27,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestInterceptor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/RestRequest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
@@ -42,10 +36,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestDispatcher.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertAdvertCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="114" column="53" lean-forward="true" selection-start-line="114" selection-start-column="53" selection-end-line="114" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -53,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="352">
+              <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,82 +84,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/users/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#1678#1679#0" expanded="true" />
-                <element signature="e#1720#1721#0" expanded="true" />
-                <element signature="e#1797#1798#0" expanded="true" />
-                <element signature="e#1840#1841#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/users/UserFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/users/UserInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/users/AppliesDiscount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/users/isPremium.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestDispatcher.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
               <folding>
-                <element signature="e#131#132#0" expanded="true" />
-                <element signature="e#158#159#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/users/isNotPremium.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/RestParameters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-              <folding>
-                <element signature="e#133#134#0" expanded="true" />
-                <element signature="e#157#158#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/RestRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="81" column="17" selection-start-line="50" selection-end-line="81" selection-end-column="17" />
+            <state relative-caret-position="383">
+              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#819#820#0" expanded="true" />
+                <element signature="e#849#850#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,9 +141,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getURLStreamHandler</find>
       <find>get</find>
-      <find>createrest</find>
       <find>url_</find>
       <find>url_add</find>
       <find>logger</find>
@@ -189,6 +169,8 @@
       <find>getpartdet</find>
       <find>PartAdapter</find>
       <find>isPremium</find>
+      <find>create</find>
+      <find>createrest</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Patrick\Desktop\Computer Systems\cs4125\Project\TeamSorbonneSSD\target</dir>
@@ -200,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartNamesWithType.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartIdWithName.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/view/SellPCParts.java" />
@@ -209,7 +190,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestDispatcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/Interceptor/RestRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/RestRequest.java" />
         <option value="$PROJECT_DIR$/RestApi/RestApp.py" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/DeleteHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/PostHandler.java" />
@@ -221,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java" />
         <option value="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Users/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUsersByIdCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertTransactionCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertAdvertCommand.java" />
@@ -237,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetAdvertsByPartTypeCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartDetailsWithIdCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUserWithNameCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/users/CurrentUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Motherboard.java" />
         <option value="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cpu.java" />
@@ -251,6 +229,10 @@
         <option value="$PROJECT_DIR$/src/main/java/users/UserFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/users/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/CommandQueue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/RestRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java" />
       </list>
     </option>
   </component>
@@ -434,7 +416,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="335" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589502925841" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589510962626" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -736,7 +718,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134190000" />
+    <option name="totallyTimeSpent" value="139578000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -758,16 +740,16 @@
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.248" />
-      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.47893333" weight="0.32286024" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.47786668" weight="0.32286024" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.6586667" visible="true" weight="0.46695557" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.6576" visible="true" weight="0.34561214" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.12866108" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49906543" weight="0.32917964" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49973333" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.34133333" side_tool="true" visible="true" weight="0.46695557" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3424" side_tool="true" visible="true" weight="0.34561214" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4928" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -880,52 +862,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PartFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/PostHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUsersByIdCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="33" column="34" selection-start-line="33" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertTransactionCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertAdvertCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertPcBuildCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertReviewCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -984,16 +920,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetAllPartsCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/DeleteHandlerCommands/deletePcBuildCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
@@ -1082,13 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/parts/unsupportedPart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1191,16 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="138" column="28" lean-forward="true" selection-start-line="138" selection-start-column="28" selection-end-line="138" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/RegisterScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -1211,41 +1120,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/RestRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/users/isNotPremium.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding>
             <element signature="e#133#134#0" expanded="true" />
             <element signature="e#157#158#0" expanded="true" />
@@ -1267,14 +1145,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/users/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/users/UserFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1288,7 +1166,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/users/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#548#549#0" expanded="true" />
             <element signature="e#579#580#0" expanded="true" />
@@ -1302,11 +1180,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="81" column="17" selection-start-line="50" selection-end-line="81" selection-end-column="17" />
+        <state relative-caret-position="178">
+          <caret line="72" column="35" lean-forward="true" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/parts/unsupportedPart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/CommandQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="32" selection-start-line="32" selection-end-line="34" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/RestResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/DeleteHandlerCommands/deletePcBuildCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="114" column="53" lean-forward="true" selection-start-line="114" selection-start-column="53" selection-end-line="114" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/RestParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/RestRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertAdvertCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/RestRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
