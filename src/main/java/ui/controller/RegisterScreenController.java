@@ -2,7 +2,7 @@ package ui.controller;
 import rest_api_handlers.PostHandler;
 import ui.model.UserRegistrationModel;
 import ui.view.RegisterUserScreen;
-import users.isPremium;
+import users.UserFactory;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -20,11 +20,11 @@ public class RegisterScreenController extends BaseFrameController {
     private JLabel errorLabel;
     private JCheckBox premiumUser;
     private PostHandler postHandler;
-    private isPremium typeOfUser;
+    private UserFactory typeOfUser;
 
     public RegisterScreenController() {
         model = new UserRegistrationModel();
-        typeOfUser = new isPremium();
+        typeOfUser = new UserFactory();
         postHandler = new PostHandler();
     }
 

@@ -2,242 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4820873-e68f-4887-bbcb-85371b50f6da" name="Default Changelist" comment="Cleaned Frames">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/cache/EightPinPowerConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/cache/FourPinPowerConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/cache/SixPinPowerConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/cache/TwoPinPowerConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/cache/partsCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/ICompatibilityCheckerFinal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDCpu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDMotherboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDPartFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AbstractPartFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelCpu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelMotherboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelPartFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/IConfigDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/PCCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/PartAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/unsupportedPart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/DeleteHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/WarehouseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/view/WarehouseScreen.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/view/WarehouseScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/users/UserInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/users/isPremium.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Users/UserInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Users/isPremium.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/cache/EightPinPowerConnector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/cache/FourPinPowerConnector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/cache/SixPinPowerConnector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/cache/TwoPinPowerConnector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/cache/partsCache.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/configuration/CompatibilityChecker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/configuration/CompatibilityCheckerDecorator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/configuration/CompatibilityCheckerFinal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/configuration/ICompatibilityChecker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/configuration/ICompatibilityCheckerFinal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/configuration/RamChannelCompatibilityDecorator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/configuration/RamTypeCompatibilityDecorator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/configuration/SocketCompatibilityCheckerDecorator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/configuration/WattageCompatiblityCheckerDecorator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/factories/AMDCpu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/factories/AMDMotherboard.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/factories/AMDPartFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/factories/AMDSocket.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/factories/AbstractPartFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/factories/IntelCpu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/factories/IntelMotherboard.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/factories/IntelPartFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/factories/IntelSocket.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/factories/PartFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/CompositePart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/Cooler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/IComposite.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/IConfigDetails.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/PCCase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/Part.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/PartAdapter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/PowerConnector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/PowerSupply.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/Socket.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/unsupportedPart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/rest_api_handlers/APIHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/rest_api_handlers/DeleteHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/rest_api_handlers/GetAPI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/rest_api_handlers/GetHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/rest_api_handlers/PostHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ui/controller/WarehouseController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ui/view/WarehouseScreen$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ui/view/WarehouseScreen.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/sonar/.sonar_lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Auctions/Advert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auctions/Advert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Auctions/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auctions/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Auctions/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auctions/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/CompatibilityChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/CompatibilityCheckerDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/CompatibilityCheckerFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/CompatibilityResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/CompatibilityResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ConfigurationDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/ConfigurationDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/ICompatibilityChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/ICompatibilityCheckerFinal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/RamChannelCompatibilityDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/RamChannelCompatibilityDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/RamTypeCompatibilityDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/RamTypeCompatibilityDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/SocketCompatibilityCheckerDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/SocketCompatibilityCheckerDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Configuration/WattageCompatiblityCheckerDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/WattageCompatiblityCheckerDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/CompositePart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/CompositePart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Cooler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cooler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Cpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cpu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Gpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Gpu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Hardrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Hardrive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/IComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/IConfigDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Motherboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Motherboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Part.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PartFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/PartFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PowerConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/PowerConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PowerSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/PowerSupply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Ram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Ram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/Socket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Socket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/APIHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/DeleteHandlerCommands/deleteAdvertCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/DeleteHandlerCommands/deleteAdvertCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/DeleteHandlerCommands/deletePcBuildCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/DeleteHandlerCommands/deletePcBuildCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetAdvertsByPartTypeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetAdvertsByPartTypeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetAllPartsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetAllPartsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartDetailsWithIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartDetailsWithIdCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartIdWithNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartIdWithNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartNamesWithTypeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartNamesWithTypeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartsOwnedByUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartsOwnedByUserCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetTransactionsByUidCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetTransactionsByUidCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUserWithNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUserWithNameCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUsersByIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUsersByIdCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertAdvertCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertAdvertCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertPcBuildCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertPcBuildCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertReviewCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertReviewCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertTransactionCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertTransactionCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/DeleteHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/GetAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/GetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/GetHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPIHandlers/PostHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/PostHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SimpleTestDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SimpleTestDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/PremiumUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/UserFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest_api_handlers/GetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/GetHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest_api_handlers/PostHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest_api_handlers/PostHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/AppMenuScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AppMenuScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/HomeScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/HomeScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/RegisterScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/RegisterScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/ReviewSellerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/ReviewSellerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/SearchPartsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/SearchPartsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/SellPartsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/SellPartsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/ViewTransactionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/ViewTransactionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/model/PartComboBoxModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/model/PartComboBoxModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/model/UserLoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/model/UserLoginModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/model/ValidationOfCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/model/ValidationOfCredentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/AdvertListingScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/AppMenuScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/AppMenuScreen.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/AppMenuScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/AppMenuScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/HomeScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/RegisterUserScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/RegisterUserScreen.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/RegisterUserScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/RegisterUserScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ReviewSellerScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ReviewSellerScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/SellPCParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/SellPCParts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/users/CurrentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/CurrentUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CompositePartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CompositePartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Auctions/Advert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auctions/Advert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Auctions/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auctions/Review.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Auctions/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auctions/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/CompatibilityChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/CompatibilityCheckerDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/CompatibilityCheckerFinal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/CompatibilityResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/configuration/CompatibilityResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ConfigurationDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/configuration/ConfigurationDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ICompatibilityChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/ICompatibilityCheckerFinal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/RamChannelCompatibilityDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/RamTypeCompatibilityDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/SocketCompatibilityCheckerDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Configuration/WattageCompatiblityCheckerDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/CompositePart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Cooler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Cpu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/Cpu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Gpu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/Gpu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Hardrive.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/Hardrive.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/IComposite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/IConfigDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Motherboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/Motherboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Part.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PartFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PowerConnector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/PowerSupply.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Ram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compatibility_checker/parts/Ram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CompatibilityChecker/Parts/Socket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/APIHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/DeleteHandlerCommands/deleteAdvertCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/DeleteHandlerCommands/deleteAdvertCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/DeleteHandlerCommands/deletePcBuildCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/DeleteHandlerCommands/deletePcBuildCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetAdvertsByPartTypeCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetAdvertsByPartTypeCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetAllPartsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetAllPartsCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetPartDetailsWithIdCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetPartDetailsWithIdCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetPartIdWithNameCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetPartIdWithNameCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetPartNamesWithTypeCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetPartNamesWithTypeCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetPartsOwnedByUserCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetPartsOwnedByUserCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetTransactionsByUidCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetTransactionsByUidCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetUserWithNameCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetUserWithNameCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetUsersByIdCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/GetHandlerCommands/GetUsersByIdCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/PostHandlerCommands/InsertAdvertCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/PostHandlerCommands/InsertAdvertCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/PostHandlerCommands/InsertPcBuildCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/PostHandlerCommands/InsertPcBuildCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/PostHandlerCommands/InsertReviewCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/PostHandlerCommands/InsertReviewCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/PostHandlerCommands/InsertTransactionCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestAPIHandlers/Command/PostHandlerCommands/InsertTransactionCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/DeleteHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/GetHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestAPIHandlers/PostHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SimpleTestDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleTestDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Users/CurrentUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/CurrentUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Users/PremiumUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Users/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Users/UserFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/AdvertListingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/AdvertListingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/AppMenuScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/AppMenuScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/ConfigurePCController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/ConfigurePCController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/HomeScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/HomeScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/LoginUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/LoginUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/RegisterScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/RegisterScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/ReviewSellerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/ReviewSellerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/SearchPartsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/SearchPartsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/SellPartsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/SellPartsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/ViewTransactionsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/ViewTransactionsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/model/PartComboBoxModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/model/PartComboBoxModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/model/UserLoginModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/model/UserLoginModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/model/ValidationOfCredentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/model/ValidationOfCredentials.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AdvertListingScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AppMenuScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AppMenuScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/AppMenuScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/AppMenuScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/ConfigurePCScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/HomeScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/HomeScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/RegisterUserScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/RegisterUserScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/RegisterUserScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/RegisterUserScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/ReviewSellerScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/ReviewSellerScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/SellPCParts$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/SellPCParts$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/SellPCParts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/SellPCParts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/ViewTransactionsScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/ViewTransactionsScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/view/ViewTransactionsScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/view/ViewTransactionsScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CompositePartTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CompositePartTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/users/isPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -259,96 +33,113 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/parts/CompositePart.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestDispatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
-                <element signature="e#253#259#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#335#336#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/configuration/CompatibilityCheckerFinal.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/users/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+                <element signature="e#1678#1679#0" expanded="true" />
+                <element signature="e#1720#1721#0" expanded="true" />
+                <element signature="e#1797#1798#0" expanded="true" />
+                <element signature="e#1840#1841#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/users/UserFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/parts/IConfigDetails.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/users/UserInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDPartFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/users/AppliesDiscount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="51">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDMotherboard.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/users/isPremium.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+              <folding>
+                <element signature="e#131#132#0" expanded="true" />
+                <element signature="e#158#159#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/users/isNotPremium.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="e#133#134#0" expanded="true" />
+                <element signature="e#157#158#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/factories/PartFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cpu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelPartFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelMotherboard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Motherboard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="331">
+              <caret line="81" column="17" selection-start-line="50" selection-end-line="81" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -368,7 +159,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getURL</find>
       <find>getURLStreamHandler</find>
       <find>get</find>
       <find>createrest</find>
@@ -398,6 +188,7 @@
       <find>GetUserwithnamecommand</find>
       <find>getpartdet</find>
       <find>PartAdapter</find>
+      <find>isPremium</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Patrick\Desktop\Computer Systems\cs4125\Project\TeamSorbonneSSD\target</dir>
@@ -409,10 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/RestParameters.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/getUserWithNameCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/RestResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartNamesWithType.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetPartIdWithName.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/view/ConfigurePCScreen.java" />
@@ -434,7 +221,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java" />
         <option value="$PROJECT_DIR$/src/main/java/Users/CurrentUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Users/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUsersByIdCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/PostHandlerCommands/InsertTransactionCommand.java" />
@@ -453,13 +239,18 @@
         <option value="$PROJECT_DIR$/src/main/java/RestAPIHandlers/Command/GetHandlerCommands/GetUserWithNameCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/users/CurrentUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/users/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Motherboard.java" />
         <option value="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/Cpu.java" />
         <option value="$PROJECT_DIR$/src/main/java/compatibility_checker/parts/CompositePart.java" />
         <option value="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/AMDPartFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/IntelPartFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/compatibility_checker/factories/PartFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/users/AppliesDiscount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/users/isNotPremium.java" />
+        <option value="$PROJECT_DIR$/src/main/java/users/isPremium1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/users/UserFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/users/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java" />
       </list>
     </option>
   </component>
@@ -531,6 +322,14 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="compatibility_checker" type="462c0819:PsiDirectoryNode" />
               <item name="parts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamSorbonneSSD" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Interceptor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PcPartPiecerCompat" type="b2602c69:ProjectViewProjectNode" />
@@ -635,7 +434,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="335" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589500332272" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589502925841" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -937,7 +736,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131707000" />
+    <option name="totallyTimeSpent" value="134190000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -958,17 +757,17 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.248" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.248" />
       <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.47893333" weight="0.32286024" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.6586667" visible="true" weight="0.40628386" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.6586667" visible="true" weight="0.46695557" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.12866108" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49906543" weight="0.32917964" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49973333" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.34133333" side_tool="true" visible="true" weight="0.40628386" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.34133333" side_tool="true" visible="true" weight="0.46695557" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4928" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -1081,73 +880,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/RestRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding>
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/SellPartsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/ReviewSellerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/APIHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/view/ViewTransactionsScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="110" column="82" selection-start-line="110" selection-start-column="82" selection-end-line="110" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/DeleteHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/CompatibilityChecker/Parts/PartFactory.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/RestAPIHandlers/PostHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/RegisterScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/ConfigurePCController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1340,39 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/users/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/users/UserInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/users/isPremium.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4480#4481#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/LoginUserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1481,8 +1186,127 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/compatibility_checker/factories/PartFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        <state relative-caret-position="330">
+          <caret line="39" column="101" lean-forward="true" selection-start-line="39" selection-start-column="101" selection-end-line="39" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rest_api_handlers/APIHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="138" column="28" lean-forward="true" selection-start-line="138" selection-start-column="28" selection-end-line="138" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/RegisterScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/RestRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interceptor/ClientRequestDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/users/isNotPremium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/users/isPremium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding>
+            <element signature="e#131#132#0" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/users/UserInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/users/UserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/users/AppliesDiscount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1720#1721#0" expanded="true" />
+            <element signature="e#1797#1798#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/controller/AdvertListingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="81" column="17" selection-start-line="50" selection-end-line="81" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

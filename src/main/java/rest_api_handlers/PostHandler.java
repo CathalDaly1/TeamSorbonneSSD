@@ -1,7 +1,7 @@
 package rest_api_handlers;
 
 import users.User;
-import users.isPremium;
+import users.UserFactory;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -50,7 +50,7 @@ public class PostHandler extends APIHandler{
         url = addParameterToUrl(url,"password",user.getPassword(),false);
         url = addParameterToUrl(url,"email",user.getEmail(),false);
         url = addParameterToUrl(url,"premium",String.valueOf(user.getUserType()),true);
-        user.userTypeNow = new isPremium();
+        user.userTypeNow = new UserFactory();
 
         if(executeInsert(url)){
             return true;

@@ -1,11 +1,9 @@
 package users;
 
-public class isPremium implements UserInterface {
+public class isPremium implements AppliesDiscount{
 
-    public isPremium(){
-    }
-
-    public User addNewUser(int uId, String username, String email, String password, boolean userType) {
-        return new User(uId, username, email, password, userType);
+    @Override
+    public double appliesDiscount(double price) {
+        return price - (price * 0.15);
     }
 }

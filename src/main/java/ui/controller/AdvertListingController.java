@@ -44,72 +44,43 @@ public class AdvertListingController extends BaseFrameController {
             buyPartsButtons[i].addActionListener((ActionEvent e) -> {
                 String uidSeller = String.valueOf(searchAds.getAdverts().get(finalI).getUserId());
                 String pid = String.valueOf(searchAds.getAdverts().get(finalI).getPid());
+
                 String price = String.valueOf(searchAds.getAdverts().get(finalI).getPrice());
                 User currentUser = CurrentUser.getInstance();
                 System.out.println("User type: " + currentUser.getUserType());
 
-                if (currentUser.getUserType()) {
-                    Double discountedPrice, regularPrice;
-                    regularPrice = Double.valueOf(searchAds.getAdverts().get(finalI).getPrice());
-                    discountedPrice = regularPrice - (regularPrice * 0.15);
-                    price = discountedPrice.toString();
-                    System.out.println(regularPrice);
-                    System.out.println(discountedPrice);
-
-                    boolean result = true;
-
-                    Command deleteAdvertCommand = new deleteAdvertCommand();
-                    HashMap<String,Object> map = new HashMap<>();
-                    map.put("uid",uidSeller);
-                    map.put("pid",pid);
-                    RestParameters restParameters = new RestParameters(map);
-                    deleteAdvertCommand.execute(restParameters);
+                Double discountedPrice, regularPrice;
+                regularPrice = Double.valueOf(searchAds.getAdverts().get(finalI).getPrice());
 
 
-                    Command insertTransactionCommand = new InsertTransactionCommand();
-                    map = new HashMap<>();
-                    map.put("uid1",uidSeller);
-                    map.put("uid2",String.valueOf(currentUser.getuId()));
-                    map.put("pid",pid);
-                    map.put("price",price);
-                    restParameters = new RestParameters(map);
-                    insertTransactionCommand.execute(restParameters);
+                price = String.valueOf(currentUser.tryToApplyDiscount(regularPrice));
+                System.out.println(regularPrice);
 
-                    if(result){
-                        JOptionPane.showMessageDialog(null,"Succesfully bought part\n You received a discounted price:" + price);
-                    } else{
-                        JOptionPane.showMessageDialog(null,"Sorry there was an issue in buying part");
-                    }
+                boolean result = true;
+
+                Command deleteAdvertCommand = new deleteAdvertCommand();
+                HashMap<String,Object> map = new HashMap<>();
+                map.put("uid",uidSeller);
+                map.put("pid",pid);
+                RestParameters restParameters = new RestParameters(map);
+                deleteAdvertCommand.execute(restParameters);
+
+
+                Command insertTransactionCommand = new InsertTransactionCommand();
+                map = new HashMap<>();
+                map.put("uid1",uidSeller);
+                map.put("uid2",String.valueOf(currentUser.getuId()));
+                map.put("pid",pid);
+                map.put("price",price);
+                restParameters = new RestParameters(map);
+                insertTransactionCommand.execute(restParameters);
+
+                if(result){
+                    JOptionPane.showMessageDialog(null,"Succesfully bought part\n You received a discounted price:" + price);
+                } else{
+                    JOptionPane.showMessageDialog(null,"Sorry there was an issue in buying part");
                 }
-                else {
-                    price = String.valueOf(searchAds.getAdverts().get(finalI).getPrice());
 
-                    boolean result = true;
-
-
-                    Command deleteAdvertCommand = new deleteAdvertCommand();
-                    HashMap<String, Object> map = new HashMap<>();
-                    map.put("uid", uidSeller);
-                    map.put("pid", pid);
-                    RestParameters restParameters = new RestParameters(map);
-                    deleteAdvertCommand.execute(restParameters);
-
-
-                    Command insertTransactionCommand = new InsertTransactionCommand();
-                    map = new HashMap<>();
-                    map.put("uid1", uidSeller);
-                    map.put("uid2", String.valueOf(currentUser.getuId()));
-                    map.put("pid", pid);
-                    map.put("price", price);
-                    restParameters = new RestParameters(map);
-                    insertTransactionCommand.execute(restParameters);
-
-                    if (result) {
-                        JOptionPane.showMessageDialog(null, "Succesfully bought part\n You paid: " + price);
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Sorry there was an issue in buying part");
-                    }
-                }
             });
 
             backButton.addActionListener((ActionEvent e) -> {

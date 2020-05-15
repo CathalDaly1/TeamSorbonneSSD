@@ -7,7 +7,7 @@ import RestAPIHandlers.Command.RestResponse;
 import users.User;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import users.isPremium;
+import users.UserFactory;
 
 import static rest_api_handlers.APIHandler.URL_ADDRESS;
 
@@ -15,7 +15,7 @@ public class GetUsersByIdCommand implements Command {
     @Override
     public RestResponse execute(RestParameters parameters) {
         APIHandler apiHandler = APIHandler.getInstance();
-        isPremium userNow = new isPremium();
+        UserFactory userNow = new UserFactory();
 
         String url = URL_ADDRESS + "/userById/?";
 

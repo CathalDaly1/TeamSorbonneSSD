@@ -3,10 +3,9 @@ package rest_api_handlers;
 import compatibility_checker.factories.AMDPartFactory;
 import compatibility_checker.factories.IntelPartFactory;
 import compatibility_checker.factories.PartFactory;
-import compatibility_checker.parts.*;
 import org.json.JSONException;
 import org.json.JSONObject;
-import users.isPremium;
+import users.UserFactory;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -25,7 +24,7 @@ public class APIHandler {
     PartFactory partFactory;
     IntelPartFactory intelPartFactory;
     AMDPartFactory amdPartFactory;
-    isPremium userNow;
+    UserFactory userNow;
 
     public static final String URL_ADDRESS = "http://192.168.1.12:5000";
     static APIHandler singleInstance = null;
@@ -43,7 +42,7 @@ public class APIHandler {
     }
 
     public APIHandler() {
-        userNow = new isPremium();
+        userNow = new UserFactory();
         partFactory = new PartFactory();
         intelPartFactory = new IntelPartFactory();
         amdPartFactory = new AMDPartFactory();

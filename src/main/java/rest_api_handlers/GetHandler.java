@@ -11,7 +11,7 @@ import users.User;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import users.isPremium;
+import users.UserFactory;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -37,10 +37,10 @@ public class GetHandler extends APIHandler implements GetAPI {
     private static final String URL_ADDRESS = "http://192.168.1.12:5000";
     IntelPartFactory intelPartFactory;
     AMDPartFactory amdPartFactory;
-    isPremium userNow;
+    UserFactory userNow;
 
     public GetHandler(){
-        userNow = new isPremium();
+        userNow = new UserFactory();
         partFactory = new PartFactory();
         intelPartFactory = new IntelPartFactory();
         amdPartFactory = new AMDPartFactory();

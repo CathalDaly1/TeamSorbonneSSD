@@ -9,6 +9,7 @@ public class User {
     private String email;
     private String password;
     private  boolean userType;
+    private AppliesDiscount isPremium;
 
     public users.UserInterface userTypeNow;
 
@@ -20,6 +21,13 @@ public class User {
         this.email = email;
         this.password=password;
         this.userType=userType;
+
+        if(userType == true){
+            this.setIsPremium(new isPremium());
+        }
+        else {
+            this.setIsPremium(new isNotPremium());
+        }
     }
 
     public boolean getUserType() {
@@ -73,5 +81,13 @@ public class User {
 
     public void setUserAbility(users.UserInterface newUserType) {
         userTypeNow = newUserType;
+    }
+
+    public double tryToApplyDiscount(double price){
+        return isPremium.appliesDiscount(price);
+    }
+
+    public void setIsPremium(AppliesDiscount appliesDiscount){
+        isPremium = appliesDiscount;
     }
 }
